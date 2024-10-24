@@ -1,0 +1,128 @@
+Chronologic VCS simulator copyright 1991-2016
+Contains Synopsys proprietary information.
+Compiler version L-2016.06_Full64; Runtime version L-2016.06_Full64;  Sep 25 22:31 2024
+[SYSTEM] Timeout threshold is set to 0 cycles.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_div_tc:
+ at time = 10: Division by zero.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_rem_tc:
+ at time = 10: Division by zero.
+[PRINT][cycle=        538] Bare Metal Init Start.
+[PRINT][cycle=        986] Bare Metal Init Finished.
+[cycle=95904][mpki=16.260163][tage error=370][btb error=1256]
+[cycle=174808][mpki=15.420154][tage error=300][btb error=1242]
+[cycle=268140][mpki=15.349847][tage error=198][btb error=1337]
+[cycle=360518][mpki=11.060000][tage error=196][btb error=910]
+[cycle=434575][mpki=10.200000][tage error=97][btb error=923]
+[cycle=526424][mpki=13.490135][tage error=130][btb error=1219]
+[cycle=617415][mpki=9.640096][tage error=90][btb error=874]
+[cycle=691045][mpki=9.510095][tage error=51][btb error=900]
+[cycle=782526][mpki=13.130131][tage error=99][btb error=1214]
+[cycle=873221][mpki=9.439906][tage error=79][btb error=865]
+[cycle=946719][mpki=9.210092][tage error=35][btb error=886]
+[cycle=1038132][mpki=13.130131][tage error=119][btb error=1194]
+[cycle=1128959][mpki=9.550096][tage error=93][btb error=862]
+[cycle=1202188][mpki=9.089909][tage error=37][btb error=872]
+[cycle=1293665][mpki=13.050000][tage error=100][btb error=1205]
+[cycle=1384223][mpki=9.289907][tage error=78][btb error=851]
+[cycle=1457498][mpki=9.270093][tage error=40][btb error=887]
+[cycle=1548975][mpki=12.860000][tage error=100][btb error=1186]
+[cycle=1639720][mpki=9.480095][tage error=100][btb error=848]
+[cycle=1712556][mpki=8.900000][tage error=24][btb error=866]
+[cycle=1804017][mpki=12.820000][tage error=103][btb error=1179]
+[cycle=1894502][mpki=9.199908][tage error=79][btb error=841]
+[cycle=1967340][mpki=8.919822][tage error=31][btb error=861]
+[cycle=2058865][mpki=12.899871][tage error=82][btb error=1208]
+[cycle=2148980][mpki=8.760088][tage error=50][btb error=826]
+[cycle=2221549][mpki=8.670087][tage error=20][btb error=847]
+[cycle=2312997][mpki=12.989740][tage error=100][btb error=1199]
+[cycle=2403355][mpki=8.860089][tage error=68][btb error=818]
+[cycle=2476274][mpki=9.040000][tage error=25][btb error=879]
+[cycle=2567450][mpki=12.769745][tage error=91][btb error=1186]
+[PRINT][cycle=    2574947] 2K performance run parameters for coremark.
+[PRINT][cycle=    2576011] CoreMark Size    : 666
+[PRINT][cycle=    2576734] Total ticks      : 2562684
+[PRINT][cycle=    2579361] Total time (secs): 0.002563
+[PRINT][cycle=    2581718] Iterations/Sec   : 3902.158830
+[PRINT][cycle=    2582333] Iterations       : 10
+[PRINT][cycle=    2583172] Compiler version : GCC13.2.0
+[PRINT][cycle=    2583712] Compiler flags   : -O2
+[PRINT][cycle=    2584196] Memory location  : STACK
+[PRINT][cycle=    2585107] seedcrc          : 0xe9f5
+[PRINT][cycle=    2586124] [0]crclist       : 0xe714
+[PRINT][cycle=    2586986] [0]crcmatrix     : 0x1fd7
+[PRINT][cycle=    2587766] [0]crcstate      : 0x8e3a
+[PRINT][cycle=    2588542] [0]crcfinal      : 0xfcaf
+[PRINT][cycle=    2589508] Correct operation validated. See README.md for run and reporting rules.
+[PRINT][cycle=    2592236] CoreMark 1.0 : 3902.158830 / GCC13.2.0 -O2 / STACK
+[SYSTEM][cycle=    2592334][pc=80002d18] Receive a cmd from core, cmd[00000000] = 0000000000000000000000000000000000000000000000000000000000000001
+[SYSTEM][cycle=    2592334][pc=80002d18] Receive exit command 0000000000000000000000000000000000000000000000000000000000000001, exit.
+[SYSTEM][PERF]Total    2592328 cycles.
+[SYSTEM][PERF]Total    3027210 instructions.
+[SYSTEM][PERF]Total      34124 times cancel.MPKI 11.272426
+[SYSTEM][BP]Tage error:  3231, BTB error: 30893, RAS error:     0, RAS miss:   184, Ind error:     x.
+[SYSTEM][BP]BP2 chgflw: 122088, RAS chgflw:  2773.
+[SYSTEM][BP]Tage update num: 543593, Real commit: 543590, Real tage err: 19300.
+[SYSTEM][ENTRY_USE]Fetch entry 0 use    1234140.
+[SYSTEM][ENTRY_USE]Fetch entry 1 use     958114.
+[SYSTEM][ENTRY_USE]Fetch entry 2 use     554676.
+[SYSTEM][ENTRY_USE]Fetch entry 3 use     348413.
+[SYSTEM][LSU]Memory req cycle num     698708.
+[SYSTEM][COMMIT]MAX use  38.
+[SYSTEM][INT_RF]MAX use  60.
+[SYSTEM][FP_RF]MAX use  35.
+[SYSTEM][LSU]MAX use 14.
+[SYSTEM][STQ]MAX use  17.
+[SYSTEM][LDQ]MAX use  14.
+[SYSTEM] phy_lock                       0                   0                   0                   0
+[SYSTEM] eu_hazard                    223
+[SYSTEM] reg_hazard               5900264
+[SYSTEM] in-order                 4334361
+[SYSTEM] 1->eu_hazard
+[SYSTEM] 2->           reg_hazard
+[SYSTEM] 3->eu_hazard  reg_hazard
+[SYSTEM] 4->                       in-order
+[SYSTEM] 5->eu_hazard              in-order
+[SYSTEM] 6->           reg_hazard  in-order
+[SYSTEM] 7->eu_hazard  reg_hazard  in-order
++----------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+
+|                |  fetch empty  |       1       |       2       |       3       |       4       |       5       |       6       |       7       |
++----------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+
+|    Channel 0   |    234760     |      40       |    949086     |       0       |       0       |       0       |       0       |       0       |
++----------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+
+|    Channel 1   |    248531     |      43       |    772590     |       6       |    105325     |       0       |    839790     |       0       |
++----------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+
+|    Channel 2   |    256479     |      34       |    396545     |       1       |    435296     |       9       |    1176673    |      33       |
++----------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+
+|    Channel 3   |    269849     |       3       |    349457     |       0       |    361136     |      16       |    1416045    |      38       |
++----------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+
+
+ | ----- E N T R Y  0 ----- | ----- E N T R Y  1 ----- | ----- E N T R Y  2 ----- | ----- E N T R Y  3 ----- |
+ |                          |                          |                          |                          | 
+ |                          |                          |                          |                    *     | 
+ |                          |                          |                          |                    *     | 
+ |                          |                          |                          |                    *     | 
+ |                          |                          |                          |                    *     | 
+ |                          |                          |                    *     |                    *     | 
+ |                          |                          |                    *     |                    *     | 
+ |                          |                          |                    *     |                    *     | 
+ |        *                 |                          |                    *     |                    *     | 
+ |        *                 |                          |                    *     |                    *     | 
+ |        *                 |                    *     |                    *     |                    *     | 
+ |        *                 |        *           *     |                    *     |                    *     | 
+ |        *                 |        *           *     |                    *     |                    *     | 
+ |        *                 |        *           *     |                    *     |                    *     | 
+ |        *                 |        *           *     |                    *     |                    *     | 
+ |        *                 |        *           *     |              *     *     |                    *     | 
+ |        *                 |        *           *     |        *     *     *     |              *     *     | 
+ |        *                 |        *           *     |        *     *     *     |        *     *     *     | 
+ |  *     *                 |  *     *           *     |  *     *     *     *     |  *     *     *     *     | 
+ |  *     *                 |  *     *           *     |  *     *     *     *     |  *     *     *     *     | 
+ |  *     *                 |  *     *     *     *     |  *     *     *     *     |  *     *     *     *     | 
+ |  0  1  2  3  4  5  6  7  |  0  1  2  3  4  5  6  7  |  0  1  2  3  4  5  6  7  |  0  1  2  3  4  5  6  7  | 
+receive exit signal 0, success exit.
+$finish called from file "/home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/toy_env_slv.sv", line 579.
+$finish at simulation time             51846670
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 51846670
+CPU Time:   1608.570 seconds;       Data structure size:   1.4Mb
+Wed Sep 25 22:58:20 2024

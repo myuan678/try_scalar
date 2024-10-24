@@ -1,0 +1,1863 @@
+Start testing: Oct 24 10:45 CST
+----------------------------------------------------------
+4/60 Testing: rv32ui-p-andi
+4/60 Test: rv32ui-p-andi
+Command: "/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv" "-exitstatus" "+HEX=/tools/hurj/riscv-proj/isa/rv32ui-p-andi_itcm.hex" "+DATA_HEX=/tools/hurj/riscv-proj/isa/rv32ui-p-andi_data.hex" "+TIMEOUT=12000"
+Directory: /data/usr/xuemy/8fetch_ooo/toy_scalar/rv_isa_test/build
+"rv32ui-p-andi" start time: Oct 24 10:45 CST
+Output:
+----------------------------------------------------------
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Oct 24 10:45 2024
+[SYSTEM] Timeout threshold is set to 12000 cycles.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_div_tc:
+ at time = 10: Division by zero.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_rem_tc:
+ at time = 10: Division by zero.
+Fatal: "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", 55: toy_top.u_toy_env_slv: at time 240100
+[SYSTEM] Timeout occurs after executing 12000 cycles !
+$finish called from file "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", line 55.
+$finish at simulation time               240100
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 240100
+CPU Time:      0.340 seconds;       Data structure size:   0.9Mb
+Thu Oct 24 10:45:07 2024
+<end of output>
+Test time =   2.64 sec
+----------------------------------------------------------
+Test Failed.
+"rv32ui-p-andi" end time: Oct 24 10:45 CST
+"rv32ui-p-andi" time elapsed: 00:00:02
+----------------------------------------------------------
+
+6/60 Testing: rv32ui-p-beq
+6/60 Test: rv32ui-p-beq
+Command: "/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv" "-exitstatus" "+HEX=/tools/hurj/riscv-proj/isa/rv32ui-p-beq_itcm.hex" "+DATA_HEX=/tools/hurj/riscv-proj/isa/rv32ui-p-beq_data.hex" "+TIMEOUT=12000"
+Directory: /data/usr/xuemy/8fetch_ooo/toy_scalar/rv_isa_test/build
+"rv32ui-p-beq" start time: Oct 24 10:45 CST
+Output:
+----------------------------------------------------------
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Oct 24 10:45 2024
+[SYSTEM] Timeout threshold is set to 12000 cycles.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_div_tc:
+ at time = 10: Division by zero.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_rem_tc:
+ at time = 10: Division by zero.
+Fatal: "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", 55: toy_top.u_toy_env_slv: at time 240100
+[SYSTEM] Timeout occurs after executing 12000 cycles !
+$finish called from file "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", line 55.
+$finish at simulation time               240100
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 240100
+CPU Time:      0.340 seconds;       Data structure size:   0.9Mb
+Thu Oct 24 10:45:08 2024
+<end of output>
+Test time =   2.85 sec
+----------------------------------------------------------
+Test Failed.
+"rv32ui-p-beq" end time: Oct 24 10:45 CST
+"rv32ui-p-beq" time elapsed: 00:00:02
+----------------------------------------------------------
+
+11/60 Testing: rv32ui-p-bne
+11/60 Test: rv32ui-p-bne
+Command: "/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv" "-exitstatus" "+HEX=/tools/hurj/riscv-proj/isa/rv32ui-p-bne_itcm.hex" "+DATA_HEX=/tools/hurj/riscv-proj/isa/rv32ui-p-bne_data.hex" "+TIMEOUT=12000"
+Directory: /data/usr/xuemy/8fetch_ooo/toy_scalar/rv_isa_test/build
+"rv32ui-p-bne" start time: Oct 24 10:45 CST
+Output:
+----------------------------------------------------------
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Oct 24 10:45 2024
+[SYSTEM] Timeout threshold is set to 12000 cycles.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_div_tc:
+ at time = 10: Division by zero.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_rem_tc:
+ at time = 10: Division by zero.
+Fatal: "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", 55: toy_top.u_toy_env_slv: at time 240100
+[SYSTEM] Timeout occurs after executing 12000 cycles !
+$finish called from file "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", line 55.
+$finish at simulation time               240100
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 240100
+CPU Time:      0.360 seconds;       Data structure size:   0.9Mb
+Thu Oct 24 10:45:08 2024
+<end of output>
+Test time =   2.91 sec
+----------------------------------------------------------
+Test Failed.
+"rv32ui-p-bne" end time: Oct 24 10:45 CST
+"rv32ui-p-bne" time elapsed: 00:00:02
+----------------------------------------------------------
+
+8/60 Testing: rv32ui-p-bgeu
+8/60 Test: rv32ui-p-bgeu
+Command: "/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv" "-exitstatus" "+HEX=/tools/hurj/riscv-proj/isa/rv32ui-p-bgeu_itcm.hex" "+DATA_HEX=/tools/hurj/riscv-proj/isa/rv32ui-p-bgeu_data.hex" "+TIMEOUT=12000"
+Directory: /data/usr/xuemy/8fetch_ooo/toy_scalar/rv_isa_test/build
+"rv32ui-p-bgeu" start time: Oct 24 10:45 CST
+Output:
+----------------------------------------------------------
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Oct 24 10:45 2024
+[SYSTEM] Timeout threshold is set to 12000 cycles.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_div_tc:
+ at time = 10: Division by zero.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_rem_tc:
+ at time = 10: Division by zero.
+Fatal: "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", 55: toy_top.u_toy_env_slv: at time 240100
+[SYSTEM] Timeout occurs after executing 12000 cycles !
+$finish called from file "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", line 55.
+$finish at simulation time               240100
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 240100
+CPU Time:      0.450 seconds;       Data structure size:   0.9Mb
+Thu Oct 24 10:45:08 2024
+<end of output>
+Test time =   2.93 sec
+----------------------------------------------------------
+Test Failed.
+"rv32ui-p-bgeu" end time: Oct 24 10:45 CST
+"rv32ui-p-bgeu" time elapsed: 00:00:02
+----------------------------------------------------------
+
+1/60 Testing: rv32ui-p-add
+1/60 Test: rv32ui-p-add
+Command: "/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv" "-exitstatus" "+HEX=/tools/hurj/riscv-proj/isa/rv32ui-p-add_itcm.hex" "+DATA_HEX=/tools/hurj/riscv-proj/isa/rv32ui-p-add_data.hex" "+TIMEOUT=12000"
+Directory: /data/usr/xuemy/8fetch_ooo/toy_scalar/rv_isa_test/build
+"rv32ui-p-add" start time: Oct 24 10:45 CST
+Output:
+----------------------------------------------------------
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Oct 24 10:45 2024
+[SYSTEM] Timeout threshold is set to 12000 cycles.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_div_tc:
+ at time = 10: Division by zero.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_rem_tc:
+ at time = 10: Division by zero.
+Fatal: "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", 55: toy_top.u_toy_env_slv: at time 240100
+[SYSTEM] Timeout occurs after executing 12000 cycles !
+$finish called from file "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", line 55.
+$finish at simulation time               240100
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 240100
+CPU Time:      0.440 seconds;       Data structure size:   0.9Mb
+Thu Oct 24 10:45:08 2024
+<end of output>
+Test time =   3.04 sec
+----------------------------------------------------------
+Test Failed.
+"rv32ui-p-add" end time: Oct 24 10:45 CST
+"rv32ui-p-add" time elapsed: 00:00:03
+----------------------------------------------------------
+
+2/60 Testing: rv32ui-p-addi
+2/60 Test: rv32ui-p-addi
+Command: "/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv" "-exitstatus" "+HEX=/tools/hurj/riscv-proj/isa/rv32ui-p-addi_itcm.hex" "+DATA_HEX=/tools/hurj/riscv-proj/isa/rv32ui-p-addi_data.hex" "+TIMEOUT=12000"
+Directory: /data/usr/xuemy/8fetch_ooo/toy_scalar/rv_isa_test/build
+"rv32ui-p-addi" start time: Oct 24 10:45 CST
+Output:
+----------------------------------------------------------
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Oct 24 10:45 2024
+[SYSTEM] Timeout threshold is set to 12000 cycles.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_div_tc:
+ at time = 10: Division by zero.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_rem_tc:
+ at time = 10: Division by zero.
+Fatal: "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", 55: toy_top.u_toy_env_slv: at time 240100
+[SYSTEM] Timeout occurs after executing 12000 cycles !
+$finish called from file "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", line 55.
+$finish at simulation time               240100
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 240100
+CPU Time:      0.420 seconds;       Data structure size:   0.9Mb
+Thu Oct 24 10:45:08 2024
+<end of output>
+Test time =   3.09 sec
+----------------------------------------------------------
+Test Failed.
+"rv32ui-p-addi" end time: Oct 24 10:45 CST
+"rv32ui-p-addi" time elapsed: 00:00:03
+----------------------------------------------------------
+
+7/60 Testing: rv32ui-p-bge
+7/60 Test: rv32ui-p-bge
+Command: "/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv" "-exitstatus" "+HEX=/tools/hurj/riscv-proj/isa/rv32ui-p-bge_itcm.hex" "+DATA_HEX=/tools/hurj/riscv-proj/isa/rv32ui-p-bge_data.hex" "+TIMEOUT=12000"
+Directory: /data/usr/xuemy/8fetch_ooo/toy_scalar/rv_isa_test/build
+"rv32ui-p-bge" start time: Oct 24 10:45 CST
+Output:
+----------------------------------------------------------
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Oct 24 10:45 2024
+[SYSTEM] Timeout threshold is set to 12000 cycles.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_div_tc:
+ at time = 10: Division by zero.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_rem_tc:
+ at time = 10: Division by zero.
+Fatal: "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", 55: toy_top.u_toy_env_slv: at time 240100
+[SYSTEM] Timeout occurs after executing 12000 cycles !
+$finish called from file "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", line 55.
+$finish at simulation time               240100
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 240100
+CPU Time:      0.450 seconds;       Data structure size:   0.9Mb
+Thu Oct 24 10:45:08 2024
+<end of output>
+Test time =   3.18 sec
+----------------------------------------------------------
+Test Failed.
+"rv32ui-p-bge" end time: Oct 24 10:45 CST
+"rv32ui-p-bge" time elapsed: 00:00:03
+----------------------------------------------------------
+
+3/60 Testing: rv32ui-p-and
+3/60 Test: rv32ui-p-and
+Command: "/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv" "-exitstatus" "+HEX=/tools/hurj/riscv-proj/isa/rv32ui-p-and_itcm.hex" "+DATA_HEX=/tools/hurj/riscv-proj/isa/rv32ui-p-and_data.hex" "+TIMEOUT=12000"
+Directory: /data/usr/xuemy/8fetch_ooo/toy_scalar/rv_isa_test/build
+"rv32ui-p-and" start time: Oct 24 10:45 CST
+Output:
+----------------------------------------------------------
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Oct 24 10:45 2024
+[SYSTEM] Timeout threshold is set to 12000 cycles.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_div_tc:
+ at time = 10: Division by zero.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_rem_tc:
+ at time = 10: Division by zero.
+Fatal: "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", 55: toy_top.u_toy_env_slv: at time 240100
+[SYSTEM] Timeout occurs after executing 12000 cycles !
+$finish called from file "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", line 55.
+$finish at simulation time               240100
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 240100
+CPU Time:      0.420 seconds;       Data structure size:   0.9Mb
+Thu Oct 24 10:45:08 2024
+<end of output>
+Test time =   3.20 sec
+----------------------------------------------------------
+Test Failed.
+"rv32ui-p-and" end time: Oct 24 10:45 CST
+"rv32ui-p-and" time elapsed: 00:00:03
+----------------------------------------------------------
+
+29/60 Testing: rv32ui-p-slt
+29/60 Test: rv32ui-p-slt
+Command: "/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv" "-exitstatus" "+HEX=/tools/hurj/riscv-proj/isa/rv32ui-p-slt_itcm.hex" "+DATA_HEX=/tools/hurj/riscv-proj/isa/rv32ui-p-slt_data.hex" "+TIMEOUT=12000"
+Directory: /data/usr/xuemy/8fetch_ooo/toy_scalar/rv_isa_test/build
+"rv32ui-p-slt" start time: Oct 24 10:45 CST
+Output:
+----------------------------------------------------------
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Oct 24 10:45 2024
+[SYSTEM] Timeout threshold is set to 12000 cycles.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_div_tc:
+ at time = 10: Division by zero.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_rem_tc:
+ at time = 10: Division by zero.
+Fatal: "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", 55: toy_top.u_toy_env_slv: at time 240100
+[SYSTEM] Timeout occurs after executing 12000 cycles !
+$finish called from file "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", line 55.
+$finish at simulation time               240100
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 240100
+CPU Time:      0.330 seconds;       Data structure size:   0.9Mb
+Thu Oct 24 10:45:08 2024
+<end of output>
+Test time =   2.96 sec
+----------------------------------------------------------
+Test Failed.
+"rv32ui-p-slt" end time: Oct 24 10:45 CST
+"rv32ui-p-slt" time elapsed: 00:00:02
+----------------------------------------------------------
+
+15/60 Testing: rv32ui-p-lb
+15/60 Test: rv32ui-p-lb
+Command: "/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv" "-exitstatus" "+HEX=/tools/hurj/riscv-proj/isa/rv32ui-p-lb_itcm.hex" "+DATA_HEX=/tools/hurj/riscv-proj/isa/rv32ui-p-lb_data.hex" "+TIMEOUT=12000"
+Directory: /data/usr/xuemy/8fetch_ooo/toy_scalar/rv_isa_test/build
+"rv32ui-p-lb" start time: Oct 24 10:45 CST
+Output:
+----------------------------------------------------------
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Oct 24 10:45 2024
+[SYSTEM] Timeout threshold is set to 12000 cycles.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_div_tc:
+ at time = 10: Division by zero.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_rem_tc:
+ at time = 10: Division by zero.
+Fatal: "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", 55: toy_top.u_toy_env_slv: at time 240100
+[SYSTEM] Timeout occurs after executing 12000 cycles !
+$finish called from file "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", line 55.
+$finish at simulation time               240100
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 240100
+CPU Time:      0.420 seconds;       Data structure size:   0.9Mb
+Thu Oct 24 10:45:08 2024
+<end of output>
+Test time =   3.31 sec
+----------------------------------------------------------
+Test Failed.
+"rv32ui-p-lb" end time: Oct 24 10:45 CST
+"rv32ui-p-lb" time elapsed: 00:00:03
+----------------------------------------------------------
+
+5/60 Testing: rv32ui-p-auipc
+5/60 Test: rv32ui-p-auipc
+Command: "/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv" "-exitstatus" "+HEX=/tools/hurj/riscv-proj/isa/rv32ui-p-auipc_itcm.hex" "+DATA_HEX=/tools/hurj/riscv-proj/isa/rv32ui-p-auipc_data.hex" "+TIMEOUT=12000"
+Directory: /data/usr/xuemy/8fetch_ooo/toy_scalar/rv_isa_test/build
+"rv32ui-p-auipc" start time: Oct 24 10:45 CST
+Output:
+----------------------------------------------------------
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Oct 24 10:45 2024
+[SYSTEM] Timeout threshold is set to 12000 cycles.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_div_tc:
+ at time = 10: Division by zero.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_rem_tc:
+ at time = 10: Division by zero.
+Fatal: "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", 55: toy_top.u_toy_env_slv: at time 240100
+[SYSTEM] Timeout occurs after executing 12000 cycles !
+$finish called from file "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", line 55.
+$finish at simulation time               240100
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 240100
+CPU Time:      0.430 seconds;       Data structure size:   0.9Mb
+Thu Oct 24 10:45:08 2024
+<end of output>
+Test time =   3.45 sec
+----------------------------------------------------------
+Test Failed.
+"rv32ui-p-auipc" end time: Oct 24 10:45 CST
+"rv32ui-p-auipc" time elapsed: 00:00:03
+----------------------------------------------------------
+
+19/60 Testing: rv32ui-p-lui
+19/60 Test: rv32ui-p-lui
+Command: "/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv" "-exitstatus" "+HEX=/tools/hurj/riscv-proj/isa/rv32ui-p-lui_itcm.hex" "+DATA_HEX=/tools/hurj/riscv-proj/isa/rv32ui-p-lui_data.hex" "+TIMEOUT=12000"
+Directory: /data/usr/xuemy/8fetch_ooo/toy_scalar/rv_isa_test/build
+"rv32ui-p-lui" start time: Oct 24 10:45 CST
+Output:
+----------------------------------------------------------
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Oct 24 10:45 2024
+[SYSTEM] Timeout threshold is set to 12000 cycles.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_div_tc:
+ at time = 10: Division by zero.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_rem_tc:
+ at time = 10: Division by zero.
+Fatal: "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", 55: toy_top.u_toy_env_slv: at time 240100
+[SYSTEM] Timeout occurs after executing 12000 cycles !
+$finish called from file "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", line 55.
+$finish at simulation time               240100
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 240100
+CPU Time:      0.410 seconds;       Data structure size:   0.9Mb
+Thu Oct 24 10:45:08 2024
+<end of output>
+Test time =   3.63 sec
+----------------------------------------------------------
+Test Failed.
+"rv32ui-p-lui" end time: Oct 24 10:45 CST
+"rv32ui-p-lui" time elapsed: 00:00:03
+----------------------------------------------------------
+
+16/60 Testing: rv32ui-p-lbu
+16/60 Test: rv32ui-p-lbu
+Command: "/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv" "-exitstatus" "+HEX=/tools/hurj/riscv-proj/isa/rv32ui-p-lbu_itcm.hex" "+DATA_HEX=/tools/hurj/riscv-proj/isa/rv32ui-p-lbu_data.hex" "+TIMEOUT=12000"
+Directory: /data/usr/xuemy/8fetch_ooo/toy_scalar/rv_isa_test/build
+"rv32ui-p-lbu" start time: Oct 24 10:45 CST
+Output:
+----------------------------------------------------------
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Oct 24 10:45 2024
+[SYSTEM] Timeout threshold is set to 12000 cycles.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_div_tc:
+ at time = 10: Division by zero.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_rem_tc:
+ at time = 10: Division by zero.
+Fatal: "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", 55: toy_top.u_toy_env_slv: at time 240100
+[SYSTEM] Timeout occurs after executing 12000 cycles !
+$finish called from file "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", line 55.
+$finish at simulation time               240100
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 240100
+CPU Time:      0.420 seconds;       Data structure size:   0.9Mb
+Thu Oct 24 10:45:08 2024
+<end of output>
+Test time =   3.69 sec
+----------------------------------------------------------
+Test Failed.
+"rv32ui-p-lbu" end time: Oct 24 10:45 CST
+"rv32ui-p-lbu" time elapsed: 00:00:03
+----------------------------------------------------------
+
+20/60 Testing: rv32ui-p-lw
+20/60 Test: rv32ui-p-lw
+Command: "/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv" "-exitstatus" "+HEX=/tools/hurj/riscv-proj/isa/rv32ui-p-lw_itcm.hex" "+DATA_HEX=/tools/hurj/riscv-proj/isa/rv32ui-p-lw_data.hex" "+TIMEOUT=12000"
+Directory: /data/usr/xuemy/8fetch_ooo/toy_scalar/rv_isa_test/build
+"rv32ui-p-lw" start time: Oct 24 10:45 CST
+Output:
+----------------------------------------------------------
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Oct 24 10:45 2024
+[SYSTEM] Timeout threshold is set to 12000 cycles.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_div_tc:
+ at time = 10: Division by zero.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_rem_tc:
+ at time = 10: Division by zero.
+Fatal: "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", 55: toy_top.u_toy_env_slv: at time 240100
+[SYSTEM] Timeout occurs after executing 12000 cycles !
+$finish called from file "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", line 55.
+$finish at simulation time               240100
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 240100
+CPU Time:      0.410 seconds;       Data structure size:   0.9Mb
+Thu Oct 24 10:45:09 2024
+<end of output>
+Test time =   3.82 sec
+----------------------------------------------------------
+Test Failed.
+"rv32ui-p-lw" end time: Oct 24 10:45 CST
+"rv32ui-p-lw" time elapsed: 00:00:03
+----------------------------------------------------------
+
+18/60 Testing: rv32ui-p-lhu
+18/60 Test: rv32ui-p-lhu
+Command: "/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv" "-exitstatus" "+HEX=/tools/hurj/riscv-proj/isa/rv32ui-p-lhu_itcm.hex" "+DATA_HEX=/tools/hurj/riscv-proj/isa/rv32ui-p-lhu_data.hex" "+TIMEOUT=12000"
+Directory: /data/usr/xuemy/8fetch_ooo/toy_scalar/rv_isa_test/build
+"rv32ui-p-lhu" start time: Oct 24 10:45 CST
+Output:
+----------------------------------------------------------
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Oct 24 10:45 2024
+[SYSTEM] Timeout threshold is set to 12000 cycles.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_div_tc:
+ at time = 10: Division by zero.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_rem_tc:
+ at time = 10: Division by zero.
+Fatal: "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", 55: toy_top.u_toy_env_slv: at time 240100
+[SYSTEM] Timeout occurs after executing 12000 cycles !
+$finish called from file "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", line 55.
+$finish at simulation time               240100
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 240100
+CPU Time:      0.430 seconds;       Data structure size:   0.9Mb
+Thu Oct 24 10:45:09 2024
+<end of output>
+Test time =   3.86 sec
+----------------------------------------------------------
+Test Failed.
+"rv32ui-p-lhu" end time: Oct 24 10:45 CST
+"rv32ui-p-lhu" time elapsed: 00:00:03
+----------------------------------------------------------
+
+41/60 Testing: rv32um-p-div
+41/60 Test: rv32um-p-div
+Command: "/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv" "-exitstatus" "+HEX=/tools/hurj/riscv-proj/isa/rv32um-p-div_itcm.hex" "+DATA_HEX=/tools/hurj/riscv-proj/isa/rv32um-p-div_data.hex" "+TIMEOUT=12000"
+Directory: /data/usr/xuemy/8fetch_ooo/toy_scalar/rv_isa_test/build
+"rv32um-p-div" start time: Oct 24 10:45 CST
+Output:
+----------------------------------------------------------
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Oct 24 10:45 2024
+[SYSTEM] Timeout threshold is set to 12000 cycles.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_div_tc:
+ at time = 10: Division by zero.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_rem_tc:
+ at time = 10: Division by zero.
+Fatal: "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", 55: toy_top.u_toy_env_slv: at time 240100
+[SYSTEM] Timeout occurs after executing 12000 cycles !
+$finish called from file "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", line 55.
+$finish at simulation time               240100
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 240100
+CPU Time:      0.320 seconds;       Data structure size:   0.9Mb
+Thu Oct 24 10:45:09 2024
+<end of output>
+Test time =   3.47 sec
+----------------------------------------------------------
+Test Failed.
+"rv32um-p-div" end time: Oct 24 10:45 CST
+"rv32um-p-div" time elapsed: 00:00:03
+----------------------------------------------------------
+
+24/60 Testing: rv32ui-p-sb
+24/60 Test: rv32ui-p-sb
+Command: "/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv" "-exitstatus" "+HEX=/tools/hurj/riscv-proj/isa/rv32ui-p-sb_itcm.hex" "+DATA_HEX=/tools/hurj/riscv-proj/isa/rv32ui-p-sb_data.hex" "+TIMEOUT=12000"
+Directory: /data/usr/xuemy/8fetch_ooo/toy_scalar/rv_isa_test/build
+"rv32ui-p-sb" start time: Oct 24 10:45 CST
+Output:
+----------------------------------------------------------
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Oct 24 10:45 2024
+[SYSTEM] Timeout threshold is set to 12000 cycles.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_div_tc:
+ at time = 10: Division by zero.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_rem_tc:
+ at time = 10: Division by zero.
+Fatal: "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", 55: toy_top.u_toy_env_slv: at time 240100
+[SYSTEM] Timeout occurs after executing 12000 cycles !
+$finish called from file "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", line 55.
+$finish at simulation time               240100
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 240100
+CPU Time:      0.410 seconds;       Data structure size:   0.9Mb
+Thu Oct 24 10:45:09 2024
+<end of output>
+Test time =   4.07 sec
+----------------------------------------------------------
+Test Failed.
+"rv32ui-p-sb" end time: Oct 24 10:45 CST
+"rv32ui-p-sb" time elapsed: 00:00:04
+----------------------------------------------------------
+
+44/60 Testing: rv32um-p-mulh
+44/60 Test: rv32um-p-mulh
+Command: "/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv" "-exitstatus" "+HEX=/tools/hurj/riscv-proj/isa/rv32um-p-mulh_itcm.hex" "+DATA_HEX=/tools/hurj/riscv-proj/isa/rv32um-p-mulh_data.hex" "+TIMEOUT=12000"
+Directory: /data/usr/xuemy/8fetch_ooo/toy_scalar/rv_isa_test/build
+"rv32um-p-mulh" start time: Oct 24 10:45 CST
+Output:
+----------------------------------------------------------
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Oct 24 10:45 2024
+[SYSTEM] Timeout threshold is set to 12000 cycles.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_div_tc:
+ at time = 10: Division by zero.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_rem_tc:
+ at time = 10: Division by zero.
+Fatal: "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", 55: toy_top.u_toy_env_slv: at time 240100
+[SYSTEM] Timeout occurs after executing 12000 cycles !
+$finish called from file "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", line 55.
+$finish at simulation time               240100
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 240100
+CPU Time:      0.330 seconds;       Data structure size:   0.9Mb
+Thu Oct 24 10:45:09 2024
+<end of output>
+Test time =   3.68 sec
+----------------------------------------------------------
+Test Failed.
+"rv32um-p-mulh" end time: Oct 24 10:45 CST
+"rv32um-p-mulh" time elapsed: 00:00:03
+----------------------------------------------------------
+
+21/60 Testing: rv32ui-p-ma_data
+21/60 Test: rv32ui-p-ma_data
+Command: "/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv" "-exitstatus" "+HEX=/tools/hurj/riscv-proj/isa/rv32ui-p-ma_data_itcm.hex" "+DATA_HEX=/tools/hurj/riscv-proj/isa/rv32ui-p-ma_data_data.hex" "+TIMEOUT=12000"
+Directory: /data/usr/xuemy/8fetch_ooo/toy_scalar/rv_isa_test/build
+"rv32ui-p-ma_data" start time: Oct 24 10:45 CST
+Output:
+----------------------------------------------------------
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Oct 24 10:45 2024
+[SYSTEM] Timeout threshold is set to 12000 cycles.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_div_tc:
+ at time = 10: Division by zero.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_rem_tc:
+ at time = 10: Division by zero.
+Fatal: "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", 55: toy_top.u_toy_env_slv: at time 240100
+[SYSTEM] Timeout occurs after executing 12000 cycles !
+$finish called from file "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", line 55.
+$finish at simulation time               240100
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 240100
+CPU Time:      0.430 seconds;       Data structure size:   0.9Mb
+Thu Oct 24 10:45:09 2024
+<end of output>
+Test time =   4.13 sec
+----------------------------------------------------------
+Test Failed.
+"rv32ui-p-ma_data" end time: Oct 24 10:45 CST
+"rv32ui-p-ma_data" time elapsed: 00:00:04
+----------------------------------------------------------
+
+22/60 Testing: rv32ui-p-or
+22/60 Test: rv32ui-p-or
+Command: "/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv" "-exitstatus" "+HEX=/tools/hurj/riscv-proj/isa/rv32ui-p-or_itcm.hex" "+DATA_HEX=/tools/hurj/riscv-proj/isa/rv32ui-p-or_data.hex" "+TIMEOUT=12000"
+Directory: /data/usr/xuemy/8fetch_ooo/toy_scalar/rv_isa_test/build
+"rv32ui-p-or" start time: Oct 24 10:45 CST
+Output:
+----------------------------------------------------------
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Oct 24 10:45 2024
+[SYSTEM] Timeout threshold is set to 12000 cycles.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_div_tc:
+ at time = 10: Division by zero.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_rem_tc:
+ at time = 10: Division by zero.
+Fatal: "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", 55: toy_top.u_toy_env_slv: at time 240100
+[SYSTEM] Timeout occurs after executing 12000 cycles !
+$finish called from file "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", line 55.
+$finish at simulation time               240100
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 240100
+CPU Time:      0.400 seconds;       Data structure size:   0.9Mb
+Thu Oct 24 10:45:09 2024
+<end of output>
+Test time =   4.12 sec
+----------------------------------------------------------
+Test Failed.
+"rv32ui-p-or" end time: Oct 24 10:45 CST
+"rv32ui-p-or" time elapsed: 00:00:04
+----------------------------------------------------------
+
+35/60 Testing: rv32ui-p-srl
+35/60 Test: rv32ui-p-srl
+Command: "/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv" "-exitstatus" "+HEX=/tools/hurj/riscv-proj/isa/rv32ui-p-srl_itcm.hex" "+DATA_HEX=/tools/hurj/riscv-proj/isa/rv32ui-p-srl_data.hex" "+TIMEOUT=12000"
+Directory: /data/usr/xuemy/8fetch_ooo/toy_scalar/rv_isa_test/build
+"rv32ui-p-srl" start time: Oct 24 10:45 CST
+Output:
+----------------------------------------------------------
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Oct 24 10:45 2024
+[SYSTEM] Timeout threshold is set to 12000 cycles.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_div_tc:
+ at time = 10: Division by zero.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_rem_tc:
+ at time = 10: Division by zero.
+Fatal: "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", 55: toy_top.u_toy_env_slv: at time 240100
+[SYSTEM] Timeout occurs after executing 12000 cycles !
+$finish called from file "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", line 55.
+$finish at simulation time               240100
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 240100
+CPU Time:      0.390 seconds;       Data structure size:   0.9Mb
+Thu Oct 24 10:45:09 2024
+<end of output>
+Test time =   3.93 sec
+----------------------------------------------------------
+Test Failed.
+"rv32ui-p-srl" end time: Oct 24 10:45 CST
+"rv32ui-p-srl" time elapsed: 00:00:03
+----------------------------------------------------------
+
+26/60 Testing: rv32ui-p-simple
+26/60 Test: rv32ui-p-simple
+Command: "/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv" "-exitstatus" "+HEX=/tools/hurj/riscv-proj/isa/rv32ui-p-simple_itcm.hex" "+DATA_HEX=/tools/hurj/riscv-proj/isa/rv32ui-p-simple_data.hex" "+TIMEOUT=12000"
+Directory: /data/usr/xuemy/8fetch_ooo/toy_scalar/rv_isa_test/build
+"rv32ui-p-simple" start time: Oct 24 10:45 CST
+Output:
+----------------------------------------------------------
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Oct 24 10:45 2024
+[SYSTEM] Timeout threshold is set to 12000 cycles.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_div_tc:
+ at time = 10: Division by zero.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_rem_tc:
+ at time = 10: Division by zero.
+Fatal: "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", 55: toy_top.u_toy_env_slv: at time 240100
+[SYSTEM] Timeout occurs after executing 12000 cycles !
+$finish called from file "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", line 55.
+$finish at simulation time               240100
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 240100
+CPU Time:      0.430 seconds;       Data structure size:   0.9Mb
+Thu Oct 24 10:45:09 2024
+<end of output>
+Test time =   4.12 sec
+----------------------------------------------------------
+Test Failed.
+"rv32ui-p-simple" end time: Oct 24 10:45 CST
+"rv32ui-p-simple" time elapsed: 00:00:04
+----------------------------------------------------------
+
+39/60 Testing: rv32ui-p-xor
+39/60 Test: rv32ui-p-xor
+Command: "/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv" "-exitstatus" "+HEX=/tools/hurj/riscv-proj/isa/rv32ui-p-xor_itcm.hex" "+DATA_HEX=/tools/hurj/riscv-proj/isa/rv32ui-p-xor_data.hex" "+TIMEOUT=12000"
+Directory: /data/usr/xuemy/8fetch_ooo/toy_scalar/rv_isa_test/build
+"rv32ui-p-xor" start time: Oct 24 10:45 CST
+Output:
+----------------------------------------------------------
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Oct 24 10:45 2024
+[SYSTEM] Timeout threshold is set to 12000 cycles.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_div_tc:
+ at time = 10: Division by zero.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_rem_tc:
+ at time = 10: Division by zero.
+Fatal: "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", 55: toy_top.u_toy_env_slv: at time 240100
+[SYSTEM] Timeout occurs after executing 12000 cycles !
+$finish called from file "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", line 55.
+$finish at simulation time               240100
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 240100
+CPU Time:      0.310 seconds;       Data structure size:   0.9Mb
+Thu Oct 24 10:45:09 2024
+<end of output>
+Test time =   3.89 sec
+----------------------------------------------------------
+Test Failed.
+"rv32ui-p-xor" end time: Oct 24 10:45 CST
+"rv32ui-p-xor" time elapsed: 00:00:03
+----------------------------------------------------------
+
+14/60 Testing: rv32ui-p-jalr
+14/60 Test: rv32ui-p-jalr
+Command: "/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv" "-exitstatus" "+HEX=/tools/hurj/riscv-proj/isa/rv32ui-p-jalr_itcm.hex" "+DATA_HEX=/tools/hurj/riscv-proj/isa/rv32ui-p-jalr_data.hex" "+TIMEOUT=12000"
+Directory: /data/usr/xuemy/8fetch_ooo/toy_scalar/rv_isa_test/build
+"rv32ui-p-jalr" start time: Oct 24 10:45 CST
+Output:
+----------------------------------------------------------
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Oct 24 10:45 2024
+[SYSTEM] Timeout threshold is set to 12000 cycles.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_div_tc:
+ at time = 10: Division by zero.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_rem_tc:
+ at time = 10: Division by zero.
+Fatal: "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", 55: toy_top.u_toy_env_slv: at time 240100
+[SYSTEM] Timeout occurs after executing 12000 cycles !
+$finish called from file "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", line 55.
+$finish at simulation time               240100
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 240100
+CPU Time:      0.350 seconds;       Data structure size:   0.9Mb
+Thu Oct 24 10:45:09 2024
+<end of output>
+Test time =   4.32 sec
+----------------------------------------------------------
+Test Failed.
+"rv32ui-p-jalr" end time: Oct 24 10:45 CST
+"rv32ui-p-jalr" time elapsed: 00:00:04
+----------------------------------------------------------
+
+28/60 Testing: rv32ui-p-slli
+28/60 Test: rv32ui-p-slli
+Command: "/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv" "-exitstatus" "+HEX=/tools/hurj/riscv-proj/isa/rv32ui-p-slli_itcm.hex" "+DATA_HEX=/tools/hurj/riscv-proj/isa/rv32ui-p-slli_data.hex" "+TIMEOUT=12000"
+Directory: /data/usr/xuemy/8fetch_ooo/toy_scalar/rv_isa_test/build
+"rv32ui-p-slli" start time: Oct 24 10:45 CST
+Output:
+----------------------------------------------------------
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Oct 24 10:45 2024
+[SYSTEM] Timeout threshold is set to 12000 cycles.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_div_tc:
+ at time = 10: Division by zero.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_rem_tc:
+ at time = 10: Division by zero.
+Fatal: "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", 55: toy_top.u_toy_env_slv: at time 240100
+[SYSTEM] Timeout occurs after executing 12000 cycles !
+$finish called from file "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", line 55.
+$finish at simulation time               240100
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 240100
+CPU Time:      0.410 seconds;       Data structure size:   0.9Mb
+Thu Oct 24 10:45:09 2024
+<end of output>
+Test time =   4.12 sec
+----------------------------------------------------------
+Test Failed.
+"rv32ui-p-slli" end time: Oct 24 10:45 CST
+"rv32ui-p-slli" time elapsed: 00:00:04
+----------------------------------------------------------
+
+10/60 Testing: rv32ui-p-bltu
+10/60 Test: rv32ui-p-bltu
+Command: "/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv" "-exitstatus" "+HEX=/tools/hurj/riscv-proj/isa/rv32ui-p-bltu_itcm.hex" "+DATA_HEX=/tools/hurj/riscv-proj/isa/rv32ui-p-bltu_data.hex" "+TIMEOUT=12000"
+Directory: /data/usr/xuemy/8fetch_ooo/toy_scalar/rv_isa_test/build
+"rv32ui-p-bltu" start time: Oct 24 10:45 CST
+Output:
+----------------------------------------------------------
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Oct 24 10:45 2024
+[SYSTEM] Timeout threshold is set to 12000 cycles.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_div_tc:
+ at time = 10: Division by zero.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_rem_tc:
+ at time = 10: Division by zero.
+Fatal: "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", 55: toy_top.u_toy_env_slv: at time 240100
+[SYSTEM] Timeout occurs after executing 12000 cycles !
+$finish called from file "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", line 55.
+$finish at simulation time               240100
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 240100
+CPU Time:      0.440 seconds;       Data structure size:   0.9Mb
+Thu Oct 24 10:45:09 2024
+<end of output>
+Test time =   4.40 sec
+----------------------------------------------------------
+Test Failed.
+"rv32ui-p-bltu" end time: Oct 24 10:45 CST
+"rv32ui-p-bltu" time elapsed: 00:00:04
+----------------------------------------------------------
+
+12/60 Testing: rv32ui-p-fence_i
+12/60 Test: rv32ui-p-fence_i
+Command: "/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv" "-exitstatus" "+HEX=/tools/hurj/riscv-proj/isa/rv32ui-p-fence_i_itcm.hex" "+DATA_HEX=/tools/hurj/riscv-proj/isa/rv32ui-p-fence_i_data.hex" "+TIMEOUT=12000"
+Directory: /data/usr/xuemy/8fetch_ooo/toy_scalar/rv_isa_test/build
+"rv32ui-p-fence_i" start time: Oct 24 10:45 CST
+Output:
+----------------------------------------------------------
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Oct 24 10:45 2024
+[SYSTEM] Timeout threshold is set to 12000 cycles.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_div_tc:
+ at time = 10: Division by zero.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_rem_tc:
+ at time = 10: Division by zero.
+Fatal: "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", 55: toy_top.u_toy_env_slv: at time 240100
+[SYSTEM] Timeout occurs after executing 12000 cycles !
+$finish called from file "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", line 55.
+$finish at simulation time               240100
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 240100
+CPU Time:      0.430 seconds;       Data structure size:   0.9Mb
+Thu Oct 24 10:45:09 2024
+<end of output>
+Test time =   4.41 sec
+----------------------------------------------------------
+Test Failed.
+"rv32ui-p-fence_i" end time: Oct 24 10:45 CST
+"rv32ui-p-fence_i" time elapsed: 00:00:04
+----------------------------------------------------------
+
+23/60 Testing: rv32ui-p-ori
+23/60 Test: rv32ui-p-ori
+Command: "/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv" "-exitstatus" "+HEX=/tools/hurj/riscv-proj/isa/rv32ui-p-ori_itcm.hex" "+DATA_HEX=/tools/hurj/riscv-proj/isa/rv32ui-p-ori_data.hex" "+TIMEOUT=12000"
+Directory: /data/usr/xuemy/8fetch_ooo/toy_scalar/rv_isa_test/build
+"rv32ui-p-ori" start time: Oct 24 10:45 CST
+Output:
+----------------------------------------------------------
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Oct 24 10:45 2024
+[SYSTEM] Timeout threshold is set to 12000 cycles.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_div_tc:
+ at time = 10: Division by zero.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_rem_tc:
+ at time = 10: Division by zero.
+Fatal: "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", 55: toy_top.u_toy_env_slv: at time 240100
+[SYSTEM] Timeout occurs after executing 12000 cycles !
+$finish called from file "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", line 55.
+$finish at simulation time               240100
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 240100
+CPU Time:      0.430 seconds;       Data structure size:   0.9Mb
+Thu Oct 24 10:45:09 2024
+<end of output>
+Test time =   4.29 sec
+----------------------------------------------------------
+Test Failed.
+"rv32ui-p-ori" end time: Oct 24 10:45 CST
+"rv32ui-p-ori" time elapsed: 00:00:04
+----------------------------------------------------------
+
+54/60 Testing: rv32uf-p-fcvt_w
+54/60 Test: rv32uf-p-fcvt_w
+Command: "/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv" "-exitstatus" "+HEX=/tools/hurj/riscv-proj/isa/rv32uf-p-fcvt_w_itcm.hex" "+DATA_HEX=/tools/hurj/riscv-proj/isa/rv32uf-p-fcvt_w_data.hex" "+TIMEOUT=12000"
+Directory: /data/usr/xuemy/8fetch_ooo/toy_scalar/rv_isa_test/build
+"rv32uf-p-fcvt_w" start time: Oct 24 10:45 CST
+Output:
+----------------------------------------------------------
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Oct 24 10:45 2024
+[SYSTEM] Timeout threshold is set to 12000 cycles.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_div_tc:
+ at time = 10: Division by zero.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_rem_tc:
+ at time = 10: Division by zero.
+Fatal: "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", 55: toy_top.u_toy_env_slv: at time 240100
+[SYSTEM] Timeout occurs after executing 12000 cycles !
+$finish called from file "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", line 55.
+$finish at simulation time               240100
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 240100
+CPU Time:      0.370 seconds;       Data structure size:   0.9Mb
+Thu Oct 24 10:45:09 2024
+<end of output>
+Test time =   3.71 sec
+----------------------------------------------------------
+Test Failed.
+"rv32uf-p-fcvt_w" end time: Oct 24 10:45 CST
+"rv32uf-p-fcvt_w" time elapsed: 00:00:03
+----------------------------------------------------------
+
+30/60 Testing: rv32ui-p-slti
+30/60 Test: rv32ui-p-slti
+Command: "/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv" "-exitstatus" "+HEX=/tools/hurj/riscv-proj/isa/rv32ui-p-slti_itcm.hex" "+DATA_HEX=/tools/hurj/riscv-proj/isa/rv32ui-p-slti_data.hex" "+TIMEOUT=12000"
+Directory: /data/usr/xuemy/8fetch_ooo/toy_scalar/rv_isa_test/build
+"rv32ui-p-slti" start time: Oct 24 10:45 CST
+Output:
+----------------------------------------------------------
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Oct 24 10:45 2024
+[SYSTEM] Timeout threshold is set to 12000 cycles.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_div_tc:
+ at time = 10: Division by zero.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_rem_tc:
+ at time = 10: Division by zero.
+Fatal: "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", 55: toy_top.u_toy_env_slv: at time 240100
+[SYSTEM] Timeout occurs after executing 12000 cycles !
+$finish called from file "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", line 55.
+$finish at simulation time               240100
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 240100
+CPU Time:      0.320 seconds;       Data structure size:   0.9Mb
+Thu Oct 24 10:45:09 2024
+<end of output>
+Test time =   4.19 sec
+----------------------------------------------------------
+Test Failed.
+"rv32ui-p-slti" end time: Oct 24 10:45 CST
+"rv32ui-p-slti" time elapsed: 00:00:04
+----------------------------------------------------------
+
+27/60 Testing: rv32ui-p-sll
+27/60 Test: rv32ui-p-sll
+Command: "/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv" "-exitstatus" "+HEX=/tools/hurj/riscv-proj/isa/rv32ui-p-sll_itcm.hex" "+DATA_HEX=/tools/hurj/riscv-proj/isa/rv32ui-p-sll_data.hex" "+TIMEOUT=12000"
+Directory: /data/usr/xuemy/8fetch_ooo/toy_scalar/rv_isa_test/build
+"rv32ui-p-sll" start time: Oct 24 10:45 CST
+Output:
+----------------------------------------------------------
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Oct 24 10:45 2024
+[SYSTEM] Timeout threshold is set to 12000 cycles.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_div_tc:
+ at time = 10: Division by zero.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_rem_tc:
+ at time = 10: Division by zero.
+Fatal: "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", 55: toy_top.u_toy_env_slv: at time 240100
+[SYSTEM] Timeout occurs after executing 12000 cycles !
+$finish called from file "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", line 55.
+$finish at simulation time               240100
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 240100
+CPU Time:      0.400 seconds;       Data structure size:   0.9Mb
+Thu Oct 24 10:45:09 2024
+<end of output>
+Test time =   4.25 sec
+----------------------------------------------------------
+Test Failed.
+"rv32ui-p-sll" end time: Oct 24 10:45 CST
+"rv32ui-p-sll" time elapsed: 00:00:04
+----------------------------------------------------------
+
+56/60 Testing: rv32uf-p-fmadd
+56/60 Test: rv32uf-p-fmadd
+Command: "/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv" "-exitstatus" "+HEX=/tools/hurj/riscv-proj/isa/rv32uf-p-fmadd_itcm.hex" "+DATA_HEX=/tools/hurj/riscv-proj/isa/rv32uf-p-fmadd_data.hex" "+TIMEOUT=12000"
+Directory: /data/usr/xuemy/8fetch_ooo/toy_scalar/rv_isa_test/build
+"rv32uf-p-fmadd" start time: Oct 24 10:45 CST
+Output:
+----------------------------------------------------------
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Oct 24 10:45 2024
+[SYSTEM] Timeout threshold is set to 12000 cycles.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_div_tc:
+ at time = 10: Division by zero.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_rem_tc:
+ at time = 10: Division by zero.
+Fatal: "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", 55: toy_top.u_toy_env_slv: at time 240100
+[SYSTEM] Timeout occurs after executing 12000 cycles !
+$finish called from file "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", line 55.
+$finish at simulation time               240100
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 240100
+CPU Time:      0.330 seconds;       Data structure size:   0.9Mb
+Thu Oct 24 10:45:09 2024
+<end of output>
+Test time =   3.69 sec
+----------------------------------------------------------
+Test Failed.
+"rv32uf-p-fmadd" end time: Oct 24 10:45 CST
+"rv32uf-p-fmadd" time elapsed: 00:00:03
+----------------------------------------------------------
+
+32/60 Testing: rv32ui-p-sltu
+32/60 Test: rv32ui-p-sltu
+Command: "/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv" "-exitstatus" "+HEX=/tools/hurj/riscv-proj/isa/rv32ui-p-sltu_itcm.hex" "+DATA_HEX=/tools/hurj/riscv-proj/isa/rv32ui-p-sltu_data.hex" "+TIMEOUT=12000"
+Directory: /data/usr/xuemy/8fetch_ooo/toy_scalar/rv_isa_test/build
+"rv32ui-p-sltu" start time: Oct 24 10:45 CST
+Output:
+----------------------------------------------------------
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Oct 24 10:45 2024
+[SYSTEM] Timeout threshold is set to 12000 cycles.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_div_tc:
+ at time = 10: Division by zero.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_rem_tc:
+ at time = 10: Division by zero.
+Fatal: "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", 55: toy_top.u_toy_env_slv: at time 240100
+[SYSTEM] Timeout occurs after executing 12000 cycles !
+$finish called from file "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", line 55.
+$finish at simulation time               240100
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 240100
+CPU Time:      0.390 seconds;       Data structure size:   0.9Mb
+Thu Oct 24 10:45:09 2024
+<end of output>
+Test time =   4.21 sec
+----------------------------------------------------------
+Test Failed.
+"rv32ui-p-sltu" end time: Oct 24 10:45 CST
+"rv32ui-p-sltu" time elapsed: 00:00:04
+----------------------------------------------------------
+
+25/60 Testing: rv32ui-p-sh
+25/60 Test: rv32ui-p-sh
+Command: "/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv" "-exitstatus" "+HEX=/tools/hurj/riscv-proj/isa/rv32ui-p-sh_itcm.hex" "+DATA_HEX=/tools/hurj/riscv-proj/isa/rv32ui-p-sh_data.hex" "+TIMEOUT=12000"
+Directory: /data/usr/xuemy/8fetch_ooo/toy_scalar/rv_isa_test/build
+"rv32ui-p-sh" start time: Oct 24 10:45 CST
+Output:
+----------------------------------------------------------
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Oct 24 10:45 2024
+[SYSTEM] Timeout threshold is set to 12000 cycles.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_div_tc:
+ at time = 10: Division by zero.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_rem_tc:
+ at time = 10: Division by zero.
+Fatal: "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", 55: toy_top.u_toy_env_slv: at time 240100
+[SYSTEM] Timeout occurs after executing 12000 cycles !
+$finish called from file "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", line 55.
+$finish at simulation time               240100
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 240100
+CPU Time:      0.410 seconds;       Data structure size:   0.9Mb
+Thu Oct 24 10:45:09 2024
+<end of output>
+Test time =   4.38 sec
+----------------------------------------------------------
+Test Failed.
+"rv32ui-p-sh" end time: Oct 24 10:45 CST
+"rv32ui-p-sh" time elapsed: 00:00:04
+----------------------------------------------------------
+
+34/60 Testing: rv32ui-p-srai
+34/60 Test: rv32ui-p-srai
+Command: "/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv" "-exitstatus" "+HEX=/tools/hurj/riscv-proj/isa/rv32ui-p-srai_itcm.hex" "+DATA_HEX=/tools/hurj/riscv-proj/isa/rv32ui-p-srai_data.hex" "+TIMEOUT=12000"
+Directory: /data/usr/xuemy/8fetch_ooo/toy_scalar/rv_isa_test/build
+"rv32ui-p-srai" start time: Oct 24 10:45 CST
+Output:
+----------------------------------------------------------
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Oct 24 10:45 2024
+[SYSTEM] Timeout threshold is set to 12000 cycles.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_div_tc:
+ at time = 10: Division by zero.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_rem_tc:
+ at time = 10: Division by zero.
+Fatal: "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", 55: toy_top.u_toy_env_slv: at time 240100
+[SYSTEM] Timeout occurs after executing 12000 cycles !
+$finish called from file "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", line 55.
+$finish at simulation time               240100
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 240100
+CPU Time:      0.400 seconds;       Data structure size:   0.9Mb
+Thu Oct 24 10:45:09 2024
+<end of output>
+Test time =   4.26 sec
+----------------------------------------------------------
+Test Failed.
+"rv32ui-p-srai" end time: Oct 24 10:45 CST
+"rv32ui-p-srai" time elapsed: 00:00:04
+----------------------------------------------------------
+
+38/60 Testing: rv32ui-p-sw
+38/60 Test: rv32ui-p-sw
+Command: "/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv" "-exitstatus" "+HEX=/tools/hurj/riscv-proj/isa/rv32ui-p-sw_itcm.hex" "+DATA_HEX=/tools/hurj/riscv-proj/isa/rv32ui-p-sw_data.hex" "+TIMEOUT=12000"
+Directory: /data/usr/xuemy/8fetch_ooo/toy_scalar/rv_isa_test/build
+"rv32ui-p-sw" start time: Oct 24 10:45 CST
+Output:
+----------------------------------------------------------
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Oct 24 10:45 2024
+[SYSTEM] Timeout threshold is set to 12000 cycles.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_div_tc:
+ at time = 10: Division by zero.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_rem_tc:
+ at time = 10: Division by zero.
+Fatal: "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", 55: toy_top.u_toy_env_slv: at time 240100
+[SYSTEM] Timeout occurs after executing 12000 cycles !
+$finish called from file "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", line 55.
+$finish at simulation time               240100
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 240100
+CPU Time:      0.410 seconds;       Data structure size:   0.9Mb
+Thu Oct 24 10:45:09 2024
+<end of output>
+Test time =   4.26 sec
+----------------------------------------------------------
+Test Failed.
+"rv32ui-p-sw" end time: Oct 24 10:45 CST
+"rv32ui-p-sw" time elapsed: 00:00:04
+----------------------------------------------------------
+
+37/60 Testing: rv32ui-p-sub
+37/60 Test: rv32ui-p-sub
+Command: "/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv" "-exitstatus" "+HEX=/tools/hurj/riscv-proj/isa/rv32ui-p-sub_itcm.hex" "+DATA_HEX=/tools/hurj/riscv-proj/isa/rv32ui-p-sub_data.hex" "+TIMEOUT=12000"
+Directory: /data/usr/xuemy/8fetch_ooo/toy_scalar/rv_isa_test/build
+"rv32ui-p-sub" start time: Oct 24 10:45 CST
+Output:
+----------------------------------------------------------
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Oct 24 10:45 2024
+[SYSTEM] Timeout threshold is set to 12000 cycles.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_div_tc:
+ at time = 10: Division by zero.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_rem_tc:
+ at time = 10: Division by zero.
+Fatal: "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", 55: toy_top.u_toy_env_slv: at time 240100
+[SYSTEM] Timeout occurs after executing 12000 cycles !
+$finish called from file "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", line 55.
+$finish at simulation time               240100
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 240100
+CPU Time:      0.390 seconds;       Data structure size:   0.9Mb
+Thu Oct 24 10:45:10 2024
+<end of output>
+Test time =   4.40 sec
+----------------------------------------------------------
+Test Failed.
+"rv32ui-p-sub" end time: Oct 24 10:45 CST
+"rv32ui-p-sub" time elapsed: 00:00:04
+----------------------------------------------------------
+
+9/60 Testing: rv32ui-p-blt
+9/60 Test: rv32ui-p-blt
+Command: "/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv" "-exitstatus" "+HEX=/tools/hurj/riscv-proj/isa/rv32ui-p-blt_itcm.hex" "+DATA_HEX=/tools/hurj/riscv-proj/isa/rv32ui-p-blt_data.hex" "+TIMEOUT=12000"
+Directory: /data/usr/xuemy/8fetch_ooo/toy_scalar/rv_isa_test/build
+"rv32ui-p-blt" start time: Oct 24 10:45 CST
+Output:
+----------------------------------------------------------
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Oct 24 10:45 2024
+[SYSTEM] Timeout threshold is set to 12000 cycles.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_div_tc:
+ at time = 10: Division by zero.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_rem_tc:
+ at time = 10: Division by zero.
+Fatal: "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", 55: toy_top.u_toy_env_slv: at time 240100
+[SYSTEM] Timeout occurs after executing 12000 cycles !
+$finish called from file "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", line 55.
+$finish at simulation time               240100
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 240100
+CPU Time:      0.440 seconds;       Data structure size:   0.9Mb
+Thu Oct 24 10:45:10 2024
+<end of output>
+Test time =   4.86 sec
+----------------------------------------------------------
+Test Failed.
+"rv32ui-p-blt" end time: Oct 24 10:45 CST
+"rv32ui-p-blt" time elapsed: 00:00:04
+----------------------------------------------------------
+
+45/60 Testing: rv32um-p-mulhsu
+45/60 Test: rv32um-p-mulhsu
+Command: "/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv" "-exitstatus" "+HEX=/tools/hurj/riscv-proj/isa/rv32um-p-mulhsu_itcm.hex" "+DATA_HEX=/tools/hurj/riscv-proj/isa/rv32um-p-mulhsu_data.hex" "+TIMEOUT=12000"
+Directory: /data/usr/xuemy/8fetch_ooo/toy_scalar/rv_isa_test/build
+"rv32um-p-mulhsu" start time: Oct 24 10:45 CST
+Output:
+----------------------------------------------------------
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Oct 24 10:45 2024
+[SYSTEM] Timeout threshold is set to 12000 cycles.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_div_tc:
+ at time = 10: Division by zero.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_rem_tc:
+ at time = 10: Division by zero.
+Fatal: "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", 55: toy_top.u_toy_env_slv: at time 240100
+[SYSTEM] Timeout occurs after executing 12000 cycles !
+$finish called from file "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", line 55.
+$finish at simulation time               240100
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 240100
+CPU Time:      0.390 seconds;       Data structure size:   0.9Mb
+Thu Oct 24 10:45:10 2024
+<end of output>
+Test time =   4.30 sec
+----------------------------------------------------------
+Test Failed.
+"rv32um-p-mulhsu" end time: Oct 24 10:45 CST
+"rv32um-p-mulhsu" time elapsed: 00:00:04
+----------------------------------------------------------
+
+33/60 Testing: rv32ui-p-sra
+33/60 Test: rv32ui-p-sra
+Command: "/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv" "-exitstatus" "+HEX=/tools/hurj/riscv-proj/isa/rv32ui-p-sra_itcm.hex" "+DATA_HEX=/tools/hurj/riscv-proj/isa/rv32ui-p-sra_data.hex" "+TIMEOUT=12000"
+Directory: /data/usr/xuemy/8fetch_ooo/toy_scalar/rv_isa_test/build
+"rv32ui-p-sra" start time: Oct 24 10:45 CST
+Output:
+----------------------------------------------------------
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Oct 24 10:45 2024
+[SYSTEM] Timeout threshold is set to 12000 cycles.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_div_tc:
+ at time = 10: Division by zero.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_rem_tc:
+ at time = 10: Division by zero.
+Fatal: "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", 55: toy_top.u_toy_env_slv: at time 240100
+[SYSTEM] Timeout occurs after executing 12000 cycles !
+$finish called from file "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", line 55.
+$finish at simulation time               240100
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 240100
+CPU Time:      0.400 seconds;       Data structure size:   0.9Mb
+Thu Oct 24 10:45:10 2024
+<end of output>
+Test time =   4.56 sec
+----------------------------------------------------------
+Test Failed.
+"rv32ui-p-sra" end time: Oct 24 10:45 CST
+"rv32ui-p-sra" time elapsed: 00:00:04
+----------------------------------------------------------
+
+46/60 Testing: rv32um-p-mulhu
+46/60 Test: rv32um-p-mulhu
+Command: "/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv" "-exitstatus" "+HEX=/tools/hurj/riscv-proj/isa/rv32um-p-mulhu_itcm.hex" "+DATA_HEX=/tools/hurj/riscv-proj/isa/rv32um-p-mulhu_data.hex" "+TIMEOUT=12000"
+Directory: /data/usr/xuemy/8fetch_ooo/toy_scalar/rv_isa_test/build
+"rv32um-p-mulhu" start time: Oct 24 10:45 CST
+Output:
+----------------------------------------------------------
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Oct 24 10:45 2024
+[SYSTEM] Timeout threshold is set to 12000 cycles.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_div_tc:
+ at time = 10: Division by zero.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_rem_tc:
+ at time = 10: Division by zero.
+Fatal: "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", 55: toy_top.u_toy_env_slv: at time 240100
+[SYSTEM] Timeout occurs after executing 12000 cycles !
+$finish called from file "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", line 55.
+$finish at simulation time               240100
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 240100
+CPU Time:      0.400 seconds;       Data structure size:   0.9Mb
+Thu Oct 24 10:45:10 2024
+<end of output>
+Test time =   4.32 sec
+----------------------------------------------------------
+Test Failed.
+"rv32um-p-mulhu" end time: Oct 24 10:45 CST
+"rv32um-p-mulhu" time elapsed: 00:00:04
+----------------------------------------------------------
+
+13/60 Testing: rv32ui-p-jal
+13/60 Test: rv32ui-p-jal
+Command: "/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv" "-exitstatus" "+HEX=/tools/hurj/riscv-proj/isa/rv32ui-p-jal_itcm.hex" "+DATA_HEX=/tools/hurj/riscv-proj/isa/rv32ui-p-jal_data.hex" "+TIMEOUT=12000"
+Directory: /data/usr/xuemy/8fetch_ooo/toy_scalar/rv_isa_test/build
+"rv32ui-p-jal" start time: Oct 24 10:45 CST
+Output:
+----------------------------------------------------------
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Oct 24 10:45 2024
+[SYSTEM] Timeout threshold is set to 12000 cycles.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_div_tc:
+ at time = 10: Division by zero.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_rem_tc:
+ at time = 10: Division by zero.
+Fatal: "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", 55: toy_top.u_toy_env_slv: at time 240100
+[SYSTEM] Timeout occurs after executing 12000 cycles !
+$finish called from file "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", line 55.
+$finish at simulation time               240100
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 240100
+CPU Time:      0.420 seconds;       Data structure size:   0.9Mb
+Thu Oct 24 10:45:10 2024
+<end of output>
+Test time =   5.07 sec
+----------------------------------------------------------
+Test Failed.
+"rv32ui-p-jal" end time: Oct 24 10:45 CST
+"rv32ui-p-jal" time elapsed: 00:00:05
+----------------------------------------------------------
+
+50/60 Testing: rv32uf-p-fadd
+50/60 Test: rv32uf-p-fadd
+Command: "/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv" "-exitstatus" "+HEX=/tools/hurj/riscv-proj/isa/rv32uf-p-fadd_itcm.hex" "+DATA_HEX=/tools/hurj/riscv-proj/isa/rv32uf-p-fadd_data.hex" "+TIMEOUT=12000"
+Directory: /data/usr/xuemy/8fetch_ooo/toy_scalar/rv_isa_test/build
+"rv32uf-p-fadd" start time: Oct 24 10:45 CST
+Output:
+----------------------------------------------------------
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Oct 24 10:45 2024
+[SYSTEM] Timeout threshold is set to 12000 cycles.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_div_tc:
+ at time = 10: Division by zero.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_rem_tc:
+ at time = 10: Division by zero.
+Fatal: "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", 55: toy_top.u_toy_env_slv: at time 240100
+[SYSTEM] Timeout occurs after executing 12000 cycles !
+$finish called from file "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", line 55.
+$finish at simulation time               240100
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 240100
+CPU Time:      0.330 seconds;       Data structure size:   0.9Mb
+Thu Oct 24 10:45:10 2024
+<end of output>
+Test time =   4.49 sec
+----------------------------------------------------------
+Test Failed.
+"rv32uf-p-fadd" end time: Oct 24 10:45 CST
+"rv32uf-p-fadd" time elapsed: 00:00:04
+----------------------------------------------------------
+
+31/60 Testing: rv32ui-p-sltiu
+31/60 Test: rv32ui-p-sltiu
+Command: "/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv" "-exitstatus" "+HEX=/tools/hurj/riscv-proj/isa/rv32ui-p-sltiu_itcm.hex" "+DATA_HEX=/tools/hurj/riscv-proj/isa/rv32ui-p-sltiu_data.hex" "+TIMEOUT=12000"
+Directory: /data/usr/xuemy/8fetch_ooo/toy_scalar/rv_isa_test/build
+"rv32ui-p-sltiu" start time: Oct 24 10:45 CST
+Output:
+----------------------------------------------------------
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Oct 24 10:45 2024
+[SYSTEM] Timeout threshold is set to 12000 cycles.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_div_tc:
+ at time = 10: Division by zero.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_rem_tc:
+ at time = 10: Division by zero.
+Fatal: "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", 55: toy_top.u_toy_env_slv: at time 240100
+[SYSTEM] Timeout occurs after executing 12000 cycles !
+$finish called from file "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", line 55.
+$finish at simulation time               240100
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 240100
+CPU Time:      0.420 seconds;       Data structure size:   0.9Mb
+Thu Oct 24 10:45:10 2024
+<end of output>
+Test time =   4.87 sec
+----------------------------------------------------------
+Test Failed.
+"rv32ui-p-sltiu" end time: Oct 24 10:45 CST
+"rv32ui-p-sltiu" time elapsed: 00:00:04
+----------------------------------------------------------
+
+42/60 Testing: rv32um-p-divu
+42/60 Test: rv32um-p-divu
+Command: "/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv" "-exitstatus" "+HEX=/tools/hurj/riscv-proj/isa/rv32um-p-divu_itcm.hex" "+DATA_HEX=/tools/hurj/riscv-proj/isa/rv32um-p-divu_data.hex" "+TIMEOUT=12000"
+Directory: /data/usr/xuemy/8fetch_ooo/toy_scalar/rv_isa_test/build
+"rv32um-p-divu" start time: Oct 24 10:45 CST
+Output:
+----------------------------------------------------------
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Oct 24 10:45 2024
+[SYSTEM] Timeout threshold is set to 12000 cycles.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_div_tc:
+ at time = 10: Division by zero.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_rem_tc:
+ at time = 10: Division by zero.
+Fatal: "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", 55: toy_top.u_toy_env_slv: at time 240100
+[SYSTEM] Timeout occurs after executing 12000 cycles !
+$finish called from file "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", line 55.
+$finish at simulation time               240100
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 240100
+CPU Time:      0.380 seconds;       Data structure size:   0.9Mb
+Thu Oct 24 10:45:10 2024
+<end of output>
+Test time =   4.66 sec
+----------------------------------------------------------
+Test Failed.
+"rv32um-p-divu" end time: Oct 24 10:45 CST
+"rv32um-p-divu" time elapsed: 00:00:04
+----------------------------------------------------------
+
+47/60 Testing: rv32um-p-rem
+47/60 Test: rv32um-p-rem
+Command: "/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv" "-exitstatus" "+HEX=/tools/hurj/riscv-proj/isa/rv32um-p-rem_itcm.hex" "+DATA_HEX=/tools/hurj/riscv-proj/isa/rv32um-p-rem_data.hex" "+TIMEOUT=12000"
+Directory: /data/usr/xuemy/8fetch_ooo/toy_scalar/rv_isa_test/build
+"rv32um-p-rem" start time: Oct 24 10:45 CST
+Output:
+----------------------------------------------------------
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Oct 24 10:45 2024
+[SYSTEM] Timeout threshold is set to 12000 cycles.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_div_tc:
+ at time = 10: Division by zero.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_rem_tc:
+ at time = 10: Division by zero.
+Fatal: "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", 55: toy_top.u_toy_env_slv: at time 240100
+[SYSTEM] Timeout occurs after executing 12000 cycles !
+$finish called from file "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", line 55.
+$finish at simulation time               240100
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 240100
+CPU Time:      0.410 seconds;       Data structure size:   0.9Mb
+Thu Oct 24 10:45:10 2024
+<end of output>
+Test time =   4.56 sec
+----------------------------------------------------------
+Test Failed.
+"rv32um-p-rem" end time: Oct 24 10:45 CST
+"rv32um-p-rem" time elapsed: 00:00:04
+----------------------------------------------------------
+
+36/60 Testing: rv32ui-p-srli
+36/60 Test: rv32ui-p-srli
+Command: "/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv" "-exitstatus" "+HEX=/tools/hurj/riscv-proj/isa/rv32ui-p-srli_itcm.hex" "+DATA_HEX=/tools/hurj/riscv-proj/isa/rv32ui-p-srli_data.hex" "+TIMEOUT=12000"
+Directory: /data/usr/xuemy/8fetch_ooo/toy_scalar/rv_isa_test/build
+"rv32ui-p-srli" start time: Oct 24 10:45 CST
+Output:
+----------------------------------------------------------
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Oct 24 10:45 2024
+[SYSTEM] Timeout threshold is set to 12000 cycles.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_div_tc:
+ at time = 10: Division by zero.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_rem_tc:
+ at time = 10: Division by zero.
+Fatal: "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", 55: toy_top.u_toy_env_slv: at time 240100
+[SYSTEM] Timeout occurs after executing 12000 cycles !
+$finish called from file "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", line 55.
+$finish at simulation time               240100
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 240100
+CPU Time:      0.420 seconds;       Data structure size:   0.9Mb
+Thu Oct 24 10:45:10 2024
+<end of output>
+Test time =   4.80 sec
+----------------------------------------------------------
+Test Failed.
+"rv32ui-p-srli" end time: Oct 24 10:45 CST
+"rv32ui-p-srli" time elapsed: 00:00:04
+----------------------------------------------------------
+
+58/60 Testing: rv32uf-p-ldst
+58/60 Test: rv32uf-p-ldst
+Command: "/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv" "-exitstatus" "+HEX=/tools/hurj/riscv-proj/isa/rv32uf-p-ldst_itcm.hex" "+DATA_HEX=/tools/hurj/riscv-proj/isa/rv32uf-p-ldst_data.hex" "+TIMEOUT=12000"
+Directory: /data/usr/xuemy/8fetch_ooo/toy_scalar/rv_isa_test/build
+"rv32uf-p-ldst" start time: Oct 24 10:45 CST
+Output:
+----------------------------------------------------------
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Oct 24 10:45 2024
+[SYSTEM] Timeout threshold is set to 12000 cycles.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_div_tc:
+ at time = 10: Division by zero.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_rem_tc:
+ at time = 10: Division by zero.
+Fatal: "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", 55: toy_top.u_toy_env_slv: at time 240100
+[SYSTEM] Timeout occurs after executing 12000 cycles !
+$finish called from file "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", line 55.
+$finish at simulation time               240100
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 240100
+CPU Time:      0.360 seconds;       Data structure size:   0.9Mb
+Thu Oct 24 10:45:10 2024
+<end of output>
+Test time =   4.34 sec
+----------------------------------------------------------
+Test Failed.
+"rv32uf-p-ldst" end time: Oct 24 10:45 CST
+"rv32uf-p-ldst" time elapsed: 00:00:04
+----------------------------------------------------------
+
+52/60 Testing: rv32uf-p-fcmp
+52/60 Test: rv32uf-p-fcmp
+Command: "/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv" "-exitstatus" "+HEX=/tools/hurj/riscv-proj/isa/rv32uf-p-fcmp_itcm.hex" "+DATA_HEX=/tools/hurj/riscv-proj/isa/rv32uf-p-fcmp_data.hex" "+TIMEOUT=12000"
+Directory: /data/usr/xuemy/8fetch_ooo/toy_scalar/rv_isa_test/build
+"rv32uf-p-fcmp" start time: Oct 24 10:45 CST
+Output:
+----------------------------------------------------------
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Oct 24 10:45 2024
+[SYSTEM] Timeout threshold is set to 12000 cycles.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_div_tc:
+ at time = 10: Division by zero.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_rem_tc:
+ at time = 10: Division by zero.
+Fatal: "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", 55: toy_top.u_toy_env_slv: at time 240100
+[SYSTEM] Timeout occurs after executing 12000 cycles !
+$finish called from file "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", line 55.
+$finish at simulation time               240100
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 240100
+CPU Time:      0.400 seconds;       Data structure size:   0.9Mb
+Thu Oct 24 10:45:10 2024
+<end of output>
+Test time =   4.50 sec
+----------------------------------------------------------
+Test Failed.
+"rv32uf-p-fcmp" end time: Oct 24 10:45 CST
+"rv32uf-p-fcmp" time elapsed: 00:00:04
+----------------------------------------------------------
+
+57/60 Testing: rv32uf-p-fmin
+57/60 Test: rv32uf-p-fmin
+Command: "/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv" "-exitstatus" "+HEX=/tools/hurj/riscv-proj/isa/rv32uf-p-fmin_itcm.hex" "+DATA_HEX=/tools/hurj/riscv-proj/isa/rv32uf-p-fmin_data.hex" "+TIMEOUT=12000"
+Directory: /data/usr/xuemy/8fetch_ooo/toy_scalar/rv_isa_test/build
+"rv32uf-p-fmin" start time: Oct 24 10:45 CST
+Output:
+----------------------------------------------------------
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Oct 24 10:45 2024
+[SYSTEM] Timeout threshold is set to 12000 cycles.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_div_tc:
+ at time = 10: Division by zero.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_rem_tc:
+ at time = 10: Division by zero.
+Fatal: "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", 55: toy_top.u_toy_env_slv: at time 240100
+[SYSTEM] Timeout occurs after executing 12000 cycles !
+$finish called from file "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", line 55.
+$finish at simulation time               240100
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 240100
+CPU Time:      0.380 seconds;       Data structure size:   0.9Mb
+Thu Oct 24 10:45:10 2024
+<end of output>
+Test time =   4.39 sec
+----------------------------------------------------------
+Test Failed.
+"rv32uf-p-fmin" end time: Oct 24 10:45 CST
+"rv32uf-p-fmin" time elapsed: 00:00:04
+----------------------------------------------------------
+
+17/60 Testing: rv32ui-p-lh
+17/60 Test: rv32ui-p-lh
+Command: "/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv" "-exitstatus" "+HEX=/tools/hurj/riscv-proj/isa/rv32ui-p-lh_itcm.hex" "+DATA_HEX=/tools/hurj/riscv-proj/isa/rv32ui-p-lh_data.hex" "+TIMEOUT=12000"
+Directory: /data/usr/xuemy/8fetch_ooo/toy_scalar/rv_isa_test/build
+"rv32ui-p-lh" start time: Oct 24 10:45 CST
+Output:
+----------------------------------------------------------
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Oct 24 10:45 2024
+[SYSTEM] Timeout threshold is set to 12000 cycles.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_div_tc:
+ at time = 10: Division by zero.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_rem_tc:
+ at time = 10: Division by zero.
+Fatal: "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", 55: toy_top.u_toy_env_slv: at time 240100
+[SYSTEM] Timeout occurs after executing 12000 cycles !
+$finish called from file "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", line 55.
+$finish at simulation time               240100
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 240100
+CPU Time:      0.410 seconds;       Data structure size:   0.9Mb
+Thu Oct 24 10:45:10 2024
+<end of output>
+Test time =   5.19 sec
+----------------------------------------------------------
+Test Failed.
+"rv32ui-p-lh" end time: Oct 24 10:45 CST
+"rv32ui-p-lh" time elapsed: 00:00:05
+----------------------------------------------------------
+
+40/60 Testing: rv32ui-p-xori
+40/60 Test: rv32ui-p-xori
+Command: "/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv" "-exitstatus" "+HEX=/tools/hurj/riscv-proj/isa/rv32ui-p-xori_itcm.hex" "+DATA_HEX=/tools/hurj/riscv-proj/isa/rv32ui-p-xori_data.hex" "+TIMEOUT=12000"
+Directory: /data/usr/xuemy/8fetch_ooo/toy_scalar/rv_isa_test/build
+"rv32ui-p-xori" start time: Oct 24 10:45 CST
+Output:
+----------------------------------------------------------
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Oct 24 10:45 2024
+[SYSTEM] Timeout threshold is set to 12000 cycles.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_div_tc:
+ at time = 10: Division by zero.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_rem_tc:
+ at time = 10: Division by zero.
+Fatal: "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", 55: toy_top.u_toy_env_slv: at time 240100
+[SYSTEM] Timeout occurs after executing 12000 cycles !
+$finish called from file "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", line 55.
+$finish at simulation time               240100
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 240100
+CPU Time:      0.310 seconds;       Data structure size:   0.9Mb
+Thu Oct 24 10:45:10 2024
+<end of output>
+Test time =   4.85 sec
+----------------------------------------------------------
+Test Failed.
+"rv32ui-p-xori" end time: Oct 24 10:45 CST
+"rv32ui-p-xori" time elapsed: 00:00:04
+----------------------------------------------------------
+
+60/60 Testing: rv32uf-p-recoding
+60/60 Test: rv32uf-p-recoding
+Command: "/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv" "-exitstatus" "+HEX=/tools/hurj/riscv-proj/isa/rv32uf-p-recoding_itcm.hex" "+DATA_HEX=/tools/hurj/riscv-proj/isa/rv32uf-p-recoding_data.hex" "+TIMEOUT=12000"
+Directory: /data/usr/xuemy/8fetch_ooo/toy_scalar/rv_isa_test/build
+"rv32uf-p-recoding" start time: Oct 24 10:45 CST
+Output:
+----------------------------------------------------------
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Oct 24 10:45 2024
+[SYSTEM] Timeout threshold is set to 12000 cycles.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_div_tc:
+ at time = 10: Division by zero.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_rem_tc:
+ at time = 10: Division by zero.
+Fatal: "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", 55: toy_top.u_toy_env_slv: at time 240100
+[SYSTEM] Timeout occurs after executing 12000 cycles !
+$finish called from file "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", line 55.
+$finish at simulation time               240100
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 240100
+CPU Time:      0.320 seconds;       Data structure size:   0.9Mb
+Thu Oct 24 10:45:10 2024
+<end of output>
+Test time =   4.51 sec
+----------------------------------------------------------
+Test Failed.
+"rv32uf-p-recoding" end time: Oct 24 10:45 CST
+"rv32uf-p-recoding" time elapsed: 00:00:04
+----------------------------------------------------------
+
+49/60 Testing: rv32uc-p-rvc
+49/60 Test: rv32uc-p-rvc
+Command: "/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv" "-exitstatus" "+HEX=/tools/hurj/riscv-proj/isa/rv32uc-p-rvc_itcm.hex" "+DATA_HEX=/tools/hurj/riscv-proj/isa/rv32uc-p-rvc_data.hex" "+TIMEOUT=12000"
+Directory: /data/usr/xuemy/8fetch_ooo/toy_scalar/rv_isa_test/build
+"rv32uc-p-rvc" start time: Oct 24 10:45 CST
+Output:
+----------------------------------------------------------
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Oct 24 10:45 2024
+[SYSTEM] Timeout threshold is set to 12000 cycles.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_div_tc:
+ at time = 10: Division by zero.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_rem_tc:
+ at time = 10: Division by zero.
+Fatal: "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", 55: toy_top.u_toy_env_slv: at time 240100
+[SYSTEM] Timeout occurs after executing 12000 cycles !
+$finish called from file "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", line 55.
+$finish at simulation time               240100
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 240100
+CPU Time:      0.400 seconds;       Data structure size:   0.9Mb
+Thu Oct 24 10:45:10 2024
+<end of output>
+Test time =   4.77 sec
+----------------------------------------------------------
+Test Failed.
+"rv32uc-p-rvc" end time: Oct 24 10:45 CST
+"rv32uc-p-rvc" time elapsed: 00:00:04
+----------------------------------------------------------
+
+51/60 Testing: rv32uf-p-fclass
+51/60 Test: rv32uf-p-fclass
+Command: "/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv" "-exitstatus" "+HEX=/tools/hurj/riscv-proj/isa/rv32uf-p-fclass_itcm.hex" "+DATA_HEX=/tools/hurj/riscv-proj/isa/rv32uf-p-fclass_data.hex" "+TIMEOUT=12000"
+Directory: /data/usr/xuemy/8fetch_ooo/toy_scalar/rv_isa_test/build
+"rv32uf-p-fclass" start time: Oct 24 10:45 CST
+Output:
+----------------------------------------------------------
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Oct 24 10:45 2024
+[SYSTEM] Timeout threshold is set to 12000 cycles.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_div_tc:
+ at time = 10: Division by zero.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_rem_tc:
+ at time = 10: Division by zero.
+Fatal: "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", 55: toy_top.u_toy_env_slv: at time 240100
+[SYSTEM] Timeout occurs after executing 12000 cycles !
+$finish called from file "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", line 55.
+$finish at simulation time               240100
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 240100
+CPU Time:      0.390 seconds;       Data structure size:   0.9Mb
+Thu Oct 24 10:45:10 2024
+<end of output>
+Test time =   4.74 sec
+----------------------------------------------------------
+Test Failed.
+"rv32uf-p-fclass" end time: Oct 24 10:45 CST
+"rv32uf-p-fclass" time elapsed: 00:00:04
+----------------------------------------------------------
+
+59/60 Testing: rv32uf-p-move
+59/60 Test: rv32uf-p-move
+Command: "/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv" "-exitstatus" "+HEX=/tools/hurj/riscv-proj/isa/rv32uf-p-move_itcm.hex" "+DATA_HEX=/tools/hurj/riscv-proj/isa/rv32uf-p-move_data.hex" "+TIMEOUT=12000"
+Directory: /data/usr/xuemy/8fetch_ooo/toy_scalar/rv_isa_test/build
+"rv32uf-p-move" start time: Oct 24 10:45 CST
+Output:
+----------------------------------------------------------
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Oct 24 10:45 2024
+[SYSTEM] Timeout threshold is set to 12000 cycles.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_div_tc:
+ at time = 10: Division by zero.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_rem_tc:
+ at time = 10: Division by zero.
+Fatal: "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", 55: toy_top.u_toy_env_slv: at time 240100
+[SYSTEM] Timeout occurs after executing 12000 cycles !
+$finish called from file "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", line 55.
+$finish at simulation time               240100
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 240100
+CPU Time:      0.380 seconds;       Data structure size:   0.9Mb
+Thu Oct 24 10:45:10 2024
+<end of output>
+Test time =   4.55 sec
+----------------------------------------------------------
+Test Failed.
+"rv32uf-p-move" end time: Oct 24 10:45 CST
+"rv32uf-p-move" time elapsed: 00:00:04
+----------------------------------------------------------
+
+55/60 Testing: rv32uf-p-fdiv
+55/60 Test: rv32uf-p-fdiv
+Command: "/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv" "-exitstatus" "+HEX=/tools/hurj/riscv-proj/isa/rv32uf-p-fdiv_itcm.hex" "+DATA_HEX=/tools/hurj/riscv-proj/isa/rv32uf-p-fdiv_data.hex" "+TIMEOUT=12000"
+Directory: /data/usr/xuemy/8fetch_ooo/toy_scalar/rv_isa_test/build
+"rv32uf-p-fdiv" start time: Oct 24 10:45 CST
+Output:
+----------------------------------------------------------
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Oct 24 10:45 2024
+[SYSTEM] Timeout threshold is set to 12000 cycles.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_div_tc:
+ at time = 10: Division by zero.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_rem_tc:
+ at time = 10: Division by zero.
+Fatal: "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", 55: toy_top.u_toy_env_slv: at time 240100
+[SYSTEM] Timeout occurs after executing 12000 cycles !
+$finish called from file "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", line 55.
+$finish at simulation time               240100
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 240100
+CPU Time:      0.420 seconds;       Data structure size:   0.9Mb
+Thu Oct 24 10:45:10 2024
+<end of output>
+Test time =   4.69 sec
+----------------------------------------------------------
+Test Failed.
+"rv32uf-p-fdiv" end time: Oct 24 10:45 CST
+"rv32uf-p-fdiv" time elapsed: 00:00:04
+----------------------------------------------------------
+
+43/60 Testing: rv32um-p-mul
+43/60 Test: rv32um-p-mul
+Command: "/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv" "-exitstatus" "+HEX=/tools/hurj/riscv-proj/isa/rv32um-p-mul_itcm.hex" "+DATA_HEX=/tools/hurj/riscv-proj/isa/rv32um-p-mul_data.hex" "+TIMEOUT=12000"
+Directory: /data/usr/xuemy/8fetch_ooo/toy_scalar/rv_isa_test/build
+"rv32um-p-mul" start time: Oct 24 10:45 CST
+Output:
+----------------------------------------------------------
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Oct 24 10:45 2024
+[SYSTEM] Timeout threshold is set to 12000 cycles.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_div_tc:
+ at time = 10: Division by zero.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_rem_tc:
+ at time = 10: Division by zero.
+Fatal: "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", 55: toy_top.u_toy_env_slv: at time 240100
+[SYSTEM] Timeout occurs after executing 12000 cycles !
+$finish called from file "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", line 55.
+$finish at simulation time               240100
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 240100
+CPU Time:      0.430 seconds;       Data structure size:   0.9Mb
+Thu Oct 24 10:45:10 2024
+<end of output>
+Test time =   4.94 sec
+----------------------------------------------------------
+Test Failed.
+"rv32um-p-mul" end time: Oct 24 10:45 CST
+"rv32um-p-mul" time elapsed: 00:00:04
+----------------------------------------------------------
+
+48/60 Testing: rv32um-p-remu
+48/60 Test: rv32um-p-remu
+Command: "/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv" "-exitstatus" "+HEX=/tools/hurj/riscv-proj/isa/rv32um-p-remu_itcm.hex" "+DATA_HEX=/tools/hurj/riscv-proj/isa/rv32um-p-remu_data.hex" "+TIMEOUT=12000"
+Directory: /data/usr/xuemy/8fetch_ooo/toy_scalar/rv_isa_test/build
+"rv32um-p-remu" start time: Oct 24 10:45 CST
+Output:
+----------------------------------------------------------
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Oct 24 10:45 2024
+[SYSTEM] Timeout threshold is set to 12000 cycles.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_div_tc:
+ at time = 10: Division by zero.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_rem_tc:
+ at time = 10: Division by zero.
+Fatal: "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", 55: toy_top.u_toy_env_slv: at time 240100
+[SYSTEM] Timeout occurs after executing 12000 cycles !
+$finish called from file "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", line 55.
+$finish at simulation time               240100
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 240100
+CPU Time:      0.400 seconds;       Data structure size:   0.9Mb
+Thu Oct 24 10:45:10 2024
+<end of output>
+Test time =   5.02 sec
+----------------------------------------------------------
+Test Failed.
+"rv32um-p-remu" end time: Oct 24 10:45 CST
+"rv32um-p-remu" time elapsed: 00:00:05
+----------------------------------------------------------
+
+53/60 Testing: rv32uf-p-fcvt
+53/60 Test: rv32uf-p-fcvt
+Command: "/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv" "-exitstatus" "+HEX=/tools/hurj/riscv-proj/isa/rv32uf-p-fcvt_itcm.hex" "+DATA_HEX=/tools/hurj/riscv-proj/isa/rv32uf-p-fcvt_data.hex" "+TIMEOUT=12000"
+Directory: /data/usr/xuemy/8fetch_ooo/toy_scalar/rv_isa_test/build
+"rv32uf-p-fcvt" start time: Oct 24 10:45 CST
+Output:
+----------------------------------------------------------
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Oct 24 10:45 2024
+[SYSTEM] Timeout threshold is set to 12000 cycles.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_div_tc:
+ at time = 10: Division by zero.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_rem_tc:
+ at time = 10: Division by zero.
+Fatal: "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", 55: toy_top.u_toy_env_slv: at time 240100
+[SYSTEM] Timeout occurs after executing 12000 cycles !
+$finish called from file "/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv", line 55.
+$finish at simulation time               240100
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 240100
+CPU Time:      0.310 seconds;       Data structure size:   0.9Mb
+Thu Oct 24 10:45:11 2024
+<end of output>
+Test time =   5.43 sec
+----------------------------------------------------------
+Test Failed.
+"rv32uf-p-fcvt" end time: Oct 24 10:45 CST
+"rv32uf-p-fcvt" time elapsed: 00:00:05
+----------------------------------------------------------
+
+End testing: Oct 24 10:45 CST

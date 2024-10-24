@@ -1,0 +1,22 @@
+rc file Version 1.0
+
+[Design]
+COMPILE_PATH=/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile
+VCS_HOME=/tools/software/synopsys/vcs/T-2022.06
+VERDI_HOME=/tools/software/synopsys/verdi/T-2022.06
+SystemC=FALSE
+UUM=FALSE
+KDB=TRUE
+USE_NOVAS_HOME=FALSE
+COSIM=FALSE
+TOP=cmn_reg_slice_backward cmn_reg_slice_full reg_slice_forward cmn_age_matrix cmn_tree_plru cmn_arb_vrp_matrix cmn_plru_node toy_pcgen toy_fetch_queue fix_priority_arb icache_prefetch_engine hazard_check v_en_decode1 fifo DW_fp_dp2 toy_mem_model_allude toy_top 
+OPTION=-ssv -ssy 
+ELAB_OPTION=-ssv -ssy 
+ELAB=TRUE
+SIMV_WRAPPER=FALSE
+[vcs]
+RUN_ELABCOM=unset TURBO_LOG_DIR ;\rm -rf simv.daidir/elabcomLog ;/tools/software/synopsys/vcs/T-2022.06/linux64/bin/elabcom -logdir simv.daidir/elabcomLog  -simvdaidir simv.daidir  -lib simv.daidir/work  -saveLevel  -elab simv.daidir/kdb -simflow -simdir simv.daidir/kdb_libs -topfile simv.daidir/.elabcomTopFile -pkgfile simv.daidir/.elabcomPkgFile -ssv -ssy  -Lf work +disable_message+C00380+C00381 +disable_message+C00388+C00389  >& /dev/null  && echo Success >& simv.daidir/.elabcomReport || echo Fail >& simv.daidir/.elabcomReport; \rm -rf simv.daidir/work.lib++ simv.daidir/kdb_libs/ 
+
+[Value]
+WREALX=ffff534e50535f58
+WREALZ=ffff534e50535f5a

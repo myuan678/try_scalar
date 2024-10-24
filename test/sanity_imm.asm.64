@@ -1,0 +1,10 @@
+
+sanity_imm.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0000000000000000 <.data>:
+	...
+    2000:	000010b7          	lui	ra,0x1
+    2004:	00102023          	sw	ra,0(zero) # 0x0

@@ -1,0 +1,296 @@
+module toy_bpu_tage_entry_buffer
+    import toy_pack::*;
+    (
+        input  logic                                 clk,
+        input  logic                                 rst_n,
+        input  logic                                 be_flush,
+        input  logic            [COMMIT_CHANNEL-1:0] be_flush_en,
+        input  logic                                 ras_flush,
+        input  logic                                 bp2_flush,
+
+        input  logic                                 s_vld_s0,
+        output logic                                 s_rdy_s0,
+        input  logic                                 s_vld_s1,
+        input  tage_entry_store                      s_pld_s1,
+        input  logic                                 s_update_vld,
+        input  tage_pkg                              s_update_pld,
+        input  logic                                 s_update_enqueue,
+
+        output logic                                 m_vld,
+        input  logic                                 m_rdy,
+        output tage_entry                            m_pld
+    );
+
+    logic              [TAGE_ENTRY_PTR_WIDTH:0]     wr_ptr;
+    logic              [TAGE_ENTRY_PTR_WIDTH:0]     rd_ptr;
+    logic              [TAGE_ENTRY_PTR_WIDTH:0]     tn_ptr;
+    logic              [TAGE_ENTRY_PTR_WIDTH:0]     eq_ptr;
+    logic              [TAGE_ENTRY_PTR_WIDTH:0]     tn_ptr_res;
+    logic              [TAGE_ENTRY_PTR_WIDTH:0]     eq_ptr_res;
+    logic              [TAGE_ENTRY_PTR_WIDTH:0]     credit_cnt;
+    logic              [TAGE_ENTRY_PTR_WIDTH:0]     credit_cal;
+    logic                                           credit_add;
+    logic                                           credit_sub;
+    logic                                           wren;
+    logic                                           rden;
+
+    tage_entry_store                                entry_buffer                [TAGE_ENTRY_NUM-1:0];
+    tage_entry_update                               taken_buffer                [TAGE_ENTRY_NUM-1:0];
+
+    tage_entry_update                               alloc_update                ;
+    logic              [TAGE_TABLE_NUM-1:0]         alloc_id                    ;
+    logic                                           update_en                   ;
+    logic                                           update_mispred              ;
+    tage_entry_store                                update_entry                ;
+    logic              [TAGE_TABLE_NUM-1:0]         update_prob;
+    logic              [TAGE_TABLE_NUM-1:0]         update_alloc_vld            ;
+    logic              [TAGE_TABLE_NUM-1:0]         update_alloc_vld_prob       ;
+    logic              [TAGE_TABLE_NUM-1:0]         update_alloc_decay          ;
+    logic              [TAGE_TABLE_NUM-1:0]         update_alloc_id             ;
+    logic              [TAGE_TABLE_NUM-1:0]         update_alloc_id_prob        ;
+    logic                                           update_alloc_id_prob_vld    ;
+    logic                                           update_alloc_id_vld_dummy   ;
+    logic              [$clog2(TAGE_TABLE_NUM)-1:0] update_alloc_bin_prob_dummy ;
+    logic              [$clog2(TAGE_TABLE_NUM)-1:0] update_alloc_bin_dummy      ;
+
+    logic              [TAGE_BASE_INDEX_WIDTH-1:0]  bypass_tb_idx;
+    logic              [TAGE_BASE_PRED_WIDTH-1:0]   bypass_tb_pred;
+    logic                                           bypass_tb_add;
+    logic                                           bypass_tb_sub;
+    tage_entry_store                                bypass_pld_s1;
+
+    //===============================================
+    //  entry fifo
+    //===============================================
+    // wr_ptr - rd_ptr = 1, cause rdy has 1 cycle delay, s_rdy pass to cycle 0, s_vld and s_pld for cycle 1
+    assign s_rdy_s0     = ((TAGE_ENTRY_NUM - 1) > credit_cnt);
+    assign m_vld        = ~(tn_ptr == rd_ptr);
+    assign m_pld.entry  = entry_buffer[rd_ptr[TAGE_ENTRY_PTR_WIDTH-1:0]];
+    assign m_pld.update = taken_buffer[rd_ptr[TAGE_ENTRY_PTR_WIDTH-1:0]];
+
+    // credit counter
+    assign credit_add   = s_vld_s0 && s_rdy_s0;
+    assign credit_sub   = m_vld && m_rdy;
+    assign credit_cal   = credit_add - credit_sub;
+    assign tn_ptr_res   = ({1'b1, tn_ptr[TAGE_ENTRY_PTR_WIDTH-1:0]} - {1'b0, rd_ptr[TAGE_ENTRY_PTR_WIDTH-1:0]}) + 2'b10;
+    assign eq_ptr_res   = ({1'b1, eq_ptr[TAGE_ENTRY_PTR_WIDTH-1:0]} - {1'b0, rd_ptr[TAGE_ENTRY_PTR_WIDTH-1:0]}) + 1'b1;
+
+    always_ff @(posedge clk or negedge rst_n) begin
+        if (~rst_n)                         credit_cnt <= {TAGE_ENTRY_PTR_WIDTH{1'b0}};
+        else if(be_flush)                   credit_cnt <= tn_ptr_res[TAGE_ENTRY_PTR_WIDTH-1:0];
+        else if(ras_flush)                  credit_cnt <= eq_ptr_res[TAGE_ENTRY_PTR_WIDTH-1:0];
+        // else if(bp2_flush)                  credit_cnt <= credit_cnt - 1'b1;
+        else if(credit_add|credit_sub)      credit_cnt <= credit_cnt + credit_cal;
+    end
+
+    // for pointer
+    assign wren         = s_vld_s1 && ~bp2_flush;
+    assign rden         = m_vld && m_rdy;
+
+    always_ff @(posedge clk or negedge rst_n) begin
+        if (~rst_n)                         wr_ptr <= {(TAGE_ENTRY_PTR_WIDTH+1){1'b0}};
+        else if(be_flush)                   wr_ptr <= tn_ptr + 1'b1;
+        else if(ras_flush)                  wr_ptr <= eq_ptr + 1'b1;
+        // else if(bp2_flush)                  wr_ptr <= wr_ptr;
+        else if(wren)                       wr_ptr <= wr_ptr + 1'b1;
+    end
+
+    always_ff @(posedge clk or negedge rst_n) begin
+        if (~rst_n)                         rd_ptr  <= {(TAGE_ENTRY_PTR_WIDTH+1){1'b0}};
+        else if(rden)                       rd_ptr  <= rd_ptr + 1'b1;
+    end
+
+    // for commit
+    always_ff @(posedge clk or negedge rst_n) begin
+        if (~rst_n)                         tn_ptr <= {(TAGE_ENTRY_PTR_WIDTH+1){1'b0}};
+        else if(s_update_vld)               tn_ptr <= tn_ptr + 1'b1;
+    end
+
+
+
+    // for enqueue
+    always_ff @(posedge clk or negedge rst_n) begin
+        if (~rst_n)                         eq_ptr  <= {(TAGE_ENTRY_PTR_WIDTH+1){1'b0}};
+        else if(be_flush)                   eq_ptr  <= tn_ptr + 1'b1;
+        else if(s_update_enqueue)           eq_ptr  <= eq_ptr + 1'b1;
+    end
+
+    // for taken and update correspond entry
+    always_ff @(posedge clk) begin
+        // for commit and cancel
+        if(s_update_vld)  taken_buffer[tn_ptr[TAGE_ENTRY_PTR_WIDTH-1:0]] <= alloc_update;
+    end
+
+
+    // bypass
+    assign bypass_tb_idx                = m_pld.entry.tb_idx;
+    assign bypass_tb_pred               = m_pld.entry.tb_pred;
+    assign bypass_tb_add                = m_pld.update.tb_pred_add;
+    assign bypass_tb_sub                = m_pld.update.tb_pred_sub;
+    assign bypass_pld_s1.pred_pc        = s_pld_s1.pred_pc;
+    assign bypass_pld_s1.tb_idx         = s_pld_s1.tb_idx;
+    assign bypass_pld_s1.tb_pred        = (rden && (s_pld_s1.tb_idx==bypass_tb_idx)) ? bypass_tb_pred : s_pld_s1.tb_pred;
+    assign bypass_pld_s1.tx_entry       = s_pld_s1.tx_entry;
+
+    assign bypass_pld_s1.pred_taken     = s_pld_s1.pred_taken;
+    assign bypass_pld_s1.pred_diff      = s_pld_s1.pred_diff;
+    assign bypass_pld_s1.prvd_idx       = s_pld_s1.prvd_idx;
+
+    //===============================================
+    //  update entry
+    //===============================================
+    cmn_lfsr4 u_prob(
+        .clk  (clk        ),
+        .rst_n(rst_n      ),
+        .out  (update_prob)
+    ); // just need one
+
+
+    // for commit and cancel
+    assign update_entry             = entry_buffer[tn_ptr[TAGE_ENTRY_PTR_WIDTH-1:0]];
+    assign update_mispred           = s_update_pld.taken_err;
+    assign alloc_update.taken       = s_update_pld.taken;
+    assign alloc_update.mispred     = update_mispred;
+    assign alloc_update.alloc_id    = alloc_id & {TAGE_TABLE_NUM{update_mispred}}; // ll27
+    assign alloc_update.tb_pred_add = update_entry.prvd_idx[0] && s_update_pld.taken;
+    assign alloc_update.tb_pred_sub = update_entry.prvd_idx[0] && ~s_update_pld.taken;
+    assign update_en                = s_update_vld;
+
+    // allocate
+    for (genvar i = 0; i < TAGE_TABLE_NUM; i=i+1) begin: GEN_ALLOC
+        assign update_alloc_vld[i]         = (|update_entry.prvd_idx[i+1:0]) & ~(update_entry.prvd_idx[i+1]) && update_entry.tx_entry[i].u_cnt==0;
+        assign update_alloc_decay[i]       = (|update_alloc_vld) & (|update_entry.prvd_idx[i+1:0]) & ~(update_entry.prvd_idx[i+1]) && update_entry.tx_entry[i].u_cnt!=0;
+    end
+
+    assign update_alloc_vld_prob = (|(update_alloc_vld & update_prob)) ? (update_alloc_vld & update_prob) : update_alloc_vld;
+    assign alloc_id              = update_alloc_id_prob_vld ? update_alloc_id_prob                        : update_alloc_id;
+
+    cmn_lead_one #(
+        .ENTRY_NUM(4)
+    ) u_prob_alloc(
+        .v_entry_vld   (update_alloc_vld_prob      ),
+        .v_free_idx_oh (update_alloc_id_prob       ),
+        .v_free_vld    (update_alloc_id_prob_vld   ),
+        .v_free_idx_bin(update_alloc_bin_prob_dummy)
+    );
+
+    cmn_lead_one #(
+        .ENTRY_NUM(4)
+    ) u_alloc(
+        .v_entry_vld   (update_alloc_vld         ),
+        .v_free_idx_oh (update_alloc_id          ),
+        .v_free_vld    (update_alloc_id_vld_dummy),
+        .v_free_idx_bin(update_alloc_bin_dummy   )
+    );
+
+
+    //===============================================
+    //  write entry buffer
+    //===============================================
+    generate
+        for(genvar n=0; n < TAGE_ENTRY_NUM; n=n+1) begin: GEN_ENTRY_UPDT
+            always_ff @(posedge clk) begin
+                if (wren && wr_ptr[TAGE_ENTRY_PTR_WIDTH-1:0]==n)
+                    entry_buffer[n] <= s_pld_s1;
+                else if(s_update_vld && (tn_ptr[TAGE_ENTRY_PTR_WIDTH-1:0]==n)) begin
+                    for (int i = 0; i < TAGE_TABLE_NUM+1; i = i + 1) begin
+                        if (i == 0) begin
+                            if (update_entry.prvd_idx[0]) begin
+                                // pred update
+                                if (~s_update_pld.taken) begin
+                                    if(rden && (update_entry.tb_idx==bypass_tb_idx) && bypass_tb_pred > 0)
+                                        entry_buffer[n].tb_pred <= bypass_tb_pred - 1'b1;
+                                    else if(update_entry.tb_pred > 0)
+                                        entry_buffer[n].tb_pred <= update_entry.tb_pred - 1'b1;
+                                end
+                                else if (s_update_pld.taken && update_entry.tb_pred < {TAGE_BASE_PRED_WIDTH{1'b1}}) begin
+                                    if(rden && (update_entry.tb_idx==bypass_tb_idx) && bypass_tb_pred < {TAGE_BASE_PRED_WIDTH{1'b1}})
+                                        entry_buffer[n].tb_pred <= bypass_tb_pred + 1'b1;
+                                    else if(update_entry.tb_pred < {TAGE_BASE_PRED_WIDTH{1'b1}})
+                                        entry_buffer[n].tb_pred <= update_entry.tb_pred + 1'b1;
+                                end
+                            end
+                        end
+                        else begin
+                            if (update_entry.prvd_idx[i]) begin
+                                // pred update
+                                if (~s_update_pld.taken && update_entry.tx_entry[i-1].pred_cnt > 0) begin
+                                    entry_buffer[n].tx_entry[i-1].pred_cnt <= update_entry.tx_entry[i-1].pred_cnt - 1'b1;
+                                end
+                                else if (s_update_pld.taken && update_entry.tx_entry[i-1].pred_cnt < {TAGE_TX_PRED_WIDTH{1'b1}}) begin
+                                    entry_buffer[n].tx_entry[i-1].pred_cnt <= update_entry.tx_entry[i-1].pred_cnt + 1'b1;
+                                end
+                                // u update
+                                if (update_mispred && update_entry.pred_diff && update_entry.tx_entry[i-1].u_cnt > 0) begin
+                                    entry_buffer[n].tx_entry[i-1].u_cnt <= update_entry.tx_entry[i-1].u_cnt - 1'b1;
+                                end
+                                else if (~update_mispred && update_entry.pred_diff && update_entry.tx_entry[i-1].u_cnt < {TAGE_TX_USEFUL_WIDTH{1'b1}}) begin
+                                    entry_buffer[n].tx_entry[i-1].u_cnt <= update_entry.tx_entry[i-1].u_cnt + 1'b1;
+                                end
+                            end
+                            // u decay
+                            else if (update_mispred && update_alloc_decay[i-1] && update_en) begin
+                                entry_buffer[n].tx_entry[i-1].u_cnt <= update_entry.tx_entry[i-1].u_cnt - 1'b1;
+                            end
+                        end
+                    end
+                end
+                else if(rden && (entry_buffer[n].tb_idx==bypass_tb_idx)) begin
+                    if(bypass_tb_add && entry_buffer[n].tb_pred < {TAGE_BASE_PRED_WIDTH{1'b1}})
+                        entry_buffer[n].tb_pred <= bypass_tb_pred + 1'b1;
+                    else if(bypass_tb_sub && entry_buffer[n].tb_pred > 0)
+                        entry_buffer[n].tb_pred <= bypass_tb_pred - 1'b1;
+                end
+            end
+        end
+    endgenerate
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+`ifdef TOY_SIM
+    logic [63:0]  update_cnt;
+    always_ff@(posedge clk or negedge rst_n) begin
+        if(~rst_n)  update_cnt             <= 0;
+        else if(m_vld && m_rdy) update_cnt <= update_cnt + 1'b1;
+    end
+    logic [63:0] real_commit;
+    always_ff@(posedge clk or negedge rst_n) begin
+        if(~rst_n)  real_commit             <= 0;
+        else if(be_flush_en[3]) real_commit <= update_cnt + 4;
+        else if(be_flush_en[2]) real_commit <= update_cnt + 3;
+        else if(be_flush_en[1]) real_commit <= update_cnt + 2;
+        else if(be_flush_en[0]) real_commit <= update_cnt + 1;
+    end
+
+
+    logic [63:0] cycle;
+    assign cycle = u_toy_scalar.u_core.u_toy_commit.cycle;
+
+    initial begin
+        forever begin
+            @(posedge clk)
+                if(s_update_vld) begin
+                    if(s_update_pld.pred_pc != entry_buffer[tn_ptr[TAGE_ENTRY_PTR_WIDTH-1:0]].pred_pc) begin
+                        $display("TAGE Error Detect: [pc=%h][pc_update=%h][cycle=%0d]", entry_buffer[tn_ptr[TAGE_ENTRY_PTR_WIDTH-1:0]].pred_pc, s_update_pld.pred_pc, cycle);
+                    end
+                end
+        end
+    end
+
+
+`endif
+
+endmodule 

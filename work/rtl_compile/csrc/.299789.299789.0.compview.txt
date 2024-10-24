@@ -1,0 +1,5 @@
+{"vcs1":{"timestamp_begin":1729738336.820613017, "rt":1.81, "ut":0.04, "st":0.02}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1729738336.325225760}
+{"VCS_COMP_START_TIME": 1729738336.325225760}
+{"VCS_COMP_END_TIME": 1729738338.667690977}
+{"VCS_USER_OPTIONS": "-kdb -full64 -debug_access -sverilog -f /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/sim.f +lint=PCWM +lint=TFIPC-L +define+TOY_SIM"}

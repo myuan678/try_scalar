@@ -1,0 +1,2131 @@
+*** Compiling Verilog ***
+
+*** Invocation #1***
+
+Loading (1) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_0dly_mem.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_0dly_mem.sv [400 ms, 35 lines, SystemVerilog_2012] ...
+
+Loading (2) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_1dly_mem.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_1dly_mem.sv [22 ms, 66 lines, SystemVerilog_2012] ...
+
+Loading (3) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_1dly_mem_model.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_1dly_mem_model.sv [26 ms, 83 lines, SystemVerilog_2012] ...
+
+Loading (4) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_fetch_queue.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_fetch_queue.sv [19 ms, 130 lines, SystemVerilog_2012] ...
+
+Loading (5) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_inst_mem.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_inst_mem.sv [8 ms, 60 lines, SystemVerilog_2012] ...
+
+Loading (6) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_CmnAgeMtx_width_2.v ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_CmnAgeMtx_width_2.v [4 ms, 43 lines, Verilog_2001] ...
+
+Loading (7) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DArb2ch_node_arb_dtcm_fwd_pld_type_ToyBusReq_bwd_pld_type_ToyBusAck.v ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DArb2ch_node_arb_dtcm_fwd_pld_type_ToyBusReq_bwd_pld_type_ToyBusAck.v [17 ms, 127 lines, Verilog_2001] ...
+
+Loading (8) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DArb2ch_node_arb_itcm_fwd_pld_type_ToyBusReq_bwd_pld_type_ToyBusAck.v ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DArb2ch_node_arb_itcm_fwd_pld_type_ToyBusReq_bwd_pld_type_ToyBusAck.v [22 ms, 127 lines, Verilog_2001] ...
+
+Loading (9) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DArb_node_arb_dtcm_pld_type_ToyBusReq_forward_True.v ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DArb_node_arb_dtcm_pld_type_ToyBusReq_forward_True.v [18 ms, 128 lines, Verilog_2001] ...
+
+Loading (10) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DArb_node_arb_itcm_pld_type_ToyBusReq_forward_True.v ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DArb_node_arb_itcm_pld_type_ToyBusReq_forward_True.v [11 ms, 128 lines, Verilog_2001] ...
+
+Loading (11) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DArb_node_dec_dmem_pld_type_ToyBusAck_forward_False.v ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DArb_node_dec_dmem_pld_type_ToyBusAck_forward_False.v [6 ms, 118 lines, Verilog_2001] ...
+
+Loading (12) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DArb_node_dec_fetch_pld_type_ToyBusAck_forward_False.v ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DArb_node_dec_fetch_pld_type_ToyBusAck_forward_False.v [5 ms, 118 lines, Verilog_2001] ...
+
+Loading (13) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DArb_node_dec_lsu_pld_type_ToyBusAck_forward_False.v ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DArb_node_dec_lsu_pld_type_ToyBusAck_forward_False.v [6 ms, 118 lines, Verilog_2001] ...
+
+Loading (14) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DDec2ch_node_dec_dmem_fwd_pld_type_ToyBusReq_bwd_pld_type_ToyBusAck.v ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DDec2ch_node_dec_dmem_fwd_pld_type_ToyBusReq_bwd_pld_type_ToyBusAck.v [3 ms, 127 lines, Verilog_2001] ...
+
+Loading (15) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DDec2ch_node_dec_fetch_fwd_pld_type_ToyBusReq_bwd_pld_type_ToyBusAck.v ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DDec2ch_node_dec_fetch_fwd_pld_type_ToyBusReq_bwd_pld_type_ToyBusAck.v [2 ms, 127 lines, Verilog_2001] ...
+
+Loading (16) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DDec2ch_node_dec_lsu_fwd_pld_type_ToyBusReq_bwd_pld_type_ToyBusAck.v ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DDec2ch_node_dec_lsu_fwd_pld_type_ToyBusReq_bwd_pld_type_ToyBusAck.v [2 ms, 127 lines, Verilog_2001] ...
+
+Loading (17) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DDec_node_arb_dtcm_pld_type_ToyBusAck_forward_False.v ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DDec_node_arb_dtcm_pld_type_ToyBusAck_forward_False.v [2 ms, 84 lines, Verilog_2001] ...
+
+Loading (18) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DDec_node_arb_itcm_pld_type_ToyBusAck_forward_False.v ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DDec_node_arb_itcm_pld_type_ToyBusAck_forward_False.v [2 ms, 84 lines, Verilog_2001] ...
+
+Loading (19) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DDec_node_dec_dmem_pld_type_ToyBusReq_forward_True.v ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DDec_node_dec_dmem_pld_type_ToyBusReq_forward_True.v [2 ms, 98 lines, Verilog_2001] ...
+
+Loading (20) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DDec_node_dec_fetch_pld_type_ToyBusReq_forward_True.v ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DDec_node_dec_fetch_pld_type_ToyBusReq_forward_True.v [3 ms, 101 lines, Verilog_2001] ...
+
+Loading (21) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DDec_node_dec_lsu_pld_type_ToyBusReq_forward_True.v ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DDec_node_dec_lsu_pld_type_ToyBusReq_forward_True.v [3 ms, 101 lines, Verilog_2001] ...
+
+Loading (22) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DWrap_network_toy_bus.v ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DWrap_network_toy_bus.v [13 ms, 619 lines, Verilog_2001] ...
+
+Loading (23) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_ToyCoreSlv_node_fetch_fwd_pld_type_ToyBusReq_bwd_pld_type_ToyBusAck_forward_True.v ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_ToyCoreSlv_node_fetch_fwd_pld_type_ToyBusReq_bwd_pld_type_ToyBusAck_forward_True.v [3 ms, 76 lines, Verilog_2001] ...
+
+Loading (24) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_ToyCoreSlv_node_lsu_fwd_pld_type_ToyBusReq_bwd_pld_type_ToyBusAck_forward_True.v ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_ToyCoreSlv_node_lsu_fwd_pld_type_ToyBusReq_bwd_pld_type_ToyBusAck_forward_True.v [2 ms, 76 lines, Verilog_2001] ...
+
+Loading (25) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_ToyMemMst_node_dtcm_fwd_pld_type_ToyBusReq_bwd_pld_type_ToyBusAck_forward_True.v ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_ToyMemMst_node_dtcm_fwd_pld_type_ToyBusReq_bwd_pld_type_ToyBusAck_forward_True.v [3 ms, 83 lines, Verilog_2001] ...
+
+Loading (26) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_ToyMemMst_node_eslv_fwd_pld_type_ToyBusReq_bwd_pld_type_ToyBusAck_forward_True.v ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_ToyMemMst_node_eslv_fwd_pld_type_ToyBusReq_bwd_pld_type_ToyBusAck_forward_True.v [2 ms, 83 lines, Verilog_2001] ...
+
+Loading (27) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_ToyMemMst_node_itcm_fwd_pld_type_ToyBusReq_bwd_pld_type_ToyBusAck_forward_True.v ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_ToyMemMst_node_itcm_fwd_pld_type_ToyBusReq_bwd_pld_type_ToyBusAck_forward_True.v [2 ms, 83 lines, Verilog_2001] ...
+
+Loading (28) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/cmn/cmn_age_matrix.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/cmn/cmn_age_matrix.sv [7 ms, 43 lines, SystemVerilog_2012] ...
+
+Loading (29) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/cmn/cmn_arb_vr_matrix.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/cmn/cmn_arb_vr_matrix.sv [2 ms, 28 lines, SystemVerilog_2012] ...
+
+Loading (30) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/cmn/cmn_arb_vrp_matrix.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/cmn/cmn_arb_vrp_matrix.sv [3 ms, 46 lines, SystemVerilog_2012] ...
+
+Loading (31) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/cmn/cmn_bin2onehot.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/cmn/cmn_bin2onehot.sv [1 ms, 20 lines, SystemVerilog_2012] ...
+
+Loading (32) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/cmn/cmn_fix_arb.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/cmn/cmn_fix_arb.sv [1 ms, 29 lines, SystemVerilog_2012] ...
+
+Loading (33) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/cmn/cmn_lead_one.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/cmn/cmn_lead_one.sv [2 ms, 42 lines, SystemVerilog_2012] ...
+
+Loading (34) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/cmn/cmn_lead_one_msb.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/cmn/cmn_lead_one_msb.sv [2 ms, 42 lines, SystemVerilog_2012] ...
+
+Loading (35) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/cmn/cmn_lead_one_rev.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/cmn/cmn_lead_one_rev.sv [3 ms, 57 lines, SystemVerilog_2012] ...
+
+Loading (36) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/cmn/cmn_lfsr4.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/cmn/cmn_lfsr4.sv [1 ms, 42 lines, SystemVerilog_2012] ...
+
+Loading (37) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/cmn/cmn_list_lead_one.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/cmn/cmn_list_lead_one.sv [4 ms, 62 lines, SystemVerilog_2012] ...
+
+Loading (38) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/cmn/cmn_list_lead_one_rev.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/cmn/cmn_list_lead_one_rev.sv [3 ms, 78 lines, SystemVerilog_2012] ...
+
+Loading (39) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/cmn/cmn_onehot2bin.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/cmn/cmn_onehot2bin.sv [1 ms, 19 lines, SystemVerilog_2012] ...
+
+Loading (40) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/cmn/cmn_plru_node.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/cmn/cmn_plru_node.sv [11 ms, 61 lines, SystemVerilog_2012] ...
+
+Loading (41) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/cmn/cmn_real_mux_onehot.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/cmn/cmn_real_mux_onehot.sv [2 ms, 41 lines, SystemVerilog_2012] ...
+
+Loading (42) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/cmn/cmn_reg_slice_backward.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/cmn/cmn_reg_slice_backward.sv [6 ms, 42 lines, SystemVerilog_2012] ...
+
+Loading (43) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/cmn/cmn_reg_slice_forward.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/cmn/cmn_reg_slice_forward.sv [2 ms, 36 lines, SystemVerilog_2012] ...
+
+Loading (44) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/cmn/cmn_reg_slice_full.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/cmn/cmn_reg_slice_full.sv [3 ms, 51 lines, SystemVerilog_2012] ...
+
+Loading (45) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/cmn/cmn_tree_plru.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/cmn/cmn_tree_plru.sv [10 ms, 60 lines, SystemVerilog_2012] ...
+
+Loading (46) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/cmn/cmn_tree_plru_comb.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/cmn/cmn_tree_plru_comb.sv [5 ms, 48 lines, SystemVerilog_2012] ...
+
+Loading (47) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_filter_predecoder.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_filter_predecoder.sv [4 ms, 52 lines, SystemVerilog_2012] ...
+
+Loading (48) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/device/toy_uart_model.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/device/toy_uart_model.sv [3 ms, 40 lines, SystemVerilog_2012] ...
+
+Loading (49) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/mem/toy_imem_model.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/mem/toy_imem_model.sv [20 ms, 180 lines, SystemVerilog_2012] ...
+
+Loading (50) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/mem/toy_mem_adapter.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/mem/toy_mem_adapter.sv [1 ms, 13 lines, SystemVerilog_2012] ...
+
+Loading (51) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/mem/toy_mem_model.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/mem/toy_mem_model.sv [9 ms, 150 lines, SystemVerilog_2012] ...
+
+Loading (52) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/mem/toy_mem_model_allude.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/mem/toy_mem_model_allude.sv [9 ms, 109 lines, SystemVerilog_2012] ...
+
+Loading (53) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/mem/toy_mem_model_bit.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/mem/toy_mem_model_bit.sv [4 ms, 71 lines, SystemVerilog_2012] ...
+
+Loading (54) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/mem/toy_mem_model_btb.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/mem/toy_mem_model_btb.sv [3 ms, 52 lines, SystemVerilog_2012] ...
+
+Loading (55) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/mem/toy_mem_model_tage.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/mem/toy_mem_model_tage.sv [3 ms, 64 lines, SystemVerilog_2012] ...
+
+Loading (56) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/mem/toy_mem_model_tb.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/mem/toy_mem_model_tb.sv [2 ms, 46 lines, SystemVerilog_2012] ...
+
+Loading (57) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/mem_adapter.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/mem_adapter.sv [1 ms, 41 lines, SystemVerilog_2012] ...
+
+Loading (58) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/toy_env_slv.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/toy_env_slv.sv [26 ms, 608 lines, SystemVerilog_2012] ...
+
+Loading (59) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/toy_pack.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/toy_pack.sv [31 ms, 850 lines, SystemVerilog_2012] ...
+
+Loading (60) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/toy_top.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/toy_top.sv [11 ms, 167 lines, SystemVerilog_2012] ...
+
+Loading (61) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/toy_scalar.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/toy_scalar.sv [5 ms, 229 lines, SystemVerilog_2012] ...
+
+Loading (62) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/mem/toy_mem_top.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/mem/toy_mem_top.sv [6 ms, 89 lines, SystemVerilog_2012] ...
+
+Loading (63) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/toy_mext.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/toy_mext.sv [17 ms, 181 lines, SystemVerilog_2012] ...
+
+Loading (64) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/toy_csr.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/toy_csr.sv [21 ms, 574 lines, SystemVerilog_2012] ...
+
+Loading (65) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/toy_core.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/toy_core.sv [14 ms, 497 lines, SystemVerilog_2012] ...
+
+Loading (66) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/toy_alu.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/toy_alu.sv [10 ms, 234 lines, SystemVerilog_2012] ...
+
+Loading (67) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/lsu/toy_stu.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/lsu/toy_stu.sv [2 ms, 128 lines, SystemVerilog_2012] ...
+
+Loading (68) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/lsu/toy_stq.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/lsu/toy_stq.sv [18 ms, 406 lines, SystemVerilog_2012] ...
+
+Loading (69) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/lsu/toy_lsu_buffer.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/lsu/toy_lsu_buffer.sv [12 ms, 281 lines, SystemVerilog_2012] ...
+
+Loading (70) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/lsu/toy_lsu.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/lsu/toy_lsu.sv [9 ms, 263 lines, SystemVerilog_2012] ...
+
+Loading (71) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/lsu/toy_ldu.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/lsu/toy_ldu.sv [3 ms, 124 lines, SystemVerilog_2012] ...
+
+Loading (72) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/lsu/toy_ldq_branch_filter.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/lsu/toy_ldq_branch_filter.sv [2 ms, 71 lines, SystemVerilog_2012] ...
+
+Loading (73) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/lsu/toy_ldq.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/lsu/toy_ldq.sv [20 ms, 408 lines, SystemVerilog_2012] ...
+
+Loading (74) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/fpu/toy_float_wsl.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/fpu/toy_float_wsl.sv [18 ms, 551 lines, SystemVerilog_2012] ...
+
+Loading (75) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/fpu/toy_float_wrapper.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/fpu/toy_float_wrapper.sv [4 ms, 164 lines, SystemVerilog_2012] ...
+
+Loading (76) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/fpu/toy_float.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/fpu/toy_float.sv [16 ms, 552 lines, SystemVerilog_2012] ...
+
+Loading (77) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/fetch/toy_fetch_queue2.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/fetch/toy_fetch_queue2.sv [12 ms, 241 lines, SystemVerilog_2012] ...
+
+Loading (78) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/fetch/toy_fetch_queue.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/fetch/toy_fetch_queue.sv [10 ms, 209 lines, SystemVerilog_2012] ...
+
+Loading (79) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/fetch/toy_fetch_buffer.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/fetch/toy_fetch_buffer.sv [7 ms, 148 lines, SystemVerilog_2012] ...
+
+Loading (80) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_rename_regfile_entry.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_rename_regfile_entry.sv [2 ms, 57 lines, SystemVerilog_2012] ...
+
+Loading (81) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_rename_regfile.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_rename_regfile.sv [3 ms, 89 lines, SystemVerilog_2012] ...
+
+Loading (82) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_regfile.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_regfile.sv [4 ms, 139 lines, SystemVerilog_2012] ...
+
+Loading (83) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_physicial_regfile_entry.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_physicial_regfile_entry.sv [6 ms, 187 lines, SystemVerilog_2012] ...
+
+Loading (84) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_physicial_regfile.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_physicial_regfile.sv [7 ms, 149 lines, SystemVerilog_2012] ...
+
+Loading (85) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_dispatch_issue_buffer.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_dispatch_issue_buffer.sv [10 ms, 218 lines, SystemVerilog_2012] ...
+
+Loading (86) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_dispatch_issue.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_dispatch_issue.sv [6 ms, 221 lines, SystemVerilog_2012] ...
+
+Loading (87) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_dispatch_crossbar.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_dispatch_crossbar.sv [7 ms, 191 lines, SystemVerilog_2012] ...
+
+Loading (88) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_dispatch.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_dispatch.sv [13 ms, 807 lines, SystemVerilog_2012] ...
+
+Loading (89) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_decoder.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_decoder.sv [27 ms, 863 lines, SystemVerilog_2012] ...
+
+Loading (90) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_backup_rename_regfile_entry.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_backup_rename_regfile_entry.sv [2 ms, 73 lines, SystemVerilog_2012] ...
+
+Loading (91) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_backup_rename_regfile.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_backup_rename_regfile.sv [3 ms, 85 lines, SystemVerilog_2012] ...
+
+Loading (92) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/commit/toy_commit.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/commit/toy_commit.sv [14 ms, 633 lines, SystemVerilog_2012] ...
+
+Loading (93) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_pcgen.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_pcgen.sv [1 ms, 67 lines, SystemVerilog_2012] ...
+
+Loading (94) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_itcm.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_itcm.sv [4 ms, 78 lines, SystemVerilog_2012] ...
+
+Loading (95) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_fe_ctrl.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_fe_ctrl.sv [5 ms, 346 lines, SystemVerilog_2012] ...
+
+Loading (96) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_fe_commit_buffer.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_fe_commit_buffer.sv [10 ms, 205 lines, SystemVerilog_2012] ...
+
+Loading (97) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_tage_tx_table.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_tage_tx_table.sv [2 ms, 107 lines, SystemVerilog_2012] ...
+
+Loading (98) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_tage_base_table.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_tage_base_table.sv [1 ms, 42 lines, SystemVerilog_2012] ...
+
+Loading (99) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_tage.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_tage.sv [12 ms, 261 lines, SystemVerilog_2012] ...
+
+Loading (100) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_rob_entry.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_rob_entry.sv [3 ms, 77 lines, SystemVerilog_2012] ...
+
+Loading (101) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_rob.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_rob.sv [5 ms, 170 lines, SystemVerilog_2012] ...
+
+Loading (102) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_ras.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_ras.sv [5 ms, 133 lines, SystemVerilog_2012] ...
+
+Loading (103) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_mem.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_mem.sv [3 ms, 102 lines, SystemVerilog_2012] ...
+
+Loading (104) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_l0btb_entry.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_l0btb_entry.sv [1 ms, 41 lines, SystemVerilog_2012] ...
+
+Loading (105) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_l0btb.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_l0btb.sv [6 ms, 178 lines, SystemVerilog_2012] ...
+
+Loading (106) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_ghr.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_ghr.sv [2 ms, 53 lines, SystemVerilog_2012] ...
+
+Loading (107) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_filter32.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_filter32.sv [5 ms, 151 lines, SystemVerilog_2012] ...
+
+Loading (108) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_filter.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_filter.sv [10 ms, 182 lines, SystemVerilog_2012] ...
+
+Loading (109) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_btfifo.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_btfifo.sv [4 ms, 74 lines, SystemVerilog_2012] ...
+
+Loading (110) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_btb_entry.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_btb_entry.sv [1 ms, 69 lines, SystemVerilog_2012] ...
+
+Loading (111) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_btb.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_btb.sv [33 ms, 239 lines, SystemVerilog_2012] ...
+
+Loading (112) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_bpdec_entry_buffer.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_bpdec_entry_buffer.sv [15 ms, 375 lines, SystemVerilog_2012] ...
+
+Loading (113) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_bpdec.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_bpdec.sv [7 ms, 349 lines, SystemVerilog_2012] ...
+
+Loading (114) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu.sv [4 ms, 449 lines, SystemVerilog_2012] ...
+
+Loading (115) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_lsu.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_lsu.sv [5 ms, 317 lines, SystemVerilog_2012] ...
+
+Loading (116) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_fetch_queue2.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_fetch_queue2.sv [8 ms, 354 lines, SystemVerilog_2012] ...
+
+Loading (117) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_fetch_pc.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_fetch_pc.sv [1 ms, 82 lines, SystemVerilog_2012] ...
+
+Loading (118) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_fetch_credit.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_fetch_credit.sv [2 ms, 90 lines, SystemVerilog_2012] ...
+
+Loading (119) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_fetch_branch_filter.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_fetch_branch_filter.sv [2 ms, 69 lines, SystemVerilog_2012] ...
+
+Loading (120) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_fetch3.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_fetch3.sv [6 ms, 238 lines, SystemVerilog_2012] ...
+
+Loading (121) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_fetch2.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_fetch2.sv [4 ms, 209 lines, SystemVerilog_2012] ...
+
+Loading (122) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_fetch.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_fetch.sv [3 ms, 76 lines, SystemVerilog_2012] ...
+
+Loading (123) /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_bpu_rob2.sv ...
+
+Done /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_bpu_rob2.sv [5 ms, 119 lines, SystemVerilog_2012] ...
+
+*** Done invocation #1 [1040 ms] ***
+
+Total number of lines [20 804]
+
+Performing post full build actions ...
+
+Performing post full build step 1 (SRI) [4 ms] ...
+
+Performing post full build step 2 (RI) [13 ms] ...
+
+Performing post full build step 3 (RCP) [3 ms] ...
+
+*** Compile Verilog done [total duration 1s.370ms] ***
+
+Performing mixed post full build step 1 (Verilog - RI) [5 ms] ...
+
+Performing mixed post full build step 2 (Verilog - RC) [10 ms] ...
+
+Performing mixed post full build step 3 (Verilog - RPC) [412 ms] ...
+
+Performing mixed post full build step 4 (Verilog - RD) [23 ms] ...
+
+Performing mixed post full build step 5 (Verilog - FSC) [304 ms] ...
+
+Performing mixed post full build step 6 (Verilog - EV) [202 ms] ...
+
+Performing mixed post full build step 7 (Verilog - US) [203 ms] ...
+
+*** COMPILE ERROR: SYSTEM_VERILOG_2012: Expecting 'endmodule', found 'endgenerate' at line: 210 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_btb.sv
+
+*** COMPILE ERROR: SYSTEM_VERILOG_2012: Unexpected token '(' at line: 222 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_btb.sv
+
+*** COMPILE ERROR: SYSTEM_VERILOG_2012: Unexpected token '.' at line: 224 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_btb.sv
+
+*** COMPILE ERROR: SYSTEM_VERILOG_2012: Unexpected token '.' at line: 225 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_btb.sv
+
+*** COMPILE ERROR: SYSTEM_VERILOG_2012: Unexpected token '.' at line: 226 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_btb.sv
+
+*** COMPILE ERROR: SYSTEM_VERILOG_2012: Unexpected token '.' at line: 227 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_btb.sv
+
+*** COMPILE ERROR: SYSTEM_VERILOG_2012: Unexpected token '.' at line: 228 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_btb.sv
+
+*** COMPILE ERROR: SYSTEM_VERILOG_2012: Unexpected token '.' at line: 229 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_btb.sv
+
+*** COMPILE ERROR: SYSTEM_VERILOG_2012: Unexpected token '.' at line: 230 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_btb.sv
+
+*** COMPILE ERROR: SYSTEM_VERILOG_2012: Unexpected token '.' at line: 231 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_btb.sv
+
+*** COMPILE ERROR: SYSTEM_VERILOG_2012: Unexpected token '.' at line: 232 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_btb.sv
+
+*** COMPILE ERROR: SYSTEM_VERILOG_2012: Unexpected token '.' at line: 233 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_btb.sv
+
+*** COMPILE ERROR: SYSTEM_VERILOG_2012: Unexpected token '.' at line: 234 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_btb.sv
+
+*** COMPILE ERROR: SYSTEM_VERILOG_2012: Unexpected token 'assign' at line: 208 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_btb.sv
+
+*** COMPILE ERROR: SYSTEM_VERILOG_2012: Unexpected token 'assign' at line: 215 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_btb.sv
+
+*** COMPILE ERROR: SYSTEM_VERILOG_2012: Unexpected token 'assign' at line: 216 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_btb.sv
+
+*** COMPILE ERROR: SYSTEM_VERILOG_2012: Unexpected token 'end' at line: 209 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_btb.sv
+
+*** COMPILE ERROR: SYSTEM_VERILOG_2012: Unexpected token 'endmodule' at line: 238 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_btb.sv
+
+*** SEMANTIC ERROR: ILLEGAL_ASSIGNMENT: Illegal assignment of 'logic[PHY_REG_ID_WIDTH-1:0] #[2:0]' to port 'reg_index' of type 'var logic[PHY_REG_ID_WIDTH-1:0]' at line: 351 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/toy_core.sv
+
+*** SEMANTIC ERROR: ILLEGAL_ASSIGNMENT: Illegal assignment of 'logic[REG_WIDTH-1:0] #[2:0]' to port 'reg_val' of type 'var logic[REG_WIDTH-1:0]' at line: 353 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/toy_core.sv
+
+*** SEMANTIC ERROR: NON_EXISTING_PORT: Non existing port 'cancel_edge_en' of module 'toy_lsu' at line: 363 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/toy_core.sv
+
+*** SEMANTIC ERROR: NON_EXISTING_PORT: Non existing port 'cancel_en' of module 'toy_lsu' at line: 362 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/toy_core.sv
+
+*** SEMANTIC ERROR: NON_EXISTING_PORT: Non existing port 'commit_credit_rel_en' of module 'toy_fetch_queue2' at line: 210 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/toy_core.sv
+
+*** SEMANTIC ERROR: NON_EXISTING_PORT: Non existing port 'commit_credit_rel_num' of module 'toy_fetch_queue2' at line: 211 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/toy_core.sv
+
+*** SEMANTIC ERROR: NON_EXISTING_PORT: Non existing port 'filter_en' of module 'toy_fetch_queue2' at line: 203 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/toy_core.sv
+
+*** SEMANTIC ERROR: NON_EXISTING_PORT: Non existing port 'filter_pld' of module 'toy_fetch_queue2' at line: 202 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/toy_core.sv
+
+*** SEMANTIC ERROR: NON_EXISTING_PORT: Non existing port 'filter_rdy' of module 'toy_fetch_queue2' at line: 200 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/toy_core.sv
+
+*** SEMANTIC ERROR: NON_EXISTING_PORT: Non existing port 'filter_vld' of module 'toy_fetch_queue2' at line: 201 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/toy_core.sv
+
+*** SEMANTIC ERROR: NON_EXISTING_PORT: Non existing port 'mem_ack_sideband' of module 'toy_lsu' at line: 371 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/toy_core.sv
+
+*** SEMANTIC ERROR: NON_EXISTING_PORT: Non existing port 'mem_req_sideband' of module 'toy_lsu' at line: 370 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/toy_core.sv
+
+*** SEMANTIC ERROR: NON_EXISTING_PORT: Non existing port 'v_ack_idx' of module 'toy_fetch_queue2' at line: 208 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/toy_core.sv
+
+*** SEMANTIC ERROR: NON_EXISTING_PORT: Non existing port 'v_ack_pc' of module 'toy_fetch_queue2' at line: 206 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/toy_core.sv
+
+*** SEMANTIC ERROR: NON_EXISTING_PORT: Non existing port 'v_fe_pld' of module 'toy_fetch_queue2' at line: 209 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/toy_core.sv
+
+*** SEMANTIC ERROR: NON_EXISTING_PORT: Non existing port 'v_instruction_rdy' of module 'toy_lsu' at line: 349 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/toy_core.sv
+
+*** SEMANTIC ERROR: NON_EXISTING_PORT: Non existing port 'v_instruction_vld' of module 'toy_lsu' at line: 348 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/toy_core.sv
+
+*** SEMANTIC ERROR: NON_EXISTING_PORT: Non existing port 'v_ldq_commit_en' of module 'toy_lsu' at line: 360 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/toy_core.sv
+
+*** SEMANTIC ERROR: NON_EXISTING_PORT: Non existing port 'v_ldq_commit_pld' of module 'toy_lsu' at line: 361 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/toy_core.sv
+
+*** SEMANTIC ERROR: NON_EXISTING_PORT: Non existing port 'v_lsu_pld' of module 'toy_lsu' at line: 350 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/toy_core.sv
+
+*** SEMANTIC ERROR: NON_EXISTING_PORT: Non existing port 'v_st_ack_commit_cancel_en' of module 'toy_lsu' at line: 358 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/toy_core.sv
+
+*** SEMANTIC ERROR: NON_EXISTING_PORT: Non existing port 'v_st_ack_commit_en' of module 'toy_lsu' at line: 357 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/toy_core.sv
+
+*** SEMANTIC ERROR: NON_EXISTING_PORT: Non existing port 'v_st_ack_commit_entry' of module 'toy_lsu' at line: 359 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/toy_core.sv
+
+*** SEMANTIC ERROR: NON_EXISTING_PORT: Non existing port 'v_stq_commit_en' of module 'toy_lsu' at line: 355 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/toy_core.sv
+
+*** SEMANTIC ERROR: NON_EXISTING_PORT: Non existing port 'v_stq_commit_pld' of module 'toy_lsu' at line: 356 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/toy_core.sv
+
+*** SEMANTIC ERROR: UNDECLARED_IDENTIFIER: Identifier 'ADDR_WIDTH' is not declared at line: 215 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_btb.sv
+
+*** SEMANTIC ERROR: UNDECLARED_IDENTIFIER: Identifier 'ALIGN_WIDTH' is not declared at line: 215 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_btb.sv
+
+*** SEMANTIC ERROR: UNDECLARED_IDENTIFIER: Identifier 'bp2_chgflw_cnt' is not a member of 'u_fe_ctrl' at line: 474 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/toy_env_slv.sv
+
+*** SEMANTIC ERROR: UNDECLARED_IDENTIFIER: Identifier 'btb_error_cnt' is not a member of 'u_toy_commit' at line: 466 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/toy_env_slv.sv
+
+*** SEMANTIC ERROR: UNDECLARED_IDENTIFIER: Identifier 'cancel_inst_cnt' is not a member of 'u_toy_commit' at line: 105 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/toy_env_slv.sv
+
+*** SEMANTIC ERROR: UNDECLARED_IDENTIFIER: Identifier 'commit_credit_cnt' is not a member of 'u_fetch' at line: 106 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/toy_env_slv.sv
+
+*** SEMANTIC ERROR: UNDECLARED_IDENTIFIER: Identifier 'fetch_0_cnt' is not a member of 'u_dispatch' at line: 425 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/toy_env_slv.sv
+
+*** SEMANTIC ERROR: UNDECLARED_IDENTIFIER: Identifier 'fetch_entry_cnt' is not a member of 'u_dispatch' at line: 424 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/toy_env_slv.sv
+
+*** SEMANTIC ERROR: UNDECLARED_IDENTIFIER: Identifier 'fix_cycle' is not a member of 'u_toy_lsu' at line: 428 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/toy_env_slv.sv
+
+*** SEMANTIC ERROR: UNDECLARED_IDENTIFIER: Identifier 'fix_priority' is not a member of 'u_toy_lsu' at line: 435 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/toy_env_slv.sv
+
+*** SEMANTIC ERROR: UNDECLARED_IDENTIFIER: Identifier 'fp_registers_shadow' is not a member of 'u_dispatch' at line: 99 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/toy_env_slv.sv
+
+*** SEMANTIC ERROR: UNDECLARED_IDENTIFIER: Identifier 'ind_btb_error_cnt' is not a member of 'u_toy_commit' at line: 469 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/toy_env_slv.sv
+
+*** SEMANTIC ERROR: UNDECLARED_IDENTIFIER: Identifier 'index' is not a member of 'bpdec_bypass_pld' at line: 206 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_btb.sv
+
+*** SEMANTIC ERROR: UNDECLARED_IDENTIFIER: Identifier 'is_cext' is not a member of 'v_inst_be_pld' at line: 92 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_fetch3.sv
+
+*** SEMANTIC ERROR: UNDECLARED_IDENTIFIER: Identifier 'mem_cycle' is not a member of 'u_toy_lsu' at line: 429 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/toy_env_slv.sv
+
+*** SEMANTIC ERROR: UNDECLARED_IDENTIFIER: Identifier 'ras_chgflw_cnt' is not a member of 'u_fe_ctrl' at line: 475 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/toy_env_slv.sv
+
+*** SEMANTIC ERROR: UNDECLARED_IDENTIFIER: Identifier 'ras_error_cnt' is not a member of 'u_toy_commit' at line: 465 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/toy_env_slv.sv
+
+*** SEMANTIC ERROR: UNDECLARED_IDENTIFIER: Identifier 'ras_miss_error_cnt' is not a member of 'u_toy_commit' at line: 468 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/toy_env_slv.sv
+
+*** SEMANTIC ERROR: UNDECLARED_IDENTIFIER: Identifier 'real_commit' is not a member of 'u_entry_buffer' at line: 481 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/toy_env_slv.sv
+
+*** SEMANTIC ERROR: UNDECLARED_IDENTIFIER: Identifier 'registers_shadow' is not a member of 'u_dispatch' at line: 98 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/toy_env_slv.sv
+
+*** SEMANTIC ERROR: UNDECLARED_IDENTIFIER: Identifier 'tage_err' is not a member of 'u_fe_ctrl' at line: 484 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/toy_env_slv.sv
+
+*** SEMANTIC ERROR: UNDECLARED_IDENTIFIER: Identifier 'tage_error_cnt' is not a member of 'u_toy_commit' at line: 467 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/toy_env_slv.sv
+
+*** SEMANTIC ERROR: UNDECLARED_IDENTIFIER: Identifier 'u_toy_lsu_buffer' is not a member of 'u_toy_lsu' at line: 109 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/toy_env_slv.sv
+
+*** SEMANTIC ERROR: UNDECLARED_IDENTIFIER: Identifier 'u_toy_lsu_buffer' is not a member of 'u_toy_lsu' at line: 110 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/toy_env_slv.sv
+
+*** SEMANTIC ERROR: UNDECLARED_IDENTIFIER: Identifier 'u_toy_lsu_buffer' is not a member of 'u_toy_lsu' at line: 111 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/toy_env_slv.sv
+
+*** SEMANTIC ERROR: UNDECLARED_IDENTIFIER: Identifier 'update_cnt' is not a member of 'u_entry_buffer' at line: 480 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/toy_env_slv.sv
+
+*** SEMANTIC ERROR: UNDECLARED_IDENTIFIER: Identifier 'v_ack_pc' is not a member of 'u_fetch' at line: 103 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/toy_env_slv.sv
+
+*** SEMANTIC ERROR: UNDECLARED_IDENTIFIER: Identifier 'v_load_pld' is not a member of 'u_toy_lsu' at line: 434 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/toy_env_slv.sv
+
+*** SEMANTIC ERROR: UNDECLARED_IDENTIFIER: Identifier 'v_monitor_eu_hazard' is not a member of 'u_toy_dispatch_issue' at line: 180 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/toy_env_slv.sv
+
+*** SEMANTIC ERROR: UNDECLARED_IDENTIFIER: Identifier 'v_monitor_phy_lock' is not a member of 'u_toy_dispatch_issue' at line: 182 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/toy_env_slv.sv
+
+*** SEMANTIC ERROR: UNDECLARED_IDENTIFIER: Identifier 'v_monitor_reg_lock' is not a member of 'u_toy_dispatch_issue' at line: 181 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/toy_env_slv.sv
+
+*** SEMANTIC WARNING: DUPLICATE_MODULE: Duplicate module 'toy_bpu_filter', already declared
+    at line 1 in /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_filter32.sv at line: 1 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_filter.sv
+
+*** SEMANTIC WARNING: DUPLICATE_MODULE: Duplicate module 'toy_bpu_rob', already declared
+    at line 1 in /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_rob.sv at line: 1 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_bpu_rob2.sv
+
+*** SEMANTIC WARNING: DUPLICATE_MODULE: Duplicate module 'toy_fetch_queue', already declared
+    at line 20 in /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_fetch_queue.sv at line: 1 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/fetch/toy_fetch_queue.sv
+
+*** SEMANTIC WARNING: DUPLICATE_MODULE: Duplicate module 'toy_fetch_queue2', already declared
+    at line 1 in /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/fetch/toy_fetch_queue2.sv at line: 2 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_fetch_queue2.sv
+
+*** SEMANTIC WARNING: DUPLICATE_MODULE: Duplicate module 'toy_float', already declared
+    at line 3 in /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/fpu/toy_float_wsl.sv at line: 3 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/fpu/toy_float.sv
+
+*** SEMANTIC WARNING: DUPLICATE_MODULE: Duplicate module 'toy_lsu', already declared
+    at line 1 in /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/lsu/toy_lsu.sv at line: 1 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_lsu.sv
+
+*** SEMANTIC WARNING: DUPLICATE_MODULE: Duplicate module 'toy_mem_adapter', already declared
+    at line 2 in /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/mem/toy_mem_adapter.sv at line: 3 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/mem_adapter.sv
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'bpdec_bp2_chgflw_vld' to 'l0btb_chgflw_vld_o' at line: 200 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_fe_ctrl.sv
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'dec_inst_rdy' to 'fetched_inst_rdy' at line: 206 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_decoder.sv
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'dec_tgt_pc' to 'v_inst_pc_nxt' at line: 28 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_filter_predecoder.sv
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'dec_tgt_pc' to 'v_inst_pc_nxt' at line: 45 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_filter_predecoder.sv
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'fetch_nxt_vld' to 'mem_req_vld' at line: 59 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_fetch_pc.sv
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'filter_enqueue_pld' to 'btb_ras_enqueue_pld' at line: 260 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_fe_ctrl.sv
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'filter_enqueue_vld' to 'bpdec_ras_enqueue_vld' at line: 218 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_fe_ctrl.sv
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'filter_enqueue_vld' to 'btb_ras_enqueue_vld' at line: 212 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_fe_ctrl.sv
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'filter_enqueue_vld' to 'ghr_ras_enqueue_vld' at line: 233 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_fe_ctrl.sv
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'icache_req_rdy' to 'fe_ctrl_chgflw_rdy' at line: 49 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_pcgen.sv
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'in0_ack_rdy' to 'out0_ack_rdy' at line: 66 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_ToyCoreSlv_node_fetch_fwd_pld_type_ToyBusReq_bwd_pld_type_ToyBusAck_forward_True.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'in0_ack_rdy' to 'out0_ack_rdy' at line: 66 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_ToyCoreSlv_node_lsu_fwd_pld_type_ToyBusReq_bwd_pld_type_ToyBusAck_forward_True.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'in0_addr' to 'out0_addr' at line: 48 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DDec_node_dec_dmem_pld_type_ToyBusReq_forward_True.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'in0_addr' to 'out0_addr' at line: 49 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DDec_node_dec_fetch_pld_type_ToyBusReq_forward_True.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'in0_addr' to 'out0_addr' at line: 49 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DDec_node_dec_lsu_pld_type_ToyBusReq_forward_True.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'in0_addr' to 'out1_addr' at line: 64 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DDec_node_dec_dmem_pld_type_ToyBusReq_forward_True.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'in0_addr' to 'out1_addr' at line: 65 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DDec_node_dec_fetch_pld_type_ToyBusReq_forward_True.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'in0_addr' to 'out1_addr' at line: 65 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DDec_node_dec_lsu_pld_type_ToyBusReq_forward_True.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'in0_data' to 'out0_data' at line: 44 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DDec_node_arb_dtcm_pld_type_ToyBusAck_forward_False.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'in0_data' to 'out0_data' at line: 44 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DDec_node_arb_itcm_pld_type_ToyBusAck_forward_False.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'in0_data' to 'out0_data' at line: 52 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DDec_node_dec_dmem_pld_type_ToyBusReq_forward_True.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'in0_data' to 'out0_data' at line: 53 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DDec_node_dec_fetch_pld_type_ToyBusReq_forward_True.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'in0_data' to 'out0_data' at line: 53 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DDec_node_dec_lsu_pld_type_ToyBusReq_forward_True.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'in0_data' to 'out1_data' at line: 56 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DDec_node_arb_dtcm_pld_type_ToyBusAck_forward_False.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'in0_data' to 'out1_data' at line: 56 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DDec_node_arb_itcm_pld_type_ToyBusAck_forward_False.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'in0_data' to 'out1_data' at line: 68 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DDec_node_dec_dmem_pld_type_ToyBusReq_forward_True.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'in0_data' to 'out1_data' at line: 69 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DDec_node_dec_fetch_pld_type_ToyBusReq_forward_True.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'in0_data' to 'out1_data' at line: 69 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DDec_node_dec_lsu_pld_type_ToyBusReq_forward_True.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'in0_opcode' to 'out0_opcode' at line: 42 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DDec_node_arb_dtcm_pld_type_ToyBusAck_forward_False.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'in0_opcode' to 'out0_opcode' at line: 42 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DDec_node_arb_itcm_pld_type_ToyBusAck_forward_False.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'in0_opcode' to 'out0_opcode' at line: 54 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DDec_node_dec_dmem_pld_type_ToyBusReq_forward_True.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'in0_opcode' to 'out0_opcode' at line: 55 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DDec_node_dec_fetch_pld_type_ToyBusReq_forward_True.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'in0_opcode' to 'out0_opcode' at line: 55 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DDec_node_dec_lsu_pld_type_ToyBusReq_forward_True.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'in0_opcode' to 'out1_opcode' at line: 54 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DDec_node_arb_dtcm_pld_type_ToyBusAck_forward_False.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'in0_opcode' to 'out1_opcode' at line: 54 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DDec_node_arb_itcm_pld_type_ToyBusAck_forward_False.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'in0_opcode' to 'out1_opcode' at line: 70 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DDec_node_dec_dmem_pld_type_ToyBusReq_forward_True.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'in0_opcode' to 'out1_opcode' at line: 71 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DDec_node_dec_fetch_pld_type_ToyBusReq_forward_True.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'in0_opcode' to 'out1_opcode' at line: 71 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DDec_node_dec_lsu_pld_type_ToyBusReq_forward_True.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'in0_req_addr' to 'out0_req_addr' at line: 48 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_ToyCoreSlv_node_fetch_fwd_pld_type_ToyBusReq_bwd_pld_type_ToyBusAck_forward_True.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'in0_req_addr' to 'out0_req_addr' at line: 48 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_ToyCoreSlv_node_lsu_fwd_pld_type_ToyBusReq_bwd_pld_type_ToyBusAck_forward_True.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'in0_req_data' to 'out0_mem_wr_data' at line: 57 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_ToyMemMst_node_dtcm_fwd_pld_type_ToyBusReq_bwd_pld_type_ToyBusAck_forward_True.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'in0_req_data' to 'out0_mem_wr_data' at line: 57 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_ToyMemMst_node_eslv_fwd_pld_type_ToyBusReq_bwd_pld_type_ToyBusAck_forward_True.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'in0_req_data' to 'out0_mem_wr_data' at line: 57 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_ToyMemMst_node_itcm_fwd_pld_type_ToyBusReq_bwd_pld_type_ToyBusAck_forward_True.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'in0_req_data' to 'out0_mem_wr_data' at line: 33 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/mem_adapter.sv
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'in0_req_data' to 'out0_req_data' at line: 52 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_ToyCoreSlv_node_fetch_fwd_pld_type_ToyBusReq_bwd_pld_type_ToyBusAck_forward_True.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'in0_req_data' to 'out0_req_data' at line: 52 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_ToyCoreSlv_node_lsu_fwd_pld_type_ToyBusReq_bwd_pld_type_ToyBusAck_forward_True.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'in0_req_opcode' to 'out0_mem_wr_en' at line: 61 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_ToyMemMst_node_dtcm_fwd_pld_type_ToyBusReq_bwd_pld_type_ToyBusAck_forward_True.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'in0_req_opcode' to 'out0_mem_wr_en' at line: 61 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_ToyMemMst_node_eslv_fwd_pld_type_ToyBusReq_bwd_pld_type_ToyBusAck_forward_True.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'in0_req_opcode' to 'out0_mem_wr_en' at line: 61 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_ToyMemMst_node_itcm_fwd_pld_type_ToyBusReq_bwd_pld_type_ToyBusAck_forward_True.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'in0_req_opcode' to 'out0_mem_wr_en' at line: 34 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/mem_adapter.sv
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'in0_req_opcode' to 'out0_req_opcode' at line: 54 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_ToyCoreSlv_node_fetch_fwd_pld_type_ToyBusReq_bwd_pld_type_ToyBusAck_forward_True.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'in0_req_opcode' to 'out0_req_opcode' at line: 54 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_ToyCoreSlv_node_lsu_fwd_pld_type_ToyBusReq_bwd_pld_type_ToyBusAck_forward_True.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'in0_req_sideband' to 'out0_mem_req_sideband' at line: 63 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_ToyMemMst_node_dtcm_fwd_pld_type_ToyBusReq_bwd_pld_type_ToyBusAck_forward_True.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'in0_req_sideband' to 'out0_mem_req_sideband' at line: 63 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_ToyMemMst_node_eslv_fwd_pld_type_ToyBusReq_bwd_pld_type_ToyBusAck_forward_True.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'in0_req_sideband' to 'out0_mem_req_sideband' at line: 63 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_ToyMemMst_node_itcm_fwd_pld_type_ToyBusReq_bwd_pld_type_ToyBusAck_forward_True.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'in0_req_sideband' to 'out0_req_sideband' at line: 64 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_ToyCoreSlv_node_fetch_fwd_pld_type_ToyBusReq_bwd_pld_type_ToyBusAck_forward_True.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'in0_req_sideband' to 'out0_req_sideband' at line: 64 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_ToyCoreSlv_node_lsu_fwd_pld_type_ToyBusReq_bwd_pld_type_ToyBusAck_forward_True.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'in0_req_strb' to 'out0_mem_wr_byte_en' at line: 59 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_ToyMemMst_node_dtcm_fwd_pld_type_ToyBusReq_bwd_pld_type_ToyBusAck_forward_True.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'in0_req_strb' to 'out0_mem_wr_byte_en' at line: 59 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_ToyMemMst_node_eslv_fwd_pld_type_ToyBusReq_bwd_pld_type_ToyBusAck_forward_True.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'in0_req_strb' to 'out0_mem_wr_byte_en' at line: 59 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_ToyMemMst_node_itcm_fwd_pld_type_ToyBusReq_bwd_pld_type_ToyBusAck_forward_True.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'in0_req_strb' to 'out0_mem_wr_byte_en' at line: 32 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/mem_adapter.sv
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'in0_req_strb' to 'out0_req_strb' at line: 50 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_ToyCoreSlv_node_fetch_fwd_pld_type_ToyBusReq_bwd_pld_type_ToyBusAck_forward_True.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'in0_req_strb' to 'out0_req_strb' at line: 50 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_ToyCoreSlv_node_lsu_fwd_pld_type_ToyBusReq_bwd_pld_type_ToyBusAck_forward_True.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'in0_req_vld' to 'out0_mem_en' at line: 53 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_ToyMemMst_node_dtcm_fwd_pld_type_ToyBusReq_bwd_pld_type_ToyBusAck_forward_True.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'in0_req_vld' to 'out0_mem_en' at line: 53 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_ToyMemMst_node_eslv_fwd_pld_type_ToyBusReq_bwd_pld_type_ToyBusAck_forward_True.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'in0_req_vld' to 'out0_mem_en' at line: 53 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_ToyMemMst_node_itcm_fwd_pld_type_ToyBusReq_bwd_pld_type_ToyBusAck_forward_True.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'in0_req_vld' to 'out0_req_vld' at line: 46 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_ToyCoreSlv_node_fetch_fwd_pld_type_ToyBusReq_bwd_pld_type_ToyBusAck_forward_True.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'in0_req_vld' to 'out0_req_vld' at line: 46 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_ToyCoreSlv_node_lsu_fwd_pld_type_ToyBusReq_bwd_pld_type_ToyBusAck_forward_True.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'in0_sideband' to 'out0_sideband' at line: 46 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DDec_node_arb_dtcm_pld_type_ToyBusAck_forward_False.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'in0_sideband' to 'out0_sideband' at line: 46 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DDec_node_arb_itcm_pld_type_ToyBusAck_forward_False.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'in0_sideband' to 'out0_sideband' at line: 60 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DDec_node_dec_dmem_pld_type_ToyBusReq_forward_True.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'in0_sideband' to 'out0_sideband' at line: 61 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DDec_node_dec_fetch_pld_type_ToyBusReq_forward_True.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'in0_sideband' to 'out0_sideband' at line: 61 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DDec_node_dec_lsu_pld_type_ToyBusReq_forward_True.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'in0_sideband' to 'out1_sideband' at line: 58 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DDec_node_arb_dtcm_pld_type_ToyBusAck_forward_False.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'in0_sideband' to 'out1_sideband' at line: 58 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DDec_node_arb_itcm_pld_type_ToyBusAck_forward_False.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'in0_sideband' to 'out1_sideband' at line: 76 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DDec_node_dec_dmem_pld_type_ToyBusReq_forward_True.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'in0_sideband' to 'out1_sideband' at line: 77 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DDec_node_dec_fetch_pld_type_ToyBusReq_forward_True.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'in0_sideband' to 'out1_sideband' at line: 77 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DDec_node_dec_lsu_pld_type_ToyBusReq_forward_True.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'in0_src_id' to 'out0_src_id' at line: 48 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DDec_node_arb_dtcm_pld_type_ToyBusAck_forward_False.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'in0_src_id' to 'out0_src_id' at line: 48 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DDec_node_arb_itcm_pld_type_ToyBusAck_forward_False.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'in0_src_id' to 'out0_src_id' at line: 56 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DDec_node_dec_dmem_pld_type_ToyBusReq_forward_True.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'in0_src_id' to 'out0_src_id' at line: 57 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DDec_node_dec_fetch_pld_type_ToyBusReq_forward_True.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'in0_src_id' to 'out0_src_id' at line: 57 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DDec_node_dec_lsu_pld_type_ToyBusReq_forward_True.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'in0_src_id' to 'out1_src_id' at line: 60 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DDec_node_arb_dtcm_pld_type_ToyBusAck_forward_False.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'in0_src_id' to 'out1_src_id' at line: 60 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DDec_node_arb_itcm_pld_type_ToyBusAck_forward_False.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'in0_src_id' to 'out1_src_id' at line: 72 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DDec_node_dec_dmem_pld_type_ToyBusReq_forward_True.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'in0_src_id' to 'out1_src_id' at line: 73 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DDec_node_dec_fetch_pld_type_ToyBusReq_forward_True.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'in0_src_id' to 'out1_src_id' at line: 73 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DDec_node_dec_lsu_pld_type_ToyBusReq_forward_True.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'in0_strb' to 'out0_strb' at line: 50 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DDec_node_dec_dmem_pld_type_ToyBusReq_forward_True.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'in0_strb' to 'out0_strb' at line: 51 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DDec_node_dec_fetch_pld_type_ToyBusReq_forward_True.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'in0_strb' to 'out0_strb' at line: 51 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DDec_node_dec_lsu_pld_type_ToyBusReq_forward_True.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'in0_strb' to 'out1_strb' at line: 66 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DDec_node_dec_dmem_pld_type_ToyBusReq_forward_True.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'in0_strb' to 'out1_strb' at line: 67 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DDec_node_dec_fetch_pld_type_ToyBusReq_forward_True.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'in0_strb' to 'out1_strb' at line: 67 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DDec_node_dec_lsu_pld_type_ToyBusReq_forward_True.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'in0_tgt_id' to 'out0_tgt_id' at line: 50 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DDec_node_arb_dtcm_pld_type_ToyBusAck_forward_False.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'in0_tgt_id' to 'out0_tgt_id' at line: 50 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DDec_node_arb_itcm_pld_type_ToyBusAck_forward_False.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'in0_tgt_id' to 'out0_tgt_id' at line: 58 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DDec_node_dec_dmem_pld_type_ToyBusReq_forward_True.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'in0_tgt_id' to 'out0_tgt_id' at line: 59 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DDec_node_dec_fetch_pld_type_ToyBusReq_forward_True.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'in0_tgt_id' to 'out0_tgt_id' at line: 59 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DDec_node_dec_lsu_pld_type_ToyBusReq_forward_True.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'in0_tgt_id' to 'out1_tgt_id' at line: 62 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DDec_node_arb_dtcm_pld_type_ToyBusAck_forward_False.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'in0_tgt_id' to 'out1_tgt_id' at line: 62 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DDec_node_arb_itcm_pld_type_ToyBusAck_forward_False.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'in0_tgt_id' to 'out1_tgt_id' at line: 74 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DDec_node_dec_dmem_pld_type_ToyBusReq_forward_True.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'in0_tgt_id' to 'out1_tgt_id' at line: 75 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DDec_node_dec_fetch_pld_type_ToyBusReq_forward_True.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'in0_tgt_id' to 'out1_tgt_id' at line: 75 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DDec_node_dec_lsu_pld_type_ToyBusReq_forward_True.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'inst_rd_idx' to 'reg_index' at line: 84 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/toy_csr.sv
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'instruction_idx' to 'reg_inst_idx' at line: 87 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/toy_csr.sv
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'instruction_idx' to 'reg_inst_idx_wr' at line: 68 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_lsu.sv
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'instruction_vld' to 'csr_FFLAGS_en' at line: 380 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/fpu/toy_float.sv
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'instruction_vld' to 'csr_FFLAGS_en' at line: 379 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/fpu/toy_float_wsl.sv
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'instruction_vld' to 'inst_commit_en' at line: 545 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/fpu/toy_float.sv
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'instruction_vld' to 'inst_commit_en' at line: 544 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/fpu/toy_float_wsl.sv
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'instruction_vld' to 'inst_commit_en' at line: 30 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/toy_alu.sv
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'instruction_vld' to 'inst_commit_en' at line: 88 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/toy_csr.sv
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'mem_ack_data' to 'branch_ack_data' at line: 63 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_fetch_branch_filter.sv
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'mem_ack_entry_id' to 'branch_ack_entry_id' at line: 64 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_fetch_branch_filter.sv
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'mem_ack_rdata' to 'ack_rdata' at line: 33 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_btb_entry.sv
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'mem_ack_rdata' to 'ack_rdata' at line: 26 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_tage_base_table.sv
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'mem_data' to 'instruction_pld' at line: 59 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_fetch.sv
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'node' to 'vv_matrix' at line: 29 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/cmn/cmn_tree_plru_comb.sv
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'node_i' to 'vv_matrix' at line: 39 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/cmn/cmn_plru_node.sv
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'out0_ack_data' to 'in0_ack_data' at line: 42 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_ToyCoreSlv_node_fetch_fwd_pld_type_ToyBusReq_bwd_pld_type_ToyBusAck_forward_True.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'out0_ack_data' to 'in0_ack_data' at line: 42 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_ToyCoreSlv_node_lsu_fwd_pld_type_ToyBusReq_bwd_pld_type_ToyBusAck_forward_True.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'out0_ack_sideband' to 'in0_ack_sideband' at line: 44 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_ToyCoreSlv_node_fetch_fwd_pld_type_ToyBusReq_bwd_pld_type_ToyBusAck_forward_True.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'out0_ack_sideband' to 'in0_ack_sideband' at line: 44 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_ToyCoreSlv_node_lsu_fwd_pld_type_ToyBusReq_bwd_pld_type_ToyBusAck_forward_True.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'out0_ack_vld' to 'in0_ack_vld' at line: 40 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_ToyCoreSlv_node_fetch_fwd_pld_type_ToyBusReq_bwd_pld_type_ToyBusAck_forward_True.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'out0_ack_vld' to 'in0_ack_vld' at line: 40 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_ToyCoreSlv_node_lsu_fwd_pld_type_ToyBusReq_bwd_pld_type_ToyBusAck_forward_True.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'out0_mem_ack_sideband' to 'in0_ack_sideband' at line: 47 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_ToyMemMst_node_dtcm_fwd_pld_type_ToyBusReq_bwd_pld_type_ToyBusAck_forward_True.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'out0_mem_ack_sideband' to 'in0_ack_sideband' at line: 47 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_ToyMemMst_node_eslv_fwd_pld_type_ToyBusReq_bwd_pld_type_ToyBusAck_forward_True.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'out0_mem_ack_sideband' to 'in0_ack_sideband' at line: 47 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_ToyMemMst_node_itcm_fwd_pld_type_ToyBusReq_bwd_pld_type_ToyBusAck_forward_True.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'out0_mem_rd_data' to 'in0_ack_data' at line: 45 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_ToyMemMst_node_dtcm_fwd_pld_type_ToyBusReq_bwd_pld_type_ToyBusAck_forward_True.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'out0_mem_rd_data' to 'in0_ack_data' at line: 45 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_ToyMemMst_node_eslv_fwd_pld_type_ToyBusReq_bwd_pld_type_ToyBusAck_forward_True.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'out0_mem_rd_data' to 'in0_ack_data' at line: 45 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_ToyMemMst_node_itcm_fwd_pld_type_ToyBusReq_bwd_pld_type_ToyBusAck_forward_True.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'out0_req_rdy' to 'in0_req_rdy' at line: 38 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_ToyCoreSlv_node_fetch_fwd_pld_type_ToyBusReq_bwd_pld_type_ToyBusAck_forward_True.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'out0_req_rdy' to 'in0_req_rdy' at line: 38 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_ToyCoreSlv_node_lsu_fwd_pld_type_ToyBusReq_bwd_pld_type_ToyBusAck_forward_True.v
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'pcgen_vld' to 'bpdec_l0btb_vld' at line: 62 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_l0btb.sv
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'pcgen_vld' to 'fe_ctrl_chgflw_vld_o' at line: 65 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_l0btb.sv
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'ras_chgflw_pld' to 'filter_ras_chgflw_pld' at line: 272 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_fe_ctrl.sv
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'ras_chgflw_vld' to 'bpdec_ras_flush' at line: 217 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_fe_ctrl.sv
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'ras_chgflw_vld' to 'btb_ras_flush' at line: 211 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_fe_ctrl.sv
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'ras_chgflw_vld' to 'filter_ras_chgflw_vld' at line: 228 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_fe_ctrl.sv
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'ras_chgflw_vld' to 'ghr_ras_flush' at line: 234 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_fe_ctrl.sv
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'req_addr' to 'mem_req_addr' at line: 31 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_btb_entry.sv
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'req_addr' to 'mem_req_addr' at line: 24 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_tage_base_table.sv
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'req_addr' to 'mem_req_addr' at line: 37 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_tage_tx_table.sv
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'req_send_back' to 'ack_send_back' at line: 140 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/mem/toy_imem_model.sv
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'req_send_back' to 'ack_send_back' at line: 121 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/mem/toy_mem_model.sv
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'req_vld' to 'mem_req_vld' at line: 29 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_btb_entry.sv
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'req_vld' to 'mem_req_vld' at line: 22 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_tage_base_table.sv
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'req_vld' to 'mem_req_vld' at line: 35 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_tage_tx_table.sv
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'req_wdata' to 'mem_req_wdata' at line: 32 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_btb_entry.sv
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'req_wdata' to 'mem_req_wdata' at line: 25 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_tage_base_table.sv
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'req_wdata' to 'mem_req_wdata' at line: 38 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_tage_tx_table.sv
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'req_wren' to 'mem_req_wren' at line: 30 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_btb_entry.sv
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'req_wren' to 'mem_req_wren' at line: 23 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_tage_base_table.sv
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'req_wren' to 'mem_req_wren' at line: 36 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_tage_tx_table.sv
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'rob_prealloc_entry_id' to 'icache_req_entry_id' at line: 168 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_fe_ctrl.sv
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'rob_prealloc_entry_id' to 'icache_req_entry_id' at line: 54 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_pcgen.sv
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 's_load_vld' to 'm_load_vld' at line: 21 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/lsu/toy_ldu.sv
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 's_store_vld' to 'm_store_vld' at line: 21 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/lsu/toy_stu.sv
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'v_entry_vld' to 'v_free_idx_oh' at line: 18 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/cmn/cmn_lead_one.sv
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'v_entry_vld' to 'v_free_idx_oh' at line: 18 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/cmn/cmn_lead_one_msb.sv
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'v_fp_pre_allocate_id' to 'v_fp_rd_phy_id' at line: 94 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_dispatch_issue.sv
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'v_int_pre_allocate_id' to 'v_int_rd_phy_id' at line: 93 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_dispatch_issue.sv
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'v_reg_rd_allocate_id' to 'v_phy_rd_allocate_id' at line: 37 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_rename_regfile.sv
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'v_reg_rd_allocate_id' to 'v_phy_reg_rd_index' at line: 80 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_physicial_regfile.sv
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'v_reg_rd_en' to 'v_phy_rd_en' at line: 35 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_rename_regfile.sv
+
+*** SEMANTIC WARNING: FEEDTHROUGH_DETECTED: Feedthrough from 'v_reg_rd_index' to 'v_phy_rd_index' at line: 36 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_rename_regfile.sv
+
+*** SEMANTIC WARNING: IMPLICIT_DECLARATION: Implicit declaration of 'arb_itcm_TO_itcm_SIG_out0_req_opcode' using `default_nettype set to wire at line: 287 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DWrap_network_toy_bus.v
+
+*** SEMANTIC WARNING: IMPLICIT_DECLARATION: Implicit declaration of 'arb_itcm_TO_itcm_SIG_out0_req_vld' using `default_nettype set to wire at line: 282 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DWrap_network_toy_bus.v
+
+*** SEMANTIC WARNING: IMPLICIT_DECLARATION: Implicit declaration of 'branch_ack_vld' using `default_nettype set to wire at line: 183 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/lsu/toy_lsu.sv
+
+*** SEMANTIC WARNING: IMPLICIT_DECLARATION: Implicit declaration of 'dec_dmem_TO_dtcm_SIG_out0_req_opcode' using `default_nettype set to wire at line: 314 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DWrap_network_toy_bus.v
+
+*** SEMANTIC WARNING: IMPLICIT_DECLARATION: Implicit declaration of 'dec_dmem_TO_dtcm_SIG_out0_req_vld' using `default_nettype set to wire at line: 309 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DWrap_network_toy_bus.v
+
+*** SEMANTIC WARNING: IMPLICIT_DECLARATION: Implicit declaration of 'dec_dmem_TO_eslv_SIG_out1_req_opcode' using `default_nettype set to wire at line: 341 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DWrap_network_toy_bus.v
+
+*** SEMANTIC WARNING: IMPLICIT_DECLARATION: Implicit declaration of 'dec_dmem_TO_eslv_SIG_out1_req_vld' using `default_nettype set to wire at line: 336 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DWrap_network_toy_bus.v
+
+*** SEMANTIC WARNING: MISSING_PORT_CONNECTION: Instance 'u_bpdec' of module 'toy_bpu_bpdec' is missing port connection to output 'btb_bypass_pld, btb_bypass_ptr' at line: 298 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu.sv
+
+*** SEMANTIC WARNING: MISSING_PORT_CONNECTION: Instance 'u_btb' of module 'toy_bpu_btb' is missing port connection to input 'bpdec_bypass_pld, bpdec_bypass_ptr' at line: 246 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu.sv
+
+*** SEMANTIC WARNING: MISSING_PORT_CONNECTION: Instance 'u_fetch' of module 'toy_fetch_queue2' is missing port connection to input 'clear, mem_ack_vld, mem_ack_pld, mem_ack_entry_id, ...' at line: 194 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/toy_core.sv
+
+*** SEMANTIC WARNING: MISSING_PORT_CONNECTION: Instance 'u_fetch' of module 'toy_fetch_queue2' is missing port connection to output 'mem_req_entry_id, fetch_nxt_vld, v_ack_pld_pc' at line: 194 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/toy_core.sv
+
+*** SEMANTIC WARNING: MISSING_PORT_CONNECTION: Instance 'u_mem' of module 'toy_mem_model' is missing port connection to input 'req_send_back' at line: 17 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/mem/toy_mem_model_tb.sv
+
+*** SEMANTIC WARNING: MISSING_PORT_CONNECTION: Instance 'u_mem' of module 'toy_mem_model' is missing port connection to output 'ack_send_back' at line: 17 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/mem/toy_mem_model_tb.sv
+
+*** SEMANTIC WARNING: MISSING_PORT_CONNECTION: Instance 'u_toy_lsu' of module 'toy_lsu' is missing port connection to input 'instruction_vld, instruction_pld, instruction_idx, inst_rd_idx, ...' at line: 345 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/toy_core.sv
+
+*** SEMANTIC WARNING: MISSING_PORT_CONNECTION: Instance 'u_toy_lsu' of module 'toy_lsu' is missing port connection to output 'instruction_rdy, reg_inst_idx_wr, reg_inst_idx_rd, inst_commit_en_rd, ...' at line: 345 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/toy_core.sv
+
+*** SEMANTIC WARNING: NON_STANDARD_FATAL_SYSTEM_TASK_FIRST_ARGUMENT: Expecting 0, 1 or 2 as first argument to '$fatal' system task at line: 55 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/toy_env_slv.sv
+
+*** SEMANTIC WARNING: NON_STANDARD_FATAL_SYSTEM_TASK_FIRST_ARGUMENT: Expecting 0, 1 or 2 as first argument to '$fatal' system task at line: 582 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/toy_env_slv.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'FCSR_backup' is not recommended at line: 365 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/commit/toy_commit.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'ack_vld' is not recommended at line: 55 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_fetch_queue.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'be_commit_rdy' is not recommended at line: 147 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_fe_commit_buffer.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'cancel_edge_en' is not recommended at line: 323 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/commit/toy_commit.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'cancel_edge_en' is not recommended at line: 331 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/commit/toy_commit.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'cancel_en' is not recommended at line: 170 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/commit/toy_commit.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'cancel_en' is not recommended at line: 203 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/commit/toy_commit.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'cancel_en' is not recommended at line: 229 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/commit/toy_commit.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'clk' is not recommended at line: 28 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/toy_env_slv.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'clk' is not recommended at line: 117 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/toy_env_slv.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'clk' is not recommended at line: 125 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/toy_env_slv.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'clk' is not recommended at line: 133 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/toy_env_slv.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'clk' is not recommended at line: 143 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/toy_env_slv.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'clk' is not recommended at line: 151 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/toy_env_slv.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'clk' is not recommended at line: 159 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/toy_env_slv.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'clk' is not recommended at line: 248 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/toy_env_slv.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'clk' is not recommended at line: 258 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/toy_env_slv.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'clk' is not recommended at line: 274 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/toy_env_slv.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'clk' is not recommended at line: 359 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/toy_env_slv.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'clk' is not recommended at line: 361 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/toy_env_slv.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'clk' is not recommended at line: 392 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/toy_env_slv.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'clk' is not recommended at line: 394 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/toy_env_slv.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'clk' is not recommended at line: 412 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/toy_env_slv.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'clk' is not recommended at line: 414 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/toy_env_slv.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'clk' is not recommended at line: 441 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/toy_env_slv.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'clk' is not recommended at line: 493 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/toy_env_slv.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'csr_FCSR' is not recommended at line: 120 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/toy_csr.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'csr_FCSR' is not recommended at line: 124 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/toy_csr.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'csr_FCSR' is not recommended at line: 241 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/toy_csr.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'csr_FCSR' is not recommended at line: 242 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/toy_csr.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'csr_FCSR' is not recommended at line: 243 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/toy_csr.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'csr_FFLAGS' is not recommended at line: 101 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/fpu/toy_float.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'csr_FFLAGS' is not recommended at line: 102 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/fpu/toy_float_wsl.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'csr_FFLAGS_en' is not recommended at line: 100 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/fpu/toy_float.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'csr_FFLAGS_en' is not recommended at line: 101 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/fpu/toy_float_wsl.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'csr_INSTRET' is not recommended at line: 340 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/commit/toy_commit.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'csr_INSTRET' is not recommended at line: 341 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/commit/toy_commit.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'csr_INSTRET' is not recommended at line: 342 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/commit/toy_commit.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'csr_INSTRET' is not recommended at line: 343 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/commit/toy_commit.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'fe_ctrl_full' is not recommended at line: 66 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_rob.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'fe_ctrl_ras_chgflw' is not recommended at line: 50 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_ras.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'fetch_nxt_pc' is not recommended at line: 64 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_fetch_pc.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'fetch_nxt_pc' is not recommended at line: 65 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_fetch_pc.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'fetch_nxt_pc' is not recommended at line: 76 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_fetch_pc.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'fetch_nxt_vld' is not recommended at line: 87 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_fetch_queue2.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'fetch_nxt_vld' is not recommended at line: 129 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_fetch_queue2.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'fetch_nxt_vld' is not recommended at line: 136 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_fetch_queue2.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'fetch_queue_vld' is not recommended at line: 142 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_filter.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'filter_rdy' is not recommended at line: 167 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/fetch/toy_fetch_queue.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'filter_rdy' is not recommended at line: 149 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/fetch/toy_fetch_queue2.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'filter_rdy' is not recommended at line: 196 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/fetch/toy_fetch_queue2.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'filter_vld' is not recommended at line: 56 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_bpu_rob2.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'filter_vld' is not recommended at line: 71 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_bpu_rob2.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'filter_vld' is not recommended at line: 36 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_btfifo.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'filter_vld' is not recommended at line: 65 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_rob.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'fp_reg_wr_en' is not recommended at line: 70 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/lsu/toy_ldq.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'in0_rdy' is not recommended at line: 76 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DArb_node_arb_dtcm_pld_type_ToyBusReq_forward_True.v
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'in0_rdy' is not recommended at line: 76 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DArb_node_arb_itcm_pld_type_ToyBusReq_forward_True.v
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'in0_rdy' is not recommended at line: 66 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DArb_node_dec_dmem_pld_type_ToyBusAck_forward_False.v
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'in0_rdy' is not recommended at line: 66 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DArb_node_dec_fetch_pld_type_ToyBusAck_forward_False.v
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'in0_rdy' is not recommended at line: 66 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DArb_node_dec_lsu_pld_type_ToyBusAck_forward_False.v
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'in1_rdy' is not recommended at line: 78 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DArb_node_arb_dtcm_pld_type_ToyBusReq_forward_True.v
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'in1_rdy' is not recommended at line: 78 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DArb_node_arb_itcm_pld_type_ToyBusReq_forward_True.v
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'in1_rdy' is not recommended at line: 68 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DArb_node_dec_dmem_pld_type_ToyBusAck_forward_False.v
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'in1_rdy' is not recommended at line: 68 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DArb_node_dec_fetch_pld_type_ToyBusAck_forward_False.v
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'in1_rdy' is not recommended at line: 68 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DArb_node_dec_lsu_pld_type_ToyBusAck_forward_False.v
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'instruction_pld' is not recommended at line: 52 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_fetch.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'instruction_pld' is not recommended at line: 64 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_fetch.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'instruction_pld' is not recommended at line: 125 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_fetch2.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'instruction_rdy' is not recommended at line: 66 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_lsu.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'instruction_rdy' is not recommended at line: 230 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_lsu.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'instruction_rdy' is not recommended at line: 235 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_lsu.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'instruction_rdy' is not recommended at line: 236 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_lsu.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'instruction_rdy' is not recommended at line: 120 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/fpu/toy_float.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'instruction_rdy' is not recommended at line: 62 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/fpu/toy_float_wrapper.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'instruction_rdy' is not recommended at line: 121 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/fpu/toy_float_wsl.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'instruction_rdy' is not recommended at line: 139 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/toy_csr.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'instruction_rdy' is not recommended at line: 148 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/toy_csr.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'instruction_rdy' is not recommended at line: 206 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/toy_csr.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'instruction_rdy' is not recommended at line: 48 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/toy_mext.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'instruction_vld' is not recommended at line: 47 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_fetch.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'instruction_vld' is not recommended at line: 51 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_fetch.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'instruction_vld' is not recommended at line: 81 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_fetch2.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'instruction_vld' is not recommended at line: 104 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_fetch2.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'instruction_vld' is not recommended at line: 110 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_fetch2.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'instruction_vld' is not recommended at line: 111 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_fetch2.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'instruction_vld' is not recommended at line: 116 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_fetch2.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'instruction_vld' is not recommended at line: 129 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_fetch2.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'instruction_vld' is not recommended at line: 130 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_fetch2.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'instruction_vld' is not recommended at line: 131 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_fetch2.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'intr_instruction_vld' is not recommended at line: 211 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/toy_csr.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'm_pld' is not recommended at line: 139 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_bpdec_entry_buffer.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'm_pld' is not recommended at line: 140 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_bpdec_entry_buffer.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'm_pld' is not recommended at line: 141 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_bpdec_entry_buffer.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'm_pld' is not recommended at line: 142 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_bpdec_entry_buffer.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'm_vld' is not recommended at line: 20 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/cmn/cmn_reg_slice_forward.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'm_vld' is not recommended at line: 34 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/cmn/cmn_reg_slice_full.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'm_vld' is not recommended at line: 92 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_bpdec_entry_buffer.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'm_vld' is not recommended at line: 107 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_bpdec_entry_buffer.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'mem_req_vld' is not recommended at line: 82 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_fetch2.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'mem_req_vld' is not recommended at line: 88 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_fetch2.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'mem_req_vld' is not recommended at line: 75 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_fetch_pc.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'mem_req_vld' is not recommended at line: 81 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_lsu.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'mem_req_vld' is not recommended at line: 90 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_lsu.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'mem_req_vld' is not recommended at line: 93 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_lsu.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'mem_req_vld' is not recommended at line: 126 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_lsu.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'mem_req_vld' is not recommended at line: 130 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_lsu.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'out' is not recommended at line: 9 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/cmn/cmn_lfsr4.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'out' is not recommended at line: 16 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/cmn/cmn_lfsr4.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'pc_update_en' is not recommended at line: 44 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/toy_alu.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'pc_update_en' is not recommended at line: 101 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/toy_csr.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'pc_val' is not recommended at line: 44 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/toy_alu.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'pc_val' is not recommended at line: 101 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/toy_csr.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'reg_index' is not recommended at line: 93 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/fpu/toy_float.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'reg_index' is not recommended at line: 93 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/fpu/toy_float_wsl.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'reg_index' is not recommended at line: 48 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/toy_alu.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'reg_index' is not recommended at line: 105 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/toy_csr.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'reg_wr_en' is not recommended at line: 67 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_lsu.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'reg_wr_en' is not recommended at line: 70 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/lsu/toy_ldq.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'req_branch_id_nxt' is not recommended at line: 45 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_fetch_branch_filter.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'req_branch_id_nxt' is not recommended at line: 54 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_fetch_branch_filter.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'req_branch_id_nxt' is not recommended at line: 53 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/lsu/toy_ldq_branch_filter.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'req_branch_id_nxt' is not recommended at line: 62 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/lsu/toy_ldq_branch_filter.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'req_rdy' is not recommended at line: 54 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_fetch_queue.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'req_rdy' is not recommended at line: 113 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/fetch/toy_fetch_buffer.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'req_vld' is not recommended at line: 44 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_fetch_credit.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'req_vld' is not recommended at line: 85 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_fetch_credit.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'rst_n' is not recommended at line: 117 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/toy_env_slv.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'rst_n' is not recommended at line: 118 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/toy_env_slv.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'rst_n' is not recommended at line: 125 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/toy_env_slv.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'rst_n' is not recommended at line: 126 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/toy_env_slv.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'rst_n' is not recommended at line: 133 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/toy_env_slv.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'rst_n' is not recommended at line: 134 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/toy_env_slv.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'rst_n' is not recommended at line: 143 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/toy_env_slv.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'rst_n' is not recommended at line: 144 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/toy_env_slv.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'rst_n' is not recommended at line: 151 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/toy_env_slv.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'rst_n' is not recommended at line: 152 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/toy_env_slv.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'rst_n' is not recommended at line: 159 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/toy_env_slv.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'rst_n' is not recommended at line: 160 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/toy_env_slv.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'rst_n' is not recommended at line: 248 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/toy_env_slv.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'rst_n' is not recommended at line: 249 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/toy_env_slv.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'rst_n' is not recommended at line: 258 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/toy_env_slv.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'rst_n' is not recommended at line: 259 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/toy_env_slv.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'rst_n' is not recommended at line: 274 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/toy_env_slv.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'rst_n' is not recommended at line: 275 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/toy_env_slv.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'rst_n' is not recommended at line: 441 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/toy_env_slv.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'rst_n' is not recommended at line: 442 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/toy_env_slv.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 's_mem_req_vld' is not recommended at line: 238 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/lsu/toy_ldq.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 's_mem_req_vld' is not recommended at line: 316 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/lsu/toy_ldq.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 's_mem_req_vld' is not recommended at line: 228 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/lsu/toy_stq.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 's_rdy' is not recommended at line: 26 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/cmn/cmn_reg_slice_forward.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 's_rdy' is not recommended at line: 32 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/cmn/cmn_reg_slice_forward.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 's_rdy' is not recommended at line: 29 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/cmn/cmn_reg_slice_full.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 's_rdy' is not recommended at line: 42 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/cmn/cmn_reg_slice_full.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 's_rdy_s0' is not recommended at line: 91 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_bpdec_entry_buffer.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'stq_commit_cnt' is not recommended at line: 220 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/lsu/toy_stq.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'stq_rdy' is not recommended at line: 335 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/lsu/toy_stq.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'v_ack_idx' is not recommended at line: 92 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/fetch/toy_fetch_queue.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'v_ack_idx' is not recommended at line: 95 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/fetch/toy_fetch_queue.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'v_ack_idx' is not recommended at line: 111 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/fetch/toy_fetch_queue.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'v_ack_idx' is not recommended at line: 103 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/fetch/toy_fetch_queue2.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'v_ack_idx' is not recommended at line: 106 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/fetch/toy_fetch_queue2.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'v_ack_idx' is not recommended at line: 122 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/fetch/toy_fetch_queue2.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'v_ack_pld' is not recommended at line: 96 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_fetch_queue2.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'v_ack_pld' is not recommended at line: 111 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_fetch_queue2.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'v_ack_pld' is not recommended at line: 263 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_fetch_queue2.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'v_ack_pld' is not recommended at line: 272 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_fetch_queue2.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'v_ack_pld' is not recommended at line: 289 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_fetch_queue2.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'v_ack_pld' is not recommended at line: 296 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_fetch_queue2.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'v_ack_pld' is not recommended at line: 320 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_fetch_queue2.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'v_ack_vld' is not recommended at line: 92 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_fetch_queue2.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'v_ack_vld' is not recommended at line: 95 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_fetch_queue2.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'v_ack_vld' is not recommended at line: 110 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_fetch_queue2.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'v_ack_vld' is not recommended at line: 262 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_fetch_queue2.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'v_ack_vld' is not recommended at line: 271 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_fetch_queue2.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'v_ack_vld' is not recommended at line: 85 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/fetch/toy_fetch_buffer.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'v_ack_vld' is not recommended at line: 114 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/fetch/toy_fetch_buffer.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'v_ack_vld' is not recommended at line: 60 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/fetch/toy_fetch_queue.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'v_ack_vld' is not recommended at line: 71 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/fetch/toy_fetch_queue2.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'v_bp_commit_pld' is not recommended at line: 310 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/commit/toy_commit.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'v_commit_error_en' is not recommended at line: 298 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/commit/toy_commit.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'v_commit_error_en' is not recommended at line: 306 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/commit/toy_commit.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'v_commit_error_en' is not recommended at line: 307 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/commit/toy_commit.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'v_commit_error_en' is not recommended at line: 308 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/commit/toy_commit.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'v_commit_error_en' is not recommended at line: 311 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/commit/toy_commit.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'v_eu_vld' is not recommended at line: 89 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_dispatch_issue.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'v_eu_vld' is not recommended at line: 90 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_dispatch_issue.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'v_eu_vld' is not recommended at line: 106 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_dispatch_issue.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'v_eu_vld' is not recommended at line: 109 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_dispatch_issue.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'v_eu_vld' is not recommended at line: 118 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_dispatch_issue.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'v_eu_vld' is not recommended at line: 121 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_dispatch_issue.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'v_eu_vld' is not recommended at line: 131 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_dispatch_issue.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'v_eu_vld' is not recommended at line: 152 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_dispatch_issue.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'v_fp_reg_rd_en' is not recommended at line: 92 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_dispatch_issue.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'v_free_idx_oh' is not recommended at line: 28 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/cmn/cmn_lead_one.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'v_free_idx_oh' is not recommended at line: 28 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/cmn/cmn_lead_one_msb.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'v_inst_en' is not recommended at line: 40 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_filter_predecoder.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'v_instruction_idx' is not recommended at line: 215 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_fetch3.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'v_instruction_idx' is not recommended at line: 218 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_fetch3.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'v_instruction_idx' is not recommended at line: 233 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_fetch3.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'v_instruction_pc' is not recommended at line: 93 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_fetch3.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'v_instruction_pld' is not recommended at line: 81 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_fetch3.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'v_instruction_pld' is not recommended at line: 85 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_fetch3.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'v_instruction_pld' is not recommended at line: 89 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_fetch3.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'v_instruction_vld' is not recommended at line: 100 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_fetch3.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'v_int_reg_rd_en' is not recommended at line: 91 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_dispatch_issue.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'v_m_ldu_vld' is not recommended at line: 84 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/lsu/toy_lsu_buffer.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'v_m_ldu_vld' is not recommended at line: 114 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/lsu/toy_lsu_buffer.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'v_m_pld' is not recommended at line: 165 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_dispatch_issue_buffer.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'v_m_stu_vld' is not recommended at line: 84 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/lsu/toy_lsu_buffer.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'v_m_stu_vld' is not recommended at line: 112 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/lsu/toy_lsu_buffer.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'v_m_vld' is not recommended at line: 56 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_dispatch_issue_buffer.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'v_m_vld' is not recommended at line: 61 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_dispatch_issue_buffer.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'v_m_vld' is not recommended at line: 79 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_dispatch_issue_buffer.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'v_m_vld' is not recommended at line: 115 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_dispatch_issue_buffer.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'v_phy_release_en' is not recommended at line: 50 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_backup_rename_regfile.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'v_phy_release_en' is not recommended at line: 54 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_backup_rename_regfile.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'v_phy_release_en' is not recommended at line: 57 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_backup_rename_regfile.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'v_rf_commit_en' is not recommended at line: 176 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/commit/toy_commit.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'v_rf_commit_en' is not recommended at line: 209 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/commit/toy_commit.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'v_rf_commit_en' is not recommended at line: 232 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/commit/toy_commit.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'v_rf_commit_en' is not recommended at line: 240 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/commit/toy_commit.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'v_rf_commit_en' is not recommended at line: 243 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/commit/toy_commit.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'v_rf_commit_en' is not recommended at line: 246 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/commit/toy_commit.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'v_rf_commit_en' is not recommended at line: 249 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/commit/toy_commit.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'v_rf_commit_en' is not recommended at line: 277 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/commit/toy_commit.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'v_rf_commit_en' is not recommended at line: 294 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/commit/toy_commit.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'v_rf_commit_en' is not recommended at line: 306 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/commit/toy_commit.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'v_rf_commit_en' is not recommended at line: 340 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/commit/toy_commit.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'v_rf_commit_en' is not recommended at line: 341 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/commit/toy_commit.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'v_rf_commit_en' is not recommended at line: 342 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/commit/toy_commit.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'v_rf_commit_en' is not recommended at line: 343 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/commit/toy_commit.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'v_rf_commit_en' is not recommended at line: 356 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/commit/toy_commit.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'v_rf_commit_en' is not recommended at line: 359 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/commit/toy_commit.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'v_rf_commit_en' is not recommended at line: 360 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/commit/toy_commit.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'v_rf_commit_en' is not recommended at line: 364 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/commit/toy_commit.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'v_rf_commit_en' is not recommended at line: 371 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/commit/toy_commit.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'v_rf_commit_pld' is not recommended at line: 356 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/commit/toy_commit.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'v_rf_commit_pld' is not recommended at line: 359 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/commit/toy_commit.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'v_rf_commit_pld' is not recommended at line: 360 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/commit/toy_commit.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'v_rf_commit_pld' is not recommended at line: 364 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/commit/toy_commit.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'v_s_lsu_rdy' is not recommended at line: 80 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/lsu/toy_lsu_buffer.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'v_s_lsu_rdy' is not recommended at line: 212 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/lsu/toy_lsu_buffer.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'v_s_lsu_rdy' is not recommended at line: 215 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/lsu/toy_lsu_buffer.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'v_s_lsu_rdy' is not recommended at line: 221 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/lsu/toy_lsu_buffer.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'v_s_lsu_rdy' is not recommended at line: 230 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/lsu/toy_lsu_buffer.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'v_s_rdy' is not recommended at line: 57 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_dispatch_issue_buffer.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'v_s_rdy' is not recommended at line: 62 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_dispatch_issue_buffer.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'v_s_rdy' is not recommended at line: 68 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_dispatch_issue_buffer.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'vv_matrix' is not recommended at line: 21 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/cmn/cmn_age_matrix.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'vv_matrix' is not recommended at line: 51 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/cmn/cmn_plru_node.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'vv_matrix' is not recommended at line: 50 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/cmn/cmn_tree_plru.sv
+
+*** SEMANTIC WARNING: OUTPUT_PORT_READ: Reading from an output port 'vv_matrix' is not recommended at line: 38 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/cmn/cmn_tree_plru_comb.sv
+
+*** SEMANTIC WARNING: PARAMETER_NEVER_USED: Parameter 'ALLOW_NO_HEX' is never used at line: 3 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/mem/toy_mem_model_bit.sv
+
+*** SEMANTIC WARNING: PARAMETER_NEVER_USED: Parameter 'ALLOW_NO_HEX' is never used at line: 3 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/mem/toy_mem_model_btb.sv
+
+*** SEMANTIC WARNING: PARAMETER_NEVER_USED: Parameter 'ALLOW_NO_HEX' is never used at line: 3 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/mem/toy_mem_model_tage.sv
+
+*** SEMANTIC WARNING: PARAMETER_NEVER_USED: Parameter 'ARGPARSE_KEY' is never used at line: 2 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/mem/toy_mem_model_bit.sv
+
+*** SEMANTIC WARNING: PARAMETER_NEVER_USED: Parameter 'ARGPARSE_KEY' is never used at line: 2 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/mem/toy_mem_model_btb.sv
+
+*** SEMANTIC WARNING: PARAMETER_NEVER_USED: Parameter 'ARGPARSE_KEY' is never used at line: 2 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/mem/toy_mem_model_tage.sv
+
+*** SEMANTIC WARNING: PARAMETER_NEVER_USED: Parameter 'DEPTH_VECTOR' is never used at line: 41 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_fetch_queue2.sv
+
+*** SEMANTIC WARNING: PARAMETER_NEVER_USED: Parameter 'ENTRY_DATA_WIDTH' is never used at line: 23 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_tage_tx_table.sv
+
+*** SEMANTIC WARNING: PARAMETER_NEVER_USED: Parameter 'INST_RD_WIDTH' is never used at line: 25 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_fetch_credit.sv
+
+*** SEMANTIC WARNING: PARAMETER_NEVER_USED: Parameter 'INST_RD_WIDTH' is never used at line: 44 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_fetch_queue2.sv
+
+*** SEMANTIC WARNING: PARAMETER_NEVER_USED: Parameter 'MEM_DATA_WIDTH' is never used at line: 24 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_tage_tx_table.sv
+
+*** SEMANTIC WARNING: PARAMETER_NEVER_USED: Parameter 'OOO_DEPTH_WIDTH' is never used at line: 28 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_dispatch_issue_buffer.sv
+
+*** SEMANTIC WARNING: PARAMETER_NEVER_USED: Parameter 'OOO_DEPTH_WIDTH_MUL2' is never used at line: 29 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_dispatch_issue_buffer.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_READ: Signal 'bpdec_be_flush' is never read (connected to sub-instance output port) at line: 54 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_READ: Signal 'bpdec_ras_flush' is never read (connected to sub-instance output port) at line: 55 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_READ: Signal 'buf_full' is never read at line: 52 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_fe_commit_buffer.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_READ: Signal 'bypass_idx_hit_high' is never read at line: 198 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_btb.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_READ: Signal 'commit_credit_rel_en' is never read (connected to sub-instance output port) at line: 164 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/toy_core.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_READ: Signal 'commit_credit_rel_num' is never read (connected to sub-instance output port) at line: 165 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/toy_core.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_READ: Signal 'csr_inst_imm' is never read (connected to sub-instance output port) at line: 143 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/toy_core.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_READ: Signal 'dec_inst_is_intr' is never read at line: 122 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_decoder.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_READ: Signal 'dep_checked_rdy' is never read at line: 192 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_decoder.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_READ: Signal 'entry_req_addr' is never read at line: 52 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_btb.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_READ: Signal 'entry_req_vld' is never read at line: 49 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_btb.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_READ: Signal 'entry_req_wdata' is never read at line: 53 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_btb.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_READ: Signal 'fe_cancel_done' is never read at line: 108 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_fe_ctrl.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_READ: Signal 'fetch_0_cnt' is never read at line: 423 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/toy_env_slv.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_READ: Signal 'fetch_queue_en' is never read (connected to sub-instance output port) at line: 66 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/toy_core.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_READ: Signal 'fetch_queue_pld' is never read (connected to sub-instance output port) at line: 65 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/toy_core.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_READ: Signal 'fetch_queue_vld' is never read (connected to sub-instance output port) at line: 64 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/toy_core.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_READ: Signal 'fix_cycle' is never read at line: 426 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/toy_env_slv.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_READ: Signal 'jb_pc_release_en' is never read at line: 47 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/toy_core.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_READ: Signal 'jb_pc_update_en' is never read at line: 48 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/toy_core.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_READ: Signal 'jb_pc_val' is never read at line: 49 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/toy_core.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_READ: Signal 'l0btb_vld_s1' is never read at line: 56 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_bpdec.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_READ: Signal 'mext_inst_imm' is never read (connected to sub-instance output port) at line: 120 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/toy_core.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_READ: Signal 'monitor_0' is never read at line: 143 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_physicial_regfile.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_READ: Signal 'monitor_1' is never read at line: 144 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_physicial_regfile.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_READ: Signal 'prvd_hit_index' is never read (connected to sub-instance output port) at line: 71 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_bpdec.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_READ: Signal 'rd_data' is never read (connected to sub-instance output port) at line: 12 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/mem/toy_mem_model_tb.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_READ: Signal 'same_time_lock_flag' is never read at line: 206 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/toy_env_slv.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_READ: Signal 'tage_update_alloc_bin_dummy' is never read (connected to sub-instance output port) at line: 68 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_bpdec_entry_buffer.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_READ: Signal 'tage_update_alloc_bin_prob_dummy' is never read (connected to sub-instance output port) at line: 67 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_bpdec_entry_buffer.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_READ: Signal 'tage_update_alloc_id_vld_dummy' is never read (connected to sub-instance output port) at line: 66 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_bpdec_entry_buffer.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_READ: Signal 'tmp' is never read at line: 90 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/toy_env_slv.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_READ: Signal 'tmp_data' is never read at line: 24 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/mem/toy_mem_model_bit.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_READ: Signal 'tmp_data' is never read at line: 24 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/mem/toy_mem_model_tage.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_READ: Signal 'trap_pc_release_en' is never read (connected to sub-instance output port) at line: 43 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/toy_core.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_READ: Signal 'trap_pc_update_en' is never read (connected to sub-instance output port) at line: 44 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/toy_core.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_READ: Signal 'trap_pc_val' is never read (connected to sub-instance output port) at line: 45 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/toy_core.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_READ: Signal 'v_allocate_oh' is never read (connected to sub-instance output port) at line: 49 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_physicial_regfile.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_READ: Signal 'v_commit_bin' is never read (connected to sub-instance output port) at line: 25 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_fe_commit_buffer.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_READ: Signal 'v_commit_dummy' is never read (connected to sub-instance output port) at line: 26 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_fe_commit_buffer.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_READ: Signal 'v_entry_req_wren' is never read at line: 51 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_btb.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_READ: Signal 'v_free_idx_oh' is never read (connected to sub-instance output port) at line: 40 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_dispatch_issue_buffer.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_READ: Signal 'v_lsu_instruction_vld' is never read (connected to sub-instance output port) at line: 83 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/toy_core.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_READ: Signal 'v_lsu_pld' is never read (connected to sub-instance output port) at line: 85 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/toy_core.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_READ: Signal 'v_opcode' is never read at line: 74 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_fetch_queue2.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_READ: Signal 'v_phy_rd_en' is never read (connected to sub-instance output port) at line: 40 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_regfile.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_READ: Signal 'v_phy_rd_index' is never read (connected to sub-instance output port) at line: 49 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_regfile.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_READ: Signal 'v_st_ack_commit_en' is never read (connected to sub-instance output port) at line: 88 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/toy_core.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_READ: Signal 'v_st_ack_commit_entry' is never read (connected to sub-instance output port) at line: 90 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/toy_core.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'ack_node' is never used at line: 22 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_btb_entry.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'addr' is never used at line: 7 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/device/toy_uart_model.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'be_cancel_en' is never used at line: 23 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'be_cancel_en' is never used at line: 10 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_fe_commit_buffer.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'bp2_flush' is never used at line: 8 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_bpdec_entry_buffer.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'bpdec_bp2_chgflw_vld_sm' is never used at line: 60 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'bpdec_bypass_ptr' is never used at line: 26 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_btb.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'bypass_hit_high' is never used at line: 199 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_btb.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'bypass_hit_low' is never used at line: 202 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_btb.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'bypass_idx_hit_low' is never used at line: 201 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_btb.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'bypass_tag_hit_low' is never used at line: 200 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_btb.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'clk' is never used at line: 5 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/cmn/cmn_arb_vrp_matrix.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'clk' is never used at line: 4 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/cmn/cmn_fix_arb.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'clk' is never used at line: 4 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_btb_entry.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'clk' is never used at line: 6 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_filter32.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'clk' is never used at line: 4 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_tage_base_table.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'clk' is never used at line: 43 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_decoder.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'clk' is never used at line: 6 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_dispatch_crossbar.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'clk' is never used at line: 6 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_dispatch_issue.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'clk' is never used at line: 6 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/fpu/toy_float.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'clk' is never used at line: 6 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/fpu/toy_float_wsl.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'clk' is never used at line: 4 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/lsu/toy_ldu.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'clk' is never used at line: 4 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/lsu/toy_stu.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'clk' is never used at line: 5 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/toy_alu.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'clk' is never used at line: 5 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/mem/toy_mem_adapter.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'clk' is never used at line: 4 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/mem_adapter.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'commit_pc_store' is never used at line: 72 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/commit/toy_commit.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'csr_reg_inst_idx' is never used at line: 97 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_dispatch.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'dec_carry' is never used at line: 15 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_filter_predecoder.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'dec_cext' is never used at line: 14 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_filter_predecoder.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'dec_taken' is never used at line: 13 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_filter_predecoder.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'dtcm_in0_req_opcode' is never used at line: 82 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DWrap_network_toy_bus.v
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'dtcm_in0_req_vld' is never used at line: 78 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DWrap_network_toy_bus.v
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'eslv_in0_req_opcode' is never used at line: 91 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DWrap_network_toy_bus.v
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'eslv_in0_req_vld' is never used at line: 87 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DWrap_network_toy_bus.v
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'fe_ctrl_bp2_flush' is never used at line: 22 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_bpu_rob2.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'fe_ctrl_bp2_vld' is never used at line: 21 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_bpu_rob2.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'fe_flush_flag' is never used at line: 107 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_fe_ctrl.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'fetch_mem_ack_rdy' is never used at line: 7 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_itcm.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'fetch_update_pc' is never used at line: 162 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/toy_core.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'float_reg_inst_idx' is never used at line: 67 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_dispatch.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'fp_register_lock' is never used at line: 141 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_dispatch.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'fp_register_lock_release' is never used at line: 142 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_dispatch.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'ghr_pending' is never used at line: 113 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'ghr_pending_taken' is never used at line: 114 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'in0_ack_data' is never used at line: 18 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/mem_adapter.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'in0_ack_opcode' is never used at line: 17 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/mem_adapter.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'in0_ack_rdy' is never used at line: 15 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_ToyMemMst_node_dtcm_fwd_pld_type_ToyBusReq_bwd_pld_type_ToyBusAck_forward_True.v
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'in0_ack_rdy' is never used at line: 15 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_ToyMemMst_node_eslv_fwd_pld_type_ToyBusReq_bwd_pld_type_ToyBusAck_forward_True.v
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'in0_ack_rdy' is never used at line: 15 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_ToyMemMst_node_itcm_fwd_pld_type_ToyBusReq_bwd_pld_type_ToyBusAck_forward_True.v
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'in0_ack_rdy' is never used at line: 16 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/mem_adapter.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'in0_ack_src_id' is never used at line: 19 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/mem_adapter.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'in0_ack_tgt_id' is never used at line: 20 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/mem_adapter.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'in0_ack_vld' is never used at line: 15 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/mem_adapter.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'in0_req_addr' is never used at line: 8 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/mem_adapter.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'in0_req_rdy' is never used at line: 7 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/mem_adapter.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'in0_req_src_id' is never used at line: 12 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/mem_adapter.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'in0_req_tgt_id' is never used at line: 12 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_ToyMemMst_node_dtcm_fwd_pld_type_ToyBusReq_bwd_pld_type_ToyBusAck_forward_True.v
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'in0_req_tgt_id' is never used at line: 12 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_ToyMemMst_node_eslv_fwd_pld_type_ToyBusReq_bwd_pld_type_ToyBusAck_forward_True.v
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'in0_req_tgt_id' is never used at line: 12 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_ToyMemMst_node_itcm_fwd_pld_type_ToyBusReq_bwd_pld_type_ToyBusAck_forward_True.v
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'in0_req_tgt_id' is never used at line: 13 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/mem_adapter.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'in0_req_vld' is never used at line: 6 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/mem_adapter.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'itcm_in0_req_opcode' is never used at line: 73 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DWrap_network_toy_bus.v
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'itcm_in0_req_vld' is never used at line: 69 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DWrap_network_toy_bus.v
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'jb_pc_release_en' is never used at line: 23 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_fetch3.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'jb_pc_update_en' is never used at line: 24 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_fetch3.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'jb_pc_val' is never used at line: 25 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_fetch3.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'mem_ack_rdata' is never used at line: 19 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_btb.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'mem_ack_vld' is never used at line: 10 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_fetch2.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'mem_ack_vld' is never used at line: 39 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_lsu.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'mem_req_addr' is never used at line: 17 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_btb.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'mem_req_vld' is never used at line: 15 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_btb.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'mem_req_wdata' is never used at line: 18 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_btb.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'mem_req_wren' is never used at line: 16 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_btb.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'mext_inst_commit_en' is never used at line: 56 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_dispatch.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'mext_reg_inst_idx' is never used at line: 55 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_dispatch.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'mpki' is never used at line: 458 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/toy_env_slv.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'opcode_dly' is never used at line: 53 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_lsu.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'out0_ack_opcode' is never used at line: 25 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_ToyCoreSlv_node_fetch_fwd_pld_type_ToyBusReq_bwd_pld_type_ToyBusAck_forward_True.v
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'out0_ack_opcode' is never used at line: 25 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_ToyCoreSlv_node_lsu_fwd_pld_type_ToyBusReq_bwd_pld_type_ToyBusAck_forward_True.v
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'out0_ack_src_id' is never used at line: 28 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_ToyCoreSlv_node_fetch_fwd_pld_type_ToyBusReq_bwd_pld_type_ToyBusAck_forward_True.v
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'out0_ack_src_id' is never used at line: 28 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_ToyCoreSlv_node_lsu_fwd_pld_type_ToyBusReq_bwd_pld_type_ToyBusAck_forward_True.v
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'out0_ack_tgt_id' is never used at line: 29 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_ToyCoreSlv_node_fetch_fwd_pld_type_ToyBusReq_bwd_pld_type_ToyBusAck_forward_True.v
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'out0_ack_tgt_id' is never used at line: 29 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_ToyCoreSlv_node_lsu_fwd_pld_type_ToyBusReq_bwd_pld_type_ToyBusAck_forward_True.v
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'out0_mem_addr' is never used at line: 23 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/mem_adapter.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'out0_mem_en' is never used at line: 22 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/mem_adapter.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'out0_mem_rd_data' is never used at line: 24 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/mem_adapter.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'pc' is never used at line: 14 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_lsu.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'pc_release_en' is never used at line: 52 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_fetch3.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'pc_update_en' is never used at line: 53 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_fetch3.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'pcgen_chgflw_pld' is never used at line: 36 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'pcgen_chgflw_rdy' is never used at line: 37 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'pcgen_chgflw_vld' is never used at line: 35 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'pcgen_stall' is never used at line: 34 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'raw_address_r' is never used at line: 57 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_lsu.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'rd_halfword' is never used at line: 37 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_fetch_credit.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'reg_lock' is never used at line: 96 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_decoder.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'register_lock' is never used at line: 139 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_dispatch.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'register_lock_release' is never used at line: 140 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_dispatch.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'req_branch_id' is never used at line: 66 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_fetch3.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'req_node' is never used at line: 23 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_btb_entry.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'rob_entry_invalid' is never used at line: 35 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_bpu_rob2.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'rob_entry_valid' is never used at line: 36 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_bpu_rob2.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'rs2_val' is never used at line: 21 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/toy_csr.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'rs2_val_r' is never used at line: 63 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_lsu.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'rst_n' is never used at line: 6 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/cmn/cmn_arb_vrp_matrix.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'rst_n' is never used at line: 5 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/cmn/cmn_fix_arb.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'rst_n' is never used at line: 5 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_btb_entry.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'rst_n' is never used at line: 7 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_filter32.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'rst_n' is never used at line: 5 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_mem.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'rst_n' is never used at line: 5 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_tage_base_table.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'rst_n' is never used at line: 44 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_decoder.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'rst_n' is never used at line: 7 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_dispatch_crossbar.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'rst_n' is never used at line: 7 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_dispatch_issue.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'rst_n' is never used at line: 7 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/fpu/toy_float.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'rst_n' is never used at line: 7 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/fpu/toy_float_wsl.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'rst_n' is never used at line: 5 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/lsu/toy_ldu.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'rst_n' is never used at line: 5 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/lsu/toy_stu.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'rst_n' is never used at line: 6 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/toy_alu.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'rst_n' is never used at line: 6 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/mem/toy_mem_adapter.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'rst_n' is never used at line: 5 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/mem_adapter.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 's_pld_s0' is never used at line: 12 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_bpdec_entry_buffer.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 's_ptr_s0' is never used at line: 13 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_bpdec_entry_buffer.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'same_time_lock_entry' is never used at line: 195 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/toy_env_slv.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'trap_pc_release_en' is never used at line: 23 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_fetch_pc.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'use_rd_en' is never used at line: 95 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_decoder.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'v_alu_inst_commit_en' is never used at line: 36 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_dispatch.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'v_alu_instruction_pld_rs' is never used at line: 74 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/toy_core.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'v_alu_instruction_rdy_rs' is never used at line: 72 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/toy_core.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'v_alu_instruction_vld_rs' is never used at line: 70 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/toy_core.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'v_alu_pld' is never used at line: 209 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_dispatch.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'v_alu_reg_inst_idx' is never used at line: 35 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_dispatch.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'v_commit_queue_pld' is never used at line: 83 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/commit/toy_commit.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'v_float_fp_rs1_val' is never used at line: 184 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_dispatch.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'v_float_fp_rs2_val' is never used at line: 185 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_dispatch.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'v_float_fp_rs3_val' is never used at line: 186 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_dispatch.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'v_goto_err' is never used at line: 31 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_dispatch_crossbar.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'v_goto_err' is never used at line: 27 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_dispatch_issue.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'v_ld_mem_not_req_revert' is never used at line: 66 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/lsu/toy_ldq.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'v_lsu_fp_rs2_val' is never used at line: 187 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_dispatch.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'v_lsu_rs2_val_temp' is never used at line: 188 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_dispatch.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'v_nxt_pc' is never used at line: 75 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/commit/toy_commit.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'v_nxt_pc_en' is never used at line: 61 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/commit/toy_commit.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'v_pc_queue_mem' is never used at line: 77 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/commit/toy_commit.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'v_st_ack_commit_cancel_en' is never used at line: 37 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/lsu/toy_lsu.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'way_ack_rdata' is never used at line: 24 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_btb_entry.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'way_req_vld' is never used at line: 25 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_btb_entry.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'way_req_wren' is never used at line: 26 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_btb_entry.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'wr_byte_en' is never used at line: 10 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/device/toy_uart_model.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'wr_byte_en' is never used at line: 13 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/toy_env_slv.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'wr_ch0_en_bitmap' is never used at line: 110 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_dispatch.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'wr_ch0_en_fp_bitmap' is never used at line: 118 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_dispatch.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'wr_ch1_en_bitmap' is never used at line: 111 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_dispatch.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'wr_ch1_en_fp_bitmap' is never used at line: 119 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_dispatch.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'wr_ch2_en_bitmap' is never used at line: 112 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_dispatch.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'wr_ch3_en_bitmap' is never used at line: 113 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_dispatch.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'wr_ch4_en_bitmap' is never used at line: 114 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_dispatch.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'wr_ch5_en_bitmap' is never used at line: 115 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_dispatch.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'wr_ch6_en_bitmap' is never used at line: 116 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_dispatch.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'wr_ch7_en_bitmap' is never used at line: 117 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_dispatch.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'wr_data' is never used at line: 12 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/mem/toy_mem_model_btb.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_USED: Signal 'wr_en' is never used at line: 15 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_inst_mem.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_WRITTEN: Signal 'addr' is never written (connected to sub-instance input port) at line: 11 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/mem/toy_mem_model_tb.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_WRITTEN: Signal 'align_offset' is never written at line: 63 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_btb.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_WRITTEN: Signal 'align_pc_boundary' is never written at line: 62 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_btb.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_WRITTEN: Signal 'bypass_tag_hit_high' is never written at line: 197 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_btb.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_WRITTEN: Signal 'en' is never written (connected to sub-instance input port) at line: 10 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/mem/toy_mem_model_tb.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_WRITTEN: Signal 'entry_ack_rdata' is never written at line: 54 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/bpu/toy_bpu_btb.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_WRITTEN: Signal 'fetch_queue_rdy' is never written (connected to sub-instance input port) at line: 63 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/toy_core.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_WRITTEN: Signal 'lsu_mem_req_sideband' is never written at line: 24 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/toy_core.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_WRITTEN: Signal 'target_pc' is never written at line: 69 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/toy_env_slv.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_WRITTEN: Signal 'v_dec_inst_is_intr' is never written at line: 136 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_dispatch.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_WRITTEN: Signal 'v_fetched_instruction_idx' is never written (connected to sub-instance input port) at line: 60 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/toy_core.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_WRITTEN: Signal 'v_fetched_instruction_pc' is never written (connected to sub-instance input port) at line: 59 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/toy_core.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_WRITTEN: Signal 'v_inst_fe_pld' is never written (connected to sub-instance input port) at line: 61 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/toy_core.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_WRITTEN: Signal 'v_ldq_commit_en' is never written (connected to sub-instance input port) at line: 91 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/toy_core.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_WRITTEN: Signal 'v_ldq_commit_pld' is never written (connected to sub-instance input port) at line: 92 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/toy_core.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_WRITTEN: Signal 'v_lsu_instruction_rdy' is never written (connected to sub-instance input port) at line: 84 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/toy_core.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_WRITTEN: Signal 'v_st_ack_commit_cancel_en' is never written at line: 89 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/toy_core.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_WRITTEN: Signal 'v_stq_commit_en' is never written (connected to sub-instance input port) at line: 86 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/toy_core.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_WRITTEN: Signal 'v_stq_commit_pld' is never written (connected to sub-instance input port) at line: 87 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/toy_core.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_WRITTEN: Signal 'wr_byte_en' is never written (connected to sub-instance input port) at line: 14 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/mem/toy_mem_model_tb.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_WRITTEN: Signal 'wr_data' is never written (connected to sub-instance input port) at line: 13 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/mem/toy_mem_model_tb.sv
+
+*** SEMANTIC WARNING: SIGNAL_NEVER_WRITTEN: Signal 'wr_en' is never written (connected to sub-instance input port) at line: 15 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/mem/toy_mem_model_tb.sv
+
+*** SEMANTIC WARNING: SIGNAL_NOT_RESET: Signal 'arch_reg_index' is not reset at line: 277 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/lsu/toy_ldq.sv
+
+*** SEMANTIC WARNING: SIGNAL_NOT_RESET: Signal 'c_ext' is not reset at line: 278 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/lsu/toy_ldq.sv
+
+*** SEMANTIC WARNING: SIGNAL_NOT_RESET: Signal 'funct3' is not reset at line: 274 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/lsu/toy_ldq.sv
+
+*** SEMANTIC WARNING: SIGNAL_NOT_RESET: Signal 'inst_fp_rd_en' is not reset at line: 273 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/lsu/toy_ldq.sv
+
+*** SEMANTIC WARNING: SIGNAL_NOT_RESET: Signal 'inst_id' is not reset at line: 276 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/lsu/toy_ldq.sv
+
+*** SEMANTIC WARNING: SIGNAL_NOT_RESET: Signal 'inst_pc' is not reset at line: 275 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/lsu/toy_ldq.sv
+
+*** SEMANTIC WARNING: SIGNAL_NOT_RESET: Signal 'inst_rd' is not reset at line: 271 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/lsu/toy_ldq.sv
+
+*** SEMANTIC WARNING: SIGNAL_NOT_RESET: Signal 'inst_rd_en' is not reset at line: 272 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/lsu/toy_ldq.sv
+
+*** SEMANTIC WARNING: SIGNAL_NOT_RESET: Signal 'mem_req_addr' is not reset at line: 269 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/lsu/toy_ldq.sv
+
+*** SEMANTIC WARNING: SIGNAL_NOT_RESET: Signal 'mem_req_strb' is not reset at line: 270 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/lsu/toy_ldq.sv
+
+*** SEMANTIC WARNING: SIGNAL_RESET_BUT_NOT_DRIVEN: Signal 'sc_state' is reset but not driven at line: 137 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/bak/toy_lsu.sv
+
+*** SEMANTIC WARNING: SIGNAL_RESET_BUT_NOT_DRIVEN: Signal 'v_entry_pld' is reset but not driven at line: 266 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/lsu/toy_ldq.sv
+
+*** SEMANTIC WARNING: UNDECLARED_MODULE: Module 'DW_div_pipe' is not declared at line: 122 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/toy_mext.sv
+
+*** SEMANTIC WARNING: UNDECLARED_MODULE: Module 'DW_fp_add' is not declared at line: 195 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/fpu/toy_float.sv
+
+*** SEMANTIC WARNING: UNDECLARED_MODULE: Module 'DW_fp_add' is not declared at line: 196 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/fpu/toy_float_wsl.sv
+
+*** SEMANTIC WARNING: UNDECLARED_MODULE: Module 'DW_fp_cmp' is not declared at line: 285 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/fpu/toy_float.sv
+
+*** SEMANTIC WARNING: UNDECLARED_MODULE: Module 'DW_fp_cmp' is not declared at line: 283 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/fpu/toy_float_wsl.sv
+
+*** SEMANTIC WARNING: UNDECLARED_MODULE: Module 'DW_fp_div' is not declared at line: 244 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/fpu/toy_float.sv
+
+*** SEMANTIC WARNING: UNDECLARED_MODULE: Module 'DW_fp_div' is not declared at line: 243 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/fpu/toy_float_wsl.sv
+
+*** SEMANTIC WARNING: UNDECLARED_MODULE: Module 'DW_fp_flt2i' is not declared at line: 150 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/fpu/toy_float.sv
+
+*** SEMANTIC WARNING: UNDECLARED_MODULE: Module 'DW_fp_flt2i' is not declared at line: 161 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/fpu/toy_float.sv
+
+*** SEMANTIC WARNING: UNDECLARED_MODULE: Module 'DW_fp_flt2i' is not declared at line: 151 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/fpu/toy_float_wsl.sv
+
+*** SEMANTIC WARNING: UNDECLARED_MODULE: Module 'DW_fp_flt2i' is not declared at line: 162 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/fpu/toy_float_wsl.sv
+
+*** SEMANTIC WARNING: UNDECLARED_MODULE: Module 'DW_fp_i2flt' is not declared at line: 173 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/fpu/toy_float.sv
+
+*** SEMANTIC WARNING: UNDECLARED_MODULE: Module 'DW_fp_i2flt' is not declared at line: 174 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/fpu/toy_float_wsl.sv
+
+*** SEMANTIC WARNING: UNDECLARED_MODULE: Module 'DW_fp_mult' is not declared at line: 219 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/fpu/toy_float.sv
+
+*** SEMANTIC WARNING: UNDECLARED_MODULE: Module 'DW_fp_mult' is not declared at line: 219 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/fpu/toy_float_wsl.sv
+
+*** SEMANTIC WARNING: UNDECLARED_MODULE: Module 'DW_fp_sqrt' is not declared at line: 258 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/fpu/toy_float.sv
+
+*** SEMANTIC WARNING: UNDECLARED_MODULE: Module 'DW_fp_sqrt' is not declared at line: 256 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/fpu/toy_float_wsl.sv
+
+*** SEMANTIC WARNING: UNDECLARED_MODULE: Module 'DW_mult_pipe' is not declared at line: 107 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/toy_mext.sv
+
+*** SEMANTIC WARNING: UNDECLARED_SYSTEM_METHOD: System task or function '$fsdbDumpMDA' is not declared at line: 161 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/toy_top.sv
+
+*** SEMANTIC WARNING: UNDECLARED_SYSTEM_METHOD: System task or function '$fsdbDumpfile' is not declared at line: 159 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/toy_top.sv
+
+*** SEMANTIC WARNING: UNDECLARED_SYSTEM_METHOD: System task or function '$fsdbDumpon' is not declared at line: 162 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/toy_top.sv
+
+*** SEMANTIC WARNING: UNDECLARED_SYSTEM_METHOD: System task or function '$fsdbDumpvars' is not declared at line: 160 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/toy_top.sv
+
+*** SEMANTIC WARNING: UNDRIVEN_INPUT_PORT: Input port 'v_pre_allocate_zero' is not driven at line: 435 in file: /home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/core/dispatch/toy_dispatch.sv
+
+*** Build done [total duration 3s.431ms] ***
+
