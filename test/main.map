@@ -1,0 +1,36 @@
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+                0x0000000080000000                . = 0x80000000
+
+.tohost
+ *(.tohost)
+                0x0000000080001000                . = (. + 0x1000)
+
+.text           0x0000000000000000       0x24
+ *(.text)
+ .text          0x0000000000000000       0x24 /tmp/ccOW2vIj.o
+                0x0000000000000000                main
+LOAD /tmp/ccOW2vIj.o
+Address of section .text set to 0x0
+OUTPUT(build/rvload.elf elf32-littleriscv)
+
+.data           0x0000000000000024        0x0
+ .data          0x0000000000000024        0x0 /tmp/ccOW2vIj.o
+
+.bss            0x0000000000000024        0x0
+ .bss           0x0000000000000024        0x0 /tmp/ccOW2vIj.o
+
+.comment        0x0000000000000000        0xe
+ .comment       0x0000000000000000        0xe /tmp/ccOW2vIj.o
+                                          0xf (size before relaxing)
+
+.riscv.attributes
+                0x0000000000000000       0x1c
+ .riscv.attributes
+                0x0000000000000000       0x1c /tmp/ccOW2vIj.o

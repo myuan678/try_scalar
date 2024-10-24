@@ -1,0 +1,26 @@
+[INFO] add fetch to network.
+[INFO] add lsu to network.
+[INFO] add itcm to network.
+[INFO] add dtcm to network.
+[INFO] add eslv to network.
+[INFO] add dec_fetch to network.
+[INFO] add dec_lsu to network.
+[INFO] add dec_dmem to network.
+[INFO] add arb_dtcm to network.
+[INFO] add arb_itcm to network.
+[INFO] link fetch to dec_fetch.
+[INFO] link lsu to dec_lsu.
+[INFO] link dec_fetch to arb_itcm.
+[INFO] link dec_lsu to arb_itcm.
+[INFO] link dec_fetch to arb_dtcm.
+[INFO] link dec_lsu to arb_dtcm.
+[INFO] link arb_itcm to itcm.
+[INFO] link arb_dtcm to dec_dmem.
+[INFO] link dec_dmem to dtcm.
+[INFO] link dec_dmem to eslv.
+[INFO] network topology graphic generation start.
+[INFO] set fetch nx_layer to -100.
+[INFO] set lsu nx_layer to -100.
+[INFO] set itcm nx_layer to 100.
+[INFO] set dtcm nx_layer to 100.
+[INFO] set eslv nx_layer to 100.

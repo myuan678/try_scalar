@@ -1,0 +1,34 @@
+until reg 0 a2 deadbeef
+reg 0 zero
+reg 0 ra
+reg 0 sp
+reg 0 gp
+reg 0 tp
+reg 0 t0
+reg 0 t1
+reg 0 t2
+reg 0 s0
+reg 0 s1
+reg 0 a0
+reg 0 a1
+reg 0 a2
+reg 0 a3
+reg 0 a4
+reg 0 a5
+reg 0 a6
+reg 0 a7
+reg 0 s2
+reg 0 s3
+reg 0 s4
+reg 0 s5
+reg 0 s6
+reg 0 s7
+reg 0 s8
+reg 0 s9
+reg 0 s10
+reg 0 s11
+reg 0 t3
+reg 0 t4
+reg 0 t5
+reg 0 t6
+r

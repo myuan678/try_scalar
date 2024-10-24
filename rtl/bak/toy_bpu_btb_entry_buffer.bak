@@ -1,0 +1,241 @@
+module toy_bpu_btb_entry_buffer
+    import toy_pack::*;
+    (
+        input  logic                                         clk,
+        input  logic                                         rst_n,
+        input  logic                                         be_flush,
+        input  logic   [COMMIT_CHANNEL-1:0]                  be_flush_en,
+        input  logic                                         ras_flush,
+        input  logic                                         bp2_flush,
+
+        input  logic                                         s_vld_s0,
+        output logic                                         s_rdy_s0,
+        input  logic                                         s_vld_s1,
+        input  btb_entry_buffer_pkg                          s_pld_s1,
+        input                       [BTB_WAY_NUM-1:0]        s_way_hit_s1,
+
+        input  logic                                         s_update_vld,
+        input  btb_pkg                                       s_update_pld,
+        input  logic                                         s_update_enqueue,
+
+        output logic                                         m_vld,
+        input  logic                                         m_rdy,
+        output btb_entry_buffer_pkg                          m_pld
+    );
+
+    localparam PDepth = $clog2(BTB_WAY_NUM);
+
+    btb_entry_buffer_pkg                            entry_buffer     [BTB_ENTRY_NUM-1:0];
+    logic                [BTB_ENTRY_PTR_WIDTH:0]    credit_cnt;
+    logic                                           credit_add;
+    logic                                           credit_sub;
+    logic                [BTB_ENTRY_PTR_WIDTH:0]    credit_cal;
+    logic                [BTB_ENTRY_PTR_WIDTH:0]    wr_ptr;
+    logic                [BTB_ENTRY_PTR_WIDTH:0]    rd_ptr;
+    logic                [BTB_ENTRY_PTR_WIDTH:0]    tn_ptr;
+    logic                [BTB_ENTRY_PTR_WIDTH:0]    eq_ptr;
+    logic                [BTB_ENTRY_PTR_WIDTH:0]    tn_ptr_res;
+    logic                [BTB_ENTRY_PTR_WIDTH:0]    eq_ptr_res;
+    logic                                           wren;
+    logic                                           rden;
+
+    btb_entry_buffer_pkg                            entry_update;
+    logic                [BTB_WAY_NUM-2:0]          node_update;
+
+    btb_entry_buffer_pkg                            update_entry    ;
+    logic                                           update_en       ;
+    logic                [BTB_WAY_NUM-1:0]          update_way_vld  ;
+    logic                [BTB_WAY_NUM-1:0]          update_way_hit  ;
+    logic                [BTB_WAY_NUM-2:0]          update_node     ;
+    logic                [BTB_WAY_NUM-1:0]          update_vv_matrix [BTB_WAY_NUM-1:0];
+    logic                [BTB_WAY_NUM-1:0]          update_arb_vld  ;
+    logic                [BTB_WAY_NUM-1:0]          update_arb_hit  ;
+    logic                [$clog2(COMMIT_CHANNEL):0] chnl_num        ;
+    btb_pkg                                         update_pld      ;
+
+
+    //===============================================
+    //  entry fifo
+    //===============================================
+    assign s_rdy_s0 = ((TAGE_ENTRY_NUM - 1) > credit_cnt) || (((TAGE_ENTRY_NUM - 1) == credit_cnt) && rden);
+    assign m_vld    = ~(tn_ptr == rd_ptr);
+    assign m_pld    = entry_buffer[rd_ptr[TAGE_ENTRY_PTR_WIDTH-1:0]];
+
+    // credit counter
+    assign credit_add   = s_vld_s0 && s_rdy_s0;
+    assign credit_sub   = m_vld && m_rdy;
+    assign credit_cal   = credit_add - credit_sub;
+    assign tn_ptr_res   = ({1'b1, tn_ptr[TAGE_ENTRY_PTR_WIDTH-1:0]} - {1'b0, rd_ptr[TAGE_ENTRY_PTR_WIDTH-1:0]}) + 2'b10;
+    assign eq_ptr_res   = ({1'b1, eq_ptr[TAGE_ENTRY_PTR_WIDTH-1:0]} - {1'b0, rd_ptr[TAGE_ENTRY_PTR_WIDTH-1:0]}) + 1'b1;
+
+    always_ff @(posedge clk or negedge rst_n) begin
+        if (~rst_n)                         credit_cnt <= {BTB_ENTRY_PTR_WIDTH{1'b0}};
+        else if(be_flush)                   credit_cnt <= tn_ptr_res[TAGE_ENTRY_PTR_WIDTH-1:0];
+        else if(ras_flush)                  credit_cnt <= eq_ptr_res[TAGE_ENTRY_PTR_WIDTH-1:0];
+        // else if(bp2_flush)                  credit_cnt <= credit_cnt - 1'b1 - credit_sub;
+        else if(credit_add|credit_sub)      credit_cnt <= credit_cnt + credit_cal;
+    end
+
+    // for pointer
+    assign wren = s_vld_s1 && ~bp2_flush;
+    assign rden = m_vld && m_rdy;
+
+    always_ff @(posedge clk or negedge rst_n) begin
+        if (~rst_n)                wr_ptr  <= {(BTB_ENTRY_PTR_WIDTH+1){1'b0}};
+        else if(be_flush)          wr_ptr  <= tn_ptr + 1'b1;
+        else if(ras_flush)         wr_ptr  <= eq_ptr + 1'b1;
+        // else if(bp2_flush)         wr_ptr  <= wr_ptr;
+        else if(wren)              wr_ptr  <= wr_ptr + 1'b1;
+    end
+
+    always_ff @(posedge clk or negedge rst_n) begin
+        if (~rst_n)                rd_ptr  <= {(BTB_ENTRY_PTR_WIDTH+1){1'b0}};
+        else if(rden)              rd_ptr  <= rd_ptr + 1'b1;
+    end
+
+    always_ff @(posedge clk or negedge rst_n) begin
+        if (~rst_n)                tn_ptr  <= {(BTB_ENTRY_PTR_WIDTH+1){1'b0}};
+        else if(s_update_vld)      tn_ptr  <= tn_ptr + 1'b1;
+    end
+
+    always_ff @(posedge clk or negedge rst_n) begin
+        if (~rst_n)                eq_ptr  <= {(BTB_ENTRY_PTR_WIDTH+1){1'b0}};
+        else if(be_flush)          eq_ptr  <= tn_ptr + 1'b1;
+        else if(s_update_enqueue)  eq_ptr  <= eq_ptr + 1'b1;
+    end
+
+    //===============================================
+    //  update entry
+    //===============================================
+    assign entry_update.entry.node       = node_update;
+    assign entry_update.tag              = s_pld_s1.tag;
+    assign entry_update.index            = s_pld_s1.index;
+    assign entry_update.entry.entry_way  = s_pld_s1.entry.entry_way;
+    assign entry_update.way_hit          = s_way_hit_s1;
+    assign entry_update.real_taken       = |s_way_hit_s1;
+
+
+    // read node update
+    generate
+        for(genvar i = 0; i < PDepth; i=i+1) begin: level_rd
+            for(genvar j = 0;j < 2**i;j=j+1) begin: offset_rd
+                if(i==PDepth-1) begin
+                    assign node_update[2**i+j-1] = s_vld_s1 ? (s_pld_s1.entry.node[2**i+j-1]||s_way_hit_s1[2*j])&&~s_way_hit_s1[2*j+1] : s_pld_s1.entry.node[2**i+j-1];
+                end
+                else begin
+                    assign node_update[2**i+j-1] = s_vld_s1 ? (s_pld_s1.entry.node[2**i+j-1]||(|s_way_hit_s1[j*2**(PDepth-i)+2**(PDepth-i-1)-1:j*2**(PDepth-i)]))&&~(|s_way_hit_s1[(j+1)*2**(PDepth-i)-1:j*2**(PDepth-i)+2**(PDepth-i-1)]) : s_pld_s1.entry.node[2**i+j-1];
+                end
+            end
+        end
+    endgenerate
+
+    //=====================================================
+    // update for commit and cancel
+    //=====================================================
+    assign update_entry    = entry_buffer[tn_ptr[BTB_ENTRY_PTR_WIDTH-1:0]];
+    assign update_way_hit  = update_entry.way_hit;
+    assign update_arb_vld  = |update_way_hit ? update_way_hit : (&update_way_vld ? {BTB_WAY_NUM{1'b1}} : ~update_way_vld);
+    assign update_en       = s_update_vld && s_update_pld.taken;
+    assign update_pld      = s_update_pld;
+
+    for (genvar i = 0; i < BTB_WAY_NUM; i=i+1) begin
+        assign update_way_vld[i] = update_entry.entry.entry_way[i].valid;
+    end
+
+    // write node arbiter
+    for(genvar i = 0; i < PDepth; i=i+1) begin: level_wr
+        for(genvar j = 0;j < 2**i;j=j+1) begin: offset_wr
+            if(i==PDepth-1) begin
+                assign update_node[2**i+j-1] = update_en ? (update_entry.entry.node[2**i+j-1]||update_arb_hit[2*j])&&~update_arb_hit[2*j+1] : update_entry.entry.node[2**i+j-1];
+            end
+            else begin
+                assign update_node[2**i+j-1] = update_en ? (update_entry.entry.node[2**i+j-1]||(|update_arb_hit[j*2**(PDepth-i)+2**(PDepth-i-1)-1:j*2**(PDepth-i)]))&&~(|update_arb_hit[(j+1)*2**(PDepth-i)-1:j*2**(PDepth-i)+2**(PDepth-i-1)]) : update_entry.entry.node[2**i+j-1];
+            end
+        end
+    end
+
+    // convert node to vv_matrix
+    for(genvar l = 0; l < PDepth; l=l+1) begin: level
+        for(genvar k = 0; k < 2**(PDepth-1-l); k=k+1) begin: offset
+            for(genvar m = 0; m < 2**l; m=m+1) begin: row
+                for(genvar n = 0; n < 2**l; n=n+1) begin: colunm
+                    assign update_vv_matrix[m+k*2**(l+1)][n+2**l+k*2**(l+1)]=update_entry.entry.node[2**(PDepth-1-l)+k-1];
+                end
+            end
+        end
+    end
+
+    for(genvar i = 0; i < BTB_WAY_NUM; i=i+1) begin: row_
+        for(genvar j = 0; j < BTB_WAY_NUM; j=j+1) begin: column_
+            if(i>j) begin
+                assign update_vv_matrix[i][j] = ~update_vv_matrix[j][i];
+            end
+            else if(i==j) begin
+                assign update_vv_matrix[i][j] = 1'b0;
+            end
+        end
+    end
+
+    cmn_arb_vr_matrix #(
+        .WIDTH(BTB_WAY_NUM)
+    ) u_arb (
+        .vv_matrix(update_vv_matrix),
+        .v_vld_s  (update_arb_vld  ),
+        .v_rdy_s  (update_arb_hit  ),
+        .vld_m    (                ),
+        .rdy_m    (update_en       )
+    );
+
+    // update entry
+    always_ff @(posedge clk) begin
+        if (wren) begin
+            entry_buffer[wr_ptr[BTB_ENTRY_PTR_WIDTH-1:0]] <= entry_update;
+        end
+        // for commit and cancel
+        if (update_en) begin
+            entry_buffer[tn_ptr[BTB_ENTRY_PTR_WIDTH-1:0]].pred_pc    <= update_pld.pred_pc;
+            entry_buffer[tn_ptr[BTB_ENTRY_PTR_WIDTH-1:0]].entry.node <= update_node;
+            entry_buffer[tn_ptr[BTB_ENTRY_PTR_WIDTH-1:0]].way_hit    <= update_arb_hit;
+            entry_buffer[tn_ptr[BTB_ENTRY_PTR_WIDTH-1:0]].real_taken <= update_pld.taken;
+
+            for (int i = 0; i < BTB_WAY_NUM; i = i + 1) begin
+                if(update_arb_hit[i]&&update_en) begin
+                    entry_buffer[tn_ptr[BTB_ENTRY_PTR_WIDTH-1:0]].entry.entry_way[i].valid   <= 1'b1;
+                    entry_buffer[tn_ptr[BTB_ENTRY_PTR_WIDTH-1:0]].entry.entry_way[i].tag     <= entry_buffer[tn_ptr[BTB_ENTRY_PTR_WIDTH-1:0]].tag;
+                    entry_buffer[tn_ptr[BTB_ENTRY_PTR_WIDTH-1:0]].entry.entry_way[i].tgt_pc  <= update_pld.tgt_pc;
+                    entry_buffer[tn_ptr[BTB_ENTRY_PTR_WIDTH-1:0]].entry.entry_way[i].offset  <= update_pld.offset;
+                    entry_buffer[tn_ptr[BTB_ENTRY_PTR_WIDTH-1:0]].entry.entry_way[i].is_cext <= update_pld.is_cext;
+                    entry_buffer[tn_ptr[BTB_ENTRY_PTR_WIDTH-1:0]].entry.entry_way[i].carry   <= update_pld.carry;
+                end
+            end
+        end
+    end
+
+
+
+
+
+
+
+
+
+
+
+`ifdef SIM_TOY
+
+    initial begin
+        forever begin
+            @(posedge clk)
+                for(int a=0; a<COMMIT_REL_CHANNEL;a=a+1)begin
+                    if(s_update_vld[a]) begin
+                        if(s_update_pld[a].pred_pc != entry_buffer[tn_ptr[BTB_ENTRY_PTR_WIDTH-1:0] + chnl_num[a]].pred_pc) begin
+                            $display("BTB Error Detect: [pc=%h][pc_update=%h][cycle=%0d]", entry_buffer[tn_ptr[BTB_ENTRY_PTR_WIDTH-1:0] + chnl_num[a]].pred_pc, s_update_pld[a].pred_pc, cycle);
+                        end
+                    end
+                end
+        end
+    end
+
+`endif
+
+endmodule

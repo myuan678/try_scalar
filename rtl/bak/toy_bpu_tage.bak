@@ -1,0 +1,401 @@
+module toy_bpu_tage
+    import toy_pack::*;
+    (
+     input  logic                                       clk,
+     input  logic                                       rst_n,
+     
+     // PC GEN =============================================
+     input  logic                                       pcgen_vld,
+     input  logic   [ADDR_WIDTH-1:0]                    pcgen_pc,
+
+     // GHR ================================================
+     input  logic    [GHR_LENGTH-1:0]                   ghr,
+     output logic                                       ghr_pred_taken,
+     output logic                                       ghr_pred_vld,
+
+     // Mem Model ==========================================
+     output logic                                       tb_mem_req_wren,
+     output logic                                       tb_mem_req_vld,
+     output logic [TAGE_BASE_INDEX_WIDTH-1:0]           tb_mem_req_addr,
+     output logic [TAGE_BASE_PRED_WIDTH-1:0]            tb_mem_req_wdata,
+     input  logic [TAGE_BASE_PRED_WIDTH-1:0]            tb_mem_ack_rdata,
+
+     output logic             [TAGE_TABLE_NUM-1:0]      tx_mem_req_vld,
+     output logic             [TAGE_TABLE_NUM-1:0]      tx_mem_req_wren,
+     output logic             [TAGE_TX_INDEX_WIDTH-1:0] tx_mem_req_addr  [TAGE_TABLE_NUM-1:0],
+     output tage_tx_field_pkg                           tx_mem_req_wdata [TAGE_TABLE_NUM-1:0],
+     input  tage_tx_field_pkg                           tx_mem_ack_rdata [TAGE_TABLE_NUM-1:0],
+
+
+     // BP DEC =============================================
+     output logic                                       bpdec_tage_vld,
+     output tage_pkg                                    bpdec_tage_pld,
+
+     // FE Controller ======================================
+     input   logic                                      fe_ctrl_stall,
+     input  logic    [1:0]                              fe_ctrl_flush,
+     input  logic    [COMMIT_CHANNEL-1:0]               fe_ctrl_flush_en,
+     input  logic                                       fe_ctrl_chgflw,
+     input  tage_pkg                                    fe_ctrl_chgflw_pld,
+     input  logic                                       fe_ctrl_enqueue,
+     output logic                                       fe_ctrl_tage_full
+    );
+
+    logic             [TAGE_CLR_WIDTH-1:0]                   clear_cnt;
+    logic                                                    u_clear;
+    
+    logic             [TAGE_BASE_INDEX_WIDTH-1:0]            tb_idx;
+    logic             [TAGE_TX_INDEX_WIDTH-1:0]              tx_hash_idx     [TAGE_TABLE_NUM-1:0];
+    logic             [TAGE_TX_TAG_WIDTH-1:0]                tx_hash_tag     [TAGE_TABLE_NUM-1:0];
+    logic             [TAGE_TX_TAG_WIDTH-1:0]                tx_hash_tag_s1  [TAGE_TABLE_NUM-1:0];
+    logic             [TAGE_BASE_INDEX_WIDTH-1:0]            tb_idx_s1;
+    logic             [TAGE_TX_INDEX_WIDTH-1:0]              tx_hash_idx_s1  [TAGE_TABLE_NUM-1:0];
+    logic             [ADDR_WIDTH-1:0]                       pred_pc_s1;
+
+    logic                                                    tx_req_vld;
+    logic                                                    tx_req_wren;
+    logic             [TAGE_TABLE_NUM-1:0]                   tx_v_req_wren;
+    logic             [TAGE_BASE_INDEX_WIDTH-1:0]            tb_req_addr;
+    logic                                                    tb_req_wren;
+    logic             [TAGE_BASE_PRED_WIDTH-1:0]             tb_req_wdata;
+    logic             [TAGE_BASE_PRED_WIDTH-1:0]             tb_ack_rdata;
+    logic             [TAGE_TX_INDEX_WIDTH-1:0]              tx_req_addr     [TAGE_TABLE_NUM-1:0];
+    tage_tx_field_pkg                                        tx_req_wdata    [TAGE_TABLE_NUM-1:0];
+    tage_tx_field_pkg                                        tx_ack_rdata    [TAGE_TABLE_NUM-1:0];
+    
+    logic                                                    s_entry_rdy_s0;                     // s0
+    logic                                                    s_entry_vld_s0;                     // s0
+    tage_entry_store                                         s_entry_pld_s1;                     // s1
+    logic                                                    s_entry_vld_s1;                     // s1
+    logic                                                    m_entry_vld_s0;
+    logic                                                    m_entry_rdy_s0;
+    tage_entry                                               m_entry_pld_s0;
+
+    logic             [TAGE_USE_ALT_WIDTH-1:0]               use_alt_cnt;
+    logic                                                    use_alt_cnt_add;
+    logic                                                    use_alt_cnt_sub;
+
+    logic             [TAGE_TABLE_NUM:0]                     entry_hit;
+    logic             [TAGE_TABLE_NUM:0]                     prvd_hit_onehot [1:0];
+    logic             [$clog2(TAGE_TABLE_NUM):0]             prvd_hit_index  [1:0];
+    logic             [1:0]                                  prvd_hit ;
+    logic                                                    prvd_pred_res;
+    logic                                                    alt_pred_res;
+    logic                                                    pred_res;
+    logic                                                    is_new_entry;
+
+    logic    [GHR_LENGTH:0]       real_ghr;
+
+    //===============================================
+    //  pred result to other module
+    //===============================================
+    assign ghr_pred_vld             = s_entry_vld_s1;
+    assign ghr_pred_taken           = pred_res;
+
+    assign bpdec_tage_vld           = s_entry_vld_s1;
+    assign bpdec_tage_pld.pred_pc   = pred_pc_s1;
+    assign bpdec_tage_pld.taken     = pred_res;
+
+    assign fe_ctrl_tage_full        = ~s_entry_rdy_s0;
+
+    //===============================================
+    //  clear counter
+    //===============================================
+    assign u_clear = (clear_cnt == TAGE_CLR_CYCLE);
+
+    always_ff @(posedge clk or negedge rst_n) begin 
+        if(~rst_n)  clear_cnt     <= {TAGE_CLR_WIDTH{1'b0}};
+        else        clear_cnt     <= clear_cnt + 1'b1;
+    end
+
+    //===============================================
+    //  Entry Buffer
+    //===============================================
+    assign s_entry_vld_s0           = pcgen_vld; 
+    assign m_entry_rdy_s0           = tx_req_wren;
+
+    assign s_entry_pld_s1.tb_idx    = tb_idx_s1;
+    assign s_entry_pld_s1.tb_pred   = tb_ack_rdata;
+    assign s_entry_pld_s1.pred_pc   = pred_pc_s1;
+
+    generate 
+        for(genvar i = 0; i < TAGE_TABLE_NUM; i=i+1) begin: GEN_ENTRY_PLD_S1 
+            assign s_entry_pld_s1.tx_entry[i].index    = tx_hash_idx_s1[i];
+            assign s_entry_pld_s1.tx_entry[i].tag      = tx_hash_tag_s1[i];
+            assign s_entry_pld_s1.tx_entry[i].pred_cnt = tx_ack_rdata[i].pred_cnt;
+            assign s_entry_pld_s1.tx_entry[i].u_cnt    = tx_ack_rdata[i].u_cnt;
+            assign s_entry_pld_s1.tx_entry[i].valid    = tx_ack_rdata[i].valid;
+        end 
+    endgenerate 
+
+    assign s_entry_pld_s1.pred_taken = pred_res;
+    assign s_entry_pld_s1.pred_diff  = prvd_pred_res != alt_pred_res;
+    assign s_entry_pld_s1.prvd_idx   = prvd_hit_onehot[0]; 
+
+   
+    toy_bpu_tage_entry_buffer u_entry_buffer(
+                                             .clk             (clk                  ),
+                                             .rst_n           (rst_n                ),
+                                             .be_flush        (fe_ctrl_flush[0]     ),
+                                             .be_flush_en     (fe_ctrl_flush_en     ),
+                                             .ras_flush       (fe_ctrl_flush[1]     ),
+                                             .bp2_flush       (1'b0),
+                                             .s_vld_s0        (s_entry_vld_s0       ),
+                                             .s_rdy_s0        (s_entry_rdy_s0       ),
+                                             .s_vld_s1        (s_entry_vld_s1       ),
+                                             .s_pld_s1        (s_entry_pld_s1       ),
+                                             .s_update_vld    (fe_ctrl_chgflw       ),
+                                             .s_update_pld    (fe_ctrl_chgflw_pld   ),
+                                             .s_update_enqueue(fe_ctrl_enqueue      ),
+                                             .m_vld           (m_entry_vld_s0       ),
+                                             .m_rdy           (m_entry_rdy_s0       ),
+                                             .m_pld           (m_entry_pld_s0       )
+                                            );
+
+    //===============================================
+    //  Preprocess
+    //===============================================
+    // hash index and tag (opt -> compress ghr)
+    // assign real_ghr = s_entry_vld_s1 ? {ghr, pred_res} : ghr;
+    assign real_ghr = ghr[GHR_LENGTH-1:0];
+
+    assign tb_idx         = pcgen_pc[TAGE_BASE_INDEX_WIDTH:1];
+    
+    assign tx_hash_idx[0] = pcgen_pc[TAGE_T0_INDEX_WIDTH:1]
+                          ^ real_ghr[TAGE_T0_INDEX_WIDTH-1:0];
+    assign tx_hash_idx[1] = pcgen_pc[TAGE_T1_INDEX_WIDTH:1]
+                          ^ real_ghr[TAGE_T1_INDEX_WIDTH-1:0]
+                          ^ real_ghr[TAGE_T1_INDEX_WIDTH*2-1:TAGE_T1_INDEX_WIDTH];
+    assign tx_hash_idx[2] = pcgen_pc[TAGE_T2_INDEX_WIDTH:1]
+                          ^ real_ghr[TAGE_T2_INDEX_WIDTH-1:0]
+                          ^ real_ghr[TAGE_T2_INDEX_WIDTH*2-1:TAGE_T2_INDEX_WIDTH]
+                          ^ real_ghr[TAGE_T2_INDEX_WIDTH*3-1:TAGE_T2_INDEX_WIDTH*2];
+    assign tx_hash_idx[3] = pcgen_pc[TAGE_T3_INDEX_WIDTH:1]
+                          ^ real_ghr[TAGE_T3_INDEX_WIDTH-1:0]
+                          ^ real_ghr[TAGE_T3_INDEX_WIDTH*2-1:TAGE_T3_INDEX_WIDTH]
+                          ^ real_ghr[TAGE_T3_INDEX_WIDTH*3-1:TAGE_T3_INDEX_WIDTH*2]
+                          ^ real_ghr[TAGE_T3_INDEX_WIDTH*4-1:TAGE_T3_INDEX_WIDTH*3];
+
+    assign tx_hash_tag[0] = pcgen_pc[TAGE_T0_TAG_WIDTH:1]
+                          ^ real_ghr[TAGE_T0_TAG_WIDTH-1:0]
+                          ^ real_ghr[TAGE_T0_HIST_LEN-1:TAGE_T0_TAG_WIDTH];
+    assign tx_hash_tag[1] = pcgen_pc[TAGE_T1_TAG_WIDTH:1]
+                          ^ real_ghr[TAGE_T1_TAG_WIDTH-1:0]
+                          ^ real_ghr[TAGE_T1_TAG_WIDTH*2-1:TAGE_T1_TAG_WIDTH]
+                          ^ real_ghr[TAGE_T1_HIST_LEN-1:TAGE_T1_TAG_WIDTH*2];
+    assign tx_hash_tag[2] = pcgen_pc[TAGE_T2_TAG_WIDTH:1]
+                          ^ real_ghr[TAGE_T2_TAG_WIDTH-1:0]
+                          ^ real_ghr[TAGE_T2_TAG_WIDTH*2-1:TAGE_T2_TAG_WIDTH]
+                          ^ real_ghr[TAGE_T2_TAG_WIDTH*3-1:TAGE_T2_TAG_WIDTH*2]
+                          ^ real_ghr[TAGE_T2_HIST_LEN-1:TAGE_T2_TAG_WIDTH*3];
+    assign tx_hash_tag[3] = pcgen_pc[TAGE_T3_TAG_WIDTH:1]
+                          ^ real_ghr[TAGE_T3_TAG_WIDTH-1:0]
+                          ^ real_ghr[TAGE_T3_TAG_WIDTH*2-1:TAGE_T3_TAG_WIDTH]
+                          ^ real_ghr[TAGE_T3_TAG_WIDTH*3-1:TAGE_T3_TAG_WIDTH*2]
+                          ^ real_ghr[TAGE_T3_TAG_WIDTH*4-1:TAGE_T3_TAG_WIDTH*3]
+                          ^ real_ghr[TAGE_T3_HIST_LEN-1:TAGE_T3_TAG_WIDTH*4];
+
+    // generate read and write signal
+    assign tx_req_vld    = pcgen_vld                      // read for predict
+                         | m_entry_vld_s0;                // write for update
+    assign tx_req_wren   = ~pcgen_vld && m_entry_vld_s0;  // write and no read req 
+
+    // process allocate info (can put into entry buffer)
+    generate 
+        for(genvar i = 0; i < TAGE_TABLE_NUM+1; i=i+1) begin: GEN_NEW_ENTRY
+            if (i==0) begin
+                assign tb_req_wdata               = m_entry_pld_s0.entry.tb_pred;
+                assign tb_req_addr                = tx_req_wren ? m_entry_pld_s0.entry.tb_idx : tb_idx;
+                assign tb_req_wren                = tx_req_wren && m_entry_pld_s0.entry.prvd_idx[0];
+            end
+            else begin
+                assign tx_req_wdata[i-1].valid    = m_entry_pld_s0.update.alloc_id[i-1] ? 1'b1 : m_entry_pld_s0.entry.tx_entry[i-1].valid;
+                assign tx_req_wdata[i-1].tag      = m_entry_pld_s0.entry.tx_entry[i-1].tag;
+                assign tx_req_wdata[i-1].pred_cnt = m_entry_pld_s0.update.alloc_id[i-1] 
+                                                  ? (m_entry_pld_s0.update.taken ? `NEW_PRED_T : `NEW_PRED_NT) 
+                                                  : m_entry_pld_s0.entry.tx_entry[i-1].pred_cnt; 
+                assign tx_req_wdata[i-1].u_cnt    = m_entry_pld_s0.update.alloc_id[i-1]
+                                                  ? `NEW_U : m_entry_pld_s0.entry.tx_entry[i-1].u_cnt;
+                assign tx_req_addr[i-1]           = tx_req_wren 
+                                                  ? m_entry_pld_s0.entry.tx_entry[i-1].index : tx_hash_idx[i-1];
+                assign tx_v_req_wren[i-1]         = tx_req_wren & tx_req_wdata[i-1].valid & (m_entry_pld_s0.update.alloc_id[i-1]|m_entry_pld_s0.entry.prvd_idx[i]);
+            end
+        end
+    endgenerate 
+                
+    //===============================================
+    //  UseAltCtr
+    //===============================================
+    assign use_alt_cnt_add  = m_entry_pld_s0.update.mispred;
+    assign use_alt_cnt_sub  = ~m_entry_pld_s0.update.mispred;
+
+    always_ff @(posedge clk or negedge rst_n) begin
+        if (~rst_n)                                                   use_alt_cnt <= {TAGE_USE_ALT_WIDTH{1'b0}};
+        else if(|fe_ctrl_flush)                                       use_alt_cnt <= {TAGE_USE_ALT_WIDTH{1'b0}};
+        else if(m_entry_vld_s0&&m_entry_rdy_s0) begin
+            if(use_alt_cnt_add && (use_alt_cnt < TAGE_USE_ALT_MAX))   use_alt_cnt <= use_alt_cnt + 1'b1;
+            else if(use_alt_cnt_sub && (use_alt_cnt > 0))             use_alt_cnt <= use_alt_cnt - 1'b1;
+        end
+    end
+
+    //===============================================
+    //  Prediction
+    //===============================================
+    // buf hash tag and index, signal from pcgen
+    always_ff @(posedge clk or negedge rst_n) begin 
+        if(~rst_n)                          pred_pc_s1 <= 1'b0;
+        else if(|fe_ctrl_flush)             pred_pc_s1 <= 1'b0;
+        else                                pred_pc_s1 <= pcgen_pc;
+    end 
+    
+    generate
+        for(genvar i = 0; i < TAGE_TABLE_NUM; i=i+1) begin: HASH_TAG_S1
+            always_ff @(posedge clk or negedge rst_n) begin 
+                if(~rst_n)                  tx_hash_tag_s1[i] <= {TAGE_TX_TAG_WIDTH{1'b0}};
+                else if(|fe_ctrl_flush)     tx_hash_tag_s1[i] <= {TAGE_TX_TAG_WIDTH{1'b0}};
+                else                        tx_hash_tag_s1[i] <= tx_hash_tag[i];
+            end
+        end
+    endgenerate 
+
+    always_ff @(posedge clk or negedge rst_n) begin 
+        if(~rst_n)                          tb_idx_s1 <= {TAGE_BASE_INDEX_WIDTH{1'b0}};
+        else if(|fe_ctrl_flush)             tb_idx_s1 <= {TAGE_BASE_INDEX_WIDTH{1'b0}};
+        else                                tb_idx_s1 <= tb_idx;
+    end
+
+    generate
+        for(genvar i = 0; i < TAGE_TABLE_NUM; i=i+1) begin: HASH_IDX_S1
+            always_ff @(posedge clk or negedge rst_n) begin 
+                if(~rst_n)                  tx_hash_idx_s1[i] <= {TAGE_TX_INDEX_WIDTH{1'b0}};
+                else if(|fe_ctrl_flush)     tx_hash_idx_s1[i] <= {TAGE_TX_INDEX_WIDTH{1'b0}};
+                else                        tx_hash_idx_s1[i] <= tx_hash_idx[i];
+            end
+        end
+    endgenerate 
+
+    always_ff @(posedge clk or negedge rst_n) begin 
+        if (~rst_n)                         s_entry_vld_s1 <= 1'b0;
+        else if(|fe_ctrl_flush)             s_entry_vld_s1 <= 1'b0;
+        else if(fe_ctrl_stall)              s_entry_vld_s1 <= 1'b0;
+        else                                s_entry_vld_s1 <= pcgen_vld;
+    end 
+
+    // predict result: 1. to other module; 2. to entry buffer
+    assign alt_pred_res   = (prvd_hit[1] && ~prvd_hit_onehot[1][0]) ? tx_ack_rdata[prvd_hit_index[1]-1].pred_cnt[TAGE_TX_PRED_WIDTH-1] : tb_ack_rdata[TAGE_BASE_PRED_WIDTH-1];
+    assign prvd_pred_res  = (prvd_hit[0] && prvd_hit_onehot[0][0]) ? tb_ack_rdata[TAGE_BASE_PRED_WIDTH-1] : tx_ack_rdata[prvd_hit_index[0]-1].pred_cnt[TAGE_TX_PRED_WIDTH-1];
+    assign is_new_entry   = (tx_ack_rdata[prvd_hit_index[0]-1].u_cnt==0 && ((tx_ack_rdata[prvd_hit_index[0]-1].pred_cnt==`NEW_PRED_T)|(tx_ack_rdata[prvd_hit_index[0]-1].pred_cnt==`NEW_PRED_NT)));
+    // assign is_new_entry   = (tx_ack_rdata[prvd_hit_index].u_cnt==0);
+    assign pred_res       = (prvd_hit[1] && ~(use_alt_cnt[TAGE_USE_ALT_WIDTH-1] && is_new_entry)) ? prvd_pred_res : alt_pred_res; 
+
+    generate 
+        for(genvar i = 0; i < TAGE_TABLE_NUM+1; i=i+1) begin: GEN_HIT 
+            if (i==0) assign entry_hit[i] = 1'b1;
+            else      assign entry_hit[i] = (tx_ack_rdata[i-1].tag == tx_hash_tag_s1[i-1]) && tx_ack_rdata[i-1].valid;
+        end
+    endgenerate 
+
+    // cmn_lead_one_rev #(
+    //                    .ENTRY_NUM(TAGE_TABLE_NUM)
+    //                   ) u_ld_one_rev(
+    //                                  .v_entry_vld   (entry_hit      ),
+    //                                  .v_free_idx_oh (prvd_hit_onehot),
+    //                                  .v_free_idx_bin(prvd_hit_index ),
+    //                                  .v_free_vld    (prvd_hit       )
+    //                                 );
+    cmn_list_lead_one_rev #(
+                            .ENTRY_NUM(TAGE_TABLE_NUM+1),
+                            .REQ_NUM  (2               )
+                           ) u_ld_one_rev(
+                                          .v_entry_vld   (entry_hit      ),
+                                          .v_free_idx_oh (prvd_hit_onehot),
+                                          .v_free_idx_bin(prvd_hit_index ),
+                                          .v_free_vld    (prvd_hit       )
+                                         );
+
+    //===============================================
+    //  tage table
+    //===============================================
+
+    toy_bpu_tage_base_table u_tage_base(
+                                        .clk          (clk             ),
+                                        .rst_n        (rst_n           ),
+                                        .req_vld      (tx_req_vld      ),
+                                        .req_wren     (tb_req_wren     ),
+                                        .req_addr     (tb_req_addr     ),
+                                        .req_wdata    (tb_req_wdata    ),
+                                        .ack_rdata    (tb_ack_rdata    ),
+                                        .mem_req_vld  (tb_mem_req_vld  ),
+                                        .mem_req_wren (tb_mem_req_wren ),
+                                        .mem_req_addr (tb_mem_req_addr ),
+                                        .mem_req_wdata(tb_mem_req_wdata),
+                                        .mem_ack_rdata(tb_mem_ack_rdata)
+                                       );
+
+    toy_bpu_tage_tx_table u_tage_t0(
+                                    .clk          (clk                ),
+                                    .rst_n        (rst_n              ),
+                                    .extra_rst    (u_clear            ),
+                                    .req_vld      (tx_req_vld         ),
+                                    .req_wren     (tx_v_req_wren[0]   ),
+                                    .req_addr     (tx_req_addr[0]     ),
+                                    .req_wdata    (tx_req_wdata[0]    ),
+                                    .ack_rdata    (tx_ack_rdata[0]    ),
+                                    .mem_req_vld  (tx_mem_req_vld[0]  ),
+                                    .mem_req_wren (tx_mem_req_wren[0] ),
+                                    .mem_req_addr (tx_mem_req_addr[0] ),
+                                    .mem_req_wdata(tx_mem_req_wdata[0]),
+                                    .mem_ack_rdata(tx_mem_ack_rdata[0])
+                                   );
+
+    toy_bpu_tage_tx_table u_tage_t1(
+                                    .clk          (clk                ),
+                                    .rst_n        (rst_n              ),
+                                    .extra_rst    (u_clear            ),
+                                    .req_vld      (tx_req_vld         ),
+                                    .req_wren     (tx_v_req_wren[1]   ),
+                                    .req_addr     (tx_req_addr[1]     ),
+                                    .req_wdata    (tx_req_wdata[1]    ),
+                                    .ack_rdata    (tx_ack_rdata[1]    ),
+                                    .mem_req_vld  (tx_mem_req_vld[1]  ),
+                                    .mem_req_wren (tx_mem_req_wren[1] ),
+                                    .mem_req_addr (tx_mem_req_addr[1] ),
+                                    .mem_req_wdata(tx_mem_req_wdata[1]),
+                                    .mem_ack_rdata(tx_mem_ack_rdata[1])
+                                   );
+    
+    toy_bpu_tage_tx_table u_tage_t2(
+                                    .clk          (clk                ),
+                                    .rst_n        (rst_n              ),
+                                    .extra_rst    (u_clear            ),
+                                    .req_vld      (tx_req_vld         ),
+                                    .req_wren     (tx_v_req_wren[2]   ),
+                                    .req_addr     (tx_req_addr[2]     ),
+                                    .req_wdata    (tx_req_wdata[2]    ),
+                                    .ack_rdata    (tx_ack_rdata[2]    ),
+                                    .mem_req_vld  (tx_mem_req_vld[2]  ),
+                                    .mem_req_wren (tx_mem_req_wren[2] ),
+                                    .mem_req_addr (tx_mem_req_addr[2] ),
+                                    .mem_req_wdata(tx_mem_req_wdata[2]),
+                                    .mem_ack_rdata(tx_mem_ack_rdata[2])
+                                   );
+
+    toy_bpu_tage_tx_table u_tage_t3(
+                                    .clk          (clk                ),
+                                    .rst_n        (rst_n              ),
+                                    .extra_rst    (u_clear            ),
+                                    .req_vld      (tx_req_vld         ),
+                                    .req_wren     (tx_v_req_wren[3]   ),
+                                    .req_addr     (tx_req_addr[3]     ),
+                                    .req_wdata    (tx_req_wdata[3]    ),
+                                    .ack_rdata    (tx_ack_rdata[3]    ),
+                                    .mem_req_vld  (tx_mem_req_vld[3]  ),
+                                    .mem_req_wren (tx_mem_req_wren[3] ),
+                                    .mem_req_addr (tx_mem_req_addr[3] ),
+                                    .mem_req_wdata(tx_mem_req_wdata[3]),
+                                    .mem_ack_rdata(tx_mem_ack_rdata[3])
+                                   );
+
+    
+
+endmodule

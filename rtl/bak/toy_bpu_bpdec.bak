@@ -1,0 +1,121 @@
+module toy_bpu_bpdec
+    import toy_pack::*;
+    (
+        input logic         clk,
+        input logic         rst_n,
+
+        // BP1 =========================================
+        input logic         l0btb_vld,
+        input bpu_pkg       l0btb_pld,
+
+        // BP2 =========================================
+        input logic         tage_vld,
+        input tage_pkg      tage_pld,
+
+        input logic         btb_vld,
+        input btb_pkg       btb_pld,
+
+        // Branch Target FIFO ==========================
+        output logic        fifo_bp1_vld,
+        output bpu_pkg      fifo_bp1_pld,
+        output logic        fifo_bp2_vld,
+        output logic        fifo_bp2_chgflw,
+        output bpu_pkg      fifo_bp2_chgflw_pld,
+
+        // rob ================================
+        output   logic      rob_bp2_vld,
+        output   logic      rob_bp2_flush,
+
+        // FE Controller ===============================
+        input  logic        fe_ctrl_stall,
+        output logic        fe_ctrl_bp2_chgflw_vld_s0,
+        output bpu_pkg      fe_ctrl_bp2_chgflw_pld_s1,
+        output logic        fe_ctrl_bp2_chgflw_vld_s1,
+        input  logic        fe_ctrl_bp2_flush         // hack bp2
+    );
+
+    bpu_pkg                                                l0btb_pld_s1;
+    logic                                                  bp2_tgt_pc_hit;
+    logic                                                  bp2_offset_hit;
+    logic                [ADDR_WIDTH-1:0]                  bp2_tgt_pc;
+    logic                [BPU_OFFSET_WIDTH-1:0]            bp2_offset;
+    logic                                                  bp2_is_cext;
+    logic                                                  bp2_carry;
+
+    // logic                [ADDR_WIDTH-1 :0]                 align_tgt_pc;
+    // logic                [ADDR_WIDTH-1 :0]                 align_pc_boundary;
+    // logic                [ADDR_WIDTH-1 :0]                 align_offset;
+    // logic                [ADDR_WIDTH-1 :0]                 non_align_tgt_pc;
+    // logic                [ADDR_WIDTH-1 :0]                 non_align_offset;
+    // logic                                                  non_align_cext;
+    // logic                                                  non_align_carry;
+    // logic                                                  non_align_taken;
+
+    logic                                                  bp2_chgflw_vld_s0;
+    bpu_pkg                                                bp2_chgflw_pld_s0;
+    logic                                                  bp2_chgflw_vld_s1;
+    logic                                                  bp1_vld_s1;
+    bpu_pkg                                                bp2_chgflw_pld_s1;
+
+
+    assign rob_bp2_vld                         =  bp1_vld_s1;
+    assign rob_bp2_flush                       =  bp2_chgflw_vld_s1;
+
+    // assign fifo_bp1_vld                        = l0btb_vld && ~bp2_chgflw_vld_s0;
+    assign fifo_bp1_vld                        = 1'b0;
+    assign fifo_bp1_pld                        = l0btb_pld;
+    assign fifo_bp2_vld                        = tage_vld && btb_vld;
+    assign fifo_bp2_chgflw                     = (~bp2_tgt_pc_hit | ~bp2_offset_hit);
+    assign fifo_bp2_chgflw_pld.taken           = tage_pld.taken && ~btb_pld.need_align;
+    assign fifo_bp2_chgflw_pld.pred_pc         = tage_pld.pred_pc;
+    assign fifo_bp2_chgflw_pld.offset          = bp2_offset;
+    assign fifo_bp2_chgflw_pld.is_cext         = bp2_is_cext;
+    assign fifo_bp2_chgflw_pld.carry           = bp2_carry;
+    assign fifo_bp2_chgflw_pld.tgt_pc          = bp2_tgt_pc;
+
+    assign fe_ctrl_bp2_chgflw_vld_s0           = bp2_chgflw_vld_s0;
+    assign fe_ctrl_bp2_chgflw_vld_s1           = bp2_chgflw_vld_s1;
+    assign fe_ctrl_bp2_chgflw_pld_s1           = bp2_chgflw_pld_s1;
+
+    assign bp2_chgflw_vld_s0                   = tage_vld && btb_vld && (~bp2_tgt_pc_hit | ~bp2_offset_hit);
+    assign bp2_chgflw_pld_s0.taken             = tage_pld.taken && ~btb_pld.need_align;
+    assign bp2_chgflw_pld_s0.pred_pc           = tage_pld.pred_pc;
+    assign bp2_chgflw_pld_s0.offset            = bp2_offset;
+    assign bp2_chgflw_pld_s0.is_cext           = bp2_is_cext;
+    assign bp2_chgflw_pld_s0.carry             = bp2_carry;
+    assign bp2_chgflw_pld_s0.tgt_pc            = bp2_tgt_pc;
+
+    always_ff @(posedge clk or negedge rst_n) begin
+        if(~rst_n)  l0btb_pld_s1 <= {(ADDR_WIDTH*2+BPU_OFFSET_WIDTH+1){1'b0}};
+        else        l0btb_pld_s1 <= l0btb_pld;
+    end
+
+    always_ff @(posedge clk or negedge rst_n) begin
+        if(~rst_n) begin
+            bp1_vld_s1        <= 1'b0;
+            bp2_chgflw_vld_s1 <= 1'b0;
+            bp2_chgflw_pld_s1 <= {$bits(bpu_pkg){1'b0}};
+        end
+        else if(fe_ctrl_bp2_flush) begin 
+            bp1_vld_s1        <= 1'b0;
+            bp2_chgflw_vld_s1 <= 1'b0;
+            bp2_chgflw_pld_s1 <= {$bits(bpu_pkg){1'b0}};
+        end
+        else begin
+            bp1_vld_s1        <= l0btb_vld;
+            bp2_chgflw_vld_s1 <= bp2_chgflw_vld_s0;
+            bp2_chgflw_pld_s1 <= bp2_chgflw_pld_s0;
+        end
+    end
+
+    assign bp2_offset     = (tage_pld.taken && ~btb_pld.need_align) ? btb_pld.offset  : ({(BPU_OFFSET_WIDTH){1'b1}} - (btb_pld.pred_pc[ALIGN_WIDTH-1:0]>>2));
+    assign bp2_is_cext    = (tage_pld.taken && ~btb_pld.need_align) ? btb_pld.is_cext : 1'b0;
+    assign bp2_carry      = (tage_pld.taken && ~btb_pld.need_align) ? btb_pld.carry   : 1'b0;
+    assign bp2_tgt_pc     = (tage_pld.taken && ~btb_pld.need_align) ? btb_pld.tgt_pc  : ({btb_pld.pred_pc[ADDR_WIDTH-1:ALIGN_WIDTH], {ALIGN_WIDTH{1'b0}}} + FETCH_DATA_WIDTH/8);
+    assign bp2_tgt_pc_hit = (tage_vld&&btb_vld) ? l0btb_pld_s1.tgt_pc == bp2_tgt_pc   : 1'b1;
+    assign bp2_offset_hit = (tage_vld&&btb_vld) ? ((l0btb_pld_s1.offset == bp2_offset)
+        && (l0btb_pld_s1.is_cext == bp2_is_cext)
+        && (l0btb_pld_s1.carry == bp2_carry)) : 1'b1;
+
+
+endmodule 

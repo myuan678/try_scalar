@@ -1,0 +1,298 @@
+module toy_bpu_btb
+    import toy_pack::*;
+    (
+        input logic                            clk,
+        input logic                            rst_n,
+
+        // PCGEN =============================================================
+        input logic                            pcgen_vld,
+        input logic [ADDR_WIDTH-1:0]           pcgen_pc,
+
+        // GHR ===============================================================
+        input   logic [GHR_LENGTH-1:0]         ghr,
+        output  logic                          ghr_pred_hit,
+
+        // MEM MODEL =========================================================
+        output logic                               mem_req_vld,
+        output logic         [BTB_WAY_NUM-1:0]     mem_req_wren,
+        output logic         [BTB_INDEX_WIDTH-1:0] mem_req_addr,
+        output btb_entry_pkg                       mem_req_wdata,
+        input  btb_entry_pkg                       mem_ack_rdata,
+
+        // BP DEC ============================================================
+        output  logic                          bpdec_btb_vld,
+        output  btb_pkg                        bpdec_btb_pld,
+
+        // FE Controller =====================================================
+        input   logic                          fe_ctrl_stall,
+        input   logic   [1:0]                  fe_ctrl_flush,
+        input   logic   [COMMIT_CHANNEL-1:0]   fe_ctrl_flush_en,
+        input   logic                          fe_ctrl_chgflw,
+        input   btb_pkg                        fe_ctrl_chgflw_pld,
+        input   logic                          fe_ctrl_enqueue,
+        output  logic                          fe_ctrl_btb_full
+    );
+
+    localparam BTB_OFFSET_WIDTH = BPU_OFFSET_WIDTH + 2;
+
+    logic                [BTB_INDEX_WIDTH-1:0]             hist_pc;
+    logic                [BTB_INDEX_WIDTH-1:0]             hist_pc_reg0;
+    logic                [BTB_INDEX_WIDTH-1:0]             hist_pc_reg1;
+    logic                [BTB_INDEX_WIDTH-1:0]             hist_pc_reg2;
+    logic                [BTB_INDEX_WIDTH-1:0]             hist_pc_reg3;
+    logic                [BTB_INDEX_WIDTH-1:0]             hist_pc_reg4;
+    logic                [BTB_INDEX_WIDTH-1:0]             rtu_hist_pc_reg [3:0];
+
+    logic                [BTB_INDEX_WIDTH-1:0]             hash_idx;
+    logic                [BTB_TAG_WIDTH-1:0]               hash_tag;
+    logic                                                  entry_req_vld;
+    logic                                                  entry_req_wren;
+    logic                [BTB_WAY_NUM-1:0]                 v_entry_req_wren;
+    logic                [BTB_INDEX_WIDTH-1:0]             entry_req_addr;
+    btb_entry_pkg                                          entry_req_wdata;
+    btb_entry_pkg                                          entry_ack_rdata;
+
+    logic                [ADDR_WIDTH-1:0]                  pcgen_pc_s1;
+    logic                [BTB_INDEX_WIDTH-1:0]             hash_idx_s1;
+    logic                [BTB_TAG_WIDTH-1:0]               hash_tag_s1;
+
+    logic                [BTB_WAY_NUM-1:0]                 way_vld;
+    logic                [BTB_WAY_NUM-1:0]                 way_hit;
+    logic                [ADDR_WIDTH+BTB_OFFSET_WIDTH-1:0] v_entry_way_pred [BTB_WAY_NUM-1:0];
+    logic                [ADDR_WIDTH+BTB_OFFSET_WIDTH-1:0] entry_way_pred;
+    btb_pkg                                                btb_pred_res;
+
+    logic                                                  buffer_s_vld_s0;
+    logic                                                  buffer_s_rdy_s0;
+    logic                                                  buffer_s_vld_s1;
+    btb_entry_buffer_pkg                                   buffer_s_pld_s1;
+    logic                [BTB_WAY_NUM-1:0]                 buffer_s_way_hit_s1;
+    logic                                                  buffer_m_vld_s0;
+    logic                                                  buffer_m_ack_s0;
+    btb_entry_buffer_pkg                                   buffer_m_pld_s0;
+
+    logic                [ADDR_WIDTH-1 :0]                 align_tgt_pc;
+    logic                [ADDR_WIDTH-1 :0]                 align_pc_boundary;
+    logic                [ADDR_WIDTH-1 :0]                 align_offset;
+    logic                [ADDR_WIDTH-1 :0]                 non_align_tgt_pc;
+    logic                [ADDR_WIDTH-1 :0]                 non_align_offset;
+    logic                                                  non_align_cext;
+    logic                                                  non_align_carry;
+    logic                                                  non_align_taken;
+    logic                                                  need_align;
+
+    //===============================================
+    //  pred result to other module
+    //===============================================
+    assign bpdec_btb_vld          = buffer_s_vld_s1;
+    assign bpdec_btb_pld          = btb_pred_res;
+
+    assign fe_ctrl_btb_full       = ~buffer_s_rdy_s0;
+    assign ghr_pred_hit           = |way_hit;
+
+    // //===============================================
+    // //  hist_pc_reg
+    // //===============================================
+
+    assign hist_pc = {hist_pc_reg3[9:8], hist_pc_reg2[7:6], hist_pc_reg1[5:4], hist_pc_reg0[3:2], pcgen_pc[2:1]};
+    // assign hist_pc = {hist_pc_reg3[8], hist_pc_reg2[7:6], hist_pc_reg1[5:4], hist_pc_reg0[3:2], pcgen_pc[2:1]};
+
+    always @(posedge clk or negedge rst_n) begin
+        if(~rst_n)                                    hist_pc_reg0 <= {BTB_INDEX_WIDTH{1'b0}};
+        else if(fe_ctrl_chgflw&&fe_ctrl_flush)        hist_pc_reg0 <= fe_ctrl_chgflw_pld.pred_pc[BTB_INDEX_WIDTH-1:0];
+        else if(fe_ctrl_stall)                        hist_pc_reg0 <= hist_pc_reg0;
+        else if(pcgen_vld)                            hist_pc_reg0 <= pcgen_pc[BTB_INDEX_WIDTH-1:0];
+    end
+
+    always @(posedge clk or negedge rst_n) begin
+        if(~rst_n)                                    hist_pc_reg1 <= {BTB_INDEX_WIDTH{1'b0}};
+        else if(fe_ctrl_chgflw&&fe_ctrl_flush)        hist_pc_reg1 <= rtu_hist_pc_reg[0];
+        else if(fe_ctrl_stall)                        hist_pc_reg1 <= hist_pc_reg1;
+        else if(pcgen_vld)                            hist_pc_reg1 <= hist_pc_reg0;
+    end
+
+    always @(posedge clk or negedge rst_n) begin
+        if(~rst_n)                                    hist_pc_reg2 <= {BTB_INDEX_WIDTH{1'b0}};
+        else if(fe_ctrl_chgflw&&fe_ctrl_flush)        hist_pc_reg2 <= rtu_hist_pc_reg[1];
+        else if(fe_ctrl_stall)                        hist_pc_reg2 <= hist_pc_reg2;
+        else if(pcgen_vld)                            hist_pc_reg2 <= hist_pc_reg1;
+    end
+
+    always @(posedge clk or negedge rst_n) begin
+        if(~rst_n)                                    hist_pc_reg3 <= {BTB_INDEX_WIDTH{1'b0}};
+        else if(fe_ctrl_chgflw&&fe_ctrl_flush)        hist_pc_reg3 <= rtu_hist_pc_reg[2];
+        else if(fe_ctrl_stall)                        hist_pc_reg3 <= hist_pc_reg3;
+        else if(pcgen_vld)                            hist_pc_reg3 <= hist_pc_reg2;
+    end
+
+    always @(posedge clk or negedge rst_n) begin
+        if(~rst_n)                                    hist_pc_reg4 <= {BTB_INDEX_WIDTH{1'b0}};
+        else if(fe_ctrl_chgflw&&fe_ctrl_flush)        hist_pc_reg4 <= rtu_hist_pc_reg[3];
+        else if(pcgen_vld)                            hist_pc_reg4 <= hist_pc_reg3;
+    end
+
+    // for be flush and commit
+    always @(posedge clk or negedge rst_n) begin
+        if(~rst_n)                                    rtu_hist_pc_reg[0] <= {BTB_INDEX_WIDTH{1'b0}};
+        else if(fe_ctrl_chgflw)                       rtu_hist_pc_reg[0] <= fe_ctrl_chgflw_pld.pred_pc[BTB_INDEX_WIDTH-1:0];
+    end
+
+    always @(posedge clk or negedge rst_n) begin
+        if(~rst_n)                                    rtu_hist_pc_reg[1] <= {BTB_INDEX_WIDTH{1'b0}};
+        else if(fe_ctrl_chgflw)                       rtu_hist_pc_reg[1] <= rtu_hist_pc_reg[0];
+    end
+
+    always @(posedge clk or negedge rst_n) begin
+        if(~rst_n)                                    rtu_hist_pc_reg[2] <= {BTB_INDEX_WIDTH{1'b0}};
+        else if(fe_ctrl_chgflw)                       rtu_hist_pc_reg[2] <= rtu_hist_pc_reg[1];
+    end
+
+    always @(posedge clk or negedge rst_n) begin
+        if(~rst_n)                                    rtu_hist_pc_reg[3] <= {BTB_INDEX_WIDTH{1'b0}};
+        else if(fe_ctrl_chgflw)                       rtu_hist_pc_reg[3] <= rtu_hist_pc_reg[2];
+    end
+
+
+
+    //===============================================
+    //  entry buffer
+    //===============================================
+    assign buffer_s_vld_s0                 = pcgen_vld;
+    assign buffer_s_pld_s1.pred_pc         = pcgen_pc_s1;
+    assign buffer_s_pld_s1.index           = hash_idx_s1;
+    assign buffer_s_pld_s1.entry.node      = entry_ack_rdata.node;
+    assign buffer_s_pld_s1.entry.entry_way = entry_ack_rdata.entry_way;
+    assign buffer_s_pld_s1.way_hit         = way_hit;
+    assign buffer_s_way_hit_s1             = way_hit;
+    assign buffer_s_pld_s1.tag             = hash_tag_s1;
+    assign buffer_m_ack_s0                 = entry_req_wren;
+
+    always_ff @(posedge clk or negedge rst_n) begin
+        if (~rst_n)             buffer_s_vld_s1 <= 1'b0;
+        else if(|fe_ctrl_flush) buffer_s_vld_s1 <= 1'b0;
+        else if(fe_ctrl_stall)  buffer_s_vld_s1 <= 1'b0;
+        else                    buffer_s_vld_s1 <= pcgen_vld;
+    end
+
+    toy_bpu_btb_entry_buffer u_entry_buffer(
+        .clk             (clk                    ),
+        .rst_n           (rst_n                  ),
+        .be_flush        (fe_ctrl_flush[0]       ),
+        .be_flush_en     (fe_ctrl_flush_en       ),
+        .ras_flush       (fe_ctrl_flush[1]       ),
+        .bp2_flush       (1'b0),
+        .s_vld_s0        (buffer_s_vld_s0        ),
+        .s_rdy_s0        (buffer_s_rdy_s0        ),
+        .s_vld_s1        (buffer_s_vld_s1        ),
+        .s_pld_s1        (buffer_s_pld_s1        ),
+        .s_way_hit_s1    (buffer_s_way_hit_s1    ),
+        .s_update_vld    (fe_ctrl_chgflw         ),
+        .s_update_pld    (fe_ctrl_chgflw_pld     ),
+        .s_update_enqueue(fe_ctrl_enqueue        ),
+        .m_vld           (buffer_m_vld_s0        ),
+        .m_rdy           (buffer_m_ack_s0        ),
+        .m_pld           (buffer_m_pld_s0        )
+    );
+
+    //===============================================
+    //  Preprocess
+    //===============================================
+    // assign hash_idx = pcgen_pc[BTB_INDEX_WIDTH:1] ^ hist_pc
+    //                 ^ ghr[BTB_INDEX_WIDTH*2-1:BTB_INDEX_WIDTH]
+    //                 ^ ghr[BTB_INDEX_WIDTH-1:0];
+
+    // assign hash_idx         = pcgen_pc[BTB_INDEX_WIDTH:1]
+    //                         ^ ghr[BTB_INDEX_WIDTH*2-1:BTB_INDEX_WIDTH]
+    //                         ^ ghr[BTB_INDEX_WIDTH-1:0];
+
+    // assign hash_tag         = {pcgen_pc[BTB_TAG_WIDTH+BTB_TAG_WIDTH:BTB_TAG_WIDTH+1], pcgen_pc[0]}
+    //                         ^ ghr[BTB_TAG_WIDTH*2-1:BTB_TAG_WIDTH]
+    //                         ^ ghr[BTB_TAG_WIDTH-1:0];
+
+    assign hash_idx         = {pcgen_pc[2*BTB_INDEX_WIDTH+1:BTB_INDEX_WIDTH+1]} ^ pcgen_pc[BTB_INDEX_WIDTH:1] ^ hist_pc;
+
+    assign hash_tag         = {pcgen_pc[2*BTB_TAG_WIDTH+1:BTB_TAG_WIDTH+1]} ^ pcgen_pc[BTB_TAG_WIDTH:1];
+
+    assign entry_req_vld    = pcgen_vld | buffer_m_vld_s0;
+    assign entry_req_wren   = ~pcgen_vld && buffer_m_vld_s0;
+    assign v_entry_req_wren = {BTB_WAY_NUM{entry_req_wren && buffer_m_pld_s0.real_taken}} & buffer_m_pld_s0.way_hit;
+    assign entry_req_addr   = entry_req_wren ? buffer_m_pld_s0.index : hash_idx;
+    assign entry_req_wdata  = buffer_m_pld_s0.entry;
+
+    always_ff @(posedge clk or negedge rst_n) begin
+        if (~rst_n)             hash_idx_s1 <= {BTB_INDEX_WIDTH{1'b0}};
+        else if(|fe_ctrl_flush) hash_idx_s1 <= {BTB_INDEX_WIDTH{1'b0}};
+        else                    hash_idx_s1 <= hash_idx;
+    end
+
+    always_ff @(posedge clk or negedge rst_n) begin
+        if (~rst_n)             hash_tag_s1 <= {BTB_TAG_WIDTH{1'b0}};
+        else if(|fe_ctrl_flush) hash_tag_s1 <= {BTB_TAG_WIDTH{1'b0}};
+        else                    hash_tag_s1 <= hash_tag;
+    end
+
+    always_ff @(posedge clk or negedge rst_n) begin
+        if (~rst_n)             pcgen_pc_s1 <= {ADDR_WIDTH{1'b0}};
+        else if(|fe_ctrl_flush) pcgen_pc_s1 <= {ADDR_WIDTH{1'b0}};
+        else                    pcgen_pc_s1 <= pcgen_pc;
+    end
+
+
+    //===============================================
+    //  Prediction
+    //===============================================
+    assign align_pc_boundary       = {pcgen_pc_s1[ADDR_WIDTH-1:ALIGN_WIDTH], {ALIGN_WIDTH{1'b0}}} + FETCH_DATA_WIDTH/8;
+    assign align_offset            = (align_pc_boundary - pcgen_pc_s1);
+    assign non_align_tgt_pc        = |way_hit ? entry_way_pred[ADDR_WIDTH+BTB_OFFSET_WIDTH-1:BTB_OFFSET_WIDTH] : (pcgen_pc_s1 + (PRED_BLOCK_LEN*4));
+    assign non_align_offset        = |way_hit ? entry_way_pred[BTB_OFFSET_WIDTH-1:2]                           : ({BPU_OFFSET_WIDTH{1'b1}} - (pcgen_pc_s1[ALIGN_WIDTH-1:0]>>2));
+    assign non_align_cext          = |way_hit ? entry_way_pred[1]                                              : 1'b0;
+    assign non_align_carry         = |way_hit ? entry_way_pred[0]                                              : 1'b0;
+    assign need_align              = ((non_align_offset << 1) + (non_align_cext ? non_align_carry : 1'b0)) >= align_offset[BPU_OFFSET_WIDTH+2:1];
+
+    assign btb_pred_res.pred_pc    = pcgen_pc_s1;
+    assign btb_pred_res.tgt_pc     = need_align ? align_pc_boundary : non_align_tgt_pc;
+    assign btb_pred_res.offset     = need_align ? (align_offset>>2) : non_align_offset;
+    assign btb_pred_res.is_cext    = need_align ? 1'b0              : non_align_cext;
+    assign btb_pred_res.carry      = need_align ? 1'b0              : non_align_carry;
+    assign btb_pred_res.need_align = need_align;
+    assign btb_pred_res.taken      = 1'b0;
+
+    generate
+        for (genvar i = 0; i < BTB_WAY_NUM; i=i+1) begin: GEN_PRED
+            assign way_vld[i]          = entry_ack_rdata.entry_way[i].valid;
+            assign way_hit[i]          = (hash_tag_s1 == entry_ack_rdata.entry_way[i].tag) && way_vld[i];
+            assign v_entry_way_pred[i] = {entry_ack_rdata.entry_way[i].tgt_pc, entry_ack_rdata.entry_way[i].offset,
+                                          entry_ack_rdata.entry_way[i].is_cext, entry_ack_rdata.entry_way[i].carry};
+        end
+    endgenerate
+    
+    cmn_real_mux_onehot #(
+        .WIDTH    (BTB_WAY_NUM                ),
+        .PLD_WIDTH(ADDR_WIDTH+BTB_OFFSET_WIDTH)
+    ) u_pld_sel (
+        .select_onehot(way_hit         ),
+        .v_pld        (v_entry_way_pred),
+        .select_pld   (entry_way_pred  )
+    );
+
+    //===============================================
+    //  4 way btb entry
+    //===============================================
+
+    toy_bpu_btb_entry u_btb_entry(
+        .clk          (clk              ),
+        .rst_n        (rst_n            ),
+        .req_vld      (entry_req_vld    ),
+        .req_wren     (v_entry_req_wren ),
+        .req_addr     (entry_req_addr   ),
+        .req_wdata    (entry_req_wdata  ),
+        .ack_rdata    (entry_ack_rdata  ),
+        .mem_req_vld  (mem_req_vld      ),
+        .mem_req_wren (mem_req_wren     ),
+        .mem_req_addr (mem_req_addr     ),
+        .mem_req_wdata(mem_req_wdata    ),
+        .mem_ack_rdata(mem_ack_rdata    )
+    );
+
+
+endmodule 

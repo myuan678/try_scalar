@@ -1,0 +1,7 @@
+Command exited with non-zero status 255
+{"vcs1":{"timestamp_begin":1729672882.166179117, "rt":3.09, "ut":1.33, "st":0.10}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1729672881.700778801}
+{"VCS_COMP_START_TIME": 1729672881.700778801}
+{"VCS_COMP_END_TIME": 1729672885.319763913}
+{"VCS_USER_OPTIONS": "-kdb -full64 -debug_access -sverilog -f /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/sim.f +lint=PCWM +lint=TFIPC-L +define+TOY_SIM"}
+{"vcs1": {"peak_mem": 263177}}

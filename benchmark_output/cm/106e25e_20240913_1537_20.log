@@ -1,0 +1,76 @@
+
+Note-[RT_BS] Larger stack needed
+  Note: Bumping stack limit from 8192 to 8194 Kbytes.
+
+Chronologic VCS simulator copyright 1991-2016
+Contains Synopsys proprietary information.
+Compiler version L-2016.06_Full64; Runtime version L-2016.06_Full64;  Sep 13 15:37 2024
+
+Warning-[STASKW_CO1] Cannot open file
+  The file 
+  '/home/liuyunqi/huangtao/flibbs/rv_test/riscv-proj/hello_world/build/coremark_itcm.hex'
+  could not be opened. No such file or directory.
+  Please ensure that the file exists with proper permissions.
+
+
+Warning-[STASKW_RMCOF] Cannot open file
+/home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/mem/toy_mem_model_allude.sv, 50
+  Cannot open file 
+  '/home/liuyunqi/huangtao/flibbs/rv_test/riscv-proj/hello_world/build/coremark_itcm.hex'
+  passed as argument to $readmem.
+  Please verify that the first argument to $readmem is a file that exists with
+  proper permissions.
+
+
+Warning-[STASKW_CO1] Cannot open file
+  The file 
+  '/home/liuyunqi/huangtao/flibbs/rv_test/riscv-proj/hello_world/build/coremark_itcm.hex'
+  could not be opened. No such file or directory.
+  Please ensure that the file exists with proper permissions.
+
+
+Warning-[STASKW_RMCOF] Cannot open file
+/home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/mem/toy_imem_model.sv, 104
+  Cannot open file 
+  '/home/liuyunqi/huangtao/flibbs/rv_test/riscv-proj/hello_world/build/coremark_itcm.hex'
+  passed as argument to $readmem.
+  Please verify that the first argument to $readmem is a file that exists with
+  proper permissions.
+
+
+Warning-[STASKW_CO1] Cannot open file
+  The file 
+  '/home/liuyunqi/huangtao/flibbs/rv_test/riscv-proj/hello_world/build/coremark_itcm.hex'
+  could not be opened. No such file or directory.
+  Please ensure that the file exists with proper permissions.
+
+
+Warning-[STASKW_RMCOF] Cannot open file
+/home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/mem/toy_mem_model.sv, 79
+  Cannot open file 
+  '/home/liuyunqi/huangtao/flibbs/rv_test/riscv-proj/hello_world/build/coremark_itcm.hex'
+  passed as argument to $readmem.
+  Please verify that the first argument to $readmem is a file that exists with
+  proper permissions.
+
+
+Warning-[STASKW_CO1] Cannot open file
+  The file 
+  '/home/liuyunqi/huangtao/flibbs/rv_test/riscv-proj/hello_world/build/coremark_dtcm.hex'
+  could not be opened. No such file or directory.
+  Please ensure that the file exists with proper permissions.
+
+
+Warning-[STASKW_RMCOF] Cannot open file
+/home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/mem/toy_mem_model.sv, 79
+  Cannot open file 
+  '/home/liuyunqi/huangtao/flibbs/rv_test/riscv-proj/hello_world/build/coremark_dtcm.hex'
+  passed as argument to $readmem.
+  Please verify that the first argument to $readmem is a file that exists with
+  proper permissions.
+
+[SYSTEM] Timeout threshold is set to 0 cycles.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_div_tc:
+ at time = 10: Division by zero.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_rem_tc:
+ at time = 10: Division by zero.
