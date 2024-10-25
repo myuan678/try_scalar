@@ -106,7 +106,6 @@ module toy_fe_ctrl
    bpu_pkg                                  fe_cancel_pld;
 
    logic                                    bpu_pred_buf;
-   logic                                    icache_req_vld_buf;
 
    //================================================================
    // for update buffer
@@ -162,15 +161,16 @@ module toy_fe_ctrl
    assign tage_pred_vld        = pcgen_vld && ~bpu_update;
    assign tage_pred_pc         = pc;
 
-   assign bpu_update           = bpdec_bp2_chgflw_vld | be_flush | ras_chgflw_vld;
-   assign pcgen_vld            = icache_req_rdy && bpdec_entry_buffer_rdy && rob_rdy;
    assign pcgen_pre_vld        = bpdec_entry_buffer_rdy && rob_rdy;
+   assign pcgen_vld            = icache_req_rdy && bpdec_entry_buffer_rdy && rob_rdy;
    assign pc_nxt               = pcgen_chgflw_vld ? pcgen_chgflw_pld.tgt_pc : (pc + (PRED_BLOCK_LEN*4));
 
+   assign bpu_update           = bpdec_bp2_chgflw_vld | be_flush | ras_chgflw_vld;
+
    always_ff @(posedge clk or negedge rst_n) begin
-      if(~rst_n)                        bpu_pred_buf <= 1'b0;
-      else if(pcgen_vld && ~bpu_update) bpu_pred_buf <= 1'b1;
-      else                              bpu_pred_buf <= 1'b0;
+      if(~rst_n)                               bpu_pred_buf <= 1'b0;
+      else if(pcgen_vld && ~bpu_update)        bpu_pred_buf <= 1'b1;
+      else                                     bpu_pred_buf <= 1'b0;
    end
 
    always_ff @(posedge clk or negedge rst_n) begin
@@ -182,7 +182,7 @@ module toy_fe_ctrl
    // Changeflow Ctrl path
    //================================================================
    // For pcgen: 1. cancel from commit buffer; 2. ras chgflw; 3. bp2 chgflw; 4. l0btb chgflw
-   assign pcgen_chgflw_vld = fe_cancel_vld | ras_chgflw_vld | bpdec_bp2_chgflw_vld | l0btb_chgflw_vld_i;
+   assign pcgen_chgflw_vld               = fe_cancel_vld | ras_chgflw_vld | bpdec_bp2_chgflw_vld | l0btb_chgflw_vld_i;
 
    // For l0btb: 1. bp2 chgflw
    assign l0btb_chgflw_vld_o             = bpdec_bp2_chgflw_vld;

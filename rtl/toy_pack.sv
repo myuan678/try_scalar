@@ -102,7 +102,7 @@ package toy_pack;
 
 
     // localparam integer unsigned ALIGN_WIDTH        = $clog2(FETCH_DATA_WIDTH/8/2);
-    localparam integer unsigned ALIGN_WIDTH           = 3; //2: 32-bit; 3: 64-bit; 4: 128-bit ...
+    localparam integer unsigned ALIGN_WIDTH           = 5; //2: 32-bit; 3: 64-bit; 4: 128-bit ...
 
 
 //=============================================================================
@@ -119,11 +119,11 @@ package toy_pack;
     localparam integer unsigned ICACHE_OFFSET_WIDTH          = $clog2(ICACHE_LINE_SIZE) ;
     localparam integer unsigned ICACHE_TAG_WIDTH             = ADDR_WIDTH-ICACHE_INDEX_WIDTH-ICACHE_OFFSET_WIDTH;
     localparam integer unsigned ICACHE_REQ_OPCODE_WIDTH      = 5 ;
-    localparam integer unsigned ICACHE_REQ_TXNID_WIDTH       = 5 ;
+    localparam integer unsigned ICACHE_REQ_TXNID_WIDTH       = 4 ;
     //localparam integer unsigned ADDR_WIDTH = ICACHE_TAG_WIDTH + ICACHE_INDEX_WIDTH + ICACHE_OFFSET_WIDTH;
     
     
-    localparam integer unsigned MSHR_ENTRY_NUM               = 16      ;
+    localparam integer unsigned MSHR_ENTRY_NUM               = 32      ;
     localparam integer unsigned MSHR_ENTRY_INDEX_WIDTH       = $clog2(MSHR_ENTRY_NUM);
     localparam integer unsigned ICACHE_UPSTREAM_DATA_WIDTH   = ICACHE_LINE_SIZE*8   ;
     localparam integer unsigned ICACHE_DOWNSTREAM_DATA_WIDTH = ICACHE_LINE_SIZE*8    ;

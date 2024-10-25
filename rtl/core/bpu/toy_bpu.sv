@@ -360,8 +360,8 @@ module toy_bpu
       .filter_vld          (filter_rob_vld                  ),
       .filter_rdy          (filter_rob_rdy                  ),
       .filter_pld          (filter_rob_pld                  ),
-      .fe_ctrl_bp2_vld     (rob_bp2_vld                     ),
-      .fe_ctrl_bp2_flush   (rob_bp2_flush                   ),
+      .bpdec_bp2_vld       (rob_bp2_vld                     ),
+      .bpdec_bp2_flush     (rob_bp2_flush                   ),
       .fe_ctrl_flush       (rob_flush                       ),
       .fe_ctrl_flush_done  (rob_flush_done                  ),
       .fe_ctrl_rdy         (rob_rdy                         )

@@ -141,8 +141,6 @@ module toy_bpu_bpdec_entry_buffer
     //===============================================
     //  bypass enable
     //===============================================
-
-
     generate
         for (genvar i=0; i< ENTRY_BUFFER_NUM; i = i + 1) begin: GEN_BYPASS
             always_ff @(posedge clk or negedge rst_n) begin

@@ -1,6 +1,5 @@
 
 -f $TOY_SCALAR_PATH/rtl/toy_scalar.f
-
 -f /data/usr/xuemy/try/cache_v1/icache_v1_1008_release/icache_filelist_scalar.f
 
 // dw ip
