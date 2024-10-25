@@ -30,7 +30,7 @@
 -P
 -Xufe=2steps
 -debug_access
--f /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/sim.f
+-f /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/sim.f
 -fsdb
 -full64
 -gen_obj
@@ -39,17 +39,17 @@
 -sverilog
 /tools/software/synopsys/vcs/T-2022.06/linux64/bin/vcs1
 /tools/software/synopsys/verdi/T-2022.06/share/PLI/VCS/LINUX64/verdi.tab
-/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/sim.f
+/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/sim.f
 76
 _LMFILES__modshare=/usr/share/modules/modulefiles/vcs/T-2022.06:1:/usr/share/modules/modulefiles/spyglass/T-2022.06-1:1:/usr/share/modules/modulefiles/syn/T-2022.03-SP2:1:/usr/share/modules/modulefiles/synopsys_lic:1:/usr/share/modules/modulefiles/verdi/T-2022.06:1:/usr/share/modules/modulefiles/fde/1.3:1
 _LMFILES_=/usr/share/modules/modulefiles/synopsys_lic:/usr/share/modules/modulefiles/vcs/T-2022.06:/usr/share/modules/modulefiles/spyglass/T-2022.06-1:/usr/share/modules/modulefiles/verdi/T-2022.06:/usr/share/modules/modulefiles/fde/1.3:/usr/share/modules/modulefiles/syn/T-2022.03-SP2
 XDG_SESSION_TYPE=tty
-XDG_SESSION_ID=700
+XDG_SESSION_ID=734
 XDG_SESSION_CLASS=user
 XDG_RUNTIME_DIR=/run/user/1014
 XDG_DATA_DIRS=/usr/local/share:/usr/share:/var/lib/snapd/desktop
-VSCODE_IPC_HOOK_CLI=/run/user/1014/vscode-ipc-2ab60509-1c1d-45b7-84bd-2341db0a0af8.sock
-VSCODE_GIT_IPC_HANDLE=/run/user/1014/vscode-git-fe4e2b6161.sock
+VSCODE_IPC_HOOK_CLI=/run/user/1014/vscode-ipc-48a322a3-af79-4bbb-b851-8963f928e196.sock
+VSCODE_GIT_IPC_HANDLE=/run/user/1014/vscode-git-785b0e0ef8.sock
 VSCODE_GIT_ASKPASS_NODE=/home/xuemengyuan/.vscode-server/cli/servers/Stable-eaa41d57266683296de7d118f574d0c2652e1fc4/server/node
 VSCODE_GIT_ASKPASS_MAIN=/home/xuemengyuan/.vscode-server/cli/servers/Stable-eaa41d57266683296de7d118f574d0c2652e1fc4/server/extensions/git/dist/askpass-main.js
 VSCODE_GIT_ASKPASS_EXTRA_ARGS=
@@ -65,7 +65,7 @@ VCS_ARG_ADDED_FOR_TMP=1
 VCS_ARCH_OVERRIDE=linux
 VCS_ARCH=linux64
 UNAME=/bin/uname
-TOY_SCALAR_PATH=/data/usr/xuemy/8fetch_ooo/toy_scalar
+TOY_SCALAR_PATH=/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar
 TOOL_HOME=/tools/software/synopsys/vcs/T-2022.06/linux64
 TERM_PROGRAM_VERSION=1.92.1
 TERM_PROGRAM=vscode
@@ -75,13 +75,13 @@ TCLLIBPATH=/tools/software/fde/fde_1p3/tcl
 SYNOPSYS=/tools/software/synopsys/syn/T-2022.03-SP2
 SSL_CERT_FILE=/usr/lib/ssl/certs/ca-certificates.crt
 SSL_CERT_DIR=/usr/lib/ssl/certs
-SSH_CONNECTION=127.0.0.1 43714 127.0.0.1 22
-SSH_CLIENT=127.0.0.1 43714 22
+SSH_CONNECTION=127.0.0.1 39224 127.0.0.1 22
+SSH_CLIENT=127.0.0.1 39224 22
 SPYGLASS_HOME=/tools/software/synopsys/spyglass/T-2022.06-1/SPYGLASS_HOME
 SNPS_VERDI_INTERNAL_LP_XML_NEW_FLOW=1
 SNPS_VCS_CLANG_PATH=/tools/software/synopsys/vcs/T-2022.06/linux64/clang
 SNPS_INTERNAL_VCS_LINUX_OS=ubuntu
-SIM_FILELIST=/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/sim.f
+SIM_FILELIST=/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/sim.f
 SCRNAME=vcs
 SCRIPT_NAME=vcs
 RV_TEST_PATH=/tools/hurj/riscv-proj
@@ -99,8 +99,8 @@ MODULESHOME=/usr/share/modules
 MODULEPATH_modshare=/etc/environment-modules/modules:1:/usr/share/modules/$MODULE_VERSION/modulefiles:1:/usr/share/modules/modulefiles:1:/usr/share/modules/versions:1
 MODULEPATH=/etc/environment-modules/modules:/usr/share/modules/versions:/usr/share/modules/$MODULE_VERSION/modulefiles:/usr/share/modules/modulefiles
 MFLAGS=
-MAKE_TERMOUT=/dev/pts/26
-MAKE_TERMERR=/dev/pts/26
+MAKE_TERMOUT=/dev/pts/11
+MAKE_TERMERR=/dev/pts/11
 MAKELEVEL=1
 MAKEFLAGS=
 LOADEDMODULES_modshare=verdi/T-2022.06:1:fde/1.3:1:vcs/T-2022.06:1:spyglass/T-2022.06-1:1:syn/T-2022.03-SP2:1:synopsys_lic:1
@@ -122,12 +122,12 @@ BASH_ENV=/usr/share/modules/init/bash
 141
 1652899353 /tools/software/synopsys/syn/T-2022.03-SP2/dw/sim_ver/DW_sqrt_function.inc
 1652899353 /tools/software/synopsys/syn/T-2022.03-SP2/dw/sim_ver/DW_div_function.inc
-1729751638 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_top.sv
-1729582784 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_env_slv.sv
-1729582784 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/mem/toy_mem_model_tage.sv
-1729582784 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/mem/toy_mem_model_bit.sv
-1729582784 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/mem/toy_mem_model_allude.sv
-1729582784 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/mem/toy_mem_model.sv
+1729841136 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/toy_top.sv
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/toy_env_slv.sv
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/mem/toy_mem_model_tage.sv
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/mem/toy_mem_model_bit.sv
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/mem/toy_mem_model_allude.sv
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/mem/toy_mem_model.sv
 1652899319 /tools/software/synopsys/syn/T-2022.03-SP2/dw/sim_ver/DW_fp_cmp.v
 1652899351 /tools/software/synopsys/syn/T-2022.03-SP2/dw/sim_ver/DW_fp_dp2.v
 1652899350 /tools/software/synopsys/syn/T-2022.03-SP2/dw/sim_ver/DW_fp_sqrt.v
@@ -141,7 +141,7 @@ BASH_ENV=/usr/share/modules/init/bash
 1652899351 /tools/software/synopsys/syn/T-2022.03-SP2/dw/sim_ver/DW_mult_pipe.v
 1652899351 /tools/software/synopsys/syn/T-2022.03-SP2/dw/sim_ver/DW_div_pipe.v
 1652899351 /tools/software/synopsys/syn/T-2022.03-SP2/dw/sim_ver/DW_div.v
-1729651219 /data/usr/xuemy/try/cache_v1/icache_v1_1008_release/mem/toy_imem_model.sv
+1729838322 /data/usr/xuemy/try/cache_v1/icache_v1_1008_release/mem/toy_imem_model.sv
 1729766227 /data/usr/xuemy/try/cache_v1/icache_v1_1008_release/mem/toy_itcm.sv
 1729750856 /data/usr/xuemy/try/cache_v1/icache_v1_1008_release/icache_adapter.sv
 1728971999 /data/usr/xuemy/try/cache_v1/icache_v1_1008_release/fifo.sv
@@ -162,112 +162,112 @@ BASH_ENV=/usr/share/modules/init/bash
 1729605718 /data/usr/xuemy/try/cache_v1/icache_v1_1008_release/icache_req_arbiter.sv
 1728971999 /data/usr/xuemy/try/cache_v1/icache_v1_1008_release/cmn_onehot2bin2.sv
 1729736220 /data/usr/xuemy/try/cache_v1/icache_v1_1008_release/icache_top_scalar.sv
-1729582784 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_scalar.sv
-1729582784 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/mem/toy_mem_top.sv
-1729582784 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/core/fetch/toy_fetch_queue2.sv
-1729582784 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/core/fetch/toy_fetch_buffer.sv
-1729582784 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/core/fetch/toy_fetch_queue.sv
-1729582784 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/core/bpu/toy_bpu_mem.sv
-1729665243 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/core/bpu/toy_bpu.sv
-1729582784 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/core/bpu/toy_pcgen.sv
-1729665243 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/core/bpu/toy_fe_commit_buffer.sv
-1729665243 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/core/bpu/toy_fe_ctrl.sv
-1729582784 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/core/bpu/toy_bpu_filter_predecoder.sv
-1729582784 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/core/bpu/toy_bpu_filter32.sv
-1729582784 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/core/bpu/toy_bpu_ras.sv
-1729582784 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/core/bpu/toy_bpu_btfifo.sv
-1729582784 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/core/bpu/toy_bpu_rob_entry.sv
-1729665243 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/core/bpu/toy_bpu_rob.sv
-1729665243 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/core/bpu/toy_bpu_bpdec_entry_buffer.sv
-1729665243 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/core/bpu/toy_bpu_bpdec.sv
-1729665243 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/core/bpu/toy_bpu_btb.sv
-1729582784 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/core/bpu/toy_bpu_btb_entry.sv
-1729665243 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/core/bpu/toy_bpu_tage.sv
-1729582784 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/core/bpu/toy_bpu_tage_tx_table.sv
-1729582784 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/core/bpu/toy_bpu_tage_base_table.sv
-1729582784 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/core/bpu/toy_bpu_l0btb.sv
-1729582784 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/core/bpu/toy_bpu_l0btb_entry.sv
-1729582784 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/core/bpu/toy_bpu_ghr.sv
-1729582784 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/core/toy_core.sv
-1729582784 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/core/toy_csr.sv
-1729582784 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/core/toy_mext.sv
-1729582784 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/core/toy_alu.sv
-1729582784 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/core/fpu/toy_float.sv
-1729582784 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/core/fpu/toy_float_wrapper.sv
-1729582784 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/core/commit/toy_commit.sv
-1729582784 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/core/lsu/toy_lsu.sv
-1729582784 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/core/lsu/toy_stq.sv
-1729582784 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/core/lsu/toy_stu.sv
-1729582784 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/core/lsu/toy_ldq.sv
-1729582784 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/core/lsu/toy_ldu.sv
-1729582784 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/core/lsu/toy_lsu_buffer.sv
-1729582784 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/core/dispatch/toy_dispatch_issue_buffer.sv
-1729582784 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/core/dispatch/toy_regfile.sv
-1729582784 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/core/dispatch/toy_dispatch.sv
-1729582784 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/core/dispatch/toy_backup_rename_regfile_entry.sv
-1729582784 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/core/dispatch/toy_backup_rename_regfile.sv
-1729582784 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/core/dispatch/toy_physicial_regfile.sv
-1729582784 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/core/dispatch/toy_physicial_regfile_entry.sv
-1729582784 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/core/dispatch/toy_rename_regfile.sv
-1729582784 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/core/dispatch/toy_rename_regfile_entry.sv
-1729582784 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/core/dispatch/toy_dispatch_issue.sv
-1729582784 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/core/dispatch/toy_dispatch_crossbar.sv
-1729582784 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/core/dispatch/toy_decoder.sv
-1729582784 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/core/lsu/toy_ldq_branch_filter.sv
-1729582784 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/cmn/cmn_tree_plru_comb.sv
-1729582784 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/cmn/cmn_plru_node.sv
-1729582784 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/cmn/cmn_arb_vr_matrix.sv
-1729582784 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/cmn/cmn_arb_vrp_matrix.sv
-1729582784 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/cmn/cmn_tree_plru.sv
-1729582784 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/cmn/cmn_age_matrix.sv
-1729582784 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/cmn/cmn_lfsr4.sv
-1729582784 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/cmn/cmn_lead_one_rev.sv
-1729582784 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/cmn/cmn_lead_one_msb.sv
-1729582784 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/cmn/cmn_lead_one.sv
-1729582784 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/cmn/cmn_fix_arb.sv
-1729582784 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/cmn/cmn_reg_slice_forward.sv
-1729582784 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/cmn/cmn_bin2onehot.sv
-1729582784 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/cmn/cmn_onehot2bin.sv
-1729582784 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/cmn/cmn_list_lead_one_rev.sv
-1729582784 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/cmn/cmn_list_lead_one.sv
-1729582784 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/cmn/cmn_reg_slice_full.sv
-1729582784 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/cmn/cmn_reg_slice_backward.sv
-1729582784 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DWrap_network_toy_bus.v
-1729582784 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_ToyCoreSlv_node_fetch_fwd_pld_type_ToyBusReq_bwd_pld_type_ToyBusAck_forward_True.v
-1729582784 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_ToyCoreSlv_node_lsu_fwd_pld_type_ToyBusReq_bwd_pld_type_ToyBusAck_forward_True.v
-1729582784 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_ToyMemMst_node_itcm_fwd_pld_type_ToyBusReq_bwd_pld_type_ToyBusAck_forward_True.v
-1729582784 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_ToyMemMst_node_dtcm_fwd_pld_type_ToyBusReq_bwd_pld_type_ToyBusAck_forward_True.v
-1729582784 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_ToyMemMst_node_eslv_fwd_pld_type_ToyBusReq_bwd_pld_type_ToyBusAck_forward_True.v
-1729582784 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DDec2ch_node_dec_fetch_fwd_pld_type_ToyBusReq_bwd_pld_type_ToyBusAck.v
-1729582784 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DDec_node_dec_fetch_pld_type_ToyBusReq_forward_True.v
-1729582784 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DArb_node_dec_fetch_pld_type_ToyBusAck_forward_False.v
-1729582784 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DDec2ch_node_dec_lsu_fwd_pld_type_ToyBusReq_bwd_pld_type_ToyBusAck.v
-1729582784 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DDec_node_dec_lsu_pld_type_ToyBusReq_forward_True.v
-1729582784 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DArb_node_dec_lsu_pld_type_ToyBusAck_forward_False.v
-1729582784 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DDec2ch_node_dec_dmem_fwd_pld_type_ToyBusReq_bwd_pld_type_ToyBusAck.v
-1729582784 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DDec_node_dec_dmem_pld_type_ToyBusReq_forward_True.v
-1729582784 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DArb_node_dec_dmem_pld_type_ToyBusAck_forward_False.v
-1729582784 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DArb2ch_node_arb_dtcm_fwd_pld_type_ToyBusReq_bwd_pld_type_ToyBusAck.v
-1729582784 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DArb_node_arb_dtcm_pld_type_ToyBusReq_forward_True.v
-1729582784 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DDec_node_arb_dtcm_pld_type_ToyBusAck_forward_False.v
-1729582784 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DArb2ch_node_arb_itcm_fwd_pld_type_ToyBusReq_bwd_pld_type_ToyBusAck.v
-1729582784 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DArb_node_arb_itcm_pld_type_ToyBusReq_forward_True.v
-1729582784 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_CmnAgeMtx_width_2.v
-1729582784 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DDec_node_arb_itcm_pld_type_ToyBusAck_forward_False.v
-1729766664 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_pack.sv
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/toy_scalar.sv
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/mem/toy_mem_top.sv
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/core/fetch/toy_fetch_queue2.sv
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/core/fetch/toy_fetch_buffer.sv
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/core/fetch/toy_fetch_queue.sv
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/core/bpu/toy_bpu_mem.sv
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/core/bpu/toy_bpu.sv
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/core/bpu/toy_pcgen.sv
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/core/bpu/toy_fe_commit_buffer.sv
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/core/bpu/toy_fe_ctrl.sv
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/core/bpu/toy_bpu_filter_predecoder.sv
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/core/bpu/toy_bpu_filter32.sv
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/core/bpu/toy_bpu_ras.sv
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/core/bpu/toy_bpu_btfifo.sv
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/core/bpu/toy_bpu_rob_entry.sv
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/core/bpu/toy_bpu_rob.sv
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/core/bpu/toy_bpu_bpdec_entry_buffer.sv
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/core/bpu/toy_bpu_bpdec.sv
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/core/bpu/toy_bpu_btb.sv
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/core/bpu/toy_bpu_btb_entry.sv
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/core/bpu/toy_bpu_tage.sv
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/core/bpu/toy_bpu_tage_tx_table.sv
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/core/bpu/toy_bpu_tage_base_table.sv
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/core/bpu/toy_bpu_l0btb.sv
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/core/bpu/toy_bpu_l0btb_entry.sv
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/core/bpu/toy_bpu_ghr.sv
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/core/toy_core.sv
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/core/toy_csr.sv
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/core/toy_mext.sv
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/core/toy_alu.sv
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/core/fpu/toy_float.sv
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/core/fpu/toy_float_wrapper.sv
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/core/commit/toy_commit.sv
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/core/lsu/toy_lsu.sv
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/core/lsu/toy_stq.sv
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/core/lsu/toy_stu.sv
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/core/lsu/toy_ldq.sv
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/core/lsu/toy_ldu.sv
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/core/lsu/toy_lsu_buffer.sv
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/core/dispatch/toy_dispatch_issue_buffer.sv
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/core/dispatch/toy_regfile.sv
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/core/dispatch/toy_dispatch.sv
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/core/dispatch/toy_backup_rename_regfile_entry.sv
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/core/dispatch/toy_backup_rename_regfile.sv
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/core/dispatch/toy_physicial_regfile.sv
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/core/dispatch/toy_physicial_regfile_entry.sv
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/core/dispatch/toy_rename_regfile.sv
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/core/dispatch/toy_rename_regfile_entry.sv
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/core/dispatch/toy_dispatch_issue.sv
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/core/dispatch/toy_dispatch_crossbar.sv
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/core/dispatch/toy_decoder.sv
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/core/lsu/toy_ldq_branch_filter.sv
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/cmn/cmn_tree_plru_comb.sv
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/cmn/cmn_plru_node.sv
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/cmn/cmn_arb_vr_matrix.sv
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/cmn/cmn_arb_vrp_matrix.sv
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/cmn/cmn_tree_plru.sv
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/cmn/cmn_age_matrix.sv
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/cmn/cmn_lfsr4.sv
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/cmn/cmn_lead_one_rev.sv
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/cmn/cmn_lead_one_msb.sv
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/cmn/cmn_lead_one.sv
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/cmn/cmn_fix_arb.sv
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/cmn/cmn_reg_slice_forward.sv
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/cmn/cmn_bin2onehot.sv
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/cmn/cmn_onehot2bin.sv
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/cmn/cmn_list_lead_one_rev.sv
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/cmn/cmn_list_lead_one.sv
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/cmn/cmn_reg_slice_full.sv
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/cmn/cmn_reg_slice_backward.sv
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DWrap_network_toy_bus.v
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_ToyCoreSlv_node_fetch_fwd_pld_type_ToyBusReq_bwd_pld_type_ToyBusAck_forward_True.v
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_ToyCoreSlv_node_lsu_fwd_pld_type_ToyBusReq_bwd_pld_type_ToyBusAck_forward_True.v
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_ToyMemMst_node_itcm_fwd_pld_type_ToyBusReq_bwd_pld_type_ToyBusAck_forward_True.v
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_ToyMemMst_node_dtcm_fwd_pld_type_ToyBusReq_bwd_pld_type_ToyBusAck_forward_True.v
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_ToyMemMst_node_eslv_fwd_pld_type_ToyBusReq_bwd_pld_type_ToyBusAck_forward_True.v
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DDec2ch_node_dec_fetch_fwd_pld_type_ToyBusReq_bwd_pld_type_ToyBusAck.v
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DDec_node_dec_fetch_pld_type_ToyBusReq_forward_True.v
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DArb_node_dec_fetch_pld_type_ToyBusAck_forward_False.v
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DDec2ch_node_dec_lsu_fwd_pld_type_ToyBusReq_bwd_pld_type_ToyBusAck.v
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DDec_node_dec_lsu_pld_type_ToyBusReq_forward_True.v
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DArb_node_dec_lsu_pld_type_ToyBusAck_forward_False.v
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DDec2ch_node_dec_dmem_fwd_pld_type_ToyBusReq_bwd_pld_type_ToyBusAck.v
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DDec_node_dec_dmem_pld_type_ToyBusReq_forward_True.v
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DArb_node_dec_dmem_pld_type_ToyBusAck_forward_False.v
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DArb2ch_node_arb_dtcm_fwd_pld_type_ToyBusReq_bwd_pld_type_ToyBusAck.v
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DArb_node_arb_dtcm_pld_type_ToyBusReq_forward_True.v
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DDec_node_arb_dtcm_pld_type_ToyBusAck_forward_False.v
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DArb2ch_node_arb_itcm_fwd_pld_type_ToyBusReq_bwd_pld_type_ToyBusAck.v
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DArb_node_arb_itcm_pld_type_ToyBusReq_forward_True.v
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_CmnAgeMtx_width_2.v
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus_DDec_node_arb_itcm_pld_type_ToyBusAck_forward_False.v
+1729841276 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/toy_pack.sv
 1729738179 /data/usr/xuemy/try/cache_v1/icache_v1_1008_release/icache_filelist_scalar.f
-1729582784 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus.f
-1729672695 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_scalar.f
-1729736427 /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/sim.f
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/bus/toy_bus_DWrap_network_toy_bus/toy_bus.f
+1729841357 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/toy_scalar.f
+1729841184 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/sim.f
 1653825972 /tools/software/synopsys/verdi/T-2022.06/share/PLI/VCS/LINUX64/verdi.tab
 1654052745 /tools/software/synopsys/vcs/T-2022.06/linux64/lib/vcsdp_lite.tab
 7
-1729582784 /data/usr/xuemy/8fetch_ooo/toy_scalar/dpi_c/draw_pic.c
-1729582784 /data/usr/xuemy/8fetch_ooo/toy_scalar/plug_in/disassembler/toy_scalar_disasm_sv_wrapper.c
-1729582784 /data/usr/xuemy/8fetch_ooo/toy_scalar/plug_in/disassembler/riscv_disas.c
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/dpi_c/draw_pic.c
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/plug_in/disassembler/toy_scalar_disasm_sv_wrapper.c
+1729841071 /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/plug_in/disassembler/riscv_disas.c
 1654054205 /tools/software/synopsys/vcs/T-2022.06/linux64/lib/libvirsim.so
 1654053585 /tools/software/synopsys/vcs/T-2022.06/linux64/lib/liberrorinf.so
 1654053489 /tools/software/synopsys/vcs/T-2022.06/linux64/lib/libsnpsmalloc.so
 1654053565 /tools/software/synopsys/vcs/T-2022.06/linux64/lib/libvfs.so
-1729824180 simv.daidir
+1729841387 simv.daidir
 -1 partitionlib

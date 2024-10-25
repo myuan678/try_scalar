@@ -29,11 +29,17 @@ module toy_top
     logic                           fetch_mem_ack_rdy       ;
     logic [FETCH_DATA_WIDTH-1:0]    fetch_mem_ack_data      ;
     logic [ROB_ENTRY_ID_WIDTH-1:0]  fetch_mem_req_entry_id  ;
-    logic [ROB_ENTRY_ID_WIDTH-1:0]  fetch_mem_ack_entry_id  ;
+    //logic [ROB_ENTRY_ID_WIDTH-1:0]  fetch_mem_ack_entry_id  ;
+    logic [ICACHE_REQ_OPCODE_WIDTH+MSHR_ENTRY_INDEX_WIDTH+ROB_ENTRY_ID_WIDTH-1:0]fetch_mem_ack_entry_id;
     logic [ADDR_WIDTH-1:0]          fetch_mem_req_addr      ;
     logic                           fetch_mem_req_vld       ;
     logic                           fetch_mem_req_rdy       ;
 
+    logic [ADDR_WIDTH-1:0]          adapter_fetch_mem_req_addr    ;
+    logic                           adapter_fetch_mem_req_vld     ;
+    logic                           adapter_fetch_mem_req_rdy     ;
+    //logic [ROB_ENTRY_ID_WIDTH-1:0]  adapter_fetch_mem_req_entry_id;
+    logic [ICACHE_REQ_OPCODE_WIDTH+MSHR_ENTRY_INDEX_WIDTH+ROB_ENTRY_ID_WIDTH-1:0]adapter_fetch_mem_req_entry_id;
     logic [ADDR_WIDTH-1:0]          ext_mem_addr             ;
     logic [BUS_DATA_WIDTH-1:0]      ext_mem_rd_data          ;
     logic [BUS_DATA_WIDTH-1:0]      ext_mem_wr_data          ;
@@ -86,7 +92,7 @@ logic                                        pref_to_mshr_req_rdy;
                              .fetch_mem_ack_rdy      (upstream_txdat_rdy    ),
                              .fetch_mem_ack_data     (upstream_txdat_data   ),
                              .fetch_mem_ack_entry_id (upstream_txdat_txnid  ),
-                             .fetch_mem_req_entry_id (upstream_rxreq_entry_id),
+                             .fetch_mem_req_entry_id (upstream_rxreq_txnid),
                              .fetch_mem_req_addr     (upstream_rxreq_addr   ),
                              .fetch_mem_req_vld      (upstream_rxreq_vld    ),
                              .fetch_mem_req_rdy      (upstream_rxreq_rdy    ),
@@ -163,23 +169,23 @@ logic                                        pref_to_mshr_req_rdy;
 // icache mem adapter
 //============================================================
     icache_memory_adapter  u_icache_memory_adapter(
-        .clk                        (clk                        ),
-        .rst_n                      (rst_n                      ),
-        .downstream_txreq_vld       (downstream_txreq_vld       ),
-        .downstream_txreq_rdy       (downstream_txreq_rdy       ),
-        .downstream_txreq_pld       (downstream_txreq_pld       ),
-        .downstream_txreq_entry_id  (downstream_txreq_entry_id  ),
-        .downstream_rxdat_vld       (downstream_rxdat_vld       ),
-        .downstream_rxdat_rdy       (downstream_rxdat_rdy       ),
-        .downstream_rxdat_pld       (downstream_rxdat_pld       ),
-        .fetch_mem_req_vld          (fetch_mem_req_vld          ),
-        .fetch_mem_req_rdy          (fetch_mem_req_rdy          ),
-        .fetch_mem_req_addr         (fetch_mem_req_addr         ),
-        .fetch_mem_req_entry_id     (fetch_mem_req_entry_id     ),
-        .fetch_mem_ack_vld          (fetch_mem_ack_vld          ),
-        .fetch_mem_ack_rdy          (fetch_mem_ack_rdy          ),
-        .fetch_mem_ack_data         (fetch_mem_ack_data         ),
-        .fetch_mem_ack_entry_id     (fetch_mem_ack_entry_id     )
+        .clk                            (clk                        ),
+        .rst_n                          (rst_n                      ),
+        .downstream_txreq_vld           (downstream_txreq_vld       ),
+        .downstream_txreq_rdy           (downstream_txreq_rdy       ),
+        .downstream_txreq_pld           (downstream_txreq_pld       ),
+        .downstream_txreq_entry_id      (downstream_txreq_entry_id  ),
+        .downstream_rxdat_vld           (downstream_rxdat_vld       ),
+        .downstream_rxdat_rdy           (downstream_rxdat_rdy       ),
+        .downstream_rxdat_pld           (downstream_rxdat_pld       ),
+        .adapter_fetch_mem_req_vld      (adapter_fetch_mem_req_vld          ),
+        .adapter_fetch_mem_req_rdy      (adapter_fetch_mem_req_rdy          ),
+        .adapter_fetch_mem_req_addr     (adapter_fetch_mem_req_addr         ),
+        .adapter_fetch_mem_req_entry_id (adapter_fetch_mem_req_entry_id     ),
+        .adapter_fetch_mem_ack_vld      (fetch_mem_ack_vld          ),
+        .adapter_fetch_mem_ack_rdy      (fetch_mem_ack_rdy          ),
+        .adapter_fetch_mem_ack_data     (fetch_mem_ack_data         ),
+        .adapter_fetch_mem_ack_entry_id (fetch_mem_ack_entry_id     )
     );
 
 
@@ -193,10 +199,10 @@ logic                                        pref_to_mshr_req_rdy;
                        .fetch_mem_ack_rdy     (fetch_mem_ack_rdy     ),
                        .fetch_mem_ack_data    (fetch_mem_ack_data    ),
                        .fetch_mem_ack_entry_id(fetch_mem_ack_entry_id),
-                       .fetch_mem_req_addr    (fetch_mem_req_addr    ),
-                       .fetch_mem_req_vld     (fetch_mem_req_vld     ),
-                       .fetch_mem_req_rdy     (fetch_mem_req_rdy     ),
-                       .fetch_mem_req_entry_id(fetch_mem_req_entry_id)
+                       .fetch_mem_req_addr    (adapter_fetch_mem_req_addr    ),
+                       .fetch_mem_req_vld     (adapter_fetch_mem_req_vld     ),
+                       .fetch_mem_req_rdy     (adapter_fetch_mem_req_rdy     ),
+                       .fetch_mem_req_entry_id(adapter_fetch_mem_req_entry_id)
                       ); 
 
 //============================================================

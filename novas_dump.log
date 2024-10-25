@@ -2,87 +2,87 @@
 # log primitive debug message of FSDB dumping                                         #
 # This is for R&D to analyze when there are issues happening when FSDB dump           #
 #######################################################################################
-ANF: vcsd_get_serial_mode_status('/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vcsd_get_serial_mode_status')
-ANF: vcsd_enable_sva_success_callback('/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vcsd_enable_sva_success_callback')
-ANF: vcsd_disable_sva_success_callback('/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vcsd_disable_sva_success_callback')
-ANF: vcsd_get_power_scope_name('/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vcsd_get_power_scope_name')
-ANF: vcsd_begin_no_value_var_info('/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vcsd_begin_no_value_var_info')
-ANF: vcsd_end_no_value_var_info('/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vcsd_end_no_value_var_info')
-ANF: vcsd_remove_xprop_merge_mode_callback('/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vcsd_remove_xprop_merge_mode_callback')
-ANF: vhpi_get_cb_info('/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhpi_get_cb_info')
-ANF: vhpi_free_handle('/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhpi_free_handle')
-ANF: vhpi_fetch_vcsd_handle('/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhpi_fetch_vcsd_handle')
-ANF: vhpi_fetch_vpi_handle('/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhpi_fetch_vpi_handle')
-ANF: vhpi_has_verilog_parent('/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhpi_has_verilog_parent')
-ANF: vhpi_is_verilog_scope('/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhpi_is_verilog_scope')
-ANF: scsd_xprop_is_enabled('/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: scsd_xprop_is_enabled')
-ANF: scsd_xprop_sig_is_promoted('/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: scsd_xprop_sig_is_promoted')
-ANF: scsd_xprop_int_xvalue('/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: scsd_xprop_int_xvalue')
-ANF: scsd_xprop_bool_xvalue('/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: scsd_xprop_bool_xvalue')
-ANF: scsd_xprop_enum_xvalue('/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: scsd_xprop_enum_xvalue')
-ANF: scsd_xprop_register_merge_mode_cb('/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: scsd_xprop_register_merge_mode_cb')
-ANF: scsd_xprop_delete_merge_mode_cb('/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: scsd_xprop_delete_merge_mode_cb')
-ANF: scsd_xprop_get_merge_mode('/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: scsd_xprop_get_merge_mode')
-ANF: scsd_thread_get_info('/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: scsd_thread_get_info')
-ANF: scsd_thread_vc_init('/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: scsd_thread_vc_init')
-ANF: scsd_master_set_delta_sync_cbk('/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: scsd_master_set_delta_sync_cbk')
-ANF: scsd_fgp_get_fsdb_cores('/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: scsd_fgp_get_fsdb_cores')
-ANF: scsd_fgp_get_is_cpu_affinity_disabled('/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: scsd_fgp_get_is_cpu_affinity_disabled')
-ANF: vhdi_dt_get_type('/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_dt_get_type')
-ANF: vhdi_dt_get_key('/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_dt_get_key')
-ANF: vhdi_dt_get_vhdl_enum_info('/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_dt_get_vhdl_enum_info')
-ANF: vhdi_dt_get_vhdl_physical_info('/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_dt_get_vhdl_physical_info')
-ANF: vhdi_dt_get_vhdl_array_info('/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_dt_get_vhdl_array_info')
-ANF: vhdi_dt_get_vhdl_record_info('/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_dt_get_vhdl_record_info')
-ANF: vhdi_def_traverse_module('/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_def_traverse_module')
-ANF: vhdi_def_traverse_scope('/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_def_traverse_scope')
-ANF: vhdi_def_traverse_variable('/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_def_traverse_variable')
-ANF: vhdi_def_get_module_id_by_vhpi('/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_def_get_module_id_by_vhpi')
-ANF: vhdi_def_get_handle_by_module_id('/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_def_get_handle_by_module_id')
-ANF: vhdi_def_get_variable_info_by_vhpi('/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_def_get_variable_info_by_vhpi')
-ANF: vhdi_def_free('/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_def_free')
-ANF: vhdi_ist_traverse_scope('/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_ist_traverse_scope')
-ANF: vhdi_ist_traverse_variable('/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_ist_traverse_variable')
-ANF: vhdi_ist_convert_by_vhpi('/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_ist_convert_by_vhpi')
-ANF: vhdi_ist_clone('/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_ist_clone')
-ANF: vhdi_ist_free('/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_ist_free')
-ANF: vhdi_ist_hash_key('/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_ist_hash_key')
-ANF: vhdi_ist_compare('/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_ist_compare')
-ANF: vhdi_ist_get_value_addr('/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_ist_get_value_addr')
-ANF: vhdi_set_scsd_callback('/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_set_scsd_callback')
-ANF: vhdi_cbk_set_force_callback('/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_cbk_set_force_callback')
-ANF: vhdi_trigger_init_force('/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_trigger_init_force')
-ANF: vhdi_ist_check_scsd_callback('/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_ist_check_scsd_callback')
-ANF: vhdi_ist_add_scsd_callback('/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_ist_add_scsd_callback')
-ANF: vhdi_ist_remove_scsd_callback('/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_ist_remove_scsd_callback')
-ANF: vhdi_ist_get_scsd_user_data('/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_ist_get_scsd_user_data')
-ANF: vhdi_add_time_change_callback('/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_add_time_change_callback')
-ANF: vhdi_get_real_value_by_value_addr('/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_get_real_value_by_value_addr')
-ANF: vhdi_get_64_value_by_value_addr('/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_get_64_value_by_value_addr')
-ANF: vhdi_xprop_inst_is_promoted('/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_xprop_inst_is_promoted')
-ANF: vdi_ist_convert_by_vhdi('/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vdi_ist_convert_by_vhdi')
-ANF: vhdi_ist_get_module_id('/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_ist_get_module_id')
-ANF: vhdi_refine_foreign_scope_type('/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_refine_foreign_scope_type')
-ANF: vhdi_flush_callback('/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_flush_callback')
-ANF: vhdi_set_orig_name('/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_set_orig_name')
-ANF: vhdi_set_dump_pt('/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_set_dump_pt')
-ANF: vhdi_get_fsdb_option('/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_get_fsdb_option')
-ANF: vhdi_fgp_get_mode('/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_fgp_get_mode')
-ANF: vhdi_node_register_composite_var('/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_node_register_composite_var')
-ANF: vhdi_node_analysis('/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_node_analysis')
-ANF: vhdi_node_id('/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_node_id')
-ANF: vhdi_node_ist_check_scsd_callback('/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_node_ist_check_scsd_callback')
-ANF: vhdi_node_ist_add_scsd_callback('/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_node_ist_add_scsd_callback')
-ANF: vhdi_node_ist_get_value_addr('/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_node_ist_get_value_addr')
-ANF: vhdi_enc_def_traverse_module('/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_enc_def_traverse_module')
-ANF: vhdi_enc_def_traverse_scope('/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_enc_def_traverse_scope')
-ANF: vhdi_enc_def_traverse_variable('/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_enc_def_traverse_variable')
-ANF: vhdi_enc_ist_traverse_scope('/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_enc_ist_traverse_scope')
-ANF: vhdi_enc_ist_traverse_variable('/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_enc_ist_traverse_variable')
-ANF: vhdi_enc_ist_get_module_id('/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_enc_ist_get_module_id')
-ANF: vhdi_enc_def_get_handle_by_module_id('/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_enc_def_get_handle_by_module_id')
+ANF: vcsd_get_serial_mode_status('/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vcsd_get_serial_mode_status')
+ANF: vcsd_enable_sva_success_callback('/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vcsd_enable_sva_success_callback')
+ANF: vcsd_disable_sva_success_callback('/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vcsd_disable_sva_success_callback')
+ANF: vcsd_get_power_scope_name('/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vcsd_get_power_scope_name')
+ANF: vcsd_begin_no_value_var_info('/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vcsd_begin_no_value_var_info')
+ANF: vcsd_end_no_value_var_info('/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vcsd_end_no_value_var_info')
+ANF: vcsd_remove_xprop_merge_mode_callback('/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vcsd_remove_xprop_merge_mode_callback')
+ANF: vhpi_get_cb_info('/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhpi_get_cb_info')
+ANF: vhpi_free_handle('/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhpi_free_handle')
+ANF: vhpi_fetch_vcsd_handle('/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhpi_fetch_vcsd_handle')
+ANF: vhpi_fetch_vpi_handle('/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhpi_fetch_vpi_handle')
+ANF: vhpi_has_verilog_parent('/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhpi_has_verilog_parent')
+ANF: vhpi_is_verilog_scope('/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhpi_is_verilog_scope')
+ANF: scsd_xprop_is_enabled('/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: scsd_xprop_is_enabled')
+ANF: scsd_xprop_sig_is_promoted('/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: scsd_xprop_sig_is_promoted')
+ANF: scsd_xprop_int_xvalue('/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: scsd_xprop_int_xvalue')
+ANF: scsd_xprop_bool_xvalue('/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: scsd_xprop_bool_xvalue')
+ANF: scsd_xprop_enum_xvalue('/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: scsd_xprop_enum_xvalue')
+ANF: scsd_xprop_register_merge_mode_cb('/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: scsd_xprop_register_merge_mode_cb')
+ANF: scsd_xprop_delete_merge_mode_cb('/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: scsd_xprop_delete_merge_mode_cb')
+ANF: scsd_xprop_get_merge_mode('/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: scsd_xprop_get_merge_mode')
+ANF: scsd_thread_get_info('/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: scsd_thread_get_info')
+ANF: scsd_thread_vc_init('/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: scsd_thread_vc_init')
+ANF: scsd_master_set_delta_sync_cbk('/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: scsd_master_set_delta_sync_cbk')
+ANF: scsd_fgp_get_fsdb_cores('/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: scsd_fgp_get_fsdb_cores')
+ANF: scsd_fgp_get_is_cpu_affinity_disabled('/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: scsd_fgp_get_is_cpu_affinity_disabled')
+ANF: vhdi_dt_get_type('/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_dt_get_type')
+ANF: vhdi_dt_get_key('/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_dt_get_key')
+ANF: vhdi_dt_get_vhdl_enum_info('/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_dt_get_vhdl_enum_info')
+ANF: vhdi_dt_get_vhdl_physical_info('/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_dt_get_vhdl_physical_info')
+ANF: vhdi_dt_get_vhdl_array_info('/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_dt_get_vhdl_array_info')
+ANF: vhdi_dt_get_vhdl_record_info('/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_dt_get_vhdl_record_info')
+ANF: vhdi_def_traverse_module('/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_def_traverse_module')
+ANF: vhdi_def_traverse_scope('/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_def_traverse_scope')
+ANF: vhdi_def_traverse_variable('/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_def_traverse_variable')
+ANF: vhdi_def_get_module_id_by_vhpi('/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_def_get_module_id_by_vhpi')
+ANF: vhdi_def_get_handle_by_module_id('/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_def_get_handle_by_module_id')
+ANF: vhdi_def_get_variable_info_by_vhpi('/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_def_get_variable_info_by_vhpi')
+ANF: vhdi_def_free('/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_def_free')
+ANF: vhdi_ist_traverse_scope('/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_ist_traverse_scope')
+ANF: vhdi_ist_traverse_variable('/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_ist_traverse_variable')
+ANF: vhdi_ist_convert_by_vhpi('/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_ist_convert_by_vhpi')
+ANF: vhdi_ist_clone('/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_ist_clone')
+ANF: vhdi_ist_free('/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_ist_free')
+ANF: vhdi_ist_hash_key('/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_ist_hash_key')
+ANF: vhdi_ist_compare('/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_ist_compare')
+ANF: vhdi_ist_get_value_addr('/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_ist_get_value_addr')
+ANF: vhdi_set_scsd_callback('/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_set_scsd_callback')
+ANF: vhdi_cbk_set_force_callback('/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_cbk_set_force_callback')
+ANF: vhdi_trigger_init_force('/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_trigger_init_force')
+ANF: vhdi_ist_check_scsd_callback('/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_ist_check_scsd_callback')
+ANF: vhdi_ist_add_scsd_callback('/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_ist_add_scsd_callback')
+ANF: vhdi_ist_remove_scsd_callback('/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_ist_remove_scsd_callback')
+ANF: vhdi_ist_get_scsd_user_data('/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_ist_get_scsd_user_data')
+ANF: vhdi_add_time_change_callback('/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_add_time_change_callback')
+ANF: vhdi_get_real_value_by_value_addr('/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_get_real_value_by_value_addr')
+ANF: vhdi_get_64_value_by_value_addr('/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_get_64_value_by_value_addr')
+ANF: vhdi_xprop_inst_is_promoted('/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_xprop_inst_is_promoted')
+ANF: vdi_ist_convert_by_vhdi('/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vdi_ist_convert_by_vhdi')
+ANF: vhdi_ist_get_module_id('/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_ist_get_module_id')
+ANF: vhdi_refine_foreign_scope_type('/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_refine_foreign_scope_type')
+ANF: vhdi_flush_callback('/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_flush_callback')
+ANF: vhdi_set_orig_name('/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_set_orig_name')
+ANF: vhdi_set_dump_pt('/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_set_dump_pt')
+ANF: vhdi_get_fsdb_option('/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_get_fsdb_option')
+ANF: vhdi_fgp_get_mode('/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_fgp_get_mode')
+ANF: vhdi_node_register_composite_var('/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_node_register_composite_var')
+ANF: vhdi_node_analysis('/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_node_analysis')
+ANF: vhdi_node_id('/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_node_id')
+ANF: vhdi_node_ist_check_scsd_callback('/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_node_ist_check_scsd_callback')
+ANF: vhdi_node_ist_add_scsd_callback('/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_node_ist_add_scsd_callback')
+ANF: vhdi_node_ist_get_value_addr('/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_node_ist_get_value_addr')
+ANF: vhdi_enc_def_traverse_module('/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_enc_def_traverse_module')
+ANF: vhdi_enc_def_traverse_scope('/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_enc_def_traverse_scope')
+ANF: vhdi_enc_def_traverse_variable('/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_enc_def_traverse_variable')
+ANF: vhdi_enc_ist_traverse_scope('/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_enc_ist_traverse_scope')
+ANF: vhdi_enc_ist_traverse_variable('/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_enc_ist_traverse_variable')
+ANF: vhdi_enc_ist_get_module_id('/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_enc_ist_get_module_id')
+ANF: vhdi_enc_def_get_handle_by_module_id('/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv: undefined symbol: vhdi_enc_def_get_handle_by_module_id')
 VCS compile option:
- option[0]: /data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv
+ option[0]: /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv
  option[1]: +HEX=/tools/hurj/riscv-proj/isa/rv32ui-p-addi_itcm.hex
  option[2]: +DATA_HEX=/tools/hurj/riscv-proj/isa/rv32ui-p-addi_dtcm.hex
  option[3]: +TIMEOUT=200000
@@ -123,7 +123,7 @@ VCS compile option:
  option[38]: -sverilog
  option[39]: -gen_obj
  option[40]: -f
- option[41]: /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/sim.f
+ option[41]: /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/sim.f
  option[42]: -load
  option[43]: /tools/software/synopsys/verdi/T-2022.06/share/PLI/VCS/LINUX64/libnovas.so:FSDBDumpCmd
 Chronologic Simulation VCS Release T-2022.06_Full64
@@ -134,7 +134,7 @@ Limit information:
 cputime		unlimited
 filesize		unlimited
 datasize		unlimited
-stacksize		8193 kbytes
+stacksize		8197 kbytes
 coredumpsize		0 kbytes
 memoryuse		unlimited
 vmemoryuse		unlimited
@@ -150,22 +150,22 @@ COLORTERM=truecolor
 VCS_ARCH_OVERRIDE=linux
 SYNOPSYS=/tools/software/synopsys/syn/T-2022.03-SP2
 TERM_PROGRAM_VERSION=1.92.1
-SIM_FILELIST=/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/sim.f
+SIM_FILELIST=/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/sim.f
 VCS_HOME=/tools/software/synopsys/vcs/T-2022.06
 SPYGLASS_HOME=/tools/software/synopsys/spyglass/T-2022.06-1/SPYGLASS_HOME
-MAKE_TERMOUT=/dev/pts/3
+MAKE_TERMOUT=/dev/pts/11
 MODULES_LMCONFLICT=synopsys_lic&synopsys_lic:vcs/T-2022.06&vcs:spyglass/T-2022.06-1&spyglass:verdi/T-2022.06&verdi:fde/1.3&fde:syn/T-2022.03-SP2&syn
 _LMFILES__modshare=/usr/share/modules/modulefiles/vcs/T-2022.06:1:/usr/share/modules/modulefiles/spyglass/T-2022.06-1:1:/usr/share/modules/modulefiles/syn/T-2022.03-SP2:1:/usr/share/modules/modulefiles/synopsys_lic:1:/usr/share/modules/modulefiles/verdi/T-2022.06:1:/usr/share/modules/modulefiles/fde/1.3:1
 VERDI_HOME=/tools/software/synopsys/verdi/T-2022.06
 MODULES_LMPREREQ=vcs/T-2022.06&synopsys_lic:spyglass/T-2022.06-1&synopsys_lic:verdi/T-2022.06&synopsys_lic:syn/T-2022.03-SP2&synopsys_lic
 ENV=/usr/share/modules/init/profile.sh
-PWD=/data/usr/xuemy/8fetch_ooo/toy_scalar
+PWD=/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar
 LOGNAME=xuemengyuan
 XDG_SESSION_TYPE=tty
 MODULESHOME=/usr/share/modules
 MANPATH=:
 TCLLIBPATH=/tools/software/fde/fde_1p3/tcl
-_=/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv
+_=/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv
 TCLLIBPATH_modshare=/tools/software/fde/fde_1p3/tcl:1
 VSCODE_GIT_ASKPASS_NODE=/home/xuemengyuan/.vscode-server/cli/servers/Stable-eaa41d57266683296de7d118f574d0c2652e1fc4/server/node
 MOTD_SHOWN=pam
@@ -175,7 +175,7 @@ MODULES_LMNOTUASKED_modshare=synopsys_lic:1
 LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
 SSL_CERT_DIR=/usr/lib/ssl/certs
 GIT_ASKPASS=/home/xuemengyuan/.vscode-server/cli/servers/Stable-eaa41d57266683296de7d118f574d0c2652e1fc4/server/extensions/git/dist/askpass.sh
-SSH_CONNECTION=127.0.0.1 55504 127.0.0.1 22
+SSH_CONNECTION=127.0.0.1 39224 127.0.0.1 22
 MFLAGS=
 MODULES_LMNOTUASKED=synopsys_lic
 PATH_modshare=/tools/software/fde/fde_1p3:1:/usr/bin:1:/tools/software/synopsys/syn/T-2022.03-SP2/bin:1:/tools/software/synopsys/spyglass/T-2022.06-1/SPYGLASS_HOME/bin:1:/usr/local/bin:1:/home/xuemengyuan/.vscode-server/cli/servers/Stable-eaa41d57266683296de7d118f574d0c2652e1fc4/server/bin/remote-cli:1:/bin:1:/tools/software/qemu/bin:1:/snap/bin:1:/sbin:1:/tools/software/synopsys/verdi/T-2022.06/bin:1:/usr/sbin:1:/usr/games:1:/usr/local/sbin:1:/tools/software/synopsys/vcs/T-2022.06/bin:1:/usr/local/games:1
@@ -191,21 +191,21 @@ TERMINFO=/usr/share/terminfo
 FDE_HOME=/tools/software/fde/fde_1p3
 LESSOPEN=| /usr/bin/lesspipe %s
 USER=xuemengyuan
-MAKE_TERMERR=/dev/pts/3
-VSCODE_GIT_IPC_HANDLE=/run/user/1014/vscode-git-fe4e2b6161.sock
+MAKE_TERMERR=/dev/pts/11
+VSCODE_GIT_IPC_HANDLE=/run/user/1014/vscode-git-785b0e0ef8.sock
 LOADEDMODULES=synopsys_lic:vcs/T-2022.06:spyglass/T-2022.06-1:verdi/T-2022.06:fde/1.3:syn/T-2022.03-SP2
 MODULES_LMCONFLICT_modshare=synopsys_lic&synopsys_lic:1:vcs/T-2022.06&vcs:1:verdi/T-2022.06&verdi:1:fde/1.3&fde:1:spyglass/T-2022.06-1&spyglass:1:syn/T-2022.03-SP2&syn:1
 MODULES_LMPREREQ_modshare=syn/T-2022.03-SP2&synopsys_lic:1:verdi/T-2022.06&synopsys_lic:1:vcs/T-2022.06&synopsys_lic:1:spyglass/T-2022.06-1&synopsys_lic:1
-TOY_SCALAR_PATH=/data/usr/xuemy/8fetch_ooo/toy_scalar
+TOY_SCALAR_PATH=/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar
 SHLVL=3
 BASH_ENV=/usr/share/modules/init/bash
 MAKELEVEL=1
-XDG_SESSION_ID=446
+XDG_SESSION_ID=734
 LM_LICENSE_FILE=27020@localhost
 RV_TEST_PATH=/tools/hurj/riscv-proj
 XDG_RUNTIME_DIR=/run/user/1014
 SSL_CERT_FILE=/usr/lib/ssl/certs/ca-certificates.crt
-SSH_CLIENT=127.0.0.1 55504 22
+SSH_CLIENT=127.0.0.1 39224 22
 VSCODE_GIT_ASKPASS_MAIN=/home/xuemengyuan/.vscode-server/cli/servers/Stable-eaa41d57266683296de7d118f574d0c2652e1fc4/server/extensions/git/dist/askpass-main.js
 DVE_HOME=/tools/software/synopsys/vcs/T-2022.06
 XDG_DATA_DIRS=/usr/local/share:/usr/share:/var/lib/snapd/desktop
@@ -216,7 +216,7 @@ _LMFILES_=/usr/share/modules/modulefiles/synopsys_lic:/usr/share/modules/modulef
 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1014/bus
 MODULES_CMD=/usr/lib/x86_64-linux-gnu/modulecmd.tcl
 TERM_PROGRAM=vscode
-VSCODE_IPC_HOOK_CLI=/run/user/1014/vscode-ipc-9cc4c6f4-57b1-43a4-b832-0c0eaea3ef9d.sock
+VSCODE_IPC_HOOK_CLI=/run/user/1014/vscode-ipc-48a322a3-af79-4bbb-b851-8963f928e196.sock
 BASH_FUNC_switchml%%=() {  typeset swfound=1;
  if [ "${MODULES_USE_COMPAT_VERSION:-0}" = '1' ]; then
  typeset swname='main';
@@ -301,15 +301,15 @@ DVE=/tools/software/synopsys/vcs/T-2022.06/gui/dve
 SPECMAN_OUTPUT_TO_TTY=1
 FLEXLM_BORROWFILE=/home/xuemengyuan/.lserver-borrow.txt
 Runtime command line arguments:
-argv[0]=/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv
+argv[0]=/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv
 argv[1]=+HEX=/tools/hurj/riscv-proj/isa/rv32ui-p-addi_itcm.hex
 argv[2]=+DATA_HEX=/tools/hurj/riscv-proj/isa/rv32ui-p-addi_dtcm.hex
 argv[3]=+TIMEOUT=200000
 argv[4]=+WAVE
 argv[5]=+PC=pc_trace.log
 235 profile - 100
-          CPU/Mem usage: 0.030 sys,  0.220 user,  345.65M mem
-236 Elapsed time:    0:00:02    Thu Oct 24 10:52:29 2024
+          CPU/Mem usage: 0.040 sys,  0.230 user,  345.87M mem
+236 Elapsed time:    0:00:02    Fri Oct 25 15:29:55 2024
 237 User CPU time used: 0 seconds
 238 System CPU time used: 0 seconds
 239 pliAppInit
@@ -323,102 +323,101 @@ argv[5]=+PC=pc_trace.log
 247 LIBSSCORE=found /tools/software/synopsys/verdi/T-2022.06/share/PLI/lib/LINUXAMD64/libsscore_vcs202206.so through $NOVAS_HOME setting.
 248 FSDB Dumper for VCS, Release Verdi_T-2022.06, Linux x86_64/64bit, 05/29/2022
 249 (C) 1996 - 2022 by Synopsys, Inc.
-250 sps_call_fsdbDumpfile_main at 0 : /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_top.sv(247)
+250 sps_call_fsdbDumpfile_main at 0 : /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/toy_top.sv(253)
 251 argv[0]: (wave.fsdb)
-252 *Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
-253 *Verdi* : Create FSDB file 'wave.fsdb'
-254 [spi_vcs_vd_ppi_create_root]: no upf option
-255 compile option from '/data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv.daidir/vcs_rebuild'.
-256   "vcs '-kdb' '-full64' '-debug_access' '-sverilog' '-f' '/data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/sim.f' '+lint=PCWM' '+lint=TFIPC-L' '+define+TOY_SIM' 2>&1"
-257 DVDI_is_vir_unload_enabled is enable
-258 FSDB_VCS_ENABLE_NATIVE_VC is enable
-259 sps_call_fsdbDumpvars_vd_main at 0 : /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_top.sv(248)
-260 argv[0]: (+all)
-261 *Verdi* : Begin traversing the scopes, layer (0).
-262 *Verdi* : Enable +all dumping.
-263 *Verdi* : End of traversing.
-264 pliAppHDL_DumpVarComplete traverse var: profile - 
-          CPU/Mem usage: 0.050 sys,  0.380 user,  465.16M mem
-                   incr: 0.010 sys,  0.150 user,  27.51M mem
-                   accu: 0.010 sys,  0.150 user,  27.51M mem
-              accu incr: 0.010 sys,  0.150 user,  27.51M mem
+252 *Verdi* : Create FSDB file 'wave.fsdb'
+253 [spi_vcs_vd_ppi_create_root]: no upf option
+254 compile option from '/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv.daidir/vcs_rebuild'.
+255   "vcs '-kdb' '-full64' '-debug_access' '-sverilog' '-f' '/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/sim.f' '+lint=PCWM' '+lint=TFIPC-L' '+define+TOY_SIM' 2>&1"
+256 DVDI_is_vir_unload_enabled is enable
+257 FSDB_VCS_ENABLE_NATIVE_VC is enable
+258 sps_call_fsdbDumpvars_vd_main at 0 : /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/toy_top.sv(254)
+259 argv[0]: (+all)
+260 *Verdi* : Begin traversing the scopes, layer (0).
+261 *Verdi* : Enable +all dumping.
+262 *Verdi* : End of traversing.
+263 pliAppHDL_DumpVarComplete traverse var: profile - 
+          CPU/Mem usage: 0.070 sys,  0.410 user,  465.23M mem
+                   incr: 0.020 sys,  0.160 user,  27.38M mem
+                   accu: 0.020 sys,  0.160 user,  27.38M mem
+              accu incr: 0.020 sys,  0.160 user,  27.38M mem
 
-          Count usage: 45331 var,  41212 idcode,  4736 callback
-                 incr: 45331 var,  41212 idcode,  4736 callback
-                 accu: 45331 var,  41212 idcode,  4736 callback
-            accu incr: 45331 var,  41212 idcode,  4736 callback
-265 Elapsed time:    0:00:02    Thu Oct 24 10:52:29 2024
-266 User CPU time used: 0 seconds
-267 System CPU time used: 0 seconds
-268 pliAppHDL_DumpVarComplete: profile - 
-          CPU/Mem usage: 0.050 sys,  0.380 user,  468.10M mem
-                   incr: 0.000 sys,  0.000 user,  2.94M mem
-                   accu: 0.010 sys,  0.150 user,  30.45M mem
-              accu incr: 0.000 sys,  0.000 user,  2.94M mem
+          Count usage: 47499 var,  43182 idcode,  4898 callback
+                 incr: 47499 var,  43182 idcode,  4898 callback
+                 accu: 47499 var,  43182 idcode,  4898 callback
+            accu incr: 47499 var,  43182 idcode,  4898 callback
+264 Elapsed time:    0:00:02    Fri Oct 25 15:29:55 2024
+265 User CPU time used: 0 seconds
+266 System CPU time used: 0 seconds
+267 pliAppHDL_DumpVarComplete: profile - 
+          CPU/Mem usage: 0.070 sys,  0.420 user,  468.31M mem
+                   incr: 0.000 sys,  0.010 user,  3.08M mem
+                   accu: 0.020 sys,  0.170 user,  30.46M mem
+              accu incr: 0.000 sys,  0.010 user,  3.08M mem
 
-          Count usage: 45331 var,  41212 idcode,  4736 callback
+          Count usage: 47499 var,  43182 idcode,  4898 callback
                  incr: 0 var,  0 idcode,  0 callback
-                 accu: 45331 var,  41212 idcode,  4736 callback
+                 accu: 47499 var,  43182 idcode,  4898 callback
             accu incr: 0 var,  0 idcode,  0 callback
-269 Elapsed time:    0:00:02    Thu Oct 24 10:52:29 2024
-270 User CPU time used: 0 seconds
-271 System CPU time used: 0 seconds
-272 sps_call_fsdbDumpMDA_vd_main at 0 : /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_top.sv(249)
-273 *Verdi* : Begin traversing the MDAs, layer (0).
-274 *Verdi* : Enable +mda and +packedmda dumping.
-275 *Verdi* : End of traversing the MDAs.
-276 pliAppHDL_DumpVarComplete traverse var: profile - 
-          CPU/Mem usage: 0.050 sys,  0.380 user,  468.10M mem
+268 Elapsed time:    0:00:02    Fri Oct 25 15:29:55 2024
+269 User CPU time used: 0 seconds
+270 System CPU time used: 0 seconds
+271 sps_call_fsdbDumpMDA_vd_main at 0 : /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/toy_top.sv(255)
+272 *Verdi* : Begin traversing the MDAs, layer (0).
+273 *Verdi* : Enable +mda and +packedmda dumping.
+274 *Verdi* : End of traversing the MDAs.
+275 pliAppHDL_DumpVarComplete traverse var: profile - 
+          CPU/Mem usage: 0.070 sys,  0.420 user,  468.31M mem
                    incr: 0.000 sys,  0.000 user,  0.00M mem
                    accu: 0.000 sys,  0.000 user,  0.00M mem
               accu incr: 0.000 sys,  0.000 user,  0.00M mem
 
-          Count usage: 55623 var,  41212 idcode,  4736 callback
-                 incr: 10292 var,  0 idcode,  0 callback
-                 accu: 10292 var,  0 idcode,  0 callback
-            accu incr: 10292 var,  0 idcode,  0 callback
-277 Elapsed time:    0:00:02    Thu Oct 24 10:52:29 2024
-278 User CPU time used: 0 seconds
-279 System CPU time used: 0 seconds
-280 pliAppHDL_DumpVarComplete: profile - 
-          CPU/Mem usage: 0.050 sys,  0.380 user,  468.10M mem
-                   incr: 0.000 sys,  0.000 user,  0.00M mem
-                   accu: 0.000 sys,  0.000 user,  0.00M mem
-              accu incr: 0.000 sys,  0.000 user,  0.00M mem
+          Count usage: 57929 var,  43182 idcode,  4898 callback
+                 incr: 10430 var,  0 idcode,  0 callback
+                 accu: 10430 var,  0 idcode,  0 callback
+            accu incr: 10430 var,  0 idcode,  0 callback
+276 Elapsed time:    0:00:02    Fri Oct 25 15:29:55 2024
+277 User CPU time used: 0 seconds
+278 System CPU time used: 0 seconds
+279 pliAppHDL_DumpVarComplete: profile - 
+          CPU/Mem usage: 0.070 sys,  0.430 user,  468.31M mem
+                   incr: 0.000 sys,  0.010 user,  0.00M mem
+                   accu: 0.000 sys,  0.010 user,  0.00M mem
+              accu incr: 0.000 sys,  0.010 user,  0.00M mem
 
-          Count usage: 55623 var,  41212 idcode,  4736 callback
+          Count usage: 57929 var,  43182 idcode,  4898 callback
                  incr: 0 var,  0 idcode,  0 callback
-                 accu: 10292 var,  0 idcode,  0 callback
+                 accu: 10430 var,  0 idcode,  0 callback
             accu incr: 0 var,  0 idcode,  0 callback
-281 Elapsed time:    0:00:02    Thu Oct 24 10:52:29 2024
-282 User CPU time used: 0 seconds
-283 System CPU time used: 0 seconds
-284 sps_call_fsdbDumpon_vd_main at 0 : /data/usr/xuemy/8fetch_ooo/toy_scalar/rtl/toy_top.sv(250)
-285 *Verdi* : fsdbDumpon - All FSDB files at 0 s.
-286 End of simulation at 4000100
-287 Memory usage: 544.395 M
-288 Maximum resident set size: 244 MB
-289 Hard page faults: 0
-290 Soft page faults: 47603
-291 Elapsed time:    0:00:08    Thu Oct 24 10:52:35 2024
-292 User CPU time used: 8 seconds
-293 System CPU time used: 0 seconds
-294 Begin FSDB profile info:
-295 FSDB Writer : bc1(1171115) bcn(71339511) mtf/stf(0/1)
-FSDB Writer elapsed time : flush(0.543938) io wait(0.000000) theadpool wait(0.000000)
+280 Elapsed time:    0:00:02    Fri Oct 25 15:29:55 2024
+281 User CPU time used: 0 seconds
+282 System CPU time used: 0 seconds
+283 sps_call_fsdbDumpon_vd_main at 0 : /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/rtl/toy_top.sv(256)
+284 *Verdi* : fsdbDumpon - All FSDB files at 0 s.
+285 End of simulation at 4000100
+286 Memory usage: 544.600 M
+287 Maximum resident set size: 262 MB
+288 Hard page faults: 0
+289 Soft page faults: 52375
+290 Elapsed time:    0:00:08    Fri Oct 25 15:30:01 2024
+291 User CPU time used: 8 seconds
+292 System CPU time used: 0 seconds
+293 Begin FSDB profile info:
+294 FSDB Writer : bc1(1273390) bcn(71502229) mtf/stf(0/1)
+FSDB Writer elapsed time : flush(0.602258) io wait(0.000000) theadpool wait(0.000000)
 FSDB Writer cpu time : MT Compression : 0
-296 End FSDB profile info
-297 FSDB closed. Name: wave.fsdb Size: 559520
-298 Parallel profile     - ProducerThread:1 ConsumerThread:1 Buffer:64MB
-299                      - BlockUsed:565 Acquire:72146989 BufferUsed:1110224921
-300                      - Flush:5 Expand:0 ProducerWait:0 ConsumerWait:545
-301                      - MainProducerTime:5.474521560 TotalConsumerTime:3.173446582
-302                      - ElapsedTime:5.736672000
-303 Producer   0 profile - BlockUsed:565 Acquire:72146989 BufferUsed:1110224921
-304 Consumer   0 profile - Affinity:-1 CPUTime:3.173446582 LifeTime:5.484191134 (0.58%)
-305                      - BlockUsed:565 Acquire:72146989 BufferUsed:1110224921
-306 SimExit
-307 Elapsed time:    0:00:08    Thu Oct 24 10:52:35 2024
-308 User CPU time used: 8 seconds
-309 System CPU time used: 0 seconds
-310 Sim process exit
+295 End FSDB profile info
+296 FSDB closed. Name: wave.fsdb Size: 656017
+297 Parallel profile     - ProducerThread:1 ConsumerThread:1 Buffer:64MB
+298                      - BlockUsed:566 Acquire:72223554 BufferUsed:1111894576
+299                      - Flush:5 Expand:0 ProducerWait:0 ConsumerWait:536
+300                      - MainProducerTime:5.271757564 TotalConsumerTime:3.250882860
+301                      - ElapsedTime:5.539440000
+302 Producer   0 profile - BlockUsed:566 Acquire:72223554 BufferUsed:1111894576
+303 Consumer   0 profile - Affinity:-1 CPUTime:3.250882860 LifeTime:5.223577134 (0.62%)
+304                      - BlockUsed:566 Acquire:72223554 BufferUsed:1111894576
+305 SimExit
+306 Elapsed time:    0:00:08    Fri Oct 25 15:30:01 2024
+307 User CPU time used: 8 seconds
+308 System CPU time used: 0 seconds
+309 Sim process exit

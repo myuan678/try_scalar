@@ -118,7 +118,6 @@ module toy_bpu_l0btb
         for(genvar i = 0; i < BPU_OFFSET_WIDTH; i=i+1) begin : ENTRY_OFFSET_GEN
             assign entry_pred_offset[i] = |v_entry_rev_offset[i];
         end
-
     endgenerate
 
     assign entry_pred_cext                  = |v_entry_pred_cext;

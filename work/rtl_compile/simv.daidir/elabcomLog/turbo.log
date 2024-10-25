@@ -2,4 +2,4 @@ Command Line: /tools/software/synopsys/vcs/T-2022.06/linux64/bin/elabcom -logdir
 uname(Linux lserver 5.15.0-105-generic #115~20.04.1-Ubuntu SMP Mon Apr 15 17:33:04 UTC 2024 x86_64)
 [INFO] error/warning message 'C00388' has been suppressed.
 [INFO] error/warning message 'C00389' has been suppressed.
-au time 1.304351 1.187222 0.075335 delta 109961216 109961216 total 283914240 283914240
+au time 0.757909 0.689196 0.044153 delta 110026752 110026752 total 283979776 283979776
