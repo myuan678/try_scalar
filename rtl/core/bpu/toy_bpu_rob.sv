@@ -155,7 +155,7 @@ module toy_bpu_rob
     //===============================================
     generate
         for (genvar i = 0; i < ROB_DEPTH; i=i+1) begin: GEN_WAIT
-            assign v_icache_prealloc[i]    = (pre_wr_ptr==i) && pre_wren;
+            assign v_icache_prealloc[i]    = (pre_wr_ptr[ROB_PTR_WIDTH-1:0]==i) && pre_wren;
             assign v_icache_ack_vld[i]     = (icache_ack_entry_id==i) && wren;
             assign v_bpdec_bp2_vld[i]      = ((eq_ptr[ROB_PTR_WIDTH-1:0]==i) && bpdec_bp2_vld) | ((pre_wr_ptr[ROB_PTR_WIDTH-1:0]==i) && pcgen_req && bpdec_bp2_flush);
             assign v_bpdec_bp2_flush[i]    = ((eq_ptr[ROB_PTR_WIDTH-1:0]==i) && bpdec_bp2_vld && bpdec_bp2_flush) | ((pre_wr_ptr[ROB_PTR_WIDTH-1:0]==i) && pcgen_req && bpdec_bp2_flush);
