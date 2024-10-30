@@ -123,7 +123,7 @@ package toy_pack;
     //localparam integer unsigned ADDR_WIDTH = ICACHE_TAG_WIDTH + ICACHE_INDEX_WIDTH + ICACHE_OFFSET_WIDTH;
     
     
-    localparam integer unsigned MSHR_ENTRY_NUM               = 32      ;
+    localparam integer unsigned MSHR_ENTRY_NUM               = 16      ;
     localparam integer unsigned MSHR_ENTRY_INDEX_WIDTH       = $clog2(MSHR_ENTRY_NUM);
     localparam integer unsigned ICACHE_UPSTREAM_DATA_WIDTH   = ICACHE_LINE_SIZE*8   ;
     localparam integer unsigned ICACHE_DOWNSTREAM_DATA_WIDTH = ICACHE_LINE_SIZE*8    ;

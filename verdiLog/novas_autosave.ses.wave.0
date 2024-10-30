@@ -1,0 +1,162 @@
+Magic 271485
+Revision Verdi_T-2022.06
+
+; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
+viewPort 0 25 1939 416 287 65
+
+; File list:
+; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
+openDirFile -d / "" "/data/usr/xuemy/try_scalar/try_scalar/wave.fsdb"
+
+; file time scale:
+; fileTimeScale ### s|ms|us|ns|ps
+
+; signal spacing:
+signalSpacing 5
+
+; windowTimeUnit is used for zoom, cursor & marker
+; waveform viewport range
+zoom 529.257096 1343.264413
+cursor 770.000000
+marker 750.000000
+
+; user define markers
+; userMarker time_pos marker_name color linestyle
+userMarker 750 M4 ID_GREEN5 long_dashed
+userMarker 1470 M3 ID_GREEN5 long_dashed
+userMarker 1230 M2 ID_GREEN5 long_dashed
+userMarker 1209.843 M1 ID_GREEN5 long_dashed
+
+; visible top row signal index
+top 88
+; marker line index
+markerPos 102
+
+; event list
+; addEvent event_name event_expression
+; curEvent event_name
+
+
+
+COMPLEX_EVENT_BEGIN
+
+
+COMPLEX_EVENT_END
+
+
+
+; toolbar current search type
+; curSTATUS search_type
+curSTATUS ByValue
+
+
+addGroup "G1"
+activeDirFile "" "/data/usr/xuemy/try_scalar/try_scalar/wave.fsdb"
+addSignal -h 15 /toy_top/u_icache_top/upstream_rxreq_vld
+addSignal -h 15 -holdScope upstream_rxreq_rdy
+addSignal -expanded -h 15 -holdScope upstream_rxreq_addr
+addSignal -h 15 -UNSIGNED -HEX -holdScope upstream_rxreq_addr.tag[17:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope upstream_rxreq_addr.index[8:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope upstream_rxreq_addr.offset[4:0]
+addSignal -h 15 -UNSIGNED -HEX /toy_top/u_toy_scalar/fetch_mem_req_addr[31:0]
+addSignal -h 15 -UNSIGNED -HEX /toy_top/u_icache_top/upstream_rxreq_txnid[3:0]
+addGroup "G2"
+addSignal -h 15 /toy_top/u_icache_top/u_icache_tag_array_ctrl/tag_req_vld
+addSignal -h 15 -UNSIGNED -HEX -holdScope tag_req_index[3:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope tag_hit[1:0]
+addSignal -h 15 -holdScope mshr_update_en
+addSignal -h 15 -holdScope clk
+addSignal -h 15 -holdScope tag_array0_wr_en
+addSignal -h 15 -holdScope mem_en
+addSignal -h 15 -UNSIGNED -HEX -holdScope tag_array0_dout[37:0]
+addSignal -h 15 -holdScope tag_array0_dout_way0_vld
+addSignal -h 15 -holdScope tag_array0_dout_way1_vld
+addSignal -h 15 -holdScope wr_tag_buf_vld
+addSignal -h 15 -holdScope pre_check_pass
+addSignal -h 15 -UNSIGNED -HEX -holdScope tag_array0_addr[8:0]
+addSignal -h 15 -holdScope rd_vld
+addSignal -h 15 -holdScope dataram_rd_rdy
+addSignal -h 15 -holdScope lru_pick_tmp
+addSignal -h 15 -UNSIGNED -HEX -holdScope rd_pld.dataram_rd_index[8:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope bitmap[15:0]
+addSignal -h 15 -UNSIGNED -HEX /toy_top/u_icache_top/u_icache_mshr_file/alloc_index[3:0]
+addSignal -h 15 -holdScope v_mshr_entry_array[15:0]
+addSignal -h 15 -holdScope linefill_done
+addSignal -h 15 -UNSIGNED -HEX -holdScope entry_release_done_index[4:0]
+addSignal -h 15 /toy_top/u_icache_top/u_icache_mshr_file/MSHR_ENTRY_ARRAY[0]/u_icache_mshr_entry/rd_vld
+addSignal -h 15 -holdScope entry_en
+addSignal -h 15 -holdScope entry_data
+addSignal -h 15 -holdScope allocate_en
+addSignal -h 15 -holdScope entry_active
+addSignal -expanded -h 15 -holdScope mshr_entry_array.req_pld
+addSignal -h 15 -holdScope mshr_entry_array.req_pld.addr
+addSignal -h 15 -UNSIGNED -HEX -holdScope mshr_entry_array.req_pld.opcode[4:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope mshr_entry_array.req_pld.txnid[3:0]
+addSignal -h 15 -holdScope mshr_entry_array.dest_way
+addSignal -h 15 -holdScope mshr_entry_array.hit
+addSignal -h 15 -UNSIGNED -HEX -holdScope dataram_rd_txnid[3:0]
+addSignal -h 15 -holdScope dataram_rd_way
+addSignal -h 15 -UNSIGNED -HEX -holdScope dataram_rd_index[8:0]
+addSignal -h 15 -holdScope state_rd_dataram_sent
+addSignal -h 15 -holdScope hazard_free
+addSignal -h 15 -holdScope dataram_rd_vld
+addSignal -h 15 -holdScope dataram_rd_rdy
+addSignal -h 15 -holdScope release_en
+addSignal -h 15 /toy_top/u_icache_top/u_icache_mshr_file/dataram_rd_vld
+addSignal -h 15 -holdScope dataram_rd_rdy
+addSignal -h 15 -holdScope dataram_rd_way
+addSignal -h 15 -UNSIGNED -HEX -holdScope dataram_rd_index[8:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope dataram_rd_txnid[3:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope v_dataram_rd_vld[15:0]
+addSignal -h 15 -holdScope rd_vld
+addSignal -h 15 /toy_top/u_icache_top/u_data_array_ctrl/upstream_txdat_vld
+addSignal -h 15 -UNSIGNED -HEX -holdScope upstream_txdat_txnid[3:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope upstream_txdat_data[255:0]
+addSignal -h 15 /toy_top/u_icache_top/u_icache_tag_array_ctrl/tag_req_rdy
+addSignal -h 15 -holdScope tag_req_vld
+addSignal -expanded -h 15 -holdScope tag_req_pld
+addSignal -expanded -h 15 -holdScope tag_req_pld.addr
+addSignal -h 15 -UNSIGNED -HEX -holdScope tag_req_pld.addr.tag[17:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope tag_req_pld.addr.index[8:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope tag_req_pld.addr.offset[4:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope tag_req_pld.opcode[4:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope tag_req_pld.txnid[3:0]
+addSignal -h 15 -holdScope clk
+addSignal -h 15 -holdScope tag_miss
+addSignal -h 15 -holdScope wr_tag_buf_vld
+addSignal -h 15 -UNSIGNED -HEX -holdScope wr_tag_buf_index[8:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope tag_array0_din[37:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope wr_tag_buf_pld[37:0]
+addSignal -h 15 -UNSIGNED -HEX /toy_top/u_icache_top/u_icache_mshr_file/alloc_index[3:0]
+addSignal -h 15 /toy_top/u_icache_top/u_icache_mshr_file/MSHR_ENTRY_ARRAY[0]/u_icache_mshr_entry/allocate_en
+addSignal -expanded -h 15 -UNSIGNED -HEX /toy_top/u_icache_top/u_icache_mshr_file/u_pre_allocate/v_vld_in[15:0]
+addSignal -h 15 -holdScope v_vld_in[15]
+addSignal -h 15 -holdScope v_vld_in[14]
+addSignal -h 15 -holdScope v_vld_in[13]
+addSignal -h 15 -holdScope v_vld_in[12]
+addSignal -h 15 -holdScope v_vld_in[11]
+addSignal -h 15 -holdScope v_vld_in[10]
+addSignal -h 15 -holdScope v_vld_in[9]
+addSignal -h 15 -holdScope v_vld_in[8]
+addSignal -h 15 -holdScope v_vld_in[7]
+addSignal -h 15 -holdScope v_vld_in[6]
+addSignal -h 15 -holdScope v_vld_in[5]
+addSignal -h 15 -holdScope v_vld_in[4]
+addSignal -h 15 -holdScope v_vld_in[3]
+addSignal -h 15 -holdScope v_vld_in[2]
+addSignal -h 15 -holdScope v_vld_in[1]
+addSignal -h 15 /toy_top/u_icache_top/u_icache_mshr_file/MSHR_ENTRY_ARRAY[0]/u_icache_mshr_entry/entry_active
+addSignal -h 15 -holdScope allocate_en
+addSignal -h 15 -UNSIGNED -HEX /toy_top/u_icache_top/u_icache_mshr_file/u_pre_allocate/taken_index[3:0]
+addSignal -h 15 -holdScope cre_tag_req_vld
+addSignal -h 15 -UNSIGNED -HEX /toy_top/u_icache_top/u_icache_mshr_file/v_entry_active[15:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope v_alloc_vld[15:0]
+addSignal -h 15 /toy_top/u_icache_top/u_icache_mshr_file/MSHR_ENTRY_ARRAY[0]/u_icache_mshr_entry/entry_active
+addSignal -h 15 /toy_top/u_icache_top/u_icache_mshr_file/u_pre_allocate/v_vld_in[0]
+addSignal -h 15 /toy_top/u_icache_top/u_icache_mshr_file/MSHR_ENTRY_ARRAY[0]/u_icache_mshr_entry/alloc_vld
+addSignal -h 15 /toy_top/u_icache_top/u_icache_mshr_file/u_pre_allocate/v_vld_reg[0]
+addGroup "G3"
+
+; getSignalForm Scope Hierarchy Status
+; active file of getSignalForm
+

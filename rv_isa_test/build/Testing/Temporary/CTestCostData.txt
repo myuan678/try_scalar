@@ -1,121 +1,64 @@
-rv32ui-p-add 2 3.72305
-rv32ui-p-addi 2 6.60568
-rv32ui-p-and 2 5.23316
-rv32ui-p-andi 2 17.9248
-rv32ui-p-auipc 2 4.30504
-rv32ui-p-beq 2 30.8338
-rv32ui-p-bge 2 3.69695
-rv32ui-p-bgeu 2 5.11342
-rv32ui-p-blt 2 6.10057
-rv32ui-p-bltu 2 7.4783
-rv32ui-p-bne 2 6.24753
+rv32ui-p-add 4 4.98652
+rv32ui-p-addi 4 5.26674
+rv32ui-p-and 4 5.24043
+rv32ui-p-andi 4 4.5176
+rv32ui-p-auipc 4 4.9757
+rv32ui-p-beq 4 5.0394
+rv32ui-p-bge 4 4.75609
+rv32ui-p-bgeu 4 5.04653
+rv32ui-p-blt 4 4.57537
+rv32ui-p-bltu 4 4.85825
+rv32ui-p-bne 4 5.02081
 rv32ui-p-fence_i 0 0
-rv32ui-p-jal 2 6.2486
-rv32ui-p-jalr 2 14.8876
-rv32ui-p-lb 2 4.03602
-rv32ui-p-lbu 2 4.34514
-rv32ui-p-lh 2 9.01553
-rv32ui-p-lhu 2 8.14631
-rv32ui-p-lui 2 3.8921
-rv32ui-p-lw 2 7.23364
+rv32ui-p-jal 4 5.25396
+rv32ui-p-jalr 4 5.05273
+rv32ui-p-lb 4 5.02249
+rv32ui-p-lbu 4 4.92086
+rv32ui-p-lh 4 5.73165
+rv32ui-p-lhu 4 4.82178
+rv32ui-p-lui 4 4.91667
+rv32ui-p-lw 4 5.23054
 rv32ui-p-ma_data 0 0
-rv32ui-p-or 2 4.63304
-rv32ui-p-ori 2 5.38636
-rv32ui-p-sb 2 6.09537
-rv32ui-p-sh 2 5.22206
-rv32ui-p-simple 2 8.05755
-rv32ui-p-sll 2 5.75258
-rv32ui-p-slli 2 4.06153
-rv32ui-p-slt 2 5.90222
-rv32ui-p-slti 2 8.4774
-rv32ui-p-sltiu 2 5.12234
-rv32ui-p-sltu 2 6.58441
-rv32ui-p-sra 2 5.35914
-rv32ui-p-srai 2 4.98291
-rv32ui-p-srl 2 16.9119
-rv32ui-p-srli 2 5.85109
-rv32ui-p-sub 2 5.4702
-rv32ui-p-sw 2 5.05759
-rv32ui-p-xor 2 8.21745
-rv32ui-p-xori 2 5.76084
-rv32um-p-div 2 5.8543
-rv32um-p-divu 2 5.20144
-rv32um-p-mul 2 5.559
-rv32um-p-mulh 2 5.33459
-rv32um-p-mulhsu 2 17.3139
-rv32um-p-mulhu 2 5.79398
-rv32um-p-rem 2 18.3242
-rv32um-p-remu 2 4.61956
+rv32ui-p-or 4 5.25366
+rv32ui-p-ori 4 4.89274
+rv32ui-p-sb 4 5.25211
+rv32ui-p-sh 4 4.95255
+rv32ui-p-simple 4 4.83403
+rv32ui-p-sll 4 5.11124
+rv32ui-p-slli 4 4.6482
+rv32ui-p-slt 4 5.42481
+rv32ui-p-slti 4 4.75293
+rv32ui-p-sltiu 4 4.74488
+rv32ui-p-sltu 4 5.37107
+rv32ui-p-sra 4 4.70188
+rv32ui-p-srai 4 5.06943
+rv32ui-p-srl 4 4.68563
+rv32ui-p-srli 4 4.69281
+rv32ui-p-sub 4 4.92967
+rv32ui-p-sw 4 5.11532
+rv32ui-p-xor 4 5.06554
+rv32ui-p-xori 4 4.72157
+rv32um-p-div 4 4.94408
+rv32um-p-divu 4 4.93036
+rv32um-p-mul 4 5.45822
+rv32um-p-mulh 4 5.07284
+rv32um-p-mulhsu 4 5.13211
+rv32um-p-mulhu 4 4.83813
+rv32um-p-rem 4 5.26459
+rv32um-p-remu 4 4.9742
 rv32uc-p-rvc 0 0
-rv32uf-p-fadd 2 5.30501
-rv32uf-p-fclass 2 3.47997
-rv32uf-p-fcmp 2 6.12778
-rv32uf-p-fcvt 2 5.75794
-rv32uf-p-fcvt_w 2 5.09771
-rv32uf-p-fdiv 2 5.45686
-rv32uf-p-fmadd 2 5.42579
-rv32uf-p-fmin 2 7.75468
-rv32uf-p-ldst 2 6.55074
-rv32uf-p-move 2 4.24893
-rv32uf-p-recoding 2 4.54902
+rv32uf-p-fadd 4 5.04953
+rv32uf-p-fclass 4 4.78659
+rv32uf-p-fcmp 4 4.98132
+rv32uf-p-fcvt 4 4.94504
+rv32uf-p-fcvt_w 4 5.11792
+rv32uf-p-fdiv 4 4.91378
+rv32uf-p-fmadd 4 5.06312
+rv32uf-p-fmin 4 4.58375
+rv32uf-p-ldst 4 5.236
+rv32uf-p-move 4 4.84148
+rv32uf-p-recoding 4 4.81539
 ---
-rv32ui-p-andi
-rv32ui-p-beq
-rv32ui-p-bne
-rv32ui-p-bgeu
-rv32ui-p-add
-rv32ui-p-addi
-rv32ui-p-bge
-rv32ui-p-and
-rv32ui-p-slt
-rv32ui-p-lb
-rv32ui-p-auipc
-rv32ui-p-lui
-rv32ui-p-lbu
-rv32ui-p-lw
-rv32ui-p-lhu
-rv32um-p-div
-rv32ui-p-sb
-rv32um-p-mulh
 rv32ui-p-ma_data
-rv32ui-p-or
-rv32ui-p-srl
-rv32ui-p-simple
-rv32ui-p-xor
-rv32ui-p-jalr
-rv32ui-p-slli
-rv32ui-p-bltu
 rv32ui-p-fence_i
-rv32ui-p-ori
-rv32uf-p-fcvt_w
-rv32ui-p-slti
-rv32ui-p-sll
-rv32uf-p-fmadd
-rv32ui-p-sltu
-rv32ui-p-sh
-rv32ui-p-srai
-rv32ui-p-sw
-rv32ui-p-sub
-rv32ui-p-blt
-rv32um-p-mulhsu
-rv32ui-p-sra
-rv32um-p-mulhu
-rv32ui-p-jal
-rv32uf-p-fadd
-rv32ui-p-sltiu
-rv32um-p-divu
-rv32um-p-rem
-rv32ui-p-srli
-rv32uf-p-ldst
-rv32uf-p-fcmp
-rv32uf-p-fmin
-rv32ui-p-lh
-rv32ui-p-xori
-rv32uf-p-recoding
 rv32uc-p-rvc
-rv32uf-p-fclass
-rv32uf-p-move
-rv32uf-p-fdiv
-rv32um-p-mul
-rv32um-p-remu
-rv32uf-p-fcvt
