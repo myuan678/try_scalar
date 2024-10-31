@@ -23,8 +23,14 @@ isa:
 dhry:
 	${RTL_COMPILE_OUTPUT}/simv +HEX=${RV_TEST_PATH}/hello_world/build/dhrystone_itcm.hex +DATA_HEX=${RV_TEST_PATH}/hello_world/build/dhrystone_dtcm.hex +TIMEOUT=200000 +WAVE +PC=pc_trace.log | tee benchmark_output/dhry/$(GIT_REVISION)_$(TIMESTAMP).log
 
-dhry_try:
-	${RTL_COMPILE_OUTPUT}/simv +HEX=${RV_TEST_PATH}/isa/rv32ui-p-addi_itcm.hex +DATA_HEX=${RV_TEST_PATH}/isa/rv32ui-p-addi_dtcm.hex +TIMEOUT=200000 +WAVE +PC=pc_trace.log | tee benchmark_output/dhry/$(GIT_REVISION)_$(TIMESTAMP).log
+#dhry_try:
+#	${RTL_COMPILE_OUTPUT}/simv +HEX=${RV_TEST_PATH}/isa/rv32ui-p-addi_itcm.hex +DATA_HEX=${RV_TEST_PATH}/isa/rv32ui-p-addi_dtcm.hex +TIMEOUT=200000 +WAVE +PC=pc_trace.log | tee benchmark_output/dhry/$(GIT_REVISION)_$(TIMESTAMP).log
+#rv32ui-p-addi_itcm.hex
+#rv32ui-p-andi_itcm.hex
+#rv32ud-p-fadd_itcm.hex
+
+ttest:
+	${RTL_COMPILE_OUTPUT}/simv +HEX=${RV_TEST_PATH}/isa/rv32ui-p-add_itcm.hex +DATA_HEX=${RV_TEST_PATH}/isa/rv32ui-p-add_data.hex +TIMEOUT=200000 +WAVE +PC=pc_trace.log | tee benchmark_output/dhry/$(GIT_REVISION)_$(TIMESTAMP).log
 
 
 dhry_test:
@@ -32,9 +38,11 @@ dhry_test:
 
 
 cm:
-	${RTL_COMPILE_OUTPUT}/simv +HEX=${RV_TEST_PATH}/hello_world/build/coremark_itcm.hex +DATA_HEX=${RV_TEST_PATH}/hello_world/build/coremark_dtcm.hex  +TIMEOUT=0 +PC=pc_trace.log | tee benchmark_output/cm/$(GIT_REVISION)_$(TIMESTAMP).log
+	${RTL_COMPILE_OUTPUT}/simv +HEX=${RV_TEST_PATH}/hello_world/build/coremark_itcm.hex +DATA_HEX=${RV_TEST_PATH}/hello_world/build/coremark_dtcm.hex  +TIMEOUT=0 +PC=pccm_trace.log | tee benchmark_output/cm/$(GIT_REVISION)_$(TIMESTAMP).log
+
 cm_test:
 	${RTL_COMPILE_OUTPUT}/simv +HEX=/data/usr/huangt/hello_world_ht/toy_bm/coremark_itcm.hex +DATA_HEX=/data/usr/huangt/hello_world_ht/toy_bm/coremark_dtcm.hex  +TIMEOUT=0 +PC=pc_trace.log | tee benchmark_output/cm/$(GIT_REVISION)_$(TIMESTAMP).log
+
 cm_backup:
 	${RTL_COMPILE_OUTPUT}/simv  +HEX=${RV_TEST_PATH}/hello_world_backup/build/coremark_itcm.hex +DATA_HEX=${RV_TEST_PATH}/hello_world_backup/build/coremark_dtcm.hex  +TIMEOUT=0 | tee benchmark_output/cm/$(GIT_REVISION)_$(TIMESTAMP).log
 

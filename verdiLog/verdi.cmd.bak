@@ -1,0 +1,1353 @@
+simSetSimulator "-vcssv" -exec \
+           "/data/usr/xuemy/try_scalar/try_scalar/work/rtl_compile/simv" -args \
+           "+HEX=/tools/hurj/riscv-proj/isa/rv32ui-p-addi_itcm.hex +DATA_HEX=/tools/hurj/riscv-proj/isa/rv32ui-p-addi_dtcm.hex +TIMEOUT=200000 +WAVE +PC=pc_trace.log"
+debImport "-sv" "-f" "/data/usr/xuemy/try_scalar/try_scalar/rtl/sim.f" "-dbdir" \
+          "/data/usr/xuemy/try_scalar/try_scalar/work/rtl_compile/simv.daidir"
+debLoadSimResult /data/usr/xuemy/try_scalar/try_scalar/wave.fsdb
+wvCreateWindow
+verdiWindowResize -win $_Verdi_1 "8" "31" "1939" "1020"
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+verdiSetActWin -dock widgetDock_<Inst._Tree>
+srcHBSelect "toy_top.u_icache_top" -win $_nTrace1
+srcSetScope "toy_top.u_icache_top" -delim "." -win $_nTrace1
+srcHBSelect "toy_top.u_icache_top" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "upstream_rxreq_vld" -line 15 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+wvSetCursor -win $_nWave2 51541.334268 -snap {("G2" 0)}
+wvZoom -win $_nWave2 0.000000 9013.955320
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "upstream_rxreq_rdy" -line 16 -pos 1 -win $_nTrace1
+wvDrop -win $_nWave2
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "upstream_rxreq_rdy" -line 16 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+verdiSetActWin -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "upstream_rxreq_addr" -line 19 -pos 1 -win $_nTrace1
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "upstream_rxreq_addr" -line 19 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "upstream_rxreq_txnid" -line 20 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+wvSetCursor -win $_nWave2 980.299876 -snap {("G2" 0)}
+verdiSetActWin -win $_nWave2
+wvSelectSignal -win $_nWave2 {( "G1" 3 )} 
+wvSetSearchMode -win $_nWave2 -value 
+wvSetSearchMode -win $_nWave2 -value 80000200
+wvSearchNext -win $_nWave2
+wvSearchNext -win $_nWave2
+wvSearchNext -win $_nWave2
+wvSearchNext -win $_nWave2
+wvSearchNext -win $_nWave2
+wvSetPosition -win $_nWave2 {("G1" 3)}
+wvSelectSignal -win $_nWave2 {( "G1" 3 )} 
+wvSearchNext -win $_nWave2
+wvSearchPrev -win $_nWave2
+wvSearchPrev -win $_nWave2
+srcDeselectAll -win $_nTrace1
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+srcHBSelect "toy_top" -win $_nTrace1
+verdiSetActWin -dock widgetDock_<Inst._Tree>
+srcSetScope "toy_top" -delim "." -win $_nTrace1
+srcHBSelect "toy_top" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "fetch_mem_req_vld" -line 35 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "fetch_mem_req_addr" -line 34 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+verdiSetActWin -dock widgetDock_<Inst._Tree>
+srcHBSelect "toy_top.u_toy_scalar" -win $_nTrace1
+srcSetScope "toy_top.u_toy_scalar" -delim "." -win $_nTrace1
+srcHBSelect "toy_top.u_toy_scalar" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "fetch_mem_req_addr" -line 15 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "fetch_mem_req_addr" -line 15 -pos 1 -win $_nTrace1
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+verdiSetActWin -win $_nWave2
+wvSearchNext -win $_nWave2
+wvZoom -win $_nWave2 541.744668 1217.635636
+wvSearchNext -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoom -win $_nWave2 953.043108 1866.785470
+srcHBSelect "toy_top.u_icache_top" -win $_nTrace1
+verdiSetActWin -dock widgetDock_<Inst._Tree>
+srcSetScope "toy_top.u_icache_top" -delim "." -win $_nTrace1
+srcHBSelect "toy_top.u_icache_top" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+wvSelectSignal -win $_nWave2 {( "G1" 6 )} 
+verdiSetActWin -win $_nWave2
+wvSetMarker -win $_nWave2 1210.000000
+wvSetMarker -win $_nWave2 -keepViewRange -name "M1" 1209.843
+wvSetMarker -win $_nWave2 -keepViewRange -name "M1" 1209.843
+srcDeselectAll -win $_nTrace1
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+srcHBSelect "toy_top.u_icache_top.u_icache_tag_array_ctrl" -win $_nTrace1
+srcSetScope "toy_top.u_icache_top.u_icache_tag_array_ctrl" -delim "." -win \
+           $_nTrace1
+verdiSetActWin -dock widgetDock_<Inst._Tree>
+srcHBSelect "toy_top.u_icache_top.u_icache_tag_array_ctrl" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "tag_req_vld" -line 7 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+wvSetPosition -win $_nWave2 {("G1" 7)}
+verdiSetActWin -win $_nWave2
+wvSetPosition -win $_nWave2 {("G2" 0)}
+wvMoveSelected -win $_nWave2
+wvSetPosition -win $_nWave2 {("G2" 1)}
+wvSetPosition -win $_nWave2 {("G2" 1)}
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "tag_req_index" -line 10 -pos 1 -win $_nTrace1
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "tag_req_index" -line 10 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "tag_way0_hit" -line 15 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "tag_miss" -line 11 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "tag_hit" -line 12 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+wvSelectSignal -win $_nWave2 {( "G2" 3 )} 
+verdiSetActWin -win $_nWave2
+wvCut -win $_nWave2
+wvSetPosition -win $_nWave2 {("G3" 0)}
+wvSetPosition -win $_nWave2 {("G2" 3)}
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "mshr_update_en" -line 18 -pos 1 -win $_nTrace1
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "mshr_update_en" -line 18 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "mshr_update_pld" -line 19 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "clk" -line 4 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+wvSetCursor -win $_nWave2 1228.106678 -snap {("G2" 5)}
+verdiSetActWin -win $_nWave2
+wvSetMarker -win $_nWave2 1230.000000
+wvSetMarker -win $_nWave2 1230.000000
+wvSetMarker -win $_nWave2 -keepViewRange -name "M2" 1228.660
+wvSetMarker -win $_nWave2 -keepViewRange -name "M2" 1230
+srcDeselectAll -win $_nTrace1
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "tag_array0_wr_en" -line 42 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "mem_en" -line 49 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "tag_array0_dout" -line 44 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+wvSelectSignal -win $_nWave2 {( "G1" 3 )} 
+verdiSetActWin -win $_nWave2
+wvSetPosition -win $_nWave2 {("G1" 3)}
+wvExpandBus -win $_nWave2
+wvSetPosition -win $_nWave2 {("G2" 8)}
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "tag_array0_dout_way1_vld" -line 46 -pos 1 -win $_nTrace1
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "tag_array0_dout_way0_vld" -line 45 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "tag_array0_dout_way1_vld" -line 46 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "wr_tag_buf_vld" -line 52 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "pre_check_pass" -line 59 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "wr_tag_buf_rdy" -line 53 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "pre_check_pass" -line 59 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "tag_array0_addr" -line 68 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "rd_vld" -line 81 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+wvSetCursor -win $_nWave2 1247.477352 -snap {("G2" 13)}
+verdiSetActWin -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "dataram_rd_rdy" -line 81 -pos 1 -win $_nTrace1
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "dataram_rd_rdy" -line 81 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "entry_data.dest_way" -line 67 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "lru_pick_tmp" -line 67 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "rd_pld.dataram_rd_index" -line 82 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "wr_tag_buf_index" -line 149 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "bitmap" -line 202 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "lru\[index\]" -line 230 -pos 1 -partailSelPos 6 -win $_nTrace1
+srcHBSelect "toy_top.u_icache_top.u_icache_mshr_file" -win $_nTrace1
+srcSetScope "toy_top.u_icache_top.u_icache_mshr_file" -delim "." -win $_nTrace1
+srcHBSelect "toy_top.u_icache_top.u_icache_mshr_file" -win $_nTrace1
+verdiSetActWin -dock widgetDock_<Inst._Tree>
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "alloc_index" -line 21 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "v_mshr_entry_array" -line 35 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+wvSelectSignal -win $_nWave2 {( "G2" 20 )} 
+verdiSetActWin -win $_nWave2
+wvExpandBus -win $_nWave2
+srcDeselectAll -win $_nTrace1
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+verdiSetActWin -dock widgetDock_<Inst._Tree>
+srcHBSelect "toy_top.u_icache_top.u_icache_tag_array_ctrl" -win $_nTrace1
+srcSetScope "toy_top.u_icache_top.u_icache_tag_array_ctrl" -delim "." -win \
+           $_nTrace1
+srcHBSelect "toy_top.u_icache_top.u_icache_tag_array_ctrl" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+verdiSetActWin -win $_nWave2
+wvScrollUp -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvSelectSignal -win $_nWave2 {( "G2" 35 )} 
+wvSetPosition -win $_nWave2 {("G2" 35)}
+wvExpandBus -win $_nWave2
+wvSetPosition -win $_nWave2 {("G2" 43)}
+wvSelectSignal -win $_nWave2 {( "G2" 37 )} 
+wvSelectSignal -win $_nWave2 {( "G2" 37 )} 
+wvSetPosition -win $_nWave2 {("G2" 37)}
+wvExpandBus -win $_nWave2
+wvSetPosition -win $_nWave2 {("G2" 46)}
+wvSelectSignal -win $_nWave2 {( "G2" 38 )} 
+wvSetPosition -win $_nWave2 {("G2" 38)}
+wvExpandBus -win $_nWave2
+wvSetPosition -win $_nWave2 {("G2" 49)}
+wvSelectSignal -win $_nWave2 {( "G2" 35 )} 
+wvSetPosition -win $_nWave2 {("G2" 35)}
+wvCollapseBus -win $_nWave2
+wvSetPosition -win $_nWave2 {("G2" 35)}
+wvSetPosition -win $_nWave2 {("G2" 36)}
+wvSelectSignal -win $_nWave2 {( "G2" 19 )} 
+wvScrollDown -win $_nWave2 0
+wvSetPosition -win $_nWave2 {("G2" 19)}
+wvExpandBus -win $_nWave2
+wvSetPosition -win $_nWave2 {("G2" 40)}
+wvSelectSignal -win $_nWave2 {( "G2" 19 )} 
+wvSetPosition -win $_nWave2 {("G2" 19)}
+wvCollapseBus -win $_nWave2
+wvSetPosition -win $_nWave2 {("G2" 19)}
+wvSetPosition -win $_nWave2 {("G2" 36)}
+wvSelectSignal -win $_nWave2 {( "G2" 20 )} 
+wvSelectSignal -win $_nWave2 {( "G2" 20 )} 
+wvSetPosition -win $_nWave2 {("G2" 20)}
+wvCollapseBus -win $_nWave2
+wvSetPosition -win $_nWave2 {("G2" 20)}
+srcHBSelect "toy_top.u_icache_top.u_icache_mshr_file" -win $_nTrace1
+verdiSetActWin -dock widgetDock_<Inst._Tree>
+srcSetScope "toy_top.u_icache_top.u_icache_mshr_file" -delim "." -win $_nTrace1
+srcHBSelect "toy_top.u_icache_top.u_icache_mshr_file" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "miss_txnid_for_prefetch" -line 27 -pos 1 -win $_nTrace1
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "rd_pld" -line 52 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+wvCut -win $_nWave2
+wvSetPosition -win $_nWave2 {("G3" 0)}
+wvSetPosition -win $_nWave2 {("G2" 20)}
+wvSelectGroup -win $_nWave2 {G3}
+verdiSetActWin -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "v_entry_active" -line 62 -pos 1 -win $_nTrace1
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "index_vld" -line 128 -pos 2 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "v_entry_en" -line 138 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "alloc_index" -line 137 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "v_entry_en" -line 138 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "linefill_done" -line 143 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "v_linefill_done" -line 145 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "entry_release_done_index" -line 159 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "downstream_release_index" -line 166 -pos 1 -win $_nTrace1
+verdiSetActWin -dock widgetDock_<Inst._Tree>
+srcHBSelect \
+           "toy_top.u_icache_top.u_icache_mshr_file.MSHR_ENTRY_ARRAY\[0\].u_icache_mshr_entry" \
+           -win $_nTrace1
+srcHBSelect \
+           "toy_top.u_icache_top.u_icache_mshr_file.MSHR_ENTRY_ARRAY\[0\].u_icache_mshr_entry" \
+           -win $_nTrace1
+srcSetScope \
+           "toy_top.u_icache_top.u_icache_mshr_file.MSHR_ENTRY_ARRAY\[0\].u_icache_mshr_entry" \
+           -delim "." -win $_nTrace1
+srcHBSelect \
+           "toy_top.u_icache_top.u_icache_mshr_file.MSHR_ENTRY_ARRAY\[0\].u_icache_mshr_entry" \
+           -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "rd_vld" -line 6 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "entry_en" -line 9 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+wvSetCursor -win $_nWave2 1250.244591 -snap {("G2" 23)}
+verdiSetActWin -win $_nWave2
+srcDeselectAll -win $_nTrace1
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "entry_data" -line 10 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "alloc_rdy" -line 20 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "dataram_rd_txnid" -line 64 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "allocate_en" -line 54 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "entry_active" -line 59 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "mshr_entry_array.req_pld" -line 72 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+wvSelectSignal -win $_nWave2 {( "G2" 28 )} 
+verdiSetActWin -win $_nWave2
+wvExpandBus -win $_nWave2
+wvSelectSignal -win $_nWave2 {( "G2" 28 )} 
+wvSelectSignal -win $_nWave2 {( "G2" 29 )} 
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "mshr_entry_array.dest_way" -line 73 -pos 1 -win $_nTrace1
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "mshr_entry_array.hit" -line 80 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "dataram_rd_txnid" -line 64 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "dataram_rd_way" -line 63 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "dataram_rd_index" -line 62 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "state_rd_dataram_sent" -line 87 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "mshr_entry_array.hit" -line 87 -pos 1 -win $_nTrace1
+wvSelectSignal -win $_nWave2 {( "G2" 33 )} 
+verdiSetActWin -win $_nWave2
+wvSetCursor -win $_nWave2 1468.303035 -snap {("G2" 37)}
+wvSetCursor -win $_nWave2 1497.082322 -snap {("G2" 33)}
+wvSetCursor -win $_nWave2 1488.227157 -snap {("G2" 27)}
+srcDeselectAll -win $_nTrace1
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "hazard_free" -line 104 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+wvSetCursor -win $_nWave2 1506.490935 -snap {("G2" 38)}
+verdiSetActWin -win $_nWave2
+srcDeselectAll -win $_nTrace1
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+wvSetCursor -win $_nWave2 1248.030800 -snap {("G2" 31)}
+verdiSetActWin -win $_nWave2
+srcDeselectAll -win $_nTrace1
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "dataram_rd_vld" -line 120 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "dataram_rd_rdy" -line 120 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "linefill_sent" -line 129 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "dataram_rd_pld.dataram_rd_index" -line 152 -pos 1 -win \
+          $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "release_en" -line 144 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "release_en" -line 144 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+verdiSetActWin -dock widgetDock_<Inst._Tree>
+srcHBSelect "toy_top.u_icache_top.u_icache_mshr_file" -win $_nTrace1
+srcSetScope "toy_top.u_icache_top.u_icache_mshr_file" -delim "." -win $_nTrace1
+srcHBSelect "toy_top.u_icache_top.u_icache_mshr_file" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "dataram_rd_vld" -line 29 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "dataram_rd_rdy" -line 30 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+verdiSetActWin -win $_nWave2
+wvSetCursor -win $_nWave2 1469.409930 -snap {("G2" 40)}
+wvSelectSignal -win $_nWave2 {( "G2" 40 )} 
+wvSelectSignal -win $_nWave2 {( "G2" 30 )} 
+wvSetMarker -win $_nWave2 -keepViewRange -name "M3" 1469.963
+wvSetMarker -win $_nWave2 -keepViewRange -name "M3" 1470
+srcDeselectAll -win $_nTrace1
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "dataram_rd_vld" -line 29 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "dataram_rd_way" -line 31 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "dataram_rd_index" -line 32 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "dataram_rd_txnid" -line 33 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "v_linefill_done" -line 50 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "v_dataram_rd_vld" -line 67 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "dataram_rd_vld" -line 99 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "rd_vld" -line 99 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "arb_dataram_rd_vld" -line 99 -pos 1 -win $_nTrace1
+verdiSetActWin -dock widgetDock_<Inst._Tree>
+srcHBSelect "toy_top.u_icache_top.u_data_array_ctrl" -win $_nTrace1
+srcSetScope "toy_top.u_icache_top.u_data_array_ctrl" -delim "." -win $_nTrace1
+srcHBSelect "toy_top.u_icache_top.u_data_array_ctrl" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "dataram_rd_vld" -line 8 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "downstream_rxdat_vld" -line 14 -pos 1 -win $_nTrace1
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "upstream_txdat_vld" -line 20 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "upstream_txdat_txnid" -line 21 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "upstream_txdat_data" -line 19 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+wvSetCursor -win $_nWave2 1628.249457 -snap {("G2" 41)}
+verdiSetActWin -win $_nWave2
+wvSetCursor -win $_nWave2 1207.629108 -snap {("G2" 37)}
+wvSelectUserMarker -win $_nWave2 -name "M1"
+wvSelectUserMarker -win $_nWave2 -name "M1"
+wvSetCursor -win $_nWave2 1228.106678 -snap {("G2" 37)}
+wvSetCursor -win $_nWave2 1228.660126 -snap {("G2" 42)}
+wvSetCursor -win $_nWave2 1228.660126 -snap {("G2" 42)}
+wvSelectUserMarker -win $_nWave2 -name "M2"
+wvSelectUserMarker -win $_nWave2 -name "M2"
+wvSelectUserMarker -win $_nWave2 -name "M1"
+wvSelectUserMarker -win $_nWave2 -name "M1"
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "upstream_txdat_data" -line 19 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "linefill_done" -line 18 -pos 1 -win $_nTrace1
+verdiSetActWin -win $_nWave2
+wvScrollUp -win $_nWave2 14
+wvScrollUp -win $_nWave2 7
+wvScrollUp -win $_nWave2 7
+wvScrollUp -win $_nWave2 7
+wvScrollUp -win $_nWave2 7
+wvSelectSignal -win $_nWave2 {( "G1" 7 )} 
+wvCut -win $_nWave2
+wvSetPosition -win $_nWave2 {("G3" 0)}
+wvSetPosition -win $_nWave2 {("G2" 51)}
+wvSelectSignal -win $_nWave2 {( "G1" 7 )} 
+wvSearchPrev -win $_nWave2
+wvSearchPrev -win $_nWave2
+wvSelectSignal -win $_nWave2 {( "G2" 3 )} 
+wvSetCursor -win $_nWave2 719.321279 -snap {("G2" 5)}
+wvSetCursor -win $_nWave2 749.777754 -snap {("G1" 8)}
+verdiSetActWin -dock widgetDock_<Inst._Tree>
+srcHBSelect "toy_top.u_icache_top.u_icache_tag_array_ctrl" -win $_nTrace1
+srcSetScope "toy_top.u_icache_top.u_icache_tag_array_ctrl" -delim "." -win \
+           $_nTrace1
+srcHBSelect "toy_top.u_icache_top.u_icache_tag_array_ctrl" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "tag_req_rdy" -line 8 -pos 1 -win $_nTrace1
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "tag_req_vld" -line 7 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "tag_req_pld" -line 9 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+wvSelectSignal -win $_nWave2 {( "G2" 54 )} 
+wvExpandBus -win $_nWave2
+verdiSetActWin -win $_nWave2
+wvSelectSignal -win $_nWave2 {( "G2" 55 )} 
+wvSetPosition -win $_nWave2 {("G2" 55)}
+wvExpandBus -win $_nWave2
+wvSetPosition -win $_nWave2 {("G2" 60)}
+wvSelectSignal -win $_nWave2 {( "G2" 53 )} 
+wvSelectSignal -win $_nWave2 {( "G2" 51 )} 
+wvSelectSignal -win $_nWave2 {( "G2" 55 )} 
+wvSetCursor -win $_nWave2 735.933902 -snap {("G2" 55)}
+wvZoom -win $_nWave2 682.773509 1477.964388
+wvZoom -win $_nWave2 714.357003 865.142718
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoom -win $_nWave2 625.537359 1391.347188
+wvZoom -win $_nWave2 1175.978505 1306.475247
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoom -win $_nWave2 633.300989 1528.135793
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "tag_miss" -line 11 -pos 1 -win $_nTrace1
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "clk" -line 4 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+wvSetCursor -win $_nWave2 747.949907 -snap {("G2" 54)}
+verdiSetActWin -win $_nWave2
+wvSetCursor -win $_nWave2 728.459591 -snap {("G2" 59)}
+wvSelectSignal -win $_nWave2 {( "G2" 57 )} 
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "tag_miss" -line 11 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+wvSetCursor -win $_nWave2 747.949907 -snap {("G2" 60)}
+verdiSetActWin -win $_nWave2
+wvSetMarker -win $_nWave2 750.000000
+wvSelectSignal -win $_nWave2 {( "G2" 60 )} 
+wvSetMarker -win $_nWave2 -keepViewRange -name "M4" 750.816
+wvSetMarker -win $_nWave2 -keepViewRange -name "M4" 750
+srcDeselectAll -win $_nTrace1
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "tag_array0_dout_way0_vld" -line 78 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "entry_data.pld" -line 66 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "rd_pld.dataram_rd_way" -line 83 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "wr_tag_buf_vld" -line 68 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "wr_tag_buf_pld" -line 70 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "wr_tag_buf_index" -line 68 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "wr_tag_buf_index" -line 68 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "tag_array0_din" -line 70 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "wr_tag_buf_pld" -line 70 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "wr_tag_buf_pld" -line 70 -pos 1 -win $_nTrace1
+uniFindSearchString -widget MTB_SOURCE_TAB_1 -pattern "wr_tag_buf_pld" -next
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "lru_pick" -line 132 -pos 1 -win $_nTrace1
+wvSetCursor -win $_nWave2 768.586712 -snap {("G2" 61)}
+verdiSetActWin -win $_nWave2
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal \
+          "tag_array0_dout\[ICACHE_TAG_RAM_WIDTH-1:ICACHE_TAG_RAM_WIDTH/2\]" \
+          -line 132 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "req_pld.addr.tag" -line 132 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "lru_pick" -line 132 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "req_pld.addr.tag" -line 133 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "tag_array0_dout\[ICACHE_TAG_RAM_WIDTH/2-1:0\]" -line 133 -pos \
+          1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -win $_nTrace1 -range {133 133 3 10 1 20}
+srcDeselectAll -win $_nTrace1
+srcSelect -win $_nTrace1 -range {133 133 10 12 1 1} -backward
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -win $_nTrace1 -range {133 133 3 10 1 16}
+srcDeselectAll -win $_nTrace1
+srcSelect -win $_nTrace1 -range {133 133 4 12 1 1} -backward
+wvVerilogExpression -win $_nWave2 -noadd \
+           "\\\{1'b1,req_pld.addr.tag\[17:0\],tag_array0_dout\[18:0\]\} \[37:0\]" \
+           "\{1'b1,\"/toy_top/u_icache_top/u_icache_tag_array_ctrl/req_pld.addr.tag\[17:0\]\",\"/toy_top/u_icache_top/u_icache_tag_array_ctrl/tag_array0_dout\[18:0\]\"\}"
+wvAddSignal -win $_nWave2 \
+           "/toy_top/u_icache_top/u_icache_tag_array_ctrl/req_pld.addr.tag\[17:0\]" \
+           "/toy_top/u_icache_top/u_icache_tag_array_ctrl/tag_array0_dout\[18:0\]"
+wvSetPosition -win $_nWave2 {("G2" 70)}
+wvSetPosition -win $_nWave2 {("G2" 72)}
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+wvSelectSignal -win $_nWave2 {( "G2" 68 )} 
+verdiSetActWin -win $_nWave2
+wvSelectSignal -win $_nWave2 {( "G2" 68 69 70 71 72 )} 
+wvCut -win $_nWave2
+wvSetPosition -win $_nWave2 {("G2" 67)}
+srcDeselectAll -win $_nTrace1
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "req_pld.addr.tag" -line 150 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "mshr_update_en" -line 181 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "bitmap\[i\]" -line 196 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "lru_pick_tmp" -line 235 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcHBSelect "toy_top.u_icache_top.u_icache_mshr_file" -win $_nTrace1
+verdiSetActWin -dock widgetDock_<Inst._Tree>
+srcSetScope "toy_top.u_icache_top.u_icache_mshr_file" -delim "." -win $_nTrace1
+srcHBSelect "toy_top.u_icache_top.u_icache_mshr_file" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "downstream_txreq_vld" -line 40 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "downstream_txreq_pld" -line 42 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "downstream_txreq_entry_id" -line 43 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "downstream_txreq_entry_id" -line 43 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "alloc_index" -line 21 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+verdiSetActWin -dock widgetDock_<Inst._Tree>
+srcHBSelect \
+           "toy_top.u_icache_top.u_icache_mshr_file.MSHR_ENTRY_ARRAY\[0\].u_icache_mshr_entry" \
+           -win $_nTrace1
+srcHBSelect \
+           "toy_top.u_icache_top.u_icache_mshr_file.MSHR_ENTRY_ARRAY\[0\].u_icache_mshr_entry" \
+           -win $_nTrace1
+srcSetScope \
+           "toy_top.u_icache_top.u_icache_mshr_file.MSHR_ENTRY_ARRAY\[0\].u_icache_mshr_entry" \
+           -delim "." -win $_nTrace1
+srcHBSelect \
+           "toy_top.u_icache_top.u_icache_mshr_file.MSHR_ENTRY_ARRAY\[0\].u_icache_mshr_entry" \
+           -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "rd_vld" -line 6 -pos 1 -win $_nTrace1
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "entry_data" -line 10 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "downstream_txreq_vld" -line 22 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "downstream_txreq_vld" -line 22 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "downstream_txreq_pld" -line 24 -pos 1 -win $_nTrace1
+wvDrop -win $_nWave2
+wvSetCursor -win $_nWave2 734.192037 -snap {("G2" 76)}
+verdiSetActWin -win $_nWave2
+wvSetCursor -win $_nWave2 768.013468 -snap {("G2" 76)}
+wvZoom -win $_nWave2 712.408743 915.910572
+srcDeselectAll -win $_nTrace1
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+wvZoomOut -win $_nWave2
+verdiSetActWin -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "rst_n" -line 70 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "state_done" -line 66 -pos 1 -win $_nTrace1
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "allocate_en" -line 54 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "mshr_entry_array.valid" -line 61 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+wvSelectSignal -win $_nWave2 {( "G2" 74 )} 
+verdiSetActWin -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "mshr_entry_array.req_pld.addr.index" -line 62 -pos 1 -win \
+          $_nTrace1
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "mshr_entry_array.req_pld.addr.index" -line 62 -pos 1 -win \
+          $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "v_hazard_bitmap" -line 67 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "mshr_entry_array.req_pld" -line 78 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+verdiSetActWin -win $_nWave2
+wvZoomOut -win $_nWave2
+srcDeselectAll -win $_nTrace1
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "tag_miss" -line 81 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "linefill_data_done" -line 88 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "mshr_entry_array.miss" -line 88 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "linefill_data_done" -line 88 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+wvSetCursor -win $_nWave2 788.946810 -snap {("G2" 80)}
+verdiSetActWin -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "state_rd_dataram_sent" -line 87 -pos 1 -win $_nTrace1
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "state_rd_dataram_sent" -line 87 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "mshr_entry_array.hit" -line 87 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "allocate_en" -line 86 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+wvSetCursor -win $_nWave2 769.131129 -snap {("G2" 83)}
+verdiSetActWin -win $_nWave2
+wvSetCursor -win $_nWave2 788.946810 -snap {("G2" 78)}
+wvSetCursor -win $_nWave2 769.131129 -snap {("G2" 73)}
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+verdiSetActWin -dock widgetDock_<Inst._Tree>
+srcHBSelect "toy_top.u_icache_top.u_data_array_ctrl" -win $_nTrace1
+srcSetScope "toy_top.u_icache_top.u_data_array_ctrl" -delim "." -win $_nTrace1
+srcHBSelect "toy_top.u_icache_top.u_data_array_ctrl" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "downstream_rxdat_vld" -line 14 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "downstream_rxdat_rdy" -line 15 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "downstream_rxdat_pld" -line 16 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+wvSelectSignal -win $_nWave2 {( "G2" 89 )} 
+wvExpandBus -win $_nWave2
+verdiSetActWin -win $_nWave2
+wvSelectSignal -win $_nWave2 {( "G2" 91 )} 
+wvScrollUp -win $_nWave2 1
+wvSelectSignal -win $_nWave2 {( "G2" 81 )} 
+wvSelectSignal -win $_nWave2 {( "G2" 81 )} 
+wvSetPosition -win $_nWave2 {("G2" 81)}
+wvExpandBus -win $_nWave2
+wvSetPosition -win $_nWave2 {("G2" 96)}
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvSelectSignal -win $_nWave2 {( "G2" 93 )} 
+wvSetCursor -win $_nWave2 829.099638 -snap {("G2" 94)}
+wvScrollDown -win $_nWave2 1
+wvSelectSignal -win $_nWave2 {( "G2" 95 )} 
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "linefill_ack_entry_idx" -line 17 -pos 1 -win $_nTrace1
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+wvSetCursor -win $_nWave2 848.915319 -snap {("G2" 95)}
+verdiSetActWin -win $_nWave2
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvSelectSignal -win $_nWave2 {( "G2" 94 )} 
+wvSelectSignal -win $_nWave2 {( "G2" 93 )} 
+wvSelectSignal -win $_nWave2 {( "G2" 95 )} 
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "data_array_addr" -line 125 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "data_array_addr" -line 125 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "data_array_wr_en" -line 124 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+wvSelectSignal -win $_nWave2 {( "G2" 98 )} 
+verdiSetActWin -win $_nWave2
+srcDeselectAll -win $_nTrace1
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "clk" -line 122 -pos 2 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "linefill_done_txnid" -line 109 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+wvSetCursor -win $_nWave2 828.578172 -snap {("G2" 99)}
+verdiSetActWin -win $_nWave2
+srcDeselectAll -win $_nTrace1
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+wvSelectSignal -win $_nWave2 {( "G2" 90 )} 
+verdiSetActWin -win $_nWave2
+wvSetCursor -win $_nWave2 848.393853 -snap {("G2" 92)}
+srcDeselectAll -win $_nTrace1
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "linefill_done" -line 68 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "linefill_ack_entry_idx" -line 69 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "linefill_data_vld" -line 73 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "linefill_data" -line 74 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+wvSelectSignal -win $_nWave2 {( "G2" 102 )} 
+verdiSetActWin -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "data_array_wr_en" -line 85 -pos 1 -win $_nTrace1
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "data_array_wr_en" -line 85 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "data_array0_din" -line 83 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "data_array1_din" -line 84 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "linefill_done" -line 86 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcSelect -signal \
+          "mshr_entry_array_msg\[downstream_rxdat_entry_idx\].req_pld.addr.index" \
+          -line 86 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+wvSelectSignal -win $_nWave2 {( "G2" 108 )} 
+verdiSetActWin -win $_nWave2
+wvSelectSignal -win $_nWave2 {( "G2" 106 )} 
+wvSetCursor -win $_nWave2 829.621103 -snap {("G2" 108)}
+wvSetCursor -win $_nWave2 868.209534 -snap {("G2" 108)}
+srcDeselectAll -win $_nTrace1
+srcSelect -signal \
+          "mshr_entry_array_msg\[downstream_rxdat_entry_idx\].req_pld.addr.index" \
+          -line 86 -pos 1 -partailSelPos 30 -win $_nTrace1
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal \
+          "mshr_entry_array_msg\[downstream_rxdat_entry_idx\].req_pld.addr.index" \
+          -line 86 -pos 1 -partailSelPos 29 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+verdiSetActWin -dock widgetDock_<Inst._Tree>
+srcDeselectAll -win $_nTrace1
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "downstream_rxdat_pld.downstream_rxdat_data" -line 74 -pos 1 \
+          -win $_nTrace1
+verdiSetActWin -dock widgetDock_<Inst._Tree>
+srcHBSelect "toy_top.u_icache_top.u_icache_mshr_file.u_pre_allocate" -win \
+           $_nTrace1
+srcSetScope "toy_top.u_icache_top.u_icache_mshr_file.u_pre_allocate" -delim "." \
+           -win $_nTrace1
+srcHBSelect "toy_top.u_icache_top.u_icache_mshr_file.u_pre_allocate" -win \
+           $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "v_vld_in" -line 10 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+wvSelectSignal -win $_nWave2 {( "G2" 97 )} 
+verdiSetActWin -win $_nWave2
+wvSelectSignal -win $_nWave2 {( "G2" 97 98 99 100 101 102 103 104 105 106 107 \
+           108 109 110 )} 
+wvCut -win $_nWave2
+wvSetPosition -win $_nWave2 {("G2" 97)}
+wvSelectSignal -win $_nWave2 {( "G2" 85 )} 
+wvSelectSignal -win $_nWave2 {( "G2" 85 86 87 88 )} 
+wvCut -win $_nWave2
+wvSetPosition -win $_nWave2 {("G2" 93)}
+wvSelectSignal -win $_nWave2 {( "G2" 86 )} 
+wvSelectSignal -win $_nWave2 {( "G2" 86 87 88 89 90 91 )} 
+wvCut -win $_nWave2
+wvSetPosition -win $_nWave2 {("G2" 87)}
+wvSelectSignal -win $_nWave2 {( "G2" 85 )} 
+wvSelectSignal -win $_nWave2 {( "G2" 86 )} 
+wvCut -win $_nWave2
+wvSetPosition -win $_nWave2 {("G3" 0)}
+wvSetPosition -win $_nWave2 {("G2" 86)}
+wvSelectSignal -win $_nWave2 {( "G2" 78 )} 
+wvSelectSignal -win $_nWave2 {( "G2" 78 79 80 81 82 83 84 )} 
+wvCut -win $_nWave2
+wvSetPosition -win $_nWave2 {("G2" 79)}
+wvSelectSignal -win $_nWave2 {( "G2" 73 )} 
+wvSelectSignal -win $_nWave2 {( "G2" 67 68 69 70 71 72 73 )} 
+wvCut -win $_nWave2
+wvSetPosition -win $_nWave2 {("G2" 72)}
+wvSelectSignal -win $_nWave2 {( "G2" 68 )} 
+wvSelectSignal -win $_nWave2 {( "G2" 68 69 70 )} 
+wvCut -win $_nWave2
+wvSetPosition -win $_nWave2 {("G2" 69)}
+wvSelectSignal -win $_nWave2 {( "G2" 67 )} 
+wvSelectSignal -win $_nWave2 {( "G2" 68 )} 
+srcHBSelect "toy_top.u_icache_top.u_icache_mshr_file.MSHR_ENTRY_ARRAY\[0\]" -win \
+           $_nTrace1
+verdiSetActWin -dock widgetDock_<Inst._Tree>
+srcSetScope "toy_top.u_icache_top.u_icache_mshr_file.MSHR_ENTRY_ARRAY\[0\]" \
+           -delim "." -win $_nTrace1
+srcHBSelect "toy_top.u_icache_top.u_icache_mshr_file.MSHR_ENTRY_ARRAY\[0\]" -win \
+           $_nTrace1
+srcHBSelect "toy_top.u_icache_top.u_icache_mshr_file.MSHR_ENTRY_ARRAY\[1\]" -win \
+           $_nTrace1
+srcSetScope "toy_top.u_icache_top.u_icache_mshr_file.MSHR_ENTRY_ARRAY\[1\]" \
+           -delim "." -win $_nTrace1
+srcHBSelect "toy_top.u_icache_top.u_icache_mshr_file.MSHR_ENTRY_ARRAY\[1\]" -win \
+           $_nTrace1
+srcHBSelect \
+           "toy_top.u_icache_top.u_icache_mshr_file.MSHR_ENTRY_ARRAY\[0\].u_icache_mshr_entry" \
+           -win $_nTrace1
+srcSetScope \
+           "toy_top.u_icache_top.u_icache_mshr_file.MSHR_ENTRY_ARRAY\[0\].u_icache_mshr_entry" \
+           -delim "." -win $_nTrace1
+srcHBSelect \
+           "toy_top.u_icache_top.u_icache_mshr_file.MSHR_ENTRY_ARRAY\[0\].u_icache_mshr_entry" \
+           -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "entry_active" -line 18 -pos 1 -win $_nTrace1
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "entry_active" -line 18 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+wvSetCursor -win $_nWave2 787.903880 -snap {("G2" 69)}
+verdiSetActWin -win $_nWave2
+wvSetCursor -win $_nWave2 768.609664 -snap {("G2" 69)}
+wvSetCursor -win $_nWave2 788.425345 -snap {("G2" 68)}
+wvSetCursor -win $_nWave2 768.609664 -snap {("G2" 69)}
+wvSelectSignal -win $_nWave2 {( "G2" 69 )} 
+wvSelectSignal -win $_nWave2 {( "G2" 70 )} 
+wvSelectSignal -win $_nWave2 {( "G2" 69 )} 
+wvSetPosition -win $_nWave2 {("G2" 69)}
+wvExpandBus -win $_nWave2
+wvSetPosition -win $_nWave2 {("G2" 86)}
+srcDeselectAll -win $_nTrace1
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "downstream_txreq_pld" -line 24 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "release_en" -line 30 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "allocate_en" -line 54 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+verdiSetActWin -dock widgetDock_<Inst._Tree>
+wvSelectSignal -win $_nWave2 {( "G2" 85 )} 
+verdiSetActWin -win $_nWave2
+verdiSetActWin -dock widgetDock_<Inst._Tree>
+srcHBSelect "toy_top.u_icache_top.u_icache_mshr_file.u_pre_allocate" -win \
+           $_nTrace1
+srcSetScope "toy_top.u_icache_top.u_icache_mshr_file.u_pre_allocate" -delim "." \
+           -win $_nTrace1
+srcHBSelect "toy_top.u_icache_top.u_icache_mshr_file.u_pre_allocate" -win \
+           $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "taken_index" -line 13 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "taken_index" -line 13 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+wvSelectSignal -win $_nWave2 {( "G2" 84 )} 
+verdiSetActWin -win $_nWave2
+wvSelectSignal -win $_nWave2 {( "G2" 85 )} 
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "v_vld_reg" -line 24 -pos 1 -win $_nTrace1
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "v_vld_reg" -line 24 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+wvSelectSignal -win $_nWave2 {( "G2" 89 )} 
+verdiSetActWin -win $_nWave2
+wvExpandBus -win $_nWave2
+wvSelectSignal -win $_nWave2 {( "G2" 104 )} 
+wvSelectSignal -win $_nWave2 {( "G2" 91 92 93 94 95 96 97 98 99 100 101 102 103 \
+           104 )} 
+wvCut -win $_nWave2
+wvSetPosition -win $_nWave2 {("G2" 91)}
+wvSelectSignal -win $_nWave2 {( "G2" 90 )} 
+wvCut -win $_nWave2
+wvSetPosition -win $_nWave2 {("G3" 0)}
+wvSetPosition -win $_nWave2 {("G2" 90)}
+wvSelectSignal -win $_nWave2 {( "G2" 89 )} 
+wvCut -win $_nWave2
+wvSetPosition -win $_nWave2 {("G3" 0)}
+wvSetPosition -win $_nWave2 {("G2" 89)}
+wvSelectSignal -win $_nWave2 {( "G2" 84 )} 
+wvSelectSignal -win $_nWave2 {( "G2" 85 )} 
+wvSetPosition -win $_nWave2 {("G2" 85)}
+wvSetPosition -win $_nWave2 {("G2" 88)}
+wvMoveSelected -win $_nWave2
+wvSetPosition -win $_nWave2 {("G2" 88)}
+wvSetCursor -win $_nWave2 768.609664 -snap {("G2" 88)}
+wvSetCursor -win $_nWave2 768.609664 -snap {("G2" 89)}
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "cre_tag_req_vld" -line 23 -pos 1 -win $_nTrace1
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "cre_tag_req_vld" -line 23 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+wvSetCursor -win $_nWave2 771.216991 -snap {("G2" 89)}
+verdiSetActWin -win $_nWave2
+srcDeselectAll -win $_nTrace1
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+wvSetCursor -win $_nWave2 748.272518 -snap {("G2" 90)}
+verdiSetActWin -win $_nWave2
+wvSetCursor -win $_nWave2 728.456837 -snap {("G2" 89)}
+wvSelectSignal -win $_nWave2 {( "G2" 88 )} 
+srcDeselectAll -win $_nTrace1
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+srcDeselectAll -win $_nTrace1
+debReload
+wvSelectSignal -win $_nWave2 {( "G2" 87 )} 
+wvSelectSignal -win $_nWave2 {( "G2" 86 )} 
+verdiSetActWin -win $_nWave2
+wvSelectSignal -win $_nWave2 {( "G2" 88 )} 
+wvSelectSignal -win $_nWave2 {( "G2" 90 )} 
+wvSelectSignal -win $_nWave2 {( "G2" 88 )} 
+srcDeselectAll -win $_nTrace1
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -win $_nTrace1 -range {53 54 1 1 54 1}
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+verdiSetActWin -dock widgetDock_<Inst._Tree>
+srcHBSelect "toy_top.u_icache_top.u_icache_mshr_file.u_entry_en_dec" -win \
+           $_nTrace1
+srcHBSelect "toy_top.u_icache_top.u_icache_mshr_file" -win $_nTrace1
+srcSetScope "toy_top.u_icache_top.u_icache_mshr_file" -delim "." -win $_nTrace1
+srcHBSelect "toy_top.u_icache_top.u_icache_mshr_file" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "tag_miss" -line 17 -pos 1 -win $_nTrace1
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "v_entry_active" -line 62 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "v_alloc_rdy" -line 65 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "v_alloc_vld" -line 64 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "v_alloc_vld" -line 64 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+verdiSetActWin -dock widgetDock_<Inst._Tree>
+srcHBSelect \
+           "toy_top.u_icache_top.u_icache_mshr_file.MSHR_ENTRY_ARRAY\[0\].u_icache_mshr_entry" \
+           -win $_nTrace1
+srcSetScope \
+           "toy_top.u_icache_top.u_icache_mshr_file.MSHR_ENTRY_ARRAY\[0\].u_icache_mshr_entry" \
+           -delim "." -win $_nTrace1
+srcHBSelect \
+           "toy_top.u_icache_top.u_icache_mshr_file.MSHR_ENTRY_ARRAY\[0\].u_icache_mshr_entry" \
+           -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "entry_active" -line 18 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "entry_active" -line 18 -pos 1 -win $_nTrace1
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "entry_active" -line 18 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+wvSelectSignal -win $_nWave2 {( "G2" 84 )} 
+verdiSetActWin -win $_nWave2
+wvSelectSignal -win $_nWave2 {( "G2" 88 )} 
+wvSetPosition -win $_nWave2 {("G2" 88)}
+wvSetPosition -win $_nWave2 {("G2" 92)}
+wvMoveSelected -win $_nWave2
+wvSetPosition -win $_nWave2 {("G2" 92)}
+wvSelectSignal -win $_nWave2 {( "G2" 91 )} 
+wvSetCursor -win $_nWave2 768.088199 -snap {("G2" 91)}
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "alloc_vld" -line 19 -pos 1 -win $_nTrace1
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "alloc_vld" -line 19 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "alloc_vld" -line 19 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "v_release_en" -line 29 -pos 1 -win $_nTrace1
+debReload
+wvSetCursor -win $_nWave2 786.339484 -snap {("G2" 85)}
+wvSetCursor -win $_nWave2 728.456837 -snap {("G2" 87)}
+wvSetCursor -win $_nWave2 750.358379 -snap {("G2" 86)}
+wvSetCursor -win $_nWave2 768.609664 -snap {("G2" 85)}
+verdiSetActWin -win $_nWave2
+wvSelectSignal -win $_nWave2 {( "G2" 92 )} 
+wvSelectSignal -win $_nWave2 {( "G2" 87 )} 
+wvSelectSignal -win $_nWave2 {( "G2" 91 )} 
+wvSelectSignal -win $_nWave2 {( "G2" 92 )} 
+wvSelectSignal -win $_nWave2 {( "G2" 88 )} 
+wvSelectSignal -win $_nWave2 {( "G2" 92 )} 
+wvSelectSignal -win $_nWave2 {( "G2" 93 )} 
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "downstream_txreq_vld" -line 22 -pos 1 -win $_nTrace1
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "alloc_rdy" -line 20 -pos 1 -win $_nTrace1
+srcHBSelect "toy_top.u_icache_top.u_icache_mshr_file" -win $_nTrace1
+srcSetScope "toy_top.u_icache_top.u_icache_mshr_file" -delim "." -win $_nTrace1
+verdiSetActWin -dock widgetDock_<Inst._Tree>
+srcHBSelect "toy_top.u_icache_top.u_icache_mshr_file" -win $_nTrace1
+wvSetCursor -win $_nWave2 707.076760 -snap {("G2" 93)}
+srcHBSelect "toy_top.u_icache_top.u_icache_mshr_file" -win $_nTrace1
+wvSelectSignal -win $_nWave2 {( "G2" 88 )} 
+wvSetCursor -win $_nWave2 728.456837 -snap {("G2" 88)}
+verdiSetActWin -win $_nWave2
+wvSelectSignal -win $_nWave2 {( "G2" 86 )} 
+wvSelectSignal -win $_nWave2 {( "G2" 92 )} 
+wvSelectSignal -win $_nWave2 {( "G2" 87 )} 
+wvSelectSignal -win $_nWave2 {( "G2" 90 )} 
+wvSelectSignal -win $_nWave2 {( "G2" 92 )} 
+wvSetCursor -win $_nWave2 767.045268 -snap {("G2" 92)}
+wvSetCursor -win $_nWave2 768.609664 -snap {("G2" 85)}
+debExit

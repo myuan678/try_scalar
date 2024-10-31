@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /data/usr/xuemy/8fetch_ooo/toy_scalar/rv_isa_test
+CMAKE_SOURCE_DIR = /data/usr/xuemy/try_scalar/try_scalar/rv_isa_test
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /data/usr/xuemy/8fetch_ooo/toy_scalar/rv_isa_test/build
+CMAKE_BINARY_DIR = /data/usr/xuemy/try_scalar/try_scalar/rv_isa_test/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -91,9 +91,9 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /data/usr/xuemy/8fetch_ooo/toy_scalar/rv_isa_test/build/CMakeFiles /data/usr/xuemy/8fetch_ooo/toy_scalar/rv_isa_test/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /data/usr/xuemy/try_scalar/try_scalar/rv_isa_test/build/CMakeFiles /data/usr/xuemy/try_scalar/try_scalar/rv_isa_test/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /data/usr/xuemy/8fetch_ooo/toy_scalar/rv_isa_test/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /data/usr/xuemy/try_scalar/try_scalar/rv_isa_test/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

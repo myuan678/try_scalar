@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /data/usr/xuemy/8fetch_ooo/toy_scalar/rv_isa_test
+CMAKE_SOURCE_DIR = /data/usr/xuemy/try_scalar/try_scalar/rv_isa_test
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /data/usr/xuemy/8fetch_ooo/toy_scalar/rv_isa_test/build
+CMAKE_BINARY_DIR = /data/usr/xuemy/try_scalar/try_scalar/rv_isa_test/build
 
 # Utility rule file for ExperimentalCoverage.
 
@@ -71,6 +71,6 @@ CMakeFiles/ExperimentalCoverage.dir/clean:
 .PHONY : CMakeFiles/ExperimentalCoverage.dir/clean
 
 CMakeFiles/ExperimentalCoverage.dir/depend:
-	cd /data/usr/xuemy/8fetch_ooo/toy_scalar/rv_isa_test/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /data/usr/xuemy/8fetch_ooo/toy_scalar/rv_isa_test /data/usr/xuemy/8fetch_ooo/toy_scalar/rv_isa_test /data/usr/xuemy/8fetch_ooo/toy_scalar/rv_isa_test/build /data/usr/xuemy/8fetch_ooo/toy_scalar/rv_isa_test/build /data/usr/xuemy/8fetch_ooo/toy_scalar/rv_isa_test/build/CMakeFiles/ExperimentalCoverage.dir/DependInfo.cmake --color=$(COLOR)
+	cd /data/usr/xuemy/try_scalar/try_scalar/rv_isa_test/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /data/usr/xuemy/try_scalar/try_scalar/rv_isa_test /data/usr/xuemy/try_scalar/try_scalar/rv_isa_test /data/usr/xuemy/try_scalar/try_scalar/rv_isa_test/build /data/usr/xuemy/try_scalar/try_scalar/rv_isa_test/build /data/usr/xuemy/try_scalar/try_scalar/rv_isa_test/build/CMakeFiles/ExperimentalCoverage.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ExperimentalCoverage.dir/depend
 

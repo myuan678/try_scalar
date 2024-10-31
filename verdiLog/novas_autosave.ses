@@ -1,0 +1,94 @@
+@verdi rc file Version 1.0
+[General]
+saveDB = TRUE
+relativePath = FALSE
+saveSingleView = FALSE
+saveNWaveWinId = 
+VerdiVersion = Verdi_T-2022.06
+[KeyNote]
+Line1 = Automatic Backup 0
+Line2 = Save Open Database Information: Yes
+Line3 = Path Option: Absolute Paths
+Line4 = Windows Option: All Windows
+[OneSearch]
+isExisted = TRUE
+[TestBench]
+ConstrViewShow = 0
+InherViewShow = 0
+FSDBMsgShow = 0
+AnnotationShow = 0
+Console = FALSE
+powerDumped = 0
+[fusa]
+fdb_server = 
+fdb_proj = 
+fdb_campaign = 
+fdb_tool = 
+[hb]
+postSimFile = /data/usr/xuemy/try_scalar/try_scalar/wave.fsdb
+syncTime = 770
+viewport = 0 114 1939 1020 0 0 113 798
+activeNode = "toy_top.u_icache_top.u_icache_mshr_file"
+activeScope = "toy_top.u_icache_top.u_icache_mshr_file"
+activeFile = "/data/usr/xuemy/try/cache_v1/icache_v1_1008_release/icache_mshr_file.sv"
+interactiveMode = False
+viewType = Source
+simulatorMode = False
+sourceBeginLine = 0
+baMode = False
+srcLineNum = True
+AutoWrap = True
+IdentifyFalseLogic = False
+syncSignal = False
+traceMode = Hierarchical
+showTraceInSchema = True
+paMode = False
+funcMode = False
+powerAwareAnnot = True
+safetyAwareAnnot = True
+amsAnnot = True
+DnDtraceCrossHierOnly = True
+leadingZero = False
+signalPane = False
+SourceVerticalScrollLines = 5
+Scope1 = "toy_top.u_icache_top.u_icache_mshr_file"
+Scope2 = "toy_top.u_icache_top.u_icache_mshr_file.MSHR_ENTRY_ARRAY[0].u_icache_mshr_entry"
+multipleSelection = 1 0 2 0 0
+sdfCheckUndef = FALSE
+simFlow = FALSE
+[hb.design]
+importCmd = "-sv" "-f" "/data/usr/xuemy/try_scalar/try_scalar/rtl/sim.f" "-dbdir" "/data/usr/xuemy/try_scalar/try_scalar/work/rtl_compile/simv.daidir" 
+invokeDir = /data/usr/xuemy/try_scalar/try_scalar
+[hb.sourceTab.1]
+scope = toy_top.u_icache_top.u_icache_mshr_file
+File = /data/usr/xuemy/try/cache_v1/icache_v1_1008_release/icache_mshr_file.sv
+Line = 1
+[nMemoryManager]
+WaveformFile = /data/usr/xuemy/try_scalar/try_scalar/wave.fsdb
+UserActionNum = 0
+nMemWindowNum = 0
+[wave.0]
+viewPort = 0 25 1939 416 287 65
+primaryWindow = TRUE
+SessionFile = /data/usr/xuemy/try_scalar/try_scalar/verdiLog/novas_autosave.ses.wave.0
+displayGrid = FALSE
+hierarchicalName = FALSE
+snap = TRUE
+displayLeadingZeros = FALSE
+fixDelta = FALSE
+displayCursorMarker = FALSE
+autoUpdate = FALSE
+highlightGlitchs = FALSE
+waveformSyncCursorMarker = FALSE
+waveformSyncHorizontalRange = FALSE
+waveformSyncVerticalscroll = FALSE
+displayErrors = TRUE
+displayMsgSymbols = TRUE
+showMsgDescriptions = TRUE
+autoFit = FALSE
+displayDeltaY = FALSE
+centerCursor = FALSE
+fsaRegMask = TRUE
+fsaCoreMask = TRUE
+fsaSfsmMask = TRUE
+fsaEcrMask = TRUE

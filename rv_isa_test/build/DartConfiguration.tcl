@@ -4,8 +4,8 @@
 
 
 # Configuration directories and files
-SourceDirectory: /data/usr/xuemy/8fetch_ooo/toy_scalar/rv_isa_test
-BuildDirectory: /data/usr/xuemy/8fetch_ooo/toy_scalar/rv_isa_test/build
+SourceDirectory: /data/usr/xuemy/try_scalar/try_scalar/rv_isa_test
+BuildDirectory: /data/usr/xuemy/try_scalar/try_scalar/rv_isa_test/build
 
 # Where to place the cost data store
 CostDataFile: 
@@ -26,7 +26,7 @@ SubmitURL: http://
 NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "/usr/bin/cmake" "/data/usr/xuemy/8fetch_ooo/toy_scalar/rv_isa_test"
+ConfigureCommand: "/usr/bin/cmake" "/data/usr/xuemy/try_scalar/try_scalar/rv_isa_test"
 MakeCommand: /usr/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}" -- -i
 DefaultCTestConfigurationType: Release
 

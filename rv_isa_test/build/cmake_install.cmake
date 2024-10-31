@@ -1,4 +1,4 @@
-# Install script for directory: /data/usr/xuemy/8fetch_ooo/toy_scalar/rv_isa_test
+# Install script for directory: /data/usr/xuemy/try_scalar/try_scalar/rv_isa_test
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/data/usr/xuemy/8fetch_ooo/toy_scalar/rv_isa_test/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/data/usr/xuemy/try_scalar/try_scalar/rv_isa_test/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

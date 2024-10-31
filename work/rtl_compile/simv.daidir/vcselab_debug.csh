@@ -1,6 +1,6 @@
 #!/bin/csh -f
 
-cd /data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile
+cd /data/usr/xuemy/try_scalar/try_scalar/work/rtl_compile
 
 #This ENV is used to avoid overriding current script in next vcselab run 
 setenv SNPS_VCSELAB_SCRIPT_NO_OVERRIDE  1

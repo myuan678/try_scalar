@@ -5,5 +5,5 @@ PYTHONPATH=/tools/software/synopsys/vcs/T-2022.06/linux64/lib/pylib27
 export PYTHONPATH
 LD_LIBRARY_PATH=/tools/software/synopsys/vcs/T-2022.06/linux64/lib:/tools/software/synopsys/vcs/T-2022.06/linux64/lib/pylib27
 export LD_LIBRARY_PATH
-/tools/software/synopsys/vcs/T-2022.06/linux64/bin/vcsfind_create_index.exe  -z  "/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv.daidir/debug_dump/fsearch/./idents_HScWlr.xml.gz" "/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv.daidir/debug_dump/fsearch/./idents_tapi.xml.gz" -o "/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv.daidir/debug_dump/fsearch/fsearch.db_tmp"
-\mv "/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv.daidir/debug_dump/fsearch/fsearch.db_tmp" "/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv.daidir/debug_dump/fsearch/fsearch.db"
+/tools/software/synopsys/vcs/T-2022.06/linux64/bin/vcsfind_create_index.exe  -z  "/data/usr/xuemy/try_scalar/try_scalar/work/rtl_compile/simv.daidir/debug_dump/fsearch/./idents_tapi.xml.gz" "/data/usr/xuemy/try_scalar/try_scalar/work/rtl_compile/simv.daidir/debug_dump/fsearch/./idents_TAGzuu.xml.gz" -o "/data/usr/xuemy/try_scalar/try_scalar/work/rtl_compile/simv.daidir/debug_dump/fsearch/fsearch.db_tmp"
+\mv "/data/usr/xuemy/try_scalar/try_scalar/work/rtl_compile/simv.daidir/debug_dump/fsearch/fsearch.db_tmp" "/data/usr/xuemy/try_scalar/try_scalar/work/rtl_compile/simv.daidir/debug_dump/fsearch/fsearch.db"

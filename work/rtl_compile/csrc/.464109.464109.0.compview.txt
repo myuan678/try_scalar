@@ -1,0 +1,9 @@
+{"vcs1":{"timestamp_begin":1729842107.409393345, "rt":17.99, "ut":16.50, "st":0.54}}
+{"vcselab":{"timestamp_begin":1729842125.477240107, "rt":2.31, "ut":0.50, "st":0.07}}
+{"link":{"timestamp_begin":1729842127.853750197, "rt":0.39, "ut":0.24, "st":0.15}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1729842106.977560745}
+{"VCS_COMP_START_TIME": 1729842106.977560745}
+{"VCS_COMP_END_TIME": 1729842128.391218404}
+{"VCS_USER_OPTIONS": "-kdb -full64 -debug_access -sverilog -f /data/usr/xuemy/try_scalar/try_scalar/rtl/sim.f +lint=PCWM +lint=TFIPC-L +define+TOY_SIM"}
+{"vcs1": {"peak_mem": 464518}}
+{"stitch_vcselab": {"peak_mem": 464961}}
