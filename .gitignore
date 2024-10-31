@@ -1,3 +1,12 @@
 qemu_trace/dhrystone_qemu_sim_trace.log
 cm_pc_trace.log
 cm_pc_trace.log
+pc_trace_1030.log
+pc_trace_icache.log
+wave.fsdb
+pc_trace_cor.log
+pccm_trace.log
+log_1030
+pc_trace.log
+pccm_trace.log
+wave.fsdb
