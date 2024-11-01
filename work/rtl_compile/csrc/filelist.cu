@@ -4,6 +4,7 @@ ifeq ($(LDVERSION), 0)
 endif
 
 ARCHIVE_OBJS=
+<<<<<<< HEAD
 ARCHIVE_OBJS += _863400_archive_1.so
 _863400_archive_1.so : archive.12/_863400_archive_1.a
 	@$(AR) -s $<
@@ -26,6 +27,19 @@ VCS_CU_ARC0 =_cuarc0.so
 VCS_CU_ARC_OBJS0 =objs/amcQw_d.o 
 
 VCS_CU_ARC_OBJS = $(VCS_CU_ARC_OBJS0) 
+=======
+ARCHIVE_OBJS += _458402_archive_1.so
+_458402_archive_1.so : archive.0/_458402_archive_1.a
+	@$(AR) -s $<
+	@$(PIC_LD) -shared  -Bsymbolic $(LD_NORELAX_FLAG)  -o .//../simv.daidir//_458402_archive_1.so --whole-archive $< --no-whole-archive
+	@rm -f $@
+	@ln -sf .//../simv.daidir//_458402_archive_1.so $@
+
+
+
+
+VCS_CU_ARC_OBJS = 
+>>>>>>> 89e66991d0bf01e1b1c749468c20af396b652198
 
 
 O0_OBJS =
@@ -36,12 +50,15 @@ $(O0_OBJS) : %.o: %.c
 
 %.o: %.c
 	$(CC_CG) $(CFLAGS_CG) -c -o $@ $<
+<<<<<<< HEAD
 
 $(VCS_CU_ARC0) : $(VCS_CU_ARC_OBJS0)
 	$(PIC_LD) -shared  -Bsymbolic $(LD_NORELAX_FLAG)  -o .//../simv.daidir//$(VCS_CU_ARC0) $(VCS_CU_ARC_OBJS0)
 	rm -f $(VCS_CU_ARC0)
 	@ln -sf .//../simv.daidir//$(VCS_CU_ARC0) $(VCS_CU_ARC0)
 
+=======
+>>>>>>> 89e66991d0bf01e1b1c749468c20af396b652198
 CU_UDP_OBJS = \
 
 
@@ -49,7 +66,13 @@ CU_LVL_OBJS = \
 SIM_l.o 
 
 MAIN_OBJS = \
+<<<<<<< HEAD
 
 
 CU_OBJS = $(MAIN_OBJS) $(ARCHIVE_OBJS) $(VCS_CU_ARC0) $(CU_UDP_OBJS) $(CU_LVL_OBJS)
+=======
+objs/amcQw_d.o 
+
+CU_OBJS = $(MAIN_OBJS) $(ARCHIVE_OBJS) $(CU_UDP_OBJS) $(CU_LVL_OBJS)
+>>>>>>> 89e66991d0bf01e1b1c749468c20af396b652198
 

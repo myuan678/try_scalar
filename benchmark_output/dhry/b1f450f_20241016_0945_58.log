@@ -1,0 +1,170 @@
+
+Note-[RT_BS] Larger stack needed
+  Note: Bumping stack limit from 8192 to 8194 Kbytes.
+
+Chronologic VCS simulator copyright 1991-2016
+Contains Synopsys proprietary information.
+Compiler version L-2016.06_Full64; Runtime version L-2016.06_Full64;  Oct 16 09:45 2024
+[SYSTEM] Timeout threshold is set to 400000 cycles.
+*Verdi3* Loading libsscore_vcs201606.so
+*Verdi3* : FSDB_GATE is set.
+*Verdi3* : FSDB_RTL is set.
+*Verdi3* : Enable Parallel Dumping.
+FSDB Dumper for VCS, Release Verdi3_L-2016.06-1, Linux x86_64/64bit, 07/10/2016
+(C) 1996 - 2016 by Synopsys, Inc.
+*Verdi3* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+*Verdi3* : Create FSDB file 'wave.fsdb'
+*Verdi3* : Begin traversing the scopes, layer (0).
+*Verdi3* : Enable +all dumping.
+*Verdi3* : End of traversing.
+*Verdi3* : Begin traversing the MDAs, layer (0).
+*Verdi3* : Enable +mda and +packedmda dumping.
+*Verdi3* : End of traversing the MDAs.
+*Verdi3* : fsdbDumpon - All FSDB files at 0 s.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_div_tc:
+ at time = 10: Division by zero.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_rem_tc:
+ at time = 10: Division by zero.
+[PRINT][cycle=       5417] 
+[PRINT][cycle=       6155] Dhrystone Benchmark, Version 2.1 (Language: C)
+[PRINT][cycle=       6238] 
+[PRINT][cycle=       6844] Program compiled without 'register' attribute
+[PRINT][cycle=       6919] 
+[PRINT][cycle=       8053] Execution starts, 1000 runs through Dhrystone
+[cycle=59604][mpki=2.200022][tage error=5][btb error=215]
+[cycle=116376][mpki=0.000000][tage error=0][btb error=0]
+[PRINT][cycle=     160501] Execution ends
+[PRINT][cycle=     160584] 
+[PRINT][cycle=     161269] Final values of the variables used in the benchmark:
+[PRINT][cycle=     161331] 
+[PRINT][cycle=     161846] Int_Glob:            5
+[PRINT][cycle=     162346]         should be:   5
+[PRINT][cycle=     162834] Bool_Glob:           1
+[PRINT][cycle=     163299]         should be:   1
+[PRINT][cycle=     163780] Ch_1_Glob:           A
+[PRINT][cycle=     164166]         should be:   A
+[PRINT][cycle=     164549] Ch_2_Glob:           B
+[PRINT][cycle=     164928]         should be:   B
+[PRINT][cycle=     165398] Arr_1_Glob[8]:       7
+[PRINT][cycle=     165851]         should be:   7
+[PRINT][cycle=     166417] Arr_2_Glob[8][7]:    1010
+[PRINT][cycle=     166971]         should be:   Number_Of_Runs + 10
+[PRINT][cycle=     167163] Ptr_Glob->
+[PRINT][cycle=     167914]   Ptr_Comp:          -1610609960
+[PRINT][cycle=     168554]         should be:   (implementation-dependent)
+[PRINT][cycle=     169018]   Discr:             0
+[PRINT][cycle=     169463]         should be:   0
+[PRINT][cycle=     169967]   Enum_Comp:         2
+[PRINT][cycle=     170408]         should be:   2
+[PRINT][cycle=     170940]   Int_Comp:          17
+[PRINT][cycle=     171450]         should be:   17
+[PRINT][cycle=     172664]   Str_Comp:          DHRYSTONE PROGRAM, SOME STRING
+[PRINT][cycle=     173369]         should be:   DHRYSTONE PROGRAM, SOME STRING
+[PRINT][cycle=     173623] Next_Ptr_Glob->
+[PRINT][cycle=     174366]   Ptr_Comp:          -1610609960
+[PRINT][cycle=     175190]         should be:   (implementation-dependent), same as above
+[PRINT][cycle=     175657]   Discr:             0
+[cycle=176024][mpki=2.950000][tage error=23][btb error=272]
+[PRINT][cycle=     176069]         should be:   0
+[PRINT][cycle=     176536]   Enum_Comp:         1
+[PRINT][cycle=     176976]         should be:   1
+[PRINT][cycle=     177443]   Int_Comp:          18
+[PRINT][cycle=     177881]         should be:   18
+[PRINT][cycle=     178857]   Str_Comp:          DHRYSTONE PROGRAM, SOME STRING
+[PRINT][cycle=     179544]         should be:   DHRYSTONE PROGRAM, SOME STRING
+[PRINT][cycle=     179997] Int_1_Loc:           5
+[PRINT][cycle=     180421]         should be:   5
+[PRINT][cycle=     180889] Int_2_Loc:           13
+[PRINT][cycle=     181351]         should be:   13
+[PRINT][cycle=     181820] Int_3_Loc:           7
+[PRINT][cycle=     182261]         should be:   7
+[PRINT][cycle=     182693] Enum_Loc:            1
+[PRINT][cycle=     183102]         should be:   1
+[PRINT][cycle=     184024] Str_1_Loc:           DHRYSTONE PROGRAM, 1'ST STRING
+[PRINT][cycle=     184709]         should be:   DHRYSTONE PROGRAM, 1'ST STRING
+[PRINT][cycle=     185655] Str_2_Loc:           DHRYSTONE PROGRAM, 2'ND STRING
+[PRINT][cycle=     186339]         should be:   DHRYSTONE PROGRAM, 2'ND STRING
+[PRINT][cycle=     186402] 
+[PRINT][cycle=     188108] start_instret :0x2c0a end_instret:0x43b3a duration:40f30
+[PRINT][cycle=     188945] start_cycle upper:0 lower:0x1f8a
+[PRINT][cycle=     189759]  end_cycle upper:0 lower:0x27203
+[PRINT][cycle=     190500] duration upper:0 lower:0x25279
+[PRINT][cycle=     192711] IPC: 1.748083
+[PRINT][cycle=     194226] DMIPS/MHz: 3.739869
+[PRINT][cycle=     195592] start_cancel :0x63 end_cancel:0xdd duration:7a
+[PRINT][cycle=     197043] MPKI:0.458591
+[PRINT][cycle=     197914] Microseconds for one run through Dhrystone: 1 
+[PRINT][cycle=     198881] Dhrystones per Second:                      657000 
+[PRINT][cycle=     198942] 
+[SYSTEM][cycle=     198988][pc=800051c8] Receive a cmd from core, cmd[00000000] = 0000000000000000000000000000000000000000000000000000000000000001
+[SYSTEM][cycle=     198988][pc=800051c8] Receive exit command 0000000000000000000000000000000000000000000000000000000000000001, exit.
+[SYSTEM][PERF]Total     198982 cycles.
+[SYSTEM][PERF]Total     331177 instructions.
+[SYSTEM][PERF]Total       1119 times cancel.MPKI 3.378858
+[SYSTEM][BP]Tage error:   117, BTB error:  1002, RAS error:     0, RAS miss:    82, Ind error:    48.
+[SYSTEM][BP]BP2 chgflw:  6975, RAS chgflw:   226.
+[SYSTEM][BP]Tage update num: 65388, Real commit: 65387, Real tage err:   524.
+[SYSTEM][ENTRY_USE]Fetch entry 0 use     115340.
+[SYSTEM][ENTRY_USE]Fetch entry 1 use      86268.
+[SYSTEM][ENTRY_USE]Fetch entry 2 use      60028.
+[SYSTEM][ENTRY_USE]Fetch entry 3 use      41598.
+[SYSTEM][LSU]Memory req cycle num     120819.
+[SYSTEM][COMMIT]MAX use  36.
+[SYSTEM][INT_RF]MAX use  58.
+[SYSTEM][FP_RF]MAX use  35.
+[SYSTEM][LSU]MAX use 11.
+[SYSTEM][STQ]MAX use  19.
+[SYSTEM][LDQ]MAX use  14.
+[SYSTEM] phy_lock                       0                   0                   0                   0
+[SYSTEM] eu_hazard                    112
+[SYSTEM] reg_hazard                355555
+[SYSTEM] in-order                  271300
+[SYSTEM] 1->eu_hazard
+[SYSTEM] 2->           reg_hazard
+[SYSTEM] 3->eu_hazard  reg_hazard
+[SYSTEM] 4->                       in-order
+[SYSTEM] 5->eu_hazard              in-order
+[SYSTEM] 6->           reg_hazard  in-order
+[SYSTEM] 7->eu_hazard  reg_hazard  in-order
++----------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+
+|                |  fetch empty  |       1       |       2       |       3       |       4       |       5       |       6       |       7       |
++----------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+
+|    Channel 0   |     9351      |       0       |     66815     |       0       |       0       |       0       |       0       |       0       |
++----------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+
+|    Channel 1   |     18650     |      27       |     42913     |       2       |     19912     |       0       |     44900     |       0       |
++----------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+
+|    Channel 2   |     19299     |      16       |     36650     |       0       |     31315     |       8       |     64344     |      15       |
++----------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+
+|    Channel 3   |     24026     |       0       |     26410     |       0       |     37288     |      12       |     73474     |      32       |
++----------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+
+
+ | ----- E N T R Y  0 ----- | ----- E N T R Y  1 ----- | ----- E N T R Y  2 ----- | ----- E N T R Y  3 ----- |
+ |                          |                          |                          |                          | 
+ |                          |                          |                          |                    *     | 
+ |                          |                          |                          |                    *     | 
+ |        *                 |                          |                          |                    *     | 
+ |        *                 |                          |                    *     |                    *     | 
+ |        *                 |                          |                    *     |                    *     | 
+ |        *                 |                          |                    *     |                    *     | 
+ |        *                 |                          |                    *     |                    *     | 
+ |        *                 |                          |                    *     |                    *     | 
+ |        *                 |                    *     |                    *     |                    *     | 
+ |        *                 |        *           *     |                    *     |                    *     | 
+ |        *                 |        *           *     |                    *     |              *     *     | 
+ |        *                 |        *           *     |        *           *     |              *     *     | 
+ |        *                 |        *           *     |        *     *     *     |              *     *     | 
+ |        *                 |        *           *     |        *     *     *     |        *     *     *     | 
+ |        *                 |        *           *     |        *     *     *     |  *     *     *     *     | 
+ |        *                 |  *     *     *     *     |  *     *     *     *     |  *     *     *     *     | 
+ |        *                 |  *     *     *     *     |  *     *     *     *     |  *     *     *     *     | 
+ |        *                 |  *     *     *     *     |  *     *     *     *     |  *     *     *     *     | 
+ |  *     *                 |  *     *     *     *     |  *     *     *     *     |  *     *     *     *     | 
+ |  *     *                 |  *     *     *     *     |  *     *     *     *     |  *     *     *     *     | 
+ |  0  1  2  3  4  5  6  7  |  0  1  2  3  4  5  6  7  |  0  1  2  3  4  5  6  7  |  0  1  2  3  4  5  6  7  | 
+receive exit signal 0, success exit.
+$finish called from file "/home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/toy_env_slv.sv", line 579.
+$finish at simulation time              3979750
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 3979750
+CPU Time:    948.840 seconds;       Data structure size:   1.4Mb
+Wed Oct 16 09:54:31 2024

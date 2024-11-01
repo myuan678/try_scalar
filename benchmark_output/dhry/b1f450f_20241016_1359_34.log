@@ -1,0 +1,95 @@
+
+Note-[RT_BS] Larger stack needed
+  Note: Bumping stack limit from 8192 to 8194 Kbytes.
+
+Chronologic VCS simulator copyright 1991-2016
+Contains Synopsys proprietary information.
+Compiler version L-2016.06_Full64; Runtime version L-2016.06_Full64;  Oct 16 13:59 2024
+[SYSTEM] Timeout threshold is set to 40000 cycles.
+*Verdi3* Loading libsscore_vcs201606.so
+*Verdi3* : FSDB_GATE is set.
+*Verdi3* : FSDB_RTL is set.
+*Verdi3* : Enable Parallel Dumping.
+FSDB Dumper for VCS, Release Verdi3_L-2016.06-1, Linux x86_64/64bit, 07/10/2016
+(C) 1996 - 2016 by Synopsys, Inc.
+*Verdi3* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+*Verdi3* : Create FSDB file 'wave.fsdb'
+*Verdi3* : Begin traversing the scopes, layer (0).
+*Verdi3* : Enable +all dumping.
+*Verdi3* : End of traversing.
+*Verdi3* : Begin traversing the MDAs, layer (0).
+*Verdi3* : Enable +mda and +packedmda dumping.
+*Verdi3* : End of traversing the MDAs.
+*Verdi3* : fsdbDumpon - All FSDB files at 0 s.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_div_tc:
+ at time = 10: Division by zero.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_rem_tc:
+ at time = 10: Division by zero.
+[PRINT][cycle=       5695] Bare Metal Init Start.
+[PRINT][cycle=       6144] Bare Metal Init Finished.
+[PRINT][cycle=       6270] 
+[PRINT][cycle=       6890] Dhrystone Benchmark, Version 2.1 (Language: C)
+[PRINT][cycle=       6975] 
+[PRINT][cycle=       7581] Program compiled without 'register' attribute
+[PRINT][cycle=       7662] 
+[PRINT][cycle=       8711] Execution starts, 20 runs through Dhrystone
+[PRINT][cycle=      12582] Execution ends
+[PRINT][cycle=      12646] 
+[PRINT][cycle=      13343] Final values of the variables used in the benchmark:
+[PRINT][cycle=      13408] 
+[PRINT][cycle=      13910] Int_Glob:            5
+[PRINT][cycle=      14404]         should be:   5
+[PRINT][cycle=      14849] Bool_Glob:           1
+[PRINT][cycle=      15302]         should be:   1
+[PRINT][cycle=      15784] Ch_1_Glob:           A
+[PRINT][cycle=      16154]         should be:   A
+[PRINT][cycle=      16528] Ch_2_Glob:           B
+[PRINT][cycle=      16909]         should be:   B
+[PRINT][cycle=      17368] Arr_1_Glob[8]:       7
+[PRINT][cycle=      17835]         should be:   7
+[PRINT][cycle=      18317] Arr_2_Glob[8][7]:    30
+[PRINT][cycle=      18860]         should be:   Number_Of_Runs + 10
+[PRINT][cycle=      19055] Ptr_Glob->
+[PRINT][cycle=      19832]   Ptr_Comp:          -1610609912
+[PRINT][cycle=      20471]         should be:   (implementation-dependent)
+[PRINT][cycle=      20961]   Discr:             0
+[PRINT][cycle=      21399]         should be:   0
+[PRINT][cycle=      21828]   Enum_Comp:         2
+[PRINT][cycle=      22252]         should be:   2
+[PRINT][cycle=      22702]   Int_Comp:          17
+[PRINT][cycle=      23168]         should be:   17
+[PRINT][cycle=      24367]   Str_Comp:          DHRYSTONE PROGRAM, SOME STRING
+[PRINT][cycle=      25055]         should be:   DHRYSTONE PROGRAM, SOME STRING
+[PRINT][cycle=      25310] Next_Ptr_Glob->
+[PRINT][cycle=      26036]   Ptr_Comp:          -1610609912
+[PRINT][cycle=      26823]         should be:   (implementation-dependent), same as above
+[PRINT][cycle=      27302]   Discr:             0
+[PRINT][cycle=      27762]         should be:   0
+[PRINT][cycle=      28205]   Enum_Comp:         1
+[PRINT][cycle=      28629]         should be:   1
+[PRINT][cycle=      29069]   Int_Comp:          18
+[PRINT][cycle=      29504]         should be:   18
+[PRINT][cycle=      30475]   Str_Comp:          DHRYSTONE PROGRAM, SOME STRING
+[PRINT][cycle=      31161]         should be:   DHRYSTONE PROGRAM, SOME STRING
+[PRINT][cycle=      31618] Int_1_Loc:           5
+[PRINT][cycle=      32077]         should be:   5
+[PRINT][cycle=      32563] Int_2_Loc:           13
+[PRINT][cycle=      33044]         should be:   13
+[PRINT][cycle=      33508] Int_3_Loc:           7
+[PRINT][cycle=      33962]         should be:   7
+[PRINT][cycle=      34376] Enum_Loc:            1
+[PRINT][cycle=      34789]         should be:   1
+[PRINT][cycle=      35747] Str_1_Loc:           DHRYSTONE PROGRAM, 1'ST STRING
+[PRINT][cycle=      36434]         should be:   DHRYSTONE PROGRAM, 1'ST STRING
+[PRINT][cycle=      37375] Str_2_Loc:           DHRYSTONE PROGRAM, 2'ND STRING
+[PRINT][cycle=      38062]         should be:   DHRYSTONE PROGRAM, 2'ND STRING
+[PRINT][cycle=      38125] 
+[PRINT][cycle=      39732] start_instret :0x3014 end_instret:0x44ff duration:5355
+Fatal: "/home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/toy_env_slv.sv", 55: toy_top.u_toy_env_slv: at time 800100
+[SYSTEM] Timeout occurs after executing 40000 cycles !
+$finish called from file "/home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/toy_env_slv.sv", line 55.
+$finish at simulation time               800100
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 800100
+CPU Time:    158.580 seconds;       Data structure size:   1.4Mb
+Wed Oct 16 14:01:01 2024

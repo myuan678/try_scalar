@@ -1,0 +1,121 @@
+
+Note-[RT_BS] Larger stack needed
+  Note: Bumping stack limit from 8192 to 8194 Kbytes.
+
+Chronologic VCS simulator copyright 1991-2016
+Contains Synopsys proprietary information.
+Compiler version L-2016.06_Full64; Runtime version L-2016.06_Full64;  Aug  8 17:03 2024
+[SYSTEM] Timeout threshold is set to 0 cycles.
+[PRINT][cycle=        423] Bare Metal Init Start.
+[PRINT][cycle=        874] Bare Metal Init Finished.
+[cycle=91291][mpki=19.140191][tage error=1782][btb error=132]
+[cycle=175315][mpki=30.140301][tage error=2748][btb error=266]
+[cycle=276330][mpki=28.950290][tage error=2668][btb error=227]
+[cycle=369237][mpki=20.200202][tage error=1898][btb error=122]
+[cycle=454813][mpki=32.840000][tage error=3023][btb error=261]
+[cycle=556523][mpki=29.800000][tage error=2740][btb error=240]
+[cycle=649365][mpki=20.409796][tage error=1917][btb error=124]
+[cycle=735814][mpki=34.100341][tage error=3149][btb error=261]
+[cycle=837367][mpki=29.490000][tage error=2724][btb error=225]
+[cycle=930305][mpki=20.810208][tage error=1954][btb error=127]
+[cycle=1017758][mpki=35.590356][tage error=3306][btb error=253]
+[cycle=1119626][mpki=29.820298][tage error=2752][btb error=230]
+[cycle=1212299][mpki=20.430204][tage error=1919][btb error=124]
+[cycle=1298700][mpki=34.030000][tage error=3138][btb error=265]
+[cycle=1400869][mpki=30.160302][tage error=2791][btb error=225]
+[cycle=1493778][mpki=20.960000][tage error=1977][btb error=119]
+[cycle=1581053][mpki=35.710357][tage error=3320][btb error=251]
+[cycle=1683649][mpki=30.660307][tage error=2842][btb error=224]
+[cycle=1775877][mpki=19.840198][tage error=1860][btb error=124]
+[cycle=1863144][mpki=35.550356][tage error=3294][btb error=261]
+[cycle=1965465][mpki=29.850299][tage error=2764][btb error=221]
+[cycle=2058411][mpki=21.440214][tage error=2026][btb error=118]
+[cycle=2145500][mpki=35.250000][tage error=3268][btb error=257]
+[cycle=2248724][mpki=31.529369][tage error=2933][btb error=220]
+[cycle=2341530][mpki=21.239788][tage error=2009][btb error=115]
+[cycle=2428232][mpki=34.729653][tage error=3210][btb error=263]
+[cycle=2530969][mpki=30.710000][tage error=2858][btb error=213]
+[cycle=2623741][mpki=21.099789][tage error=1994][btb error=116]
+[cycle=2710630][mpki=34.930349][tage error=3251][btb error=242]
+[cycle=2813350][mpki=30.549389][tage error=2822][btb error=233]
+[PRINT][cycle=    2821602] 2K performance run parameters for coremark.
+[PRINT][cycle=    2822472] CoreMark Size    : 666
+[PRINT][cycle=    2823222] Total ticks      : 2810340
+[PRINT][cycle=    2825264] Total time (secs): 0.002810
+[PRINT][cycle=    2827278] Iterations/Sec   : 3558.288321
+[PRINT][cycle=    2827796] Iterations       : 10
+[PRINT][cycle=    2828602] Compiler version : GCC13.2.0
+[PRINT][cycle=    2829098] Compiler flags   : -O2
+[PRINT][cycle=    2829641] Memory location  : STACK
+[PRINT][cycle=    2830420] seedcrc          : 0xe9f5
+[PRINT][cycle=    2831297] [0]crclist       : 0xe714
+[PRINT][cycle=    2832130] [0]crcmatrix     : 0x1fd7
+[PRINT][cycle=    2833069] [0]crcstate      : 0x8e3a
+[PRINT][cycle=    2833906] [0]crcfinal      : 0xfcaf
+[PRINT][cycle=    2834996] Correct operation validated. See README.md for run and reporting rules.
+[PRINT][cycle=    2837543] CoreMark 1.0 : 3558.288321 / GCC13.2.0 -O2 / STACK
+[SYSTEM][cycle=    2837622][pc=80002c98] Receive a cmd from core, cmd[00000000] = 0000000000000000000000000000000000000000000000000000000000000001
+[SYSTEM][cycle=    2837622][pc=80002c98] Receive exit command 0000000000000000000000000000000000000000000000000000000000000001, exit.
+[SYSTEM][PERF]Total    2837616 cycles.
+[SYSTEM][PERF]Total    3027235 instructions.
+[SYSTEM][PERF]Total      86308 times cancel.MPKI 28.510505
+[SYSTEM][BP]Tage error: 80126, BTB error:  6182, RAS error:     0.
+[SYSTEM][BP]BP2 chgflw: 261288, RAS chgflw:  8325.
+[SYSTEM][ENTRY_USE]Fetch entry 0 use    1632214.
+[SYSTEM][ENTRY_USE]Fetch entry 1 use    1105331.
+[SYSTEM][ENTRY_USE]Fetch entry 2 use     418653.
+[SYSTEM][ENTRY_USE]Fetch entry 3 use     207788.
+[SYSTEM][LSU]Memory req cycle num     728938.
+[SYSTEM] phy_lock                       0                   0                   0                   0
+[SYSTEM] eu_hazard                    155
+[SYSTEM] reg_hazard               4991728
+[SYSTEM] in-order                 4307862
+[SYSTEM] 1->eu_hazard
+[SYSTEM] 2->           reg_hazard
+[SYSTEM] 3->eu_hazard  reg_hazard
+[SYSTEM] 4->                       in-order
+[SYSTEM] 5->eu_hazard              in-order
+[SYSTEM] 6->           reg_hazard  in-order
+[SYSTEM] 7->eu_hazard  reg_hazard  in-order
++----------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+
+|                |  fetch empty  |       1       |       2       |       3       |       4       |       5       |       6       |       7       |
++----------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+
+|    Channel 0   |    331311     |       0       |    874091     |       0       |       0       |       0       |       0       |       0       |
++----------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+
+|    Channel 1   |    342396     |      50       |    517484     |       0       |    365961     |       0       |    506394     |       0       |
++----------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+
+|    Channel 2   |    353810     |      15       |    679176     |       0       |    572496     |      18       |    813448     |       0       |
++----------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+
+|    Channel 3   |    372315     |      21       |    207947     |       0       |    656315     |      42       |    1393179    |       9       |
++----------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+
+
+ | ----- E N T R Y  0 ----- | ----- E N T R Y  1 ----- | ----- E N T R Y  2 ----- | ----- E N T R Y  3 ----- |
+ |                          |                          |                          |                          | 
+ |                          |                          |                          |                    *     | 
+ |                          |                          |                          |                    *     | 
+ |                          |                          |                          |                    *     | 
+ |                          |                          |                          |                    *     | 
+ |                          |                          |                          |                    *     | 
+ |                          |                          |                          |                    *     | 
+ |                          |                          |                          |                    *     | 
+ |                          |                          |                          |                    *     | 
+ |        *                 |                          |                          |                    *     | 
+ |        *                 |                          |                    *     |                    *     | 
+ |        *                 |                          |                    *     |                    *     | 
+ |        *                 |                          |        *           *     |              *     *     | 
+ |        *                 |                          |        *     *     *     |              *     *     | 
+ |        *                 |        *           *     |        *     *     *     |              *     *     | 
+ |        *                 |        *           *     |        *     *     *     |              *     *     | 
+ |        *                 |        *     *     *     |  *     *     *     *     |  *           *     *     | 
+ |  *     *                 |  *     *     *     *     |  *     *     *     *     |  *           *     *     | 
+ |  *     *                 |  *     *     *     *     |  *     *     *     *     |  *           *     *     | 
+ |  *     *                 |  *     *     *     *     |  *     *     *     *     |  *     *     *     *     | 
+ |  *     *                 |  *     *     *     *     |  *     *     *     *     |  *     *     *     *     | 
+ |  0  1  2  3  4  5  6  7  |  0  1  2  3  4  5  6  7  |  0  1  2  3  4  5  6  7  |  0  1  2  3  4  5  6  7  | 
+receive exit signal 0, success exit.
+$finish called from file "/home/liuyunqi/huangtao/flibbs/fetch8_inorder/rtl/toy_env_slv.sv", line 479.
+$finish at simulation time             56752430
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 56752430
+CPU Time:   5411.820 seconds;       Data structure size:   1.7Mb
+Thu Aug  8 18:33:38 2024

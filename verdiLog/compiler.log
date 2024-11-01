@@ -1,4 +1,8 @@
 *design* DebussyLib (btIdent Verdi_T-2022.06)
+<<<<<<< HEAD
 Command arguments:  -elab  /data/usr/xuemy/try_scalar/try_scalar/work/rtl_compile/simv.daidir/kdb.elab++ 
+=======
+Command arguments:  -elab  /data/usr/xuemy/8fetch_ooo/toy_scalar/work/rtl_compile/simv.daidir/kdb.elab++ 
+>>>>>>> 89e66991d0bf01e1b1c749468c20af396b652198
 *design* DebussyLib (btIdent Verdi_T-2022.06)
 Total	0 error(s),   0 warning(s)

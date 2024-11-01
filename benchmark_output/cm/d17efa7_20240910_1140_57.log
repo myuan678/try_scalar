@@ -1,0 +1,36 @@
+Chronologic VCS simulator copyright 1991-2016
+Contains Synopsys proprietary information.
+Compiler version L-2016.06_Full64; Runtime version L-2016.06_Full64;  Sep 10 11:40 2024
+[SYSTEM] Timeout threshold is set to 200000 cycles.
+*Verdi3* Loading libsscore_vcs201606.so
+*Verdi3* : FSDB_GATE is set.
+*Verdi3* : FSDB_RTL is set.
+*Verdi3* : Enable Parallel Dumping.
+FSDB Dumper for VCS, Release Verdi3_L-2016.06-1, Linux x86_64/64bit, 07/10/2016
+(C) 1996 - 2016 by Synopsys, Inc.
+*Verdi3* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+*Verdi3* : Create FSDB file 'wave.fsdb'
+*Verdi3* : Begin traversing the scopes, layer (0).
+*Verdi3* : Enable +all dumping.
+*Verdi3* : End of traversing.
+*Verdi3* : Begin traversing the MDAs, layer (0).
+*Verdi3* : Enable +mda and +packedmda dumping.
+*Verdi3* : End of traversing the MDAs.
+*Verdi3* : fsdbDumpon - All FSDB files at 0 s.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_div_tc:
+ at time = 10: Division by zero.
+WARNING: toy_top.u_toy_scalar.u_core.u_mext.metx_dw_div.U1.DWF_rem_tc:
+ at time = 10: Division by zero.
+[cycle=95718][mpki=19.420000][tage error=287][btb error=1655]
+[cycle=171822][mpki=20.190202][tage error=184][btb error=1835]
+[pc=80006940][inst=00008067][cycle=172414]:ERROR TYPE: ras ERROR
+[pc=80004a58][inst=00008067][cycle=172570]:ERROR TYPE: ras ERROR
+[pc=80004af8][inst=00008067][cycle=172581]:ERROR TYPE: ras ERROR
+Fatal: "/home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/toy_env_slv.sv", 55: toy_top.u_toy_env_slv: at time 4000100
+[SYSTEM] Timeout occurs after executing 200000 cycles !
+$finish called from file "/home/liuyunqi/huangtao/flibbs/fetch8-ooo/rtl/toy_env_slv.sv", line 55.
+$finish at simulation time              4000100
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 4000100
+CPU Time:    698.460 seconds;       Data structure size:   1.4Mb
+Tue Sep 10 11:47:03 2024

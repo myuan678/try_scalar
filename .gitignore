@@ -1,6 +1,7 @@
 qemu_trace/dhrystone_qemu_sim_trace.log
 cm_pc_trace.log
 cm_pc_trace.log
+<<<<<<< HEAD
 pc_trace_1030.log
 pc_trace_icache.log
 wave.fsdb
@@ -10,3 +11,5 @@ log_1030
 pc_trace.log
 pccm_trace.log
 wave.fsdb
+=======
+>>>>>>> 89e66991d0bf01e1b1c749468c20af396b652198

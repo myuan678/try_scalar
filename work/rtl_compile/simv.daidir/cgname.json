@@ -101,11 +101,19 @@
         "module",
         17
     ],
+<<<<<<< HEAD
     "cmn_lead_one_0002": [
         "cmn_lead_one_0002",
         "UKkjx",
         "module",
         298
+=======
+    "cmn_lead_one_0001": [
+        "cmn_lead_one_0001",
+        "WzdPp",
+        "module",
+        18
+>>>>>>> 89e66991d0bf01e1b1c749468c20af396b652198
     ],
     "cmn_lead_one_msb_0000": [
         "cmn_lead_one_msb_0000",
@@ -1649,12 +1657,15 @@
         "module",
         275
     ],
+<<<<<<< HEAD
     "vrp_arb_0001": [
         "vrp_arb_0001",
         "h4qpI",
         "module",
         18
     ],
+=======
+>>>>>>> 89e66991d0bf01e1b1c749468c20af396b652198
     "hazard_check": [
         "hazard_check",
         "TrDeP",
@@ -1685,6 +1696,15 @@
         "module",
         280
     ],
+<<<<<<< HEAD
+=======
+    "arb_vrp_0000": [
+        "arb_vrp_0000",
+        "VdtsG",
+        "module",
+        281
+    ],
+>>>>>>> 89e66991d0bf01e1b1c749468c20af396b652198
     "fifo": [
         "fifo",
         "BWIbP",

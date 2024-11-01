@@ -1,7 +1,11 @@
 rc file Version 1.0
 
 [Design]
+<<<<<<< HEAD
 COMPILE_PATH=/data/usr/xuemy/try_scalar/try_scalar/work/rtl_compile
+=======
+COMPILE_PATH=/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile
+>>>>>>> 89e66991d0bf01e1b1c749468c20af396b652198
 VCS_HOME=/tools/software/synopsys/vcs/T-2022.06
 VERDI_HOME=/tools/software/synopsys/verdi/T-2022.06
 SystemC=FALSE

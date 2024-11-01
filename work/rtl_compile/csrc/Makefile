@@ -105,6 +105,10 @@ clobber : clean
 picclean : 
 	rm -f _cuarc*.so _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
 	@rm -f $(PRODUCT).daidir/_[0-9]*_archive_*.so 2>/dev/null
+<<<<<<< HEAD
+=======
+	@rm -f $(DPI_OBJS)
+>>>>>>> 89e66991d0bf01e1b1c749468c20af396b652198
 
 product_clean_order : 
 	@$(MAKE) -f Makefile --no-print-directory picclean

@@ -1,6 +1,10 @@
 #!/bin/sh -h 
 
+<<<<<<< HEAD
 FILE_PATH="/data/usr/xuemy/try_scalar/try_scalar/work/rtl_compile/simv.daidir/debug_dump/fsearch"
+=======
+FILE_PATH="/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv.daidir/debug_dump/fsearch"
+>>>>>>> 89e66991d0bf01e1b1c749468c20af396b652198
 lockfile="${FILE_PATH}"/lock
 
 FSearch_lock_release() {
@@ -28,17 +32,30 @@ if [ "${dir_name}" = "." ]; then
     cd $dir_name
     dir_name=`/bin/pwd`
 fi
+<<<<<<< HEAD
 if [ -d "$dir_name"/../../../../../../../../../.. ]; then
     cd "$dir_name"/../../../../../../../../../..
 fi
 
 if [ -f "/data/usr/xuemy/try_scalar/try_scalar/work/rtl_compile/simv.daidir/debug_dump/fsearch/.create_fsearch_db" ]; then
     if [ ! -f "/data/usr/xuemy/try_scalar/try_scalar/work/rtl_compile/simv.daidir/debug_dump/fsearch/fsearch.db" ]; then
+=======
+if [ -d "$dir_name"/../../../../../../../../../../.. ]; then
+    cd "$dir_name"/../../../../../../../../../../..
+fi
+
+if [ -f "/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv.daidir/debug_dump/fsearch/.create_fsearch_db" ]; then
+    if [ ! -f "/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv.daidir/debug_dump/fsearch/fsearch.db" ]; then
+>>>>>>> 89e66991d0bf01e1b1c749468c20af396b652198
         if [ "$#" -eq 1 ] && [ "x$1" == "x-background" ]; then
             trap FSearch_lock_release EXIT
             (
                 flock 193
+<<<<<<< HEAD
                 create_fsearch_db_ctrl "/data/usr/xuemy/try_scalar/try_scalar/work/rtl_compile/simv.daidir/debug_dump/fsearch/.create_fsearch_db"
+=======
+                create_fsearch_db_ctrl "/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv.daidir/debug_dump/fsearch/.create_fsearch_db"
+>>>>>>> 89e66991d0bf01e1b1c749468c20af396b652198
                 exit 193
             ) 193> "$lockfile"
             rstat=$?
@@ -46,6 +63,7 @@ if [ -f "/data/usr/xuemy/try_scalar/try_scalar/work/rtl_compile/simv.daidir/debu
                 exit $rstat
             fi
         else
+<<<<<<< HEAD
             "/data/usr/xuemy/try_scalar/try_scalar/work/rtl_compile/simv.daidir/debug_dump/fsearch/.create_fsearch_db"
             if [ -f "/data/usr/xuemy/try_scalar/try_scalar/work/rtl_compile/simv.daidir/debug_dump/fsearch/fsearch.stat" ]; then
                rm -f "/data/usr/xuemy/try_scalar/try_scalar/work/rtl_compile/simv.daidir/debug_dump/fsearch/fsearch.stat"
@@ -53,5 +71,14 @@ if [ -f "/data/usr/xuemy/try_scalar/try_scalar/work/rtl_compile/simv.daidir/debu
         fi
     elif [ -f "/data/usr/xuemy/try_scalar/try_scalar/work/rtl_compile/simv.daidir/debug_dump/fsearch/fsearch.stat" ]; then
        rm -f "/data/usr/xuemy/try_scalar/try_scalar/work/rtl_compile/simv.daidir/debug_dump/fsearch/fsearch.stat"
+=======
+            "/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv.daidir/debug_dump/fsearch/.create_fsearch_db"
+            if [ -f "/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv.daidir/debug_dump/fsearch/fsearch.stat" ]; then
+               rm -f "/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv.daidir/debug_dump/fsearch/fsearch.stat"
+            fi
+        fi
+    elif [ -f "/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv.daidir/debug_dump/fsearch/fsearch.stat" ]; then
+       rm -f "/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv.daidir/debug_dump/fsearch/fsearch.stat"
+>>>>>>> 89e66991d0bf01e1b1c749468c20af396b652198
     fi
 fi

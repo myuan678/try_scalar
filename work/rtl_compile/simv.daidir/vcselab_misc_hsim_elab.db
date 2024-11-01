@@ -1,6 +1,10 @@
 psSimBaseName                      	simv
 psLogFileName                      	NULL
+<<<<<<< HEAD
 pDaiDir                            	/data/usr/xuemy/try_scalar/try_scalar/work/rtl_compile/simv.daidir
+=======
+pDaiDir                            	/data/usr/xuemy/8fetch_ooo/dev_ooo/toy_scalar/work/rtl_compile/simv.daidir
+>>>>>>> 89e66991d0bf01e1b1c749468c20af396b652198
 destPath                           	csrc/
 fSharedMaster                      	0
 fHsimPCSharedLibSpecified          	0
