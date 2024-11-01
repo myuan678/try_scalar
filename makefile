@@ -38,17 +38,11 @@ dhry_test:
 
 
 cm:
-<<<<<<< HEAD
 	${RTL_COMPILE_OUTPUT}/simv +HEX=${RV_TEST_PATH}/hello_world/build/coremark_itcm.hex +DATA_HEX=${RV_TEST_PATH}/hello_world/build/coremark_dtcm.hex  +TIMEOUT=0 +PC=pccm_trace.log | tee benchmark_output/cm/$(GIT_REVISION)_$(TIMESTAMP).log
 
 cm_test:
 	${RTL_COMPILE_OUTPUT}/simv +HEX=/data/usr/huangt/hello_world_ht/toy_bm/coremark_itcm.hex +DATA_HEX=/data/usr/huangt/hello_world_ht/toy_bm/coremark_dtcm.hex  +TIMEOUT=0 +PC=pc_trace.log | tee benchmark_output/cm/$(GIT_REVISION)_$(TIMESTAMP).log
 
-=======
-	${RTL_COMPILE_OUTPUT}/simv +HEX=${RV_TEST_PATH}/hello_world/build/coremark_itcm.hex +DATA_HEX=${RV_TEST_PATH}/hello_world/build/coremark_dtcm.hex  +TIMEOUT=0 +PC=pc_trace.log | tee benchmark_output/cm/$(GIT_REVISION)_$(TIMESTAMP).log
-cm_test:
-	${RTL_COMPILE_OUTPUT}/simv +HEX=/data/usr/huangt/hello_world_ht/toy_bm/coremark_itcm.hex +DATA_HEX=/data/usr/huangt/hello_world_ht/toy_bm/coremark_dtcm.hex  +TIMEOUT=0 +PC=pc_trace.log | tee benchmark_output/cm/$(GIT_REVISION)_$(TIMESTAMP).log
->>>>>>> 89e66991d0bf01e1b1c749468c20af396b652198
 cm_backup:
 	${RTL_COMPILE_OUTPUT}/simv  +HEX=${RV_TEST_PATH}/hello_world_backup/build/coremark_itcm.hex +DATA_HEX=${RV_TEST_PATH}/hello_world_backup/build/coremark_dtcm.hex  +TIMEOUT=0 | tee benchmark_output/cm/$(GIT_REVISION)_$(TIMESTAMP).log
 

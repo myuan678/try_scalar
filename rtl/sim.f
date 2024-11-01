@@ -1,6 +1,7 @@
 
 -f $TOY_SCALAR_PATH/rtl/toy_scalar.f
--f /data/usr/xuemy/try/cache_v1/icache_v1_1008_release/icache_filelist_scalar.f
+-f $TOY_SCALAR_PATH/rtl/icache/icache_filelist_scalar.f
+//-f /data/usr/xuemy/try/cache_v1/icache_v1_1008_release/icache_filelist_scalar.f
 
 // dw ip
 +incdir+/tools/software/synopsys/syn/T-2022.03-SP2/dw/sim_ver
@@ -29,3 +30,4 @@ $TOY_SCALAR_PATH/dpi_c/draw_pic.c
 
 $TOY_SCALAR_PATH/plug_in/disassembler/toy_scalar_disasm_sv_wrapper.c
 $TOY_SCALAR_PATH/plug_in/disassembler/riscv_disas.c
+
